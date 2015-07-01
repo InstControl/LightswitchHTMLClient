@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Properties\Client.lsml" Checksum="221C915BFFFF3C304A81EC171FD3BC9C65D10C005B0F1626FB65356E253FBB1B" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Properties\Proxies.lsml" Checksum="7B839B8B7A187D4616BE01C7226B44044A3CBE4C4612C75241EACBB585802045" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Screens\SearchAbteilungItemSet.lsml" Checksum="9F9CB4FDBDC35FF3B0EF352676FD3612A8DFFCD7AFF216064593D128F280BF6A" />
+  </Documents>
+</ModelDocumentManifest>

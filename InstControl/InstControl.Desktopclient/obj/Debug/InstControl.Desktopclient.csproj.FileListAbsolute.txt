@@ -1,0 +1,156 @@
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\InstControl.Desktopclient.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\InstControl.Desktopclient.pdb
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\AppManifest.xaml
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\InstControl.Desktopclient.xap
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\XapCache.tmp
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.CSharp.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.Data.Edm.SL.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.Data.Services.Client.SL.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Base.Client.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Client.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Client.Internal.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.CodeMarker.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Cosmopolitan.Client.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.ExportProvider.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Extensions.Client.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Extensions.Design.Client.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.ManifestService.Client.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Model.Xaml.Client.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.RuntimeEditor.Internal.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.SDKProxy.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.Extensions.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.PollingDuplex.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.Web.Extensions.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.Data.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.DomainServices.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.Input.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Data.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.Xml.Linq.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.DomainServices.Client.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.Data.OData.SL.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.Xml.Serialization.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.Spatial.SL.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.xml
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.DomainServices.xml
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.DomainServices.Client.xml
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.Base.Client.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.Client.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.Client.Internal.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.Cosmopolitan.Client.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.Extensions.Client.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.ExportProvider.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.ManifestService.Client.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.Model.Xaml.Client.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.Data.Edm.SL.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.Data.Services.Client.SL.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ComponentModel.Composition.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ServiceModel.Extensions.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ServiceModel.PollingDuplex.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Controls.Data.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Controls.Input.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Controls.DomainServices.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Data.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Xml.Linq.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.CSharp.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.RuntimeEditor.Internal.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.Data.OData.SL.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Xml.Serialization.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Spatial.SL.resources.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\obj\Debug\InstControl.Desktopclient.csprojResolveAssemblyReference.cache
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\obj\Debug\InstControl.Desktopclient.dll
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.Desktopclient\obj\Debug\InstControl.Desktopclient.pdb
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\InstControl.Desktopclient.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\InstControl.Desktopclient.pdb
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\AppManifest.xaml
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\InstControl.Desktopclient.xap
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\XapCache.tmp
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.CSharp.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.Data.Edm.SL.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.Data.Services.Client.SL.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Base.Client.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Client.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Client.Internal.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.CodeMarker.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Cosmopolitan.Client.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.ExportProvider.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Extensions.Client.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Extensions.Design.Client.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.ManifestService.Client.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.Model.Xaml.Client.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.RuntimeEditor.Internal.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.LightSwitch.SDKProxy.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.Extensions.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.PollingDuplex.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.Web.Extensions.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.Data.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.DomainServices.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.Input.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Data.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.Xml.Linq.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.DomainServices.Client.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\Microsoft.Data.OData.SL.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.Xml.Serialization.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.Spatial.SL.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.xml
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.Windows.Controls.DomainServices.xml
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\System.ServiceModel.DomainServices.Client.xml
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.Base.Client.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.Client.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.Client.Internal.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.Cosmopolitan.Client.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.Extensions.Client.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.ExportProvider.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.ManifestService.Client.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.Model.Xaml.Client.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.Data.Edm.SL.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.Data.Services.Client.SL.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ComponentModel.Composition.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ServiceModel.Extensions.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ServiceModel.DomainServices.Client.Web.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ServiceModel.PollingDuplex.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ServiceModel.Web.Extensions.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Controls.Data.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Controls.Input.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Controls.DomainServices.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Windows.Data.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Xml.Linq.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.CSharp.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.LightSwitch.RuntimeEditor.Internal.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.ServiceModel.DomainServices.Client.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\Microsoft.Data.OData.SL.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Xml.Serialization.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Bin\Debug\de\System.Spatial.SL.resources.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\obj\Debug\InstControl.Desktopclient.csprojResolveAssemblyReference.cache
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\obj\Debug\InstControl.Desktopclient.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\obj\Debug\InstControl.Desktopclient.pdb

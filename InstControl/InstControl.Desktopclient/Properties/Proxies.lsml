@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application
+  Name="LightSwitchApplication.InstControl.Desktopclient" xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <Application.Attributes>
+    <Partial />
+  </Application.Attributes>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:AbteilungItem" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:BeschäftigungsArtItem" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:MitarbeiterItem" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Properties>
+      <EntityProperty
+        Name="Ende">
+        <EntityProperty.Attributes>
+          <Proxy
+            Target="LightSwitchServiceApplication:ProjektItem/Properties[Ende]" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:ProjektItem" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Properties>
+      <EntityProperty
+        Name="Dauer">
+        <EntityProperty.Attributes>
+          <Proxy
+            Target="LightSwitchServiceApplication:VertragItem/Properties[Dauer]" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+    </EntityType.Properties>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:VertragItem" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityContainer
+    Name="ApplicationData">
+    <EntityContainer.Attributes>
+      <Proxy
+        Target="ServiceInterface:ApplicationData" />
+    </EntityContainer.Attributes>
+  </EntityContainer>
+  <Association
+    Name="AbteilungItem_MitarbeiterItem">
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:AbteilungItem_MitarbeiterItem" />
+    </Association.Attributes>
+  </Association>
+  <Association
+    Name="AbteilungItem_ProjektItem">
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:AbteilungItem_ProjektItem" />
+    </Association.Attributes>
+  </Association>
+  <Association
+    Name="BeschäftigungsArtItem_VertragItem">
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:BeschäftigungsArtItem_VertragItem" />
+    </Association.Attributes>
+  </Association>
+  <Association
+    Name="VertragItem_MitarbeiterItem">
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:VertragItem_MitarbeiterItem" />
+    </Association.Attributes>
+  </Association>
+  <Association
+    Name="AbteilungItem_MitarbeiterItem1">
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:AbteilungItem_MitarbeiterItem1" />
+    </Association.Attributes>
+  </Association>
+  <Association
+    Name="VertragItem_ProjektItem">
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:VertragItem_ProjektItem" />
+    </Association.Attributes>
+  </Association>
+</Application>

@@ -1,0 +1,6 @@
+C:\Users\Thomas\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\Thomas\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\tBartnitzki\OneDrive\Visual Studio 2015\Projects\InstControl\InstControl\InstControl.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\bin\Debug\LSResourceGeneratorsTask.mcs
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\bin\Debug\LSClientCodeGeneratorsTask.mcs

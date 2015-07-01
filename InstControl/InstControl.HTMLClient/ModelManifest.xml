@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Properties\ApplicationData\AbteilungItemSet.lsml" Checksum="03A5FF3405874C15C703FA5E2890751F7244B634FD94B4BDD8C792B5B8E96D0B" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Properties\ApplicationData\BeschäftigungsArtItemSet.lsml" Checksum="E300C6D9785A1F526F6EF687C9C8786EFA548E69CF130165885C04B997327431" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Properties\ApplicationData\MitarbeiterItemSet.lsml" Checksum="9DF1755AFACB2D495B97DF6214937CD967E32A15CAE52A4446675D22054F6CF7" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Properties\ApplicationData\ProjektItemSet.lsml" Checksum="5E5D7767AB8D513462BADF130695D722B912926C3EF6D098CFEB33B4975013E6" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Properties\ApplicationData\VertragItemSet.lsml" Checksum="0B58D85D92FEBCE8D2EBD21524A94A017F3C0BD669BC3299B455A6CA25BF88EB" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Properties\Client.lsml" Checksum="7A314DC6BAA90044178E027255E7113A1F6F1D6BD2BC94392458D267A5B16D22" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Properties\Proxies.lsml" Checksum="58F737A8E3784FEFDAC103BB360CF4C19B444162368E0F4686A15797FA5A6A97" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\AbteilungItemSet\AddEditAbteilungItem.lsml" Checksum="24E7595668357BDB35361A2388B1F30AE32AE2AEAD3C519F9C48E19D6138BFC4" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\AbteilungItemSet\BrowseAbteilungItemSet.lsml" Checksum="4393928D4F024EF060725036A73275E9E42B4F444E164EB4CD655730B4C3661B" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\AbteilungItemSet\ViewAbteilungItem.lsml" Checksum="D6E6D479E0CA93EB46332AFFDECF4B1EC48070224E64975F09D25FF8B4C3D820" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\BeschäftigungsArtItemSet\AddEditBeschäftigungsArtItem.lsml" Checksum="F2231A96BB041258D03D7CC4306EB6D39C0CE53E662D9E4726A425ED079EA9E6" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\BeschäftigungsArtItemSet\BrowseBeschäftigungsArtItemSet.lsml" Checksum="5FEDCCF8A1FF4D9C864329AEEE03EE561A66500A2C3936A96EBA0B4E3886BE71" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\BeschäftigungsArtItemSet\ViewBeschäftigungsArtItem.lsml" Checksum="CFCFB56B66B20E032B879368093F3AD2DD9D6D7C74D59C56F751F583950B6BA1" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\KontoItem\AddEditKontoItem.lsml" Checksum="30DDDF8319FD2078003F06553CEFADD7EC270B27047039ECAF2F828D28A4A848" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\KontoItem\BrowseKontoItem.lsml" Checksum="444A067A6B6ED14927F648284BD3DF73743075446F28364FF0BC3F4B09D90C30" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\KontoItem\ViewKontoItem.lsml" Checksum="CC3845C5E2ECEE6137A60F0C2667D48B74799DA942432FF980F001EA7E2278FD" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\MitarbeiterSet\AddEditMitarbeiter.lsml" Checksum="F3C9CF4A9CD58A643C41493BA2CD045E5316988066A03BA24B57FC25D2701A32" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\MitarbeiterSet\BrowseMitarbeiterSet.lsml" Checksum="B8B37BB36381C02053DFC7FF84BF70FFD8BE3289AD8B8EB285B7C6B6A9047DF4" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\MitarbeiterSet\ViewMitarbeiter.lsml" Checksum="47333EEB863B37913EA9A0602FC98B011E130FA2D3A2F4A7ACA79B708144407C" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\ProjektItemSet\AddEditProjektItem.lsml" Checksum="91DD508F8FE0D8299C383F75BC5A57E73F867BE346B15813FF86352A1CD7223A" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\ProjektItemSet\BrowseProjektItemSet.lsml" Checksum="39567565920522021C75604EA7D395BAA91E3E6C73F7269DC7004D791E89902B" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\ProjektItemSet\ViewProjektItem.lsml" Checksum="02E32485ABF5FFDE464693D227F8FD2A28A3CA024E52008E9E882050494DE24A" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\VertragItemSet\AddEditVertragItem.lsml" Checksum="53919C942CDBB18E5DB8929D0F6050A6B487ED9B9FB40079850878896E6F6791" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\VertragItemSet\BrowseVertragItemSet.lsml" Checksum="2B46D0F02F7A6BC4DF099813DF8D77A694D698F69CA6F8559C3FCBA6FCB82912" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\VertragItemSet\ViewVertragItem.lsml" Checksum="B79ADF15D0260CFFC1ED14D7F686FDBB093B2BFF3614C5B9A5173CE82BD9CF3A" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.HTMLClient\Screens\Browse.lsml" Checksum="A8207593B458A390A85B6528E99FBFADF09BDBBC7CFDAB1E52F991EFF13E8960" />
+  </Documents>
+</ModelDocumentManifest>

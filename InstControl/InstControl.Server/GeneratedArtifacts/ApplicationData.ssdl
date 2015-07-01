@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ApplicationDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ApplicationDataStore">
+    <EntitySet Name="AbteilungItemSet" EntityType="ApplicationDataStore.AbteilungItem" store:Type="Tables" Schema="dbo" Table="AbteilungItemSet" />
+    <EntitySet Name="BeschäftigungsArtItemSet" EntityType="ApplicationDataStore.BeschäftigungsArtItem" store:Type="Tables" Schema="dbo" Table="BeschäftigungsArtItemSet" />
+    <EntitySet Name="MitarbeiterItemSet" EntityType="ApplicationDataStore.MitarbeiterItem" store:Type="Tables" Schema="dbo" Table="MitarbeiterItemSet" />
+    <EntitySet Name="ProjektItemSet" EntityType="ApplicationDataStore.ProjektItem" store:Type="Tables" Schema="dbo" Table="ProjektItemSet" />
+    <EntitySet Name="VertragItemSet" EntityType="ApplicationDataStore.VertragItem" store:Type="Tables" Schema="dbo" Table="VertragItemSet" />
+    <AssociationSet Name="AbteilungItem_MitarbeiterItem" Association="ApplicationDataStore.AbteilungItem_MitarbeiterItem">
+      <End Role="AbteilungItem" EntitySet="AbteilungItemSet" />
+      <End Role="MitarbeiterItem" EntitySet="MitarbeiterItemSet" />
+    </AssociationSet>
+    <AssociationSet Name="AbteilungItem_ProjektItem" Association="ApplicationDataStore.AbteilungItem_ProjektItem">
+      <End Role="AbteilungItem" EntitySet="AbteilungItemSet" />
+      <End Role="ProjektItem" EntitySet="ProjektItemSet" />
+    </AssociationSet>
+    <AssociationSet Name="VertragItem_MitarbeiterItem" Association="ApplicationDataStore.VertragItem_MitarbeiterItem">
+      <End Role="MitarbeiterItem" EntitySet="MitarbeiterItemSet" />
+      <End Role="VertragItem" EntitySet="VertragItemSet" />
+    </AssociationSet>
+    <AssociationSet Name="AbteilungItem_MitarbeiterItem1" Association="ApplicationDataStore.AbteilungItem_MitarbeiterItem1">
+      <End Role="MitarbeiterItem" EntitySet="MitarbeiterItemSet" />
+      <End Role="AbteilungItem" EntitySet="AbteilungItemSet" />
+    </AssociationSet>
+    <AssociationSet Name="VertragItem_ProjektItem" Association="ApplicationDataStore.VertragItem_ProjektItem">
+      <End Role="ProjektItem" EntitySet="ProjektItemSet" />
+      <End Role="VertragItem" EntitySet="VertragItemSet" />
+    </AssociationSet>
+    <AssociationSet Name="BeschäftigungsArtItem_VertragItem" Association="ApplicationDataStore.BeschäftigungsArtItem_VertragItem">
+      <End Role="BeschäftigungsArtItem" EntitySet="BeschäftigungsArtItemSet" />
+      <End Role="VertragItem" EntitySet="VertragItemSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AbteilungItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kürzel" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Langname" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="AbteilungItem_MitarbeiterItem1" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BeschäftigungsArtItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Art" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="MitarbeiterItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nachname" Type="nvarchar" Nullable="false" MaxLength="255">
+      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </Property>
+    <Property Name="Vorname" Type="nvarchar" Nullable="false" MaxLength="255">
+      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </Property>
+    <Property Name="Geburtstag" Type="datetime" Nullable="false" />
+    <Property Name="Erstanstellung" Type="datetime" Nullable="false" />
+    <Property Name="Ausscheidedatum" Type="datetime" />
+    <Property Name="Bermerkung" Type="nvarchar" MaxLength="255" />
+    <Property Name="Raum" Type="nvarchar" MaxLength="255" />
+    <Property Name="Telefon" Type="nvarchar" MaxLength="255" />
+    <Property Name="Foto" Type="varbinary(max)" />
+    <Property Name="PersonalNr" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="AbteilungItem_MitarbeiterItem" Type="int" />
+  </EntityType>
+  <EntityType Name="ProjektItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProjektKurzName" Type="nvarchar" Nullable="false" MaxLength="255">
+      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </Property>
+    <Property Name="ProjektLangName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Start" Type="datetime" Nullable="false" />
+    <Property Name="Laufzeit" Type="int" Nullable="false" />
+    <Property Name="PSPElement" Type="nvarchar" MaxLength="255">
+      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </Property>
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="AbteilungItem_ProjektItem" Type="int" />
+  </EntityType>
+  <EntityType Name="VertragItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="von" Type="datetime" Nullable="false" />
+    <Property Name="bis" Type="datetime" Nullable="false" />
+    <Property Name="Stellenanteil" Type="decimal" Nullable="false" Precision="3" Scale="2" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="VertragItem_MitarbeiterItem" Type="int" Nullable="false" />
+    <Property Name="VertragItem_ProjektItem" Type="int" Nullable="false" />
+    <Property Name="BeschäftigungsArtItem_VertragItem" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="AbteilungItem_MitarbeiterItem">
+    <End Role="AbteilungItem" Type="ApplicationDataStore.AbteilungItem" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="MitarbeiterItem" Type="ApplicationDataStore.MitarbeiterItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AbteilungItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MitarbeiterItem">
+        <PropertyRef Name="AbteilungItem_MitarbeiterItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AbteilungItem_ProjektItem">
+    <End Role="AbteilungItem" Type="ApplicationDataStore.AbteilungItem" Multiplicity="0..1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="ProjektItem" Type="ApplicationDataStore.ProjektItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AbteilungItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProjektItem">
+        <PropertyRef Name="AbteilungItem_ProjektItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VertragItem_MitarbeiterItem">
+    <End Role="MitarbeiterItem" Type="ApplicationDataStore.MitarbeiterItem" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="VertragItem" Type="ApplicationDataStore.VertragItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MitarbeiterItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VertragItem">
+        <PropertyRef Name="VertragItem_MitarbeiterItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AbteilungItem_MitarbeiterItem1">
+    <End Role="MitarbeiterItem" Type="ApplicationDataStore.MitarbeiterItem" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="AbteilungItem" Type="ApplicationDataStore.AbteilungItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MitarbeiterItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="AbteilungItem">
+        <PropertyRef Name="AbteilungItem_MitarbeiterItem1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VertragItem_ProjektItem">
+    <End Role="ProjektItem" Type="ApplicationDataStore.ProjektItem" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="VertragItem" Type="ApplicationDataStore.VertragItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProjektItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VertragItem">
+        <PropertyRef Name="VertragItem_ProjektItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="BeschäftigungsArtItem_VertragItem">
+    <End Role="BeschäftigungsArtItem" Type="ApplicationDataStore.BeschäftigungsArtItem" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="VertragItem" Type="ApplicationDataStore.VertragItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BeschäftigungsArtItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VertragItem">
+        <PropertyRef Name="BeschäftigungsArtItem_VertragItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

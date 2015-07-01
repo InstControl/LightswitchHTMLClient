@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\DataSources\ApplicationData\AbteilungItemSet.lsml" Checksum="67099F69064285C8384FB92AB06A278F46E9FE79B30050C5A00C527662D2E680" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\DataSources\ApplicationData\BeschäftigungsArtItemSet.lsml" Checksum="6E93991F266288D009086186162992157960CD00EA494D8D5CC9FC194D3DA26B" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\DataSources\ApplicationData\MitarbeiterItemSet.lsml" Checksum="13F861247F31604FB211F03F0B4386DD6A5D31BDEF94E5A0D60D06C6AB2E63FF" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\DataSources\ApplicationData\aktuelleMitarbeiter.lsml" Checksum="9ECBFEB8845C1AA486F9193519706C4EF8CF6811518B42C73028418AAAAA3CEA" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\DataSources\ApplicationData\ausgeschiedeneMitarbeiter.lsml" Checksum="4CA73AE79B6A2D7C9EAF0352789D1682E03E2CD5F8BDE5EEFD8F831A23F062C1" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\DataSources\ApplicationData\ProjektItemSet.lsml" Checksum="ECC1BBDA1AC4D797C262876C243B00EE0934E01180838524B0EA5CAAF8793C12" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\DataSources\ApplicationData\VertragItemSet.lsml" Checksum="0E092FB8CD350488395D6443A91790C34F6E5BD1C2A226A27890C47003430679" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\Properties\DataSources\ApplicationData.lsml" Checksum="E6FEEAC3B4A850AAC5F0029259A0B9F8C1BD45F2950D17BD8D6664B9422E6AD6" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\Properties\Service.lsml" Checksum="679C78F29C5AF23E9956A773B0E46DF90F7B86CADA0B79571E5896A1C79F5B70" />
+  </Documents>
+</ModelDocumentManifest>

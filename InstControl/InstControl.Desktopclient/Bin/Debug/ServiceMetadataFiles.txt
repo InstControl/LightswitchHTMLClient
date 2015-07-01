@@ -1,0 +1,9 @@
+InstControl.Server.Properties.Service.lsml
+InstControl.Server.Properties.DataSources.ApplicationData.lsml
+InstControl.Server.DataSources.ApplicationData.MitarbeiterItemSet.lsml
+InstControl.Server.DataSources.ApplicationData.ausgeschiedeneMitarbeiter.lsml
+InstControl.Server.DataSources.ApplicationData.VertragItemSet.lsml
+InstControl.Server.DataSources.ApplicationData.BeschäftigungsArtItemSet.lsml
+InstControl.Server.DataSources.ApplicationData.ProjektItemSet.lsml
+InstControl.Server.DataSources.ApplicationData.AbteilungItemSet.lsml
+InstControl.Server.DataSources.ApplicationData.aktuelleMitarbeiter.lsml
