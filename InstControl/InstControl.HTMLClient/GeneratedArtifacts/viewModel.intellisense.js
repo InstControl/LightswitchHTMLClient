@@ -1165,6 +1165,14 @@
             data: lightSwitchApplication.MitarbeiterItem,
             value: lightSwitchApplication.MitarbeiterItem
         },
+        PersonalNr: {
+            _$class: msls.ContentItem,
+            _$name: "PersonalNr",
+            _$parentName: "right",
+            screen: lightSwitchApplication.AddEditMitarbeiter,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: String
+        },
         Raum: {
             _$class: msls.ContentItem,
             _$name: "Raum",
@@ -1279,6 +1287,11 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("right"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement PersonalNr gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        PersonalNr_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("PersonalNr"); }],
         /// <field>
         /// Wird aufgerufen, nachdem das Inhaltselement Raum gerendert wurde.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
@@ -1578,30 +1591,6 @@
             data: lightSwitchApplication.VertragItem,
             value: Date
         },
-        ProjektKurzName: {
-            _$class: msls.ContentItem,
-            _$name: "ProjektKurzName",
-            _$parentName: "VertragItemCollectionTemplate",
-            screen: lightSwitchApplication.ViewMitarbeiter,
-            data: lightSwitchApplication.VertragItem,
-            value: String
-        },
-        PSPElement1: {
-            _$class: msls.ContentItem,
-            _$name: "PSPElement1",
-            _$parentName: "VertragItemCollectionTemplate",
-            screen: lightSwitchApplication.ViewMitarbeiter,
-            data: lightSwitchApplication.VertragItem,
-            value: String
-        },
-        Stellenanteil1: {
-            _$class: msls.ContentItem,
-            _$name: "Stellenanteil1",
-            _$parentName: "VertragItemCollectionTemplate",
-            screen: lightSwitchApplication.ViewMitarbeiter,
-            data: lightSwitchApplication.VertragItem,
-            value: String
-        },
         Art1: {
             _$class: msls.ContentItem,
             _$name: "Art1",
@@ -1655,30 +1644,6 @@
             screen: lightSwitchApplication.ViewMitarbeiter,
             data: lightSwitchApplication.VertragItem,
             value: Date
-        },
-        ProjektCode: {
-            _$class: msls.ContentItem,
-            _$name: "ProjektCode",
-            _$parentName: "VertragItemCollectionPlannedTemplate",
-            screen: lightSwitchApplication.ViewMitarbeiter,
-            data: lightSwitchApplication.VertragItem,
-            value: String
-        },
-        PSPElement: {
-            _$class: msls.ContentItem,
-            _$name: "PSPElement",
-            _$parentName: "VertragItemCollectionPlannedTemplate",
-            screen: lightSwitchApplication.ViewMitarbeiter,
-            data: lightSwitchApplication.VertragItem,
-            value: String
-        },
-        Stellenanteil: {
-            _$class: msls.ContentItem,
-            _$name: "Stellenanteil",
-            _$parentName: "VertragItemCollectionPlannedTemplate",
-            screen: lightSwitchApplication.ViewMitarbeiter,
-            data: lightSwitchApplication.VertragItem,
-            value: String
         },
         Art: {
             _$class: msls.ContentItem,
@@ -1926,6 +1891,16 @@
         /// </field>
         RefreshTabs_execute: [lightSwitchApplication.ViewMitarbeiter],
         /// <field>
+        /// Wird aufgerufen, um zu ermitteln, ob die Methode DeleteVertrag ausgeführt werden kann.
+        /// <br/>canExecute(msls.application.ViewMitarbeiter screen)
+        /// </field>
+        DeleteVertrag_canExecute: [lightSwitchApplication.ViewMitarbeiter],
+        /// <field>
+        /// Wird aufgerufen, um die Methode DeleteVertrag auszuführen.
+        /// <br/>execute(msls.application.ViewMitarbeiter screen)
+        /// </field>
+        DeleteVertrag_execute: [lightSwitchApplication.ViewMitarbeiter],
+        /// <field>
         /// Wird aufgerufen, nachdem das Inhaltselement Tab_VertragItemCollectionCurrent gerendert wurde.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
@@ -1950,21 +1925,6 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         bis1_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("bis1"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektKurzName gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProjektKurzName_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("ProjektKurzName"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement PSPElement1 gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        PSPElement1_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("PSPElement1"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil1 gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Stellenanteil1_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Stellenanteil1"); }],
         /// <field>
         /// Wird aufgerufen, nachdem das Inhaltselement Art1 gerendert wurde.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
@@ -1995,21 +1955,6 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         bis2_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("bis2"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektCode gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProjektCode_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("ProjektCode"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement PSPElement gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        PSPElement_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("PSPElement"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Stellenanteil_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Stellenanteil"); }],
         /// <field>
         /// Wird aufgerufen, nachdem das Inhaltselement Art gerendert wurde.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
@@ -2591,6 +2536,405 @@
         Modified_postRender: [$element, function () { return new lightSwitchApplication.ViewProjektItem().findContentItem("Modified"); }]
     });
 
+    lightSwitchApplication.AddEditStellenanteilItem.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditStellenanteilItem
+        },
+        Details: {
+            _$class: msls.ContentItem,
+            _$name: "Details",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.AddEditStellenanteilItem,
+            data: lightSwitchApplication.AddEditStellenanteilItem,
+            value: lightSwitchApplication.AddEditStellenanteilItem
+        },
+        columns: {
+            _$class: msls.ContentItem,
+            _$name: "columns",
+            _$parentName: "Details",
+            screen: lightSwitchApplication.AddEditStellenanteilItem,
+            data: lightSwitchApplication.AddEditStellenanteilItem,
+            value: lightSwitchApplication.StellenanteilItem
+        },
+        left: {
+            _$class: msls.ContentItem,
+            _$name: "left",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditStellenanteilItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: lightSwitchApplication.StellenanteilItem
+        },
+        Stellenanteil: {
+            _$class: msls.ContentItem,
+            _$name: "Stellenanteil",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditStellenanteilItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: String
+        },
+        ProjektItem: {
+            _$class: msls.ContentItem,
+            _$name: "ProjektItem",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditStellenanteilItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: lightSwitchApplication.ProjektItem
+        },
+        ProjektItem1: {
+            _$class: msls.ContentItem,
+            _$name: "ProjektItem1",
+            _$parentName: "ProjektItem",
+            screen: lightSwitchApplication.AddEditStellenanteilItem,
+            data: lightSwitchApplication.ProjektItem,
+            value: lightSwitchApplication.ProjektItem
+        },
+        right: {
+            _$class: msls.ContentItem,
+            _$name: "right",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditStellenanteilItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: lightSwitchApplication.StellenanteilItem
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.AddEditStellenanteilItem
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.AddEditStellenanteilItem, {
+        /// <field>
+        /// Wird aufgerufen, wenn ein neuer AddEditStellenanteilItem-Bildschirm erstellt wird.
+        /// <br/>created(msls.application.AddEditStellenanteilItem screen)
+        /// </field>
+        created: [lightSwitchApplication.AddEditStellenanteilItem],
+        /// <field>
+        /// Wird aufgerufen, bevor Änderungen auf einem aktiven AddEditStellenanteilItem-Bildschirm angewendet werden.
+        /// <br/>beforeApplyChanges(msls.application.AddEditStellenanteilItem screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.AddEditStellenanteilItem],
+        /// <field>
+        /// Wird aufgerufen, um zu ermitteln, ob die Methode Delete ausgeführt werden kann.
+        /// <br/>canExecute(msls.application.AddEditStellenanteilItem screen)
+        /// </field>
+        Delete_canExecute: [lightSwitchApplication.AddEditStellenanteilItem],
+        /// <field>
+        /// Wird aufgerufen, um die Methode Delete auszuführen.
+        /// <br/>execute(msls.application.AddEditStellenanteilItem screen)
+        /// </field>
+        Delete_execute: [lightSwitchApplication.AddEditStellenanteilItem],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("Details"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("columns"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        left_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("left"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Stellenanteil_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("Stellenanteil"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement ProjektItem gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProjektItem_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("ProjektItem"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement ProjektItem1 gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProjektItem1_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("ProjektItem1"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("right"); }]
+    });
+
+    lightSwitchApplication.BrowseStellenanteilItemSet.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.BrowseStellenanteilItemSet
+        },
+        StellenanteilItemList: {
+            _$class: msls.ContentItem,
+            _$name: "StellenanteilItemList",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.BrowseStellenanteilItemSet,
+            data: lightSwitchApplication.BrowseStellenanteilItemSet,
+            value: lightSwitchApplication.BrowseStellenanteilItemSet
+        },
+        StellenanteilItemSet: {
+            _$class: msls.ContentItem,
+            _$name: "StellenanteilItemSet",
+            _$parentName: "StellenanteilItemList",
+            screen: lightSwitchApplication.BrowseStellenanteilItemSet,
+            data: lightSwitchApplication.BrowseStellenanteilItemSet,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.BrowseStellenanteilItemSet,
+                _$entry: {
+                    elementType: lightSwitchApplication.StellenanteilItem
+                }
+            }
+        },
+        rows: {
+            _$class: msls.ContentItem,
+            _$name: "rows",
+            _$parentName: "StellenanteilItemSet",
+            screen: lightSwitchApplication.BrowseStellenanteilItemSet,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: lightSwitchApplication.StellenanteilItem
+        },
+        Id: {
+            _$class: msls.ContentItem,
+            _$name: "Id",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseStellenanteilItemSet,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: Number
+        },
+        Stellenanteil: {
+            _$class: msls.ContentItem,
+            _$name: "Stellenanteil",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseStellenanteilItemSet,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: String
+        },
+        VertragItem: {
+            _$class: msls.ContentItem,
+            _$name: "VertragItem",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseStellenanteilItemSet,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: lightSwitchApplication.VertragItem
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.BrowseStellenanteilItemSet
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.BrowseStellenanteilItemSet, {
+        /// <field>
+        /// Wird aufgerufen, wenn ein neuer BrowseStellenanteilItemSet-Bildschirm erstellt wird.
+        /// <br/>created(msls.application.BrowseStellenanteilItemSet screen)
+        /// </field>
+        created: [lightSwitchApplication.BrowseStellenanteilItemSet],
+        /// <field>
+        /// Wird aufgerufen, bevor Änderungen auf einem aktiven BrowseStellenanteilItemSet-Bildschirm angewendet werden.
+        /// <br/>beforeApplyChanges(msls.application.BrowseStellenanteilItemSet screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.BrowseStellenanteilItemSet],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement StellenanteilItemList gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        StellenanteilItemList_postRender: [$element, function () { return new lightSwitchApplication.BrowseStellenanteilItemSet().findContentItem("StellenanteilItemList"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement StellenanteilItemSet gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        StellenanteilItemSet_postRender: [$element, function () { return new lightSwitchApplication.BrowseStellenanteilItemSet().findContentItem("StellenanteilItemSet"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement rows gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        rows_postRender: [$element, function () { return new lightSwitchApplication.BrowseStellenanteilItemSet().findContentItem("rows"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Id gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Id_postRender: [$element, function () { return new lightSwitchApplication.BrowseStellenanteilItemSet().findContentItem("Id"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Stellenanteil_postRender: [$element, function () { return new lightSwitchApplication.BrowseStellenanteilItemSet().findContentItem("Stellenanteil"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement VertragItem gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        VertragItem_postRender: [$element, function () { return new lightSwitchApplication.BrowseStellenanteilItemSet().findContentItem("VertragItem"); }]
+    });
+
+    lightSwitchApplication.ViewStellenanteilItem.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.ViewStellenanteilItem
+        },
+        Details: {
+            _$class: msls.ContentItem,
+            _$name: "Details",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.ViewStellenanteilItem,
+            data: lightSwitchApplication.ViewStellenanteilItem,
+            value: lightSwitchApplication.ViewStellenanteilItem
+        },
+        columns: {
+            _$class: msls.ContentItem,
+            _$name: "columns",
+            _$parentName: "Details",
+            screen: lightSwitchApplication.ViewStellenanteilItem,
+            data: lightSwitchApplication.ViewStellenanteilItem,
+            value: lightSwitchApplication.StellenanteilItem
+        },
+        left: {
+            _$class: msls.ContentItem,
+            _$name: "left",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.ViewStellenanteilItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: lightSwitchApplication.StellenanteilItem
+        },
+        Stellenanteil: {
+            _$class: msls.ContentItem,
+            _$name: "Stellenanteil",
+            _$parentName: "left",
+            screen: lightSwitchApplication.ViewStellenanteilItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: String
+        },
+        VertragItem: {
+            _$class: msls.ContentItem,
+            _$name: "VertragItem",
+            _$parentName: "left",
+            screen: lightSwitchApplication.ViewStellenanteilItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: lightSwitchApplication.VertragItem
+        },
+        CreatedBy: {
+            _$class: msls.ContentItem,
+            _$name: "CreatedBy",
+            _$parentName: "left",
+            screen: lightSwitchApplication.ViewStellenanteilItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: String
+        },
+        right: {
+            _$class: msls.ContentItem,
+            _$name: "right",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.ViewStellenanteilItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: lightSwitchApplication.StellenanteilItem
+        },
+        Created: {
+            _$class: msls.ContentItem,
+            _$name: "Created",
+            _$parentName: "right",
+            screen: lightSwitchApplication.ViewStellenanteilItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: Date
+        },
+        ModifiedBy: {
+            _$class: msls.ContentItem,
+            _$name: "ModifiedBy",
+            _$parentName: "right",
+            screen: lightSwitchApplication.ViewStellenanteilItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: String
+        },
+        Modified: {
+            _$class: msls.ContentItem,
+            _$name: "Modified",
+            _$parentName: "right",
+            screen: lightSwitchApplication.ViewStellenanteilItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: Date
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.ViewStellenanteilItem
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.ViewStellenanteilItem, {
+        /// <field>
+        /// Wird aufgerufen, wenn ein neuer ViewStellenanteilItem-Bildschirm erstellt wird.
+        /// <br/>created(msls.application.ViewStellenanteilItem screen)
+        /// </field>
+        created: [lightSwitchApplication.ViewStellenanteilItem],
+        /// <field>
+        /// Wird aufgerufen, bevor Änderungen auf einem aktiven ViewStellenanteilItem-Bildschirm angewendet werden.
+        /// <br/>beforeApplyChanges(msls.application.ViewStellenanteilItem screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.ViewStellenanteilItem],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Details_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("Details"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        columns_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("columns"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        left_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("left"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Stellenanteil_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("Stellenanteil"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement VertragItem gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        VertragItem_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("VertragItem"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement CreatedBy gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        CreatedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("CreatedBy"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        right_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("right"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Created gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Created_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("Created"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement ModifiedBy gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ModifiedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("ModifiedBy"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Modified gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Modified_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("Modified"); }]
+    });
+
     lightSwitchApplication.AddEditVertragItem.prototype._$contentItems = {
         Tabs: {
             _$class: msls.ContentItem,
@@ -2630,66 +2974,10 @@
             data: lightSwitchApplication.VertragItem,
             value: Date
         },
-        bis: {
-            _$class: msls.ContentItem,
-            _$name: "bis",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditVertragItem,
-            data: lightSwitchApplication.VertragItem,
-            value: Date
-        },
-        Stellenanteil: {
-            _$class: msls.ContentItem,
-            _$name: "Stellenanteil",
-            _$parentName: "left",
-            screen: lightSwitchApplication.AddEditVertragItem,
-            data: lightSwitchApplication.VertragItem,
-            value: String
-        },
-        right: {
-            _$class: msls.ContentItem,
-            _$name: "right",
-            _$parentName: "columns",
-            screen: lightSwitchApplication.AddEditVertragItem,
-            data: lightSwitchApplication.VertragItem,
-            value: lightSwitchApplication.VertragItem
-        },
-        MitarbeiterItem: {
-            _$class: msls.ContentItem,
-            _$name: "MitarbeiterItem",
-            _$parentName: "right",
-            screen: lightSwitchApplication.AddEditVertragItem,
-            data: lightSwitchApplication.VertragItem,
-            value: lightSwitchApplication.MitarbeiterItem
-        },
-        RowTemplate: {
-            _$class: msls.ContentItem,
-            _$name: "RowTemplate",
-            _$parentName: "MitarbeiterItem",
-            screen: lightSwitchApplication.AddEditVertragItem,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: lightSwitchApplication.MitarbeiterItem
-        },
-        Nachname: {
-            _$class: msls.ContentItem,
-            _$name: "Nachname",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.AddEditVertragItem,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: String
-        },
-        Vorname: {
-            _$class: msls.ContentItem,
-            _$name: "Vorname",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.AddEditVertragItem,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: String
-        },
         BeschäftigungsArtItem: {
             _$class: msls.ContentItem,
             _$name: "BeschäftigungsArtItem",
-            _$parentName: "right",
+            _$parentName: "left",
             screen: lightSwitchApplication.AddEditVertragItem,
             data: lightSwitchApplication.VertragItem,
             value: lightSwitchApplication.BeschäftigungsArtItem
@@ -2702,20 +2990,58 @@
             data: lightSwitchApplication.BeschäftigungsArtItem,
             value: lightSwitchApplication.BeschäftigungsArtItem
         },
-        ProjektItem: {
+        right: {
             _$class: msls.ContentItem,
-            _$name: "ProjektItem",
+            _$name: "right",
+            _$parentName: "columns",
+            screen: lightSwitchApplication.AddEditVertragItem,
+            data: lightSwitchApplication.VertragItem,
+            value: lightSwitchApplication.VertragItem
+        },
+        bis: {
+            _$class: msls.ContentItem,
+            _$name: "bis",
             _$parentName: "right",
             screen: lightSwitchApplication.AddEditVertragItem,
             data: lightSwitchApplication.VertragItem,
-            value: lightSwitchApplication.ProjektItem
+            value: Date
         },
-        ProjektItemTemplate: {
+        StellenanteilItemCollection: {
             _$class: msls.ContentItem,
-            _$name: "ProjektItemTemplate",
-            _$parentName: "ProjektItem",
+            _$name: "StellenanteilItemCollection",
+            _$parentName: "Details",
             screen: lightSwitchApplication.AddEditVertragItem,
-            data: lightSwitchApplication.ProjektItem,
+            data: lightSwitchApplication.AddEditVertragItem,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.AddEditVertragItem,
+                _$entry: {
+                    elementType: lightSwitchApplication.StellenanteilItem
+                }
+            }
+        },
+        StellenanteilItemCollectionTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "StellenanteilItemCollectionTemplate",
+            _$parentName: "StellenanteilItemCollection",
+            screen: lightSwitchApplication.AddEditVertragItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: lightSwitchApplication.StellenanteilItem
+        },
+        Stellenanteil: {
+            _$class: msls.ContentItem,
+            _$name: "Stellenanteil",
+            _$parentName: "StellenanteilItemCollectionTemplate",
+            screen: lightSwitchApplication.AddEditVertragItem,
+            data: lightSwitchApplication.StellenanteilItem,
+            value: String
+        },
+        ProjektItem: {
+            _$class: msls.ContentItem,
+            _$name: "ProjektItem",
+            _$parentName: "StellenanteilItemCollectionTemplate",
+            screen: lightSwitchApplication.AddEditVertragItem,
+            data: lightSwitchApplication.StellenanteilItem,
             value: lightSwitchApplication.ProjektItem
         },
         Popups: {
@@ -2738,6 +3064,16 @@
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.AddEditVertragItem],
         /// <field>
+        /// Wird aufgerufen, um zu ermitteln, ob die Methode DeleteVertrag ausgeführt werden kann.
+        /// <br/>canExecute(msls.application.AddEditVertragItem screen)
+        /// </field>
+        DeleteVertrag_canExecute: [lightSwitchApplication.AddEditVertragItem],
+        /// <field>
+        /// Wird aufgerufen, um die Methode DeleteVertrag auszuführen.
+        /// <br/>execute(msls.application.AddEditVertragItem screen)
+        /// </field>
+        DeleteVertrag_execute: [lightSwitchApplication.AddEditVertragItem],
+        /// <field>
         /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
@@ -2758,41 +3094,6 @@
         /// </field>
         von_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("von"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement bis gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        bis_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("bis"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Stellenanteil_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("Stellenanteil"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("right"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterItem gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        MitarbeiterItem_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("MitarbeiterItem"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement RowTemplate gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        RowTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("RowTemplate"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Nachname gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Nachname_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("Nachname"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Vorname gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Vorname_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("Vorname"); }],
-        /// <field>
         /// Wird aufgerufen, nachdem das Inhaltselement BeschäftigungsArtItem gerendert wurde.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
@@ -2803,15 +3104,35 @@
         /// </field>
         BeschäftigungsArtItem1_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("BeschäftigungsArtItem1"); }],
         /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        right_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("right"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement bis gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        bis_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("bis"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement StellenanteilItemCollection gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        StellenanteilItemCollection_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("StellenanteilItemCollection"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement StellenanteilItemCollectionTemplate gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        StellenanteilItemCollectionTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("StellenanteilItemCollectionTemplate"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Stellenanteil_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("Stellenanteil"); }],
+        /// <field>
         /// Wird aufgerufen, nachdem das Inhaltselement ProjektItem gerendert wurde.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        ProjektItem_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("ProjektItem"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektItemTemplate gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ProjektItemTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("ProjektItemTemplate"); }]
+        ProjektItem_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("ProjektItem"); }]
     });
 
     lightSwitchApplication.BrowseVertragItemSet.prototype._$contentItems = {
@@ -3147,6 +3468,170 @@
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ShowBrowseMitarbeiterSet_postRender: [$element, function () { return new lightSwitchApplication.Browse().findContentItem("ShowBrowseMitarbeiterSet"); }]
+    });
+
+    lightSwitchApplication.BrowseVertragJeMonatItemSet.prototype._$contentItems = {
+        Tabs: {
+            _$class: msls.ContentItem,
+            _$name: "Tabs",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet
+        },
+        VertragJeMonatItemList: {
+            _$class: msls.ContentItem,
+            _$name: "VertragJeMonatItemList",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+            data: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+            value: lightSwitchApplication.BrowseVertragJeMonatItemSet
+        },
+        VertragJeMonatItemSet: {
+            _$class: msls.ContentItem,
+            _$name: "VertragJeMonatItemSet",
+            _$parentName: "VertragJeMonatItemList",
+            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+            data: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+                _$entry: {
+                    elementType: lightSwitchApplication.VertragJeMonatItem
+                }
+            }
+        },
+        rows: {
+            _$class: msls.ContentItem,
+            _$name: "rows",
+            _$parentName: "VertragJeMonatItemSet",
+            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+            data: lightSwitchApplication.VertragJeMonatItem,
+            value: lightSwitchApplication.VertragJeMonatItem
+        },
+        Id: {
+            _$class: msls.ContentItem,
+            _$name: "Id",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+            data: lightSwitchApplication.VertragJeMonatItem,
+            value: Number
+        },
+        Monat: {
+            _$class: msls.ContentItem,
+            _$name: "Monat",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+            data: lightSwitchApplication.VertragJeMonatItem,
+            value: Date
+        },
+        Stellenanteil: {
+            _$class: msls.ContentItem,
+            _$name: "Stellenanteil",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+            data: lightSwitchApplication.VertragJeMonatItem,
+            value: String
+        },
+        ProjektKurzName: {
+            _$class: msls.ContentItem,
+            _$name: "ProjektKurzName",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+            data: lightSwitchApplication.VertragJeMonatItem,
+            value: String
+        },
+        Nachname: {
+            _$class: msls.ContentItem,
+            _$name: "Nachname",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+            data: lightSwitchApplication.VertragJeMonatItem,
+            value: String
+        },
+        Kürzel: {
+            _$class: msls.ContentItem,
+            _$name: "Kürzel",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+            data: lightSwitchApplication.VertragJeMonatItem,
+            value: String
+        },
+        Art: {
+            _$class: msls.ContentItem,
+            _$name: "Art",
+            _$parentName: "rows",
+            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet,
+            data: lightSwitchApplication.VertragJeMonatItem,
+            value: String
+        },
+        Popups: {
+            _$class: msls.ContentItem,
+            _$name: "Popups",
+            _$parentName: "RootContentItem",
+            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet
+        }
+    };
+
+    msls._addEntryPoints(lightSwitchApplication.BrowseVertragJeMonatItemSet, {
+        /// <field>
+        /// Wird aufgerufen, wenn ein neuer BrowseVertragJeMonatItemSet-Bildschirm erstellt wird.
+        /// <br/>created(msls.application.BrowseVertragJeMonatItemSet screen)
+        /// </field>
+        created: [lightSwitchApplication.BrowseVertragJeMonatItemSet],
+        /// <field>
+        /// Wird aufgerufen, bevor Änderungen auf einem aktiven BrowseVertragJeMonatItemSet-Bildschirm angewendet werden.
+        /// <br/>beforeApplyChanges(msls.application.BrowseVertragJeMonatItemSet screen)
+        /// </field>
+        beforeApplyChanges: [lightSwitchApplication.BrowseVertragJeMonatItemSet],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement VertragJeMonatItemList gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        VertragJeMonatItemList_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("VertragJeMonatItemList"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement VertragJeMonatItemSet gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        VertragJeMonatItemSet_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("VertragJeMonatItemSet"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement rows gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        rows_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("rows"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Id gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Id_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("Id"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Monat gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Monat_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("Monat"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Stellenanteil_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("Stellenanteil"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement ProjektKurzName gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        ProjektKurzName_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("ProjektKurzName"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Nachname gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Nachname_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("Nachname"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Kürzel gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Kürzel_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("Kürzel"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Art gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Art_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("Art"); }]
     });
 
 }(msls.application));

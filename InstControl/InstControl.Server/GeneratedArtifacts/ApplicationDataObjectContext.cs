@@ -23,8 +23,10 @@ using System.Xml.Serialization;
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "AbteilungItem_ProjektItem", "AbteilungItem", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(LightSwitchApplication.Implementation.AbteilungItem), "ProjektItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.ProjektItem), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "VertragItem_MitarbeiterItem", "MitarbeiterItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.MitarbeiterItem), "VertragItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.VertragItem), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "AbteilungItem_MitarbeiterItem1", "MitarbeiterItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.MitarbeiterItem), "AbteilungItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.AbteilungItem), true)]
-[assembly: EdmRelationshipAttribute("LightSwitchApplication", "VertragItem_ProjektItem", "ProjektItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.ProjektItem), "VertragItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.VertragItem), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "StellenanteilItem_ProjektItem", "ProjektItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.ProjektItem), "StellenanteilItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.StellenanteilItem), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "BeschäftigungsArtItem_VertragItem", "BeschäftigungsArtItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.BeschäftigungsArtItem), "VertragItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.VertragItem), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "VertragItem_StellenanteilItem", "VertragItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.VertragItem), "StellenanteilItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.StellenanteilItem), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "VertragJeMonatItem_StellenanteilItem", "StellenanteilItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.StellenanteilItem), "VertragJeMonatItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.VertragJeMonatItem), true)]
 
 #endregion
 
@@ -140,6 +142,22 @@ namespace LightSwitchApplication.Implementation
         /// <summary>
         /// Keine Dokumentation für Metadaten verfügbar.
         /// </summary>
+        public ObjectSet<StellenanteilItem> StellenanteilItemSet
+        {
+            get
+            {
+                if ((_StellenanteilItemSet == null))
+                {
+                    _StellenanteilItemSet = base.CreateObjectSet<StellenanteilItem>("StellenanteilItemSet");
+                }
+                return _StellenanteilItemSet;
+            }
+        }
+        private ObjectSet<StellenanteilItem> _StellenanteilItemSet;
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
         public ObjectSet<VertragItem> VertragItemSet
         {
             get
@@ -152,6 +170,22 @@ namespace LightSwitchApplication.Implementation
             }
         }
         private ObjectSet<VertragItem> _VertragItemSet;
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        public ObjectSet<VertragJeMonatItem> VertragJeMonatItemSet
+        {
+            get
+            {
+                if ((_VertragJeMonatItemSet == null))
+                {
+                    _VertragJeMonatItemSet = base.CreateObjectSet<VertragJeMonatItem>("VertragJeMonatItemSet");
+                }
+                return _VertragJeMonatItemSet;
+            }
+        }
+        private ObjectSet<VertragJeMonatItem> _VertragJeMonatItemSet;
 
         #endregion
 
@@ -190,11 +224,27 @@ namespace LightSwitchApplication.Implementation
         }
     
         /// <summary>
+        /// Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'StellenanteilItemSet'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet&lt;T&gt;'.
+        /// </summary>
+        public void AddToStellenanteilItemSet(StellenanteilItem stellenanteilItem)
+        {
+            base.AddObject("StellenanteilItemSet", stellenanteilItem);
+        }
+    
+        /// <summary>
         /// Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'VertragItemSet'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet&lt;T&gt;'.
         /// </summary>
         public void AddToVertragItemSet(VertragItem vertragItem)
         {
             base.AddObject("VertragItemSet", vertragItem);
+        }
+    
+        /// <summary>
+        /// Veraltete Methode zum Hinzufügen eines neuen Objekts zum EntitySet 'VertragJeMonatItemSet'. Verwenden Sie stattdessen die Methode '.Add' der zugeordneten Eigenschaft 'ObjectSet&lt;T&gt;'.
+        /// </summary>
+        public void AddToVertragJeMonatItemSet(VertragJeMonatItem vertragJeMonatItem)
+        {
+            base.AddObject("VertragJeMonatItemSet", vertragJeMonatItem);
         }
 
         #endregion
@@ -1653,28 +1703,6 @@ namespace LightSwitchApplication.Implementation
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "VertragItem_ProjektItem", "VertragItem")]
-        public EntityCollection<VertragItem> VertragItemCollection
-        {
-            get
-            {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<VertragItem>("LightSwitchApplication.VertragItem_ProjektItem", "VertragItem");
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<VertragItem>("LightSwitchApplication.VertragItem_ProjektItem", "VertragItem", value);
-                }
-            }
-        }
-    
-        /// <summary>
-        /// Keine Dokumentation für Metadaten verfügbar.
-        /// </summary>
-        [XmlIgnoreAttribute()]
-        [SoapIgnoreAttribute()]
-        [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "AbteilungItem_ProjektItem", "AbteilungItem")]
         public AbteilungItem AbteilungItem
         {
@@ -1706,6 +1734,387 @@ namespace LightSwitchApplication.Implementation
                 }
             }
         }
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "StellenanteilItem_ProjektItem", "StellenanteilItem")]
+        public EntityCollection<StellenanteilItem> StellenanteilItem
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<StellenanteilItem>("LightSwitchApplication.StellenanteilItem_ProjektItem", "StellenanteilItem");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<StellenanteilItem>("LightSwitchApplication.StellenanteilItem_ProjektItem", "StellenanteilItem", value);
+                }
+            }
+        }
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// Keine Dokumentation für Metadaten verfügbar.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="StellenanteilItem")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class StellenanteilItem : EntityObject
+    {
+        #region Factory-Methode
+    
+        /// <summary>
+        /// Erstellt ein neues StellenanteilItem-Objekt.
+        /// </summary>
+        /// <param name="id">Anfangswert der Eigenschaft Id.</param>
+        /// <param name="stellenanteil">Anfangswert der Eigenschaft Stellenanteil.</param>
+        /// <param name="vertragItem_StellenanteilItem">Anfangswert der Eigenschaft VertragItem_StellenanteilItem.</param>
+        /// <param name="stellenanteilItem_ProjektItem">Anfangswert der Eigenschaft StellenanteilItem_ProjektItem.</param>
+        /// <param name="rowVersion">Anfangswert der Eigenschaft RowVersion.</param>
+        public static StellenanteilItem CreateStellenanteilItem(global::System.Int32 id, global::System.Decimal stellenanteil, global::System.Int32 vertragItem_StellenanteilItem, global::System.Int32 stellenanteilItem_ProjektItem, global::System.Byte[] rowVersion)
+        {
+            StellenanteilItem stellenanteilItem = new StellenanteilItem();
+            stellenanteilItem.Id = id;
+            stellenanteilItem.Stellenanteil = stellenanteil;
+            stellenanteilItem.VertragItem_StellenanteilItem = vertragItem_StellenanteilItem;
+            stellenanteilItem.StellenanteilItem_ProjektItem = stellenanteilItem_ProjektItem;
+            stellenanteilItem.RowVersion = rowVersion;
+            return stellenanteilItem;
+        }
+
+        #endregion
+
+        #region Primitive Eigenschaften
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = value;
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Decimal Stellenanteil
+        {
+            get
+            {
+                return _Stellenanteil;
+            }
+            set
+            {
+                OnStellenanteilChanging(value);
+                ReportPropertyChanging("Stellenanteil");
+                _Stellenanteil = value;
+                ReportPropertyChanged("Stellenanteil");
+                OnStellenanteilChanged();
+            }
+        }
+        private global::System.Decimal _Stellenanteil;
+        partial void OnStellenanteilChanging(global::System.Decimal value);
+        partial void OnStellenanteilChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 VertragItem_StellenanteilItem
+        {
+            get
+            {
+                return _VertragItem_StellenanteilItem;
+            }
+            set
+            {
+                OnVertragItem_StellenanteilItemChanging(value);
+                ReportPropertyChanging("VertragItem_StellenanteilItem");
+                _VertragItem_StellenanteilItem = value;
+                ReportPropertyChanged("VertragItem_StellenanteilItem");
+                OnVertragItem_StellenanteilItemChanged();
+            }
+        }
+        private global::System.Int32 _VertragItem_StellenanteilItem;
+        partial void OnVertragItem_StellenanteilItemChanging(global::System.Int32 value);
+        partial void OnVertragItem_StellenanteilItemChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 StellenanteilItem_ProjektItem
+        {
+            get
+            {
+                return _StellenanteilItem_ProjektItem;
+            }
+            set
+            {
+                OnStellenanteilItem_ProjektItemChanging(value);
+                ReportPropertyChanging("StellenanteilItem_ProjektItem");
+                _StellenanteilItem_ProjektItem = value;
+                ReportPropertyChanged("StellenanteilItem_ProjektItem");
+                OnStellenanteilItem_ProjektItemChanged();
+            }
+        }
+        private global::System.Int32 _StellenanteilItem_ProjektItem;
+        partial void OnStellenanteilItem_ProjektItemChanging(global::System.Int32 value);
+        partial void OnStellenanteilItem_ProjektItemChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CreatedBy
+        {
+            get
+            {
+                return _CreatedBy;
+            }
+            set
+            {
+                OnCreatedByChanging(value);
+                ReportPropertyChanging("CreatedBy");
+                _CreatedBy = value;
+                ReportPropertyChanged("CreatedBy");
+                OnCreatedByChanged();
+            }
+        }
+        private global::System.String _CreatedBy;
+        partial void OnCreatedByChanging(global::System.String value);
+        partial void OnCreatedByChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Created
+        {
+            get
+            {
+                return _Created;
+            }
+            set
+            {
+                OnCreatedChanging(value);
+                ReportPropertyChanging("Created");
+                _Created = value;
+                ReportPropertyChanged("Created");
+                OnCreatedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Created;
+        partial void OnCreatedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnCreatedChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ModifiedBy
+        {
+            get
+            {
+                return _ModifiedBy;
+            }
+            set
+            {
+                OnModifiedByChanging(value);
+                ReportPropertyChanging("ModifiedBy");
+                _ModifiedBy = value;
+                ReportPropertyChanged("ModifiedBy");
+                OnModifiedByChanged();
+            }
+        }
+        private global::System.String _ModifiedBy;
+        partial void OnModifiedByChanging(global::System.String value);
+        partial void OnModifiedByChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Modified
+        {
+            get
+            {
+                return _Modified;
+            }
+            set
+            {
+                OnModifiedChanging(value);
+                ReportPropertyChanging("Modified");
+                _Modified = value;
+                ReportPropertyChanged("Modified");
+                OnModifiedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Modified;
+        partial void OnModifiedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnModifiedChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Byte[] RowVersion
+        {
+            get
+            {
+                return StructuralObject.GetValidValue(_RowVersion);
+            }
+            set
+            {
+                OnRowVersionChanging(value);
+                ReportPropertyChanging("RowVersion");
+                _RowVersion = value;
+                ReportPropertyChanged("RowVersion");
+                OnRowVersionChanged();
+            }
+        }
+        private global::System.Byte[] _RowVersion;
+        partial void OnRowVersionChanging(global::System.Byte[] value);
+        partial void OnRowVersionChanged();
+
+        #endregion
+
+    
+        #region Navigationseigenschaften
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "VertragItem_StellenanteilItem", "VertragItem")]
+        public VertragItem VertragItem
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<VertragItem>("LightSwitchApplication.VertragItem_StellenanteilItem", "VertragItem").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<VertragItem>("LightSwitchApplication.VertragItem_StellenanteilItem", "VertragItem").Value = value;
+            }
+        }
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<VertragItem> VertragItemReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<VertragItem>("LightSwitchApplication.VertragItem_StellenanteilItem", "VertragItem");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<VertragItem>("LightSwitchApplication.VertragItem_StellenanteilItem", "VertragItem", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "StellenanteilItem_ProjektItem", "ProjektItem")]
+        public ProjektItem ProjektItem
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<ProjektItem>("LightSwitchApplication.StellenanteilItem_ProjektItem", "ProjektItem").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<ProjektItem>("LightSwitchApplication.StellenanteilItem_ProjektItem", "ProjektItem").Value = value;
+            }
+        }
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<ProjektItem> ProjektItemReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<ProjektItem>("LightSwitchApplication.StellenanteilItem_ProjektItem", "ProjektItem");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<ProjektItem>("LightSwitchApplication.StellenanteilItem_ProjektItem", "ProjektItem", value);
+                }
+            }
+        }
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "VertragJeMonatItem_StellenanteilItem", "VertragJeMonatItem")]
+        public EntityCollection<VertragJeMonatItem> VertragJeMonatCollection
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<VertragJeMonatItem>("LightSwitchApplication.VertragJeMonatItem_StellenanteilItem", "VertragJeMonatItem");
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<VertragJeMonatItem>("LightSwitchApplication.VertragJeMonatItem_StellenanteilItem", "VertragJeMonatItem", value);
+                }
+            }
+        }
 
         #endregion
 
@@ -1729,10 +2138,8 @@ namespace LightSwitchApplication.Implementation
         /// <param name="bis">Anfangswert der Eigenschaft bis.</param>
         /// <param name="vertragItem_MitarbeiterItem">Anfangswert der Eigenschaft VertragItem_MitarbeiterItem.</param>
         /// <param name="beschäftigungsArtItem_VertragItem">Anfangswert der Eigenschaft BeschäftigungsArtItem_VertragItem.</param>
-        /// <param name="vertragItem_ProjektItem">Anfangswert der Eigenschaft VertragItem_ProjektItem.</param>
-        /// <param name="stellenanteil">Anfangswert der Eigenschaft Stellenanteil.</param>
         /// <param name="rowVersion">Anfangswert der Eigenschaft RowVersion.</param>
-        public static VertragItem CreateVertragItem(global::System.Int32 id, global::System.DateTime von, global::System.DateTime bis, global::System.Int32 vertragItem_MitarbeiterItem, global::System.Int32 beschäftigungsArtItem_VertragItem, global::System.Int32 vertragItem_ProjektItem, global::System.Decimal stellenanteil, global::System.Byte[] rowVersion)
+        public static VertragItem CreateVertragItem(global::System.Int32 id, global::System.DateTime von, global::System.DateTime bis, global::System.Int32 vertragItem_MitarbeiterItem, global::System.Int32 beschäftigungsArtItem_VertragItem, global::System.Byte[] rowVersion)
         {
             VertragItem vertragItem = new VertragItem();
             vertragItem.Id = id;
@@ -1740,8 +2147,6 @@ namespace LightSwitchApplication.Implementation
             vertragItem.bis = bis;
             vertragItem.VertragItem_MitarbeiterItem = vertragItem_MitarbeiterItem;
             vertragItem.BeschäftigungsArtItem_VertragItem = beschäftigungsArtItem_VertragItem;
-            vertragItem.VertragItem_ProjektItem = vertragItem_ProjektItem;
-            vertragItem.Stellenanteil = stellenanteil;
             vertragItem.RowVersion = rowVersion;
             return vertragItem;
         }
@@ -1872,54 +2277,6 @@ namespace LightSwitchApplication.Implementation
         private global::System.Int32 _BeschäftigungsArtItem_VertragItem;
         partial void OnBeschäftigungsArtItem_VertragItemChanging(global::System.Int32 value);
         partial void OnBeschäftigungsArtItem_VertragItemChanged();
-    
-        /// <summary>
-        /// Keine Dokumentation für Metadaten verfügbar.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Int32 VertragItem_ProjektItem
-        {
-            get
-            {
-                return _VertragItem_ProjektItem;
-            }
-            set
-            {
-                OnVertragItem_ProjektItemChanging(value);
-                ReportPropertyChanging("VertragItem_ProjektItem");
-                _VertragItem_ProjektItem = value;
-                ReportPropertyChanged("VertragItem_ProjektItem");
-                OnVertragItem_ProjektItemChanged();
-            }
-        }
-        private global::System.Int32 _VertragItem_ProjektItem;
-        partial void OnVertragItem_ProjektItemChanging(global::System.Int32 value);
-        partial void OnVertragItem_ProjektItemChanged();
-    
-        /// <summary>
-        /// Keine Dokumentation für Metadaten verfügbar.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Decimal Stellenanteil
-        {
-            get
-            {
-                return _Stellenanteil;
-            }
-            set
-            {
-                OnStellenanteilChanging(value);
-                ReportPropertyChanging("Stellenanteil");
-                _Stellenanteil = value;
-                ReportPropertyChanged("Stellenanteil");
-                OnStellenanteilChanged();
-            }
-        }
-        private global::System.Decimal _Stellenanteil;
-        partial void OnStellenanteilChanging(global::System.Decimal value);
-        partial void OnStellenanteilChanged();
     
         /// <summary>
         /// Keine Dokumentation für Metadaten verfügbar.
@@ -2128,16 +2485,273 @@ namespace LightSwitchApplication.Implementation
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "VertragItem_ProjektItem", "ProjektItem")]
-        public ProjektItem ProjektItem
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "VertragItem_StellenanteilItem", "StellenanteilItem")]
+        public EntityCollection<StellenanteilItem> StellenanteilItemCollection
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<ProjektItem>("LightSwitchApplication.VertragItem_ProjektItem", "ProjektItem").Value;
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<StellenanteilItem>("LightSwitchApplication.VertragItem_StellenanteilItem", "StellenanteilItem");
             }
             set
             {
-                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<ProjektItem>("LightSwitchApplication.VertragItem_ProjektItem", "ProjektItem").Value = value;
+                if ((value != null))
+                {
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<StellenanteilItem>("LightSwitchApplication.VertragItem_StellenanteilItem", "StellenanteilItem", value);
+                }
+            }
+        }
+
+        #endregion
+
+    }
+    
+    /// <summary>
+    /// Keine Dokumentation für Metadaten verfügbar.
+    /// </summary>
+    [EdmEntityTypeAttribute(NamespaceName="LightSwitchApplication", Name="VertragJeMonatItem")]
+    [Serializable()]
+    [DataContractAttribute(IsReference=true)]
+    public partial class VertragJeMonatItem : EntityObject
+    {
+        #region Factory-Methode
+    
+        /// <summary>
+        /// Erstellt ein neues VertragJeMonatItem-Objekt.
+        /// </summary>
+        /// <param name="id">Anfangswert der Eigenschaft Id.</param>
+        /// <param name="monat">Anfangswert der Eigenschaft Monat.</param>
+        /// <param name="vertragJeMonatItem_StellenanteilItem">Anfangswert der Eigenschaft VertragJeMonatItem_StellenanteilItem.</param>
+        /// <param name="rowVersion">Anfangswert der Eigenschaft RowVersion.</param>
+        public static VertragJeMonatItem CreateVertragJeMonatItem(global::System.Int32 id, global::System.DateTime monat, global::System.Int32 vertragJeMonatItem_StellenanteilItem, global::System.Byte[] rowVersion)
+        {
+            VertragJeMonatItem vertragJeMonatItem = new VertragJeMonatItem();
+            vertragJeMonatItem.Id = id;
+            vertragJeMonatItem.Monat = monat;
+            vertragJeMonatItem.VertragJeMonatItem_StellenanteilItem = vertragJeMonatItem_StellenanteilItem;
+            vertragJeMonatItem.RowVersion = rowVersion;
+            return vertragJeMonatItem;
+        }
+
+        #endregion
+
+        #region Primitive Eigenschaften
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=true, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 Id
+        {
+            get
+            {
+                return _Id;
+            }
+            set
+            {
+                if (_Id != value)
+                {
+                    OnIdChanging(value);
+                    ReportPropertyChanging("Id");
+                    _Id = value;
+                    ReportPropertyChanged("Id");
+                    OnIdChanged();
+                }
+            }
+        }
+        private global::System.Int32 _Id;
+        partial void OnIdChanging(global::System.Int32 value);
+        partial void OnIdChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.DateTime Monat
+        {
+            get
+            {
+                return _Monat;
+            }
+            set
+            {
+                OnMonatChanging(value);
+                ReportPropertyChanging("Monat");
+                _Monat = value;
+                ReportPropertyChanged("Monat");
+                OnMonatChanged();
+            }
+        }
+        private global::System.DateTime _Monat;
+        partial void OnMonatChanging(global::System.DateTime value);
+        partial void OnMonatChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Int32 VertragJeMonatItem_StellenanteilItem
+        {
+            get
+            {
+                return _VertragJeMonatItem_StellenanteilItem;
+            }
+            set
+            {
+                OnVertragJeMonatItem_StellenanteilItemChanging(value);
+                ReportPropertyChanging("VertragJeMonatItem_StellenanteilItem");
+                _VertragJeMonatItem_StellenanteilItem = value;
+                ReportPropertyChanged("VertragJeMonatItem_StellenanteilItem");
+                OnVertragJeMonatItem_StellenanteilItemChanged();
+            }
+        }
+        private global::System.Int32 _VertragJeMonatItem_StellenanteilItem;
+        partial void OnVertragJeMonatItem_StellenanteilItemChanging(global::System.Int32 value);
+        partial void OnVertragJeMonatItem_StellenanteilItemChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String CreatedBy
+        {
+            get
+            {
+                return _CreatedBy;
+            }
+            set
+            {
+                OnCreatedByChanging(value);
+                ReportPropertyChanging("CreatedBy");
+                _CreatedBy = value;
+                ReportPropertyChanged("CreatedBy");
+                OnCreatedByChanged();
+            }
+        }
+        private global::System.String _CreatedBy;
+        partial void OnCreatedByChanging(global::System.String value);
+        partial void OnCreatedByChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Created
+        {
+            get
+            {
+                return _Created;
+            }
+            set
+            {
+                OnCreatedChanging(value);
+                ReportPropertyChanging("Created");
+                _Created = value;
+                ReportPropertyChanged("Created");
+                OnCreatedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Created;
+        partial void OnCreatedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnCreatedChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public global::System.String ModifiedBy
+        {
+            get
+            {
+                return _ModifiedBy;
+            }
+            set
+            {
+                OnModifiedByChanging(value);
+                ReportPropertyChanging("ModifiedBy");
+                _ModifiedBy = value;
+                ReportPropertyChanged("ModifiedBy");
+                OnModifiedByChanged();
+            }
+        }
+        private global::System.String _ModifiedBy;
+        partial void OnModifiedByChanging(global::System.String value);
+        partial void OnModifiedByChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=true)]
+        [DataMemberAttribute()]
+        public Nullable<global::System.DateTimeOffset> Modified
+        {
+            get
+            {
+                return _Modified;
+            }
+            set
+            {
+                OnModifiedChanging(value);
+                ReportPropertyChanging("Modified");
+                _Modified = value;
+                ReportPropertyChanged("Modified");
+                OnModifiedChanged();
+            }
+        }
+        private Nullable<global::System.DateTimeOffset> _Modified;
+        partial void OnModifiedChanging(Nullable<global::System.DateTimeOffset> value);
+        partial void OnModifiedChanged();
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.Byte[] RowVersion
+        {
+            get
+            {
+                return StructuralObject.GetValidValue(_RowVersion);
+            }
+            set
+            {
+                OnRowVersionChanging(value);
+                ReportPropertyChanging("RowVersion");
+                _RowVersion = value;
+                ReportPropertyChanged("RowVersion");
+                OnRowVersionChanged();
+            }
+        }
+        private global::System.Byte[] _RowVersion;
+        partial void OnRowVersionChanging(global::System.Byte[] value);
+        partial void OnRowVersionChanged();
+
+        #endregion
+
+    
+        #region Navigationseigenschaften
+    
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [XmlIgnoreAttribute()]
+        [SoapIgnoreAttribute()]
+        [DataMemberAttribute()]
+        [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "VertragJeMonatItem_StellenanteilItem", "StellenanteilItem")]
+        public StellenanteilItem StellenanteilItem
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<StellenanteilItem>("LightSwitchApplication.VertragJeMonatItem_StellenanteilItem", "StellenanteilItem").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<StellenanteilItem>("LightSwitchApplication.VertragJeMonatItem_StellenanteilItem", "StellenanteilItem").Value = value;
             }
         }
         /// <summary>
@@ -2145,17 +2759,17 @@ namespace LightSwitchApplication.Implementation
         /// </summary>
         [BrowsableAttribute(false)]
         [DataMemberAttribute()]
-        public EntityReference<ProjektItem> ProjektItemReference
+        public EntityReference<StellenanteilItem> StellenanteilItemReference
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<ProjektItem>("LightSwitchApplication.VertragItem_ProjektItem", "ProjektItem");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<StellenanteilItem>("LightSwitchApplication.VertragJeMonatItem_StellenanteilItem", "StellenanteilItem");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<ProjektItem>("LightSwitchApplication.VertragItem_ProjektItem", "ProjektItem", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<StellenanteilItem>("LightSwitchApplication.VertragJeMonatItem_StellenanteilItem", "StellenanteilItem", value);
                 }
             }
         }

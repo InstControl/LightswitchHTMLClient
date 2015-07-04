@@ -269,11 +269,17 @@
         /// <field name="VertragItemCollectionCurrent" type="msls.VisualCollection" elementType="msls.application.VertragItem">
         /// Ruft den vertragItemCollectionCurrent für diesen Bildschirm ab.
         /// </field>
+        /// <field name="Stellenanteil" type="String">
+        /// Ruft den stellenanteil für diesen Bildschirm ab oder legt diesen fest.
+        /// </field>
         /// <field name="VertragItemCollectionPlanned" type="msls.VisualCollection" elementType="msls.application.VertragItem">
         /// Ruft den vertragItemCollectionPlanned für diesen Bildschirm ab.
         /// </field>
         /// <field name="VertragItemCollectionEnded" type="msls.VisualCollection" elementType="msls.application.VertragItem">
         /// Ruft den vertragItemCollectionEnded für diesen Bildschirm ab.
+        /// </field>
+        /// <field name="StellenanteilItemCollection" type="msls.VisualCollection" elementType="msls.application.StellenanteilItem">
+        /// Ruft den stellenanteilItemCollection für diesen Bildschirm ab.
         /// </field>
         /// <field name="details" type="msls.application.ViewMitarbeiter.Details">
         /// Ruft die Details für diesen Bildschirm ab.
@@ -350,6 +356,72 @@
         $Screen.call(this, dataWorkspace, "ViewProjektItem", parameters);
     }
 
+    function AddEditStellenanteilItem(parameters, dataWorkspace) {
+        /// <summary>
+        /// Stellt den Bildschirm AddEditStellenanteilItem dar.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// Ein Array von Bildschirm-Parameterwerten.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// Ein bestehender Datenarbeitsbereich, der für diesen Bildschirm benutzt werden soll. Standardmäßig wird ein neuer Datenarbeitsbereich erstellt.
+        /// </param>
+        /// <field name="StellenanteilItem" type="msls.application.StellenanteilItem">
+        /// Ruft den stellenanteilItem für diesen Bildschirm ab oder legt diesen fest.
+        /// </field>
+        /// <field name="details" type="msls.application.AddEditStellenanteilItem.Details">
+        /// Ruft die Details für diesen Bildschirm ab.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "AddEditStellenanteilItem", parameters);
+    }
+
+    function BrowseStellenanteilItemSet(parameters, dataWorkspace) {
+        /// <summary>
+        /// Stellt den Bildschirm BrowseStellenanteilItemSet dar.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// Ein Array von Bildschirm-Parameterwerten.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// Ein bestehender Datenarbeitsbereich, der für diesen Bildschirm benutzt werden soll. Standardmäßig wird ein neuer Datenarbeitsbereich erstellt.
+        /// </param>
+        /// <field name="StellenanteilItemSet" type="msls.VisualCollection" elementType="msls.application.StellenanteilItem">
+        /// Ruft den stellenanteilItemSet für diesen Bildschirm ab.
+        /// </field>
+        /// <field name="details" type="msls.application.BrowseStellenanteilItemSet.Details">
+        /// Ruft die Details für diesen Bildschirm ab.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "BrowseStellenanteilItemSet", parameters);
+    }
+
+    function ViewStellenanteilItem(parameters, dataWorkspace) {
+        /// <summary>
+        /// Stellt den Bildschirm ViewStellenanteilItem dar.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// Ein Array von Bildschirm-Parameterwerten.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// Ein bestehender Datenarbeitsbereich, der für diesen Bildschirm benutzt werden soll. Standardmäßig wird ein neuer Datenarbeitsbereich erstellt.
+        /// </param>
+        /// <field name="StellenanteilItem" type="msls.application.StellenanteilItem">
+        /// Ruft den stellenanteilItem für diesen Bildschirm ab oder legt diesen fest.
+        /// </field>
+        /// <field name="details" type="msls.application.ViewStellenanteilItem.Details">
+        /// Ruft die Details für diesen Bildschirm ab.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "ViewStellenanteilItem", parameters);
+    }
+
     function AddEditVertragItem(parameters, dataWorkspace) {
         /// <summary>
         /// Stellt den Bildschirm AddEditVertragItem dar.
@@ -362,6 +434,9 @@
         /// </param>
         /// <field name="VertragItem" type="msls.application.VertragItem">
         /// Ruft den vertragItem für diesen Bildschirm ab oder legt diesen fest.
+        /// </field>
+        /// <field name="StellenanteilItemCollection" type="msls.VisualCollection" elementType="msls.application.StellenanteilItem">
+        /// Ruft den stellenanteilItemCollection für diesen Bildschirm ab.
         /// </field>
         /// <field name="details" type="msls.application.AddEditVertragItem.Details">
         /// Ruft die Details für diesen Bildschirm ab.
@@ -436,6 +511,28 @@
             dataWorkspace = new lightSwitchApplication.DataWorkspace();
         }
         $Screen.call(this, dataWorkspace, "Browse", parameters);
+    }
+
+    function BrowseVertragJeMonatItemSet(parameters, dataWorkspace) {
+        /// <summary>
+        /// Stellt den Bildschirm BrowseVertragJeMonatItemSet dar.
+        /// </summary>
+        /// <param name="parameters" type="Array">
+        /// Ein Array von Bildschirm-Parameterwerten.
+        /// </param>
+        /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
+        /// Ein bestehender Datenarbeitsbereich, der für diesen Bildschirm benutzt werden soll. Standardmäßig wird ein neuer Datenarbeitsbereich erstellt.
+        /// </param>
+        /// <field name="VertragJeMonatItemSet" type="msls.VisualCollection" elementType="msls.application.VertragJeMonatItem">
+        /// Ruft den vertragJeMonatItemSet für diesen Bildschirm ab.
+        /// </field>
+        /// <field name="details" type="msls.application.BrowseVertragJeMonatItemSet.Details">
+        /// Ruft die Details für diesen Bildschirm ab.
+        /// </field>
+        if (!dataWorkspace) {
+            dataWorkspace = new lightSwitchApplication.DataWorkspace();
+        }
+        $Screen.call(this, dataWorkspace, "BrowseVertragJeMonatItemSet", parameters);
     }
 
     msls._addToNamespace("msls.application", {
@@ -563,9 +660,10 @@
                 },
                 appendQuery: function () {
                     var today1 = msls.relativeDates.today();
-                    return this.filter("(von lt " + $toODataString(today1, "DateTime") + ") and (bis ge " + $toODataString(today1, "DateTime") + ")").orderBy("von").expand("ProjektItem").expand("BeschäftigungsArtItem");
+                    return this.filter("(von lt " + $toODataString(today1, "DateTime") + ") and (bis ge " + $toODataString(today1, "DateTime") + ")").orderBy("von").expand("BeschäftigungsArtItem");
                 }
             },
+            { name: "Stellenanteil", kind: "local", type: String },
             {
                 name: "VertragItemCollectionPlanned", kind: "collection", elementType: lightSwitchApplication.VertragItem,
                 getNavigationProperty: function () {
@@ -576,7 +674,7 @@
                 },
                 appendQuery: function () {
                     var today1 = msls.relativeDates.today();
-                    return this.filter("(von gt " + $toODataString(today1, "DateTime") + ") and (bis gt " + $toODataString(today1, "DateTime") + ")").orderBy("von").expand("ProjektItem").expand("BeschäftigungsArtItem");
+                    return this.filter("(von gt " + $toODataString(today1, "DateTime") + ") and (bis gt " + $toODataString(today1, "DateTime") + ")").orderBy("von").expand("BeschäftigungsArtItem");
                 }
             },
             {
@@ -591,10 +689,23 @@
                     var today1 = msls.relativeDates.today();
                     return this.filter("bis lt " + $toODataString(today1, "DateTime") + "").orderByDescending("bis");
                 }
+            },
+            {
+                name: "StellenanteilItemCollection", kind: "collection", elementType: lightSwitchApplication.StellenanteilItem,
+                getNavigationProperty: function () {
+                    if (this.owner.VertragItemCollectionCurrent.selectedItem) {
+                        return this.owner.VertragItemCollectionCurrent.selectedItem.details.properties.StellenanteilItemCollection;
+                    }
+                    return null;
+                },
+                appendQuery: function () {
+                    return this;
+                }
             }
         ], [
             { name: "UpdateTab" },
-            { name: "RefreshTabs" }
+            { name: "RefreshTabs" },
+            { name: "DeleteVertrag" }
         ]),
 
         AddEditProjektItem: $defineScreen(AddEditProjektItem, [
@@ -617,9 +728,43 @@
         ], [
         ]),
 
-        AddEditVertragItem: $defineScreen(AddEditVertragItem, [
-            { name: "VertragItem", kind: "local", type: lightSwitchApplication.VertragItem }
+        AddEditStellenanteilItem: $defineScreen(AddEditStellenanteilItem, [
+            { name: "StellenanteilItem", kind: "local", type: lightSwitchApplication.StellenanteilItem }
         ], [
+            { name: "Delete" }
+        ]),
+
+        BrowseStellenanteilItemSet: $defineScreen(BrowseStellenanteilItemSet, [
+            {
+                name: "StellenanteilItemSet", kind: "collection", elementType: lightSwitchApplication.StellenanteilItem,
+                createQuery: function () {
+                    return this.dataWorkspace.ApplicationData.StellenanteilItemSet.expand("VertragItem");
+                }
+            }
+        ], [
+        ]),
+
+        ViewStellenanteilItem: $defineScreen(ViewStellenanteilItem, [
+            { name: "StellenanteilItem", kind: "local", type: lightSwitchApplication.StellenanteilItem }
+        ], [
+        ]),
+
+        AddEditVertragItem: $defineScreen(AddEditVertragItem, [
+            { name: "VertragItem", kind: "local", type: lightSwitchApplication.VertragItem },
+            {
+                name: "StellenanteilItemCollection", kind: "collection", elementType: lightSwitchApplication.StellenanteilItem,
+                getNavigationProperty: function () {
+                    if (this.owner.VertragItem) {
+                        return this.owner.VertragItem.details.properties.StellenanteilItemCollection;
+                    }
+                    return null;
+                },
+                appendQuery: function () {
+                    return this.expand("ProjektItem");
+                }
+            }
+        ], [
+            { name: "DeleteVertrag" }
         ]),
 
         BrowseVertragItemSet: $defineScreen(BrowseVertragItemSet, [
@@ -639,6 +784,16 @@
 
         Browse: $defineScreen(Browse, [
             { name: "Property1", kind: "local", type: String }
+        ], [
+        ]),
+
+        BrowseVertragJeMonatItemSet: $defineScreen(BrowseVertragJeMonatItemSet, [
+            {
+                name: "VertragJeMonatItemSet", kind: "collection", elementType: lightSwitchApplication.VertragJeMonatItem,
+                createQuery: function () {
+                    return this.dataWorkspace.ApplicationData.VertragJeMonatItemSet.expand("StellenanteilItem").expand("StellenanteilItem.ProjektItem").expand("StellenanteilItem.VertragItem").expand("StellenanteilItem.VertragItem.MitarbeiterItem").expand("StellenanteilItem.VertragItem.MitarbeiterItem.AbteilungItem").expand("StellenanteilItem.VertragItem.BeschäftigungsArtItem");
+                }
+            }
         ], [
         ]),
 
@@ -822,6 +977,42 @@
             return lightSwitchApplication.showScreen("ViewProjektItem", parameters, options);
         }),
 
+        showAddEditStellenanteilItem: $defineShowScreen(function showAddEditStellenanteilItem(StellenanteilItem, options) {
+            /// <summary>
+            /// Navigiert asynchron vorwärts zum Bildschirm AddEditStellenanteilItem.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// Ein Objekt, das eine oder mehrere der folgenden Optionen bietet:<br/>- beforeShown: Eine Funktion, die aufgerufen wird, nachdem Grenzverhalten angewendet wurde, jedoch bevor der Bildschirm angezeigt wird.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: Eine Funktion, die aufgerufen wird, nachdem Grenzverhalten angewendet und der Bildschirm geschlossen wurde.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("AddEditStellenanteilItem", parameters, options);
+        }),
+
+        showBrowseStellenanteilItemSet: $defineShowScreen(function showBrowseStellenanteilItemSet(options) {
+            /// <summary>
+            /// Navigiert asynchron vorwärts zum Bildschirm BrowseStellenanteilItemSet.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// Ein Objekt, das eine oder mehrere der folgenden Optionen bietet:<br/>- beforeShown: Eine Funktion, die aufgerufen wird, nachdem Grenzverhalten angewendet wurde, jedoch bevor der Bildschirm angezeigt wird.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: Eine Funktion, die aufgerufen wird, nachdem Grenzverhalten angewendet und der Bildschirm geschlossen wurde.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 0);
+            return lightSwitchApplication.showScreen("BrowseStellenanteilItemSet", parameters, options);
+        }),
+
+        showViewStellenanteilItem: $defineShowScreen(function showViewStellenanteilItem(StellenanteilItem, options) {
+            /// <summary>
+            /// Navigiert asynchron vorwärts zum Bildschirm ViewStellenanteilItem.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// Ein Objekt, das eine oder mehrere der folgenden Optionen bietet:<br/>- beforeShown: Eine Funktion, die aufgerufen wird, nachdem Grenzverhalten angewendet wurde, jedoch bevor der Bildschirm angezeigt wird.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: Eine Funktion, die aufgerufen wird, nachdem Grenzverhalten angewendet und der Bildschirm geschlossen wurde.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 1);
+            return lightSwitchApplication.showScreen("ViewStellenanteilItem", parameters, options);
+        }),
+
         showAddEditVertragItem: $defineShowScreen(function showAddEditVertragItem(VertragItem, options) {
             /// <summary>
             /// Navigiert asynchron vorwärts zum Bildschirm AddEditVertragItem.
@@ -868,6 +1059,18 @@
             /// <returns type="WinJS.Promise" />
             var parameters = Array.prototype.slice.call(arguments, 0, 0);
             return lightSwitchApplication.showScreen("Browse", parameters, options);
+        }),
+
+        showBrowseVertragJeMonatItemSet: $defineShowScreen(function showBrowseVertragJeMonatItemSet(options) {
+            /// <summary>
+            /// Navigiert asynchron vorwärts zum Bildschirm BrowseVertragJeMonatItemSet.
+            /// </summary>
+            /// <param name="options" optional="true">
+            /// Ein Objekt, das eine oder mehrere der folgenden Optionen bietet:<br/>- beforeShown: Eine Funktion, die aufgerufen wird, nachdem Grenzverhalten angewendet wurde, jedoch bevor der Bildschirm angezeigt wird.<br/>+ Signature: beforeShown(screen)<br/>- afterClosed: Eine Funktion, die aufgerufen wird, nachdem Grenzverhalten angewendet und der Bildschirm geschlossen wurde.<br/>+ Signature: afterClosed(screen, action : msls.NavigateBackAction)
+            /// </param>
+            /// <returns type="WinJS.Promise" />
+            var parameters = Array.prototype.slice.call(arguments, 0, 0);
+            return lightSwitchApplication.showScreen("BrowseVertragJeMonatItemSet", parameters, options);
         })
 
     });

@@ -70,6 +70,21 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="StellenanteilItemSet">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.StellenanteilItem)">
+        <MappingFragment StoreEntitySet="StellenanteilItemSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Stellenanteil" ColumnName="Stellenanteil" />
+          <ScalarProperty Name="VertragItem_StellenanteilItem" ColumnName="VertragItem_StellenanteilItem" />
+          <ScalarProperty Name="StellenanteilItem_ProjektItem" ColumnName="StellenanteilItem_ProjektItem" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="VertragItemSet">
       <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.VertragItem)">
         <MappingFragment StoreEntitySet="VertragItemSet">
@@ -78,8 +93,20 @@
           <ScalarProperty Name="bis" ColumnName="bis" />
           <ScalarProperty Name="VertragItem_MitarbeiterItem" ColumnName="VertragItem_MitarbeiterItem" />
           <ScalarProperty Name="BeschäftigungsArtItem_VertragItem" ColumnName="BeschäftigungsArtItem_VertragItem" />
-          <ScalarProperty Name="VertragItem_ProjektItem" ColumnName="VertragItem_ProjektItem" />
-          <ScalarProperty Name="Stellenanteil" ColumnName="Stellenanteil" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Created" ColumnName="Created" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="Modified" ColumnName="Modified" />
+          <ScalarProperty Name="RowVersion" ColumnName="RowVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VertragJeMonatItemSet">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.VertragJeMonatItem)">
+        <MappingFragment StoreEntitySet="VertragJeMonatItemSet">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Monat" ColumnName="Monat" />
+          <ScalarProperty Name="VertragJeMonatItem_StellenanteilItem" ColumnName="VertragJeMonatItem_StellenanteilItem" />
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
           <ScalarProperty Name="Created" ColumnName="Created" />
           <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />

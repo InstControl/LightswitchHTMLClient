@@ -49,5 +49,14 @@
     <ApplicationNavigationMethodLink
       Name="link1"
       Method="!module/Methods[showBrowseAbteilungItemSet]" />
+    <ApplicationNavigationMethodLink
+      Name="link2"
+      Method="!module/Methods[showBrowseStellenanteilItemSet]" />
+    <ApplicationNavigationMethodLink
+      Name="link6"
+      Method="!module/Methods[showBrowseVertragItemSet]" />
+    <ApplicationNavigationMethodLink
+      Name="link5"
+      Method="!module/Methods[showBrowseVertragJeMonatItemSet]" />
   </Application.NavigationItems>
 </Application>

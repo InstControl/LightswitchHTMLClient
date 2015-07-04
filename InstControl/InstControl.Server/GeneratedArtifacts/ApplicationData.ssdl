@@ -5,7 +5,9 @@
     <EntitySet Name="BeschäftigungsArtItemSet" EntityType="ApplicationDataStore.BeschäftigungsArtItem" store:Type="Tables" Schema="dbo" Table="BeschäftigungsArtItemSet" />
     <EntitySet Name="MitarbeiterItemSet" EntityType="ApplicationDataStore.MitarbeiterItem" store:Type="Tables" Schema="dbo" Table="MitarbeiterItemSet" />
     <EntitySet Name="ProjektItemSet" EntityType="ApplicationDataStore.ProjektItem" store:Type="Tables" Schema="dbo" Table="ProjektItemSet" />
+    <EntitySet Name="StellenanteilItemSet" EntityType="ApplicationDataStore.StellenanteilItem" store:Type="Tables" Schema="dbo" Table="StellenanteilItemSet" />
     <EntitySet Name="VertragItemSet" EntityType="ApplicationDataStore.VertragItem" store:Type="Tables" Schema="dbo" Table="VertragItemSet" />
+    <EntitySet Name="VertragJeMonatItemSet" EntityType="ApplicationDataStore.VertragJeMonatItem" store:Type="Tables" Schema="dbo" Table="VertragJeMonatItemSet" />
     <AssociationSet Name="AbteilungItem_MitarbeiterItem" Association="ApplicationDataStore.AbteilungItem_MitarbeiterItem">
       <End Role="AbteilungItem" EntitySet="AbteilungItemSet" />
       <End Role="MitarbeiterItem" EntitySet="MitarbeiterItemSet" />
@@ -22,13 +24,21 @@
       <End Role="MitarbeiterItem" EntitySet="MitarbeiterItemSet" />
       <End Role="AbteilungItem" EntitySet="AbteilungItemSet" />
     </AssociationSet>
-    <AssociationSet Name="VertragItem_ProjektItem" Association="ApplicationDataStore.VertragItem_ProjektItem">
+    <AssociationSet Name="StellenanteilItem_ProjektItem" Association="ApplicationDataStore.StellenanteilItem_ProjektItem">
       <End Role="ProjektItem" EntitySet="ProjektItemSet" />
-      <End Role="VertragItem" EntitySet="VertragItemSet" />
+      <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
     </AssociationSet>
     <AssociationSet Name="BeschäftigungsArtItem_VertragItem" Association="ApplicationDataStore.BeschäftigungsArtItem_VertragItem">
       <End Role="BeschäftigungsArtItem" EntitySet="BeschäftigungsArtItemSet" />
       <End Role="VertragItem" EntitySet="VertragItemSet" />
+    </AssociationSet>
+    <AssociationSet Name="VertragItem_StellenanteilItem" Association="ApplicationDataStore.VertragItem_StellenanteilItem">
+      <End Role="VertragItem" EntitySet="VertragItemSet" />
+      <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
+    </AssociationSet>
+    <AssociationSet Name="VertragJeMonatItem_StellenanteilItem" Association="ApplicationDataStore.VertragJeMonatItem_StellenanteilItem">
+      <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
+      <End Role="VertragJeMonatItem" EntitySet="VertragJeMonatItemSet" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="AbteilungItem">
@@ -104,6 +114,24 @@
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
     <Property Name="AbteilungItem_ProjektItem" Type="int" />
   </EntityType>
+  <EntityType Name="StellenanteilItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Stellenanteil" Type="decimal" Nullable="false" Precision="3" Scale="2" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="StellenanteilItem_ProjektItem" Type="int" Nullable="false">
+      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </Property>
+    <Property Name="VertragItem_StellenanteilItem" Type="int" Nullable="false">
+      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </Property>
+  </EntityType>
   <EntityType Name="VertragItem">
     <Key>
       <PropertyRef Name="Id" />
@@ -111,15 +139,26 @@
     <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="von" Type="datetime" Nullable="false" />
     <Property Name="bis" Type="datetime" Nullable="false" />
-    <Property Name="Stellenanteil" Type="decimal" Nullable="false" Precision="3" Scale="2" />
     <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Created" Type="datetimeoffset" />
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Modified" Type="datetimeoffset" />
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
     <Property Name="VertragItem_MitarbeiterItem" Type="int" Nullable="false" />
-    <Property Name="VertragItem_ProjektItem" Type="int" Nullable="false" />
     <Property Name="BeschäftigungsArtItem_VertragItem" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VertragJeMonatItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Monat" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="VertragJeMonatItem_StellenanteilItem" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="AbteilungItem_MitarbeiterItem">
     <End Role="AbteilungItem" Type="ApplicationDataStore.AbteilungItem" Multiplicity="0..1">
@@ -177,17 +216,17 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="VertragItem_ProjektItem">
+  <Association Name="StellenanteilItem_ProjektItem">
     <End Role="ProjektItem" Type="ApplicationDataStore.ProjektItem" Multiplicity="1">
       <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
     </End>
-    <End Role="VertragItem" Type="ApplicationDataStore.VertragItem" Multiplicity="*" />
+    <End Role="StellenanteilItem" Type="ApplicationDataStore.StellenanteilItem" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="ProjektItem">
         <PropertyRef Name="Id" />
       </Principal>
-      <Dependent Role="VertragItem">
-        <PropertyRef Name="VertragItem_ProjektItem" />
+      <Dependent Role="StellenanteilItem">
+        <PropertyRef Name="StellenanteilItem_ProjektItem" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -202,6 +241,34 @@
       </Principal>
       <Dependent Role="VertragItem">
         <PropertyRef Name="BeschäftigungsArtItem_VertragItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VertragItem_StellenanteilItem">
+    <End Role="VertragItem" Type="ApplicationDataStore.VertragItem" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="StellenanteilItem" Type="ApplicationDataStore.StellenanteilItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VertragItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StellenanteilItem">
+        <PropertyRef Name="VertragItem_StellenanteilItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VertragJeMonatItem_StellenanteilItem">
+    <End Role="StellenanteilItem" Type="ApplicationDataStore.StellenanteilItem" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="VertragJeMonatItem" Type="ApplicationDataStore.VertragJeMonatItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StellenanteilItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VertragJeMonatItem">
+        <PropertyRef Name="VertragJeMonatItem_StellenanteilItem" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

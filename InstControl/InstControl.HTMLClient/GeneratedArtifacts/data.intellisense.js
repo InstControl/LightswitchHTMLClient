@@ -34,12 +34,28 @@
         created: [lightSwitchApplication.ProjektItem]
     });
 
+    msls._addEntryPoints(lightSwitchApplication.StellenanteilItem, {
+        /// <field>
+        /// Wird aufgerufen, wenn ein neuer stellenanteilItem erstellt wird.
+        /// <br/>created(msls.application.StellenanteilItem entity)
+        /// </field>
+        created: [lightSwitchApplication.StellenanteilItem]
+    });
+
     msls._addEntryPoints(lightSwitchApplication.VertragItem, {
         /// <field>
         /// Wird aufgerufen, wenn ein neuer vertragItem erstellt wird.
         /// <br/>created(msls.application.VertragItem entity)
         /// </field>
         created: [lightSwitchApplication.VertragItem]
+    });
+
+    msls._addEntryPoints(lightSwitchApplication.VertragJeMonatItem, {
+        /// <field>
+        /// Wird aufgerufen, wenn ein neuer vertragJeMonatItem erstellt wird.
+        /// <br/>created(msls.application.VertragJeMonatItem entity)
+        /// </field>
+        created: [lightSwitchApplication.VertragJeMonatItem]
     });
 
 }(msls.application));

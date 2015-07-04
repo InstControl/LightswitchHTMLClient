@@ -2167,6 +2167,109 @@
       ]
     },
     {
+      "id": "EJ.DataVisualization:!module",
+      "name": "EJ.DataVisualization",
+      "targetPlatform": "MobileWeb",
+      "globalItems":
+      [
+        {
+          "id": "EJ.DataVisualization:CollectionCustomControl",
+          "name": "CollectionCustomControl",
+          "attachedLabelSupport": "DisplayedByContainer",
+          "supportedContentItemKind": "Collection",
+          "baseControl": { "__id": ":RootCustomControl" },
+          "properties":
+          [
+            {
+              "id": "EJ.DataVisualization:CollectionCustomControl/Properties[Control]",
+              "name": "Control",
+              "propertyType": { "__id": ":String" },
+              "defaultValueSource":
+              {
+                "value": "ejRangeNavigator"
+              }
+            },
+            {
+              "id": "EJ.DataVisualization:CollectionCustomControl/Properties[ControlProperty]",
+              "name": "ControlProperty",
+              "propertyType": { "__id": ":String" }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "EJ.Web:!module",
+      "name": "EJ.Web",
+      "targetPlatform": "MobileWeb",
+      "globalItems":
+      [
+        {
+          "id": "EJ.Web:ValueCustomControl",
+          "name": "ValueCustomControl",
+          "attachedLabelSupport": "DisplayedByContainer",
+          "supportedContentItemKind": "Value",
+          "baseControl": { "__id": ":RootCustomControl" },
+          "properties":
+          [
+            {
+              "id": "EJ.Web:ValueCustomControl/Properties[Control]",
+              "name": "Control",
+              "propertyType": { "__id": ":String" },
+              "defaultValueSource":
+              {
+                "value": "ejDatePicker"
+              }
+            },
+            {
+              "id": "EJ.Web:ValueCustomControl/Properties[ControlProperty]",
+              "name": "ControlProperty",
+              "propertyType": { "__id": ":String" }
+            }
+          ]
+        },
+        {
+          "id": "EJ.Web:CollectionCustomControl",
+          "name": "CollectionCustomControl",
+          "attachedLabelSupport": "DisplayedByContainer",
+          "supportedContentItemKind": "Collection",
+          "baseControl": { "__id": ":RootCustomControl" },
+          "properties":
+          [
+            {
+              "id": "EJ.Web:CollectionCustomControl/Properties[Control]",
+              "name": "Control",
+              "propertyType": { "__id": ":String" },
+              "defaultValueSource":
+              {
+                "value": "ejDropDownList"
+              }
+            },
+            {
+              "id": "EJ.Web:CollectionCustomControl/Properties[ControlProperty]",
+              "name": "ControlProperty",
+              "propertyType": { "__id": ":String" }
+            }
+          ]
+        },
+        {
+          "id": "EJ.Web:ScreenCustomControl",
+          "name": "ScreenCustomControl",
+          "attachedLabelSupport": "DisplayedByContainer",
+          "supportedContentItemKind": "ScreenContent",
+          "baseControl": { "__id": ":RootCustomControl" },
+          "properties":
+          [
+            {
+              "id": "EJ.Web:ScreenCustomControl/Properties[ControlProperty]",
+              "name": "ControlProperty",
+              "propertyType": { "__id": ":String" }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "homeScreen": { "__id": "BrowseMitarbeiterSet" },
       "id": "!module",
       "name": "LightSwitchApplication.InstControl.HTMLClient",
@@ -2195,6 +2298,64 @@
         {
           "id": "LightSwitchServiceApplicationGroup",
           "name": "LightSwitchServiceApplicationGroup"
+        },
+        {
+          "id": "CollectionView$VertragJeMonatItem",
+          "name": "CollectionView$VertragJeMonatItem",
+          "kind": "CollectionView",
+          "elementType": { "__id": "VertragJeMonatItem" },
+          "methods":
+          [
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[addNew]",
+              "name": "addNew",
+              "returnType": { "__id": "VertragJeMonatItem" }
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[addAndEditNew]",
+              "name": "addAndEditNew",
+              "returnType": { "__id": "VertragJeMonatItem" }
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[showSearch]",
+              "name": "showSearch",
+              "returnType": { "__id": "VertragJeMonatItem" }
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[editSelected]",
+              "name": "editSelected"
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[deleteSelected]",
+              "name": "deleteSelected"
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[removeSelected]",
+              "name": "removeSelected"
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[refresh]",
+              "name": "refresh"
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[viewSelected]",
+              "name": "viewSelected"
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "CollectionView$VertragJeMonatItem/Properties[selectedItem]",
+              "name": "selectedItem",
+              "propertyType": { "__id": "VertragJeMonatItem" }
+            }
+          ]
+        },
+        {
+          "id": "VertragJeMonatItem*",
+          "name": "VertragJeMonatItem*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "VertragJeMonatItem" }
         },
         {
           "id": "VertragItem*",
@@ -2251,6 +2412,64 @@
               "id": "CollectionView$VertragItem/Properties[selectedItem]",
               "name": "selectedItem",
               "propertyType": { "__id": "VertragItem" }
+            }
+          ]
+        },
+        {
+          "id": "StellenanteilItem*",
+          "name": "StellenanteilItem*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "StellenanteilItem" }
+        },
+        {
+          "id": "CollectionView$StellenanteilItem",
+          "name": "CollectionView$StellenanteilItem",
+          "kind": "CollectionView",
+          "elementType": { "__id": "StellenanteilItem" },
+          "methods":
+          [
+            {
+              "id": "CollectionView$StellenanteilItem/Methods[addNew]",
+              "name": "addNew",
+              "returnType": { "__id": "StellenanteilItem" }
+            },
+            {
+              "id": "CollectionView$StellenanteilItem/Methods[addAndEditNew]",
+              "name": "addAndEditNew",
+              "returnType": { "__id": "StellenanteilItem" }
+            },
+            {
+              "id": "CollectionView$StellenanteilItem/Methods[showSearch]",
+              "name": "showSearch",
+              "returnType": { "__id": "StellenanteilItem" }
+            },
+            {
+              "id": "CollectionView$StellenanteilItem/Methods[editSelected]",
+              "name": "editSelected"
+            },
+            {
+              "id": "CollectionView$StellenanteilItem/Methods[deleteSelected]",
+              "name": "deleteSelected"
+            },
+            {
+              "id": "CollectionView$StellenanteilItem/Methods[removeSelected]",
+              "name": "removeSelected"
+            },
+            {
+              "id": "CollectionView$StellenanteilItem/Methods[refresh]",
+              "name": "refresh"
+            },
+            {
+              "id": "CollectionView$StellenanteilItem/Methods[viewSelected]",
+              "name": "viewSelected"
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "CollectionView$StellenanteilItem/Properties[selectedItem]",
+              "name": "selectedItem",
+              "propertyType": { "__id": "StellenanteilItem" }
             }
           ]
         },
@@ -2732,14 +2951,6 @@
           "id": "MitarbeiterItem",
           "name": "MitarbeiterItem",
           ":@CreatedModifiedPropertiesEnabled": { },
-          ":@DefaultScreen":
-          {
-            "value": { "__id": "ViewMitarbeiter" },
-            ":@ScreenParameterMapping":
-            {
-              "screenParameter": { "__id": "ViewMitarbeiter/Properties[MitarbeiterItem]" }
-            }
-          },
           "methods":
           [
             {
@@ -3001,15 +3212,6 @@
               ":@StringValueFormat": { "value": "#' Monate' " }
             },
             {
-              "id": "ProjektItem/Properties[VertragItemCollection]",
-              "name": "VertragItemCollection",
-              "association": { "__id": "VertragItem_ProjektItem" },
-              "elementType": { "__id": "VertragItem" },
-              "fromEnd": { "__id": "VertragItem_ProjektItem/Ends[ProjektItem]" },
-              "propertyType": { "__id": "VertragItem*" },
-              "toEnd": { "__id": "VertragItem_ProjektItem/Ends[VertragItem]" }
-            },
-            {
               "id": "ProjektItem/Properties[PSPElement]",
               "name": "PSPElement",
               "propertyType": { "__id": ":String?" },
@@ -3027,6 +3229,15 @@
               "fromEnd": { "__id": "AbteilungItem_ProjektItem/Ends[ProjektItem]" },
               "propertyType": { "__id": "AbteilungItem" },
               "toEnd": { "__id": "AbteilungItem_ProjektItem/Ends[AbteilungItem]" }
+            },
+            {
+              "id": "ProjektItem/Properties[StellenanteilItem]",
+              "name": "StellenanteilItem",
+              "association": { "__id": "StellenanteilItem_ProjektItem" },
+              "elementType": { "__id": "StellenanteilItem" },
+              "fromEnd": { "__id": "StellenanteilItem_ProjektItem/Ends[ProjektItem]" },
+              "propertyType": { "__id": "StellenanteilItem*" },
+              "toEnd": { "__id": "StellenanteilItem_ProjektItem/Ends[StellenanteilItem]" }
             },
             {
               "id": "ProjektItem/Properties[CreatedBy]",
@@ -3077,6 +3288,139 @@
         },
         {
           "__isEntityType": 1,
+          ":@SummaryProperty": { "property": { "__id": "StellenanteilItem/Properties[Id]" } },
+          "id": "StellenanteilItem",
+          "name": "StellenanteilItem",
+          ":@CreatedModifiedPropertiesEnabled": { },
+          ":@DefaultScreen":
+          {
+            "value": { "__id": "ViewStellenanteilItem" },
+            ":@ScreenParameterMapping":
+            {
+              "screenParameter": { "__id": "ViewStellenanteilItem/Properties[StellenanteilItem]" }
+            }
+          },
+          "methods":
+          [
+            {
+              "id": "StellenanteilItem/Methods[deleteEntity]",
+              "name": "deleteEntity"
+            },
+            {
+              "id": "StellenanteilItem/Methods[edit]",
+              "name": "edit"
+            },
+            {
+              "id": "StellenanteilItem/Methods[view]",
+              "name": "view"
+            }
+          ],
+          "properties":
+          [
+            {
+              "__isKeyProperty": 1,
+              "id": "StellenanteilItem/Properties[Id]",
+              "name": "Id",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Int32" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "StellenanteilItem/Properties[Stellenanteil]",
+              "name": "Stellenanteil",
+              "propertyType": { "__id": ":Decimal" },
+              ":@Required": { },
+              ":@NotSearchable": { },
+              ":@DecimalConstraint":
+              {
+                "precision": 3,
+                "scale": 2
+              },
+              ":@Range":
+              {
+                "maximum": 1,
+                "minimum": 0
+              }
+            },
+            {
+              "id": "StellenanteilItem/Properties[VertragItem]",
+              "name": "VertragItem",
+              "association": { "__id": "VertragItem_StellenanteilItem" },
+              "elementType": { "__id": "VertragItem" },
+              "fromEnd": { "__id": "VertragItem_StellenanteilItem/Ends[StellenanteilItem]" },
+              "propertyType": { "__id": "VertragItem" },
+              "toEnd": { "__id": "VertragItem_StellenanteilItem/Ends[VertragItem]" },
+              ":@IncludeInUniqueIndex": { }
+            },
+            {
+              "id": "StellenanteilItem/Properties[ProjektItem]",
+              "name": "ProjektItem",
+              "association": { "__id": "StellenanteilItem_ProjektItem" },
+              "elementType": { "__id": "ProjektItem" },
+              "fromEnd": { "__id": "StellenanteilItem_ProjektItem/Ends[StellenanteilItem]" },
+              "propertyType": { "__id": "ProjektItem" },
+              "toEnd": { "__id": "StellenanteilItem_ProjektItem/Ends[ProjektItem]" },
+              ":@IncludeInUniqueIndex": { }
+            },
+            {
+              "id": "StellenanteilItem/Properties[VertragJeMonatCollection]",
+              "name": "VertragJeMonatCollection",
+              "association": { "__id": "VertragJeMonatItem_StellenanteilItem" },
+              "elementType": { "__id": "VertragJeMonatItem" },
+              "fromEnd": { "__id": "VertragJeMonatItem_StellenanteilItem/Ends[StellenanteilItem]" },
+              "propertyType": { "__id": "VertragJeMonatItem*" },
+              "toEnd": { "__id": "VertragJeMonatItem_StellenanteilItem/Ends[VertragJeMonatItem]" }
+            },
+            {
+              "id": "StellenanteilItem/Properties[CreatedBy]",
+              "name": "CreatedBy",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Person?" },
+              ":@NotSearchable": { },
+              ":@MaxLength":
+              {
+                "value": 255
+              }
+            },
+            {
+              "id": "StellenanteilItem/Properties[Created]",
+              "name": "Created",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":DateTimeOffset?" },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "StellenanteilItem/Properties[ModifiedBy]",
+              "name": "ModifiedBy",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Person?" },
+              ":@NotSearchable": { },
+              ":@MaxLength":
+              {
+                "value": 255
+              }
+            },
+            {
+              "id": "StellenanteilItem/Properties[Modified]",
+              "name": "Modified",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":DateTimeOffset?" },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "StellenanteilItem/Properties[RowVersion]",
+              "name": "RowVersion",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":RowVersion" },
+              ":@Hidden": { },
+              ":@UseForConcurrency": { },
+              ":@NotSearchable": { }
+            }
+          ]
+        },
+        {
+          "__isEntityType": 1,
           ":@SummaryProperty": { "property": { "__id": "VertragItem/Properties[Id]" } },
           "id": "VertragItem",
           "name": "VertragItem",
@@ -3113,7 +3457,8 @@
               "isReadOnly": true,
               "propertyType": { "__id": ":Int32" },
               ":@Required": { },
-              ":@NotSearchable": { }
+              ":@NotSearchable": { },
+              ":@Hidden": { }
             },
             {
               "id": "VertragItem/Properties[von]",
@@ -3147,30 +3492,13 @@
               "toEnd": { "__id": "BeschäftigungsArtItem_VertragItem/Ends[BeschäftigungsArtItem]" }
             },
             {
-              "id": "VertragItem/Properties[ProjektItem]",
-              "name": "ProjektItem",
-              "association": { "__id": "VertragItem_ProjektItem" },
-              "elementType": { "__id": "ProjektItem" },
-              "fromEnd": { "__id": "VertragItem_ProjektItem/Ends[VertragItem]" },
-              "propertyType": { "__id": "ProjektItem" },
-              "toEnd": { "__id": "VertragItem_ProjektItem/Ends[ProjektItem]" }
-            },
-            {
-              "id": "VertragItem/Properties[Stellenanteil]",
-              "name": "Stellenanteil",
-              "propertyType": { "__id": ":Decimal" },
-              ":@Required": { },
-              ":@NotSearchable": { },
-              ":@DecimalConstraint":
-              {
-                "precision": 3,
-                "scale": 2
-              },
-              ":@Range":
-              {
-                "maximum": 1,
-                "minimum": 0
-              }
+              "id": "VertragItem/Properties[StellenanteilItemCollection]",
+              "name": "StellenanteilItemCollection",
+              "association": { "__id": "VertragItem_StellenanteilItem" },
+              "elementType": { "__id": "StellenanteilItem" },
+              "fromEnd": { "__id": "VertragItem_StellenanteilItem/Ends[VertragItem]" },
+              "propertyType": { "__id": "StellenanteilItem*" },
+              "toEnd": { "__id": "VertragItem_StellenanteilItem/Ends[StellenanteilItem]" }
             },
             {
               "id": "VertragItem/Properties[CreatedBy]",
@@ -3308,20 +3636,20 @@
               ]
             },
             {
-              "id": "ApplicationData/Members[VertragItem_ProjektItemSet]",
-              "name": "VertragItem_ProjektItemSet",
-              "association": { "__id": "VertragItem_ProjektItem" },
+              "id": "ApplicationData/Members[StellenanteilItem_ProjektItemSet]",
+              "name": "StellenanteilItem_ProjektItemSet",
+              "association": { "__id": "StellenanteilItem_ProjektItem" },
               "ends":
               [
                 {
-                  "properties": [ "VertragItem_ProjektItem" ],
-                  "id": "ApplicationData/Members[VertragItem_ProjektItemSet]/Members[VertragItem]",
-                  "name": "VertragItem",
-                  "entitySet": { "__id": "ApplicationData/Members[VertragItemSet]" }
+                  "properties": [ "StellenanteilItem_ProjektItem" ],
+                  "id": "ApplicationData/Members[StellenanteilItem_ProjektItemSet]/Members[StellenanteilItem]",
+                  "name": "StellenanteilItem",
+                  "entitySet": { "__id": "ApplicationData/Members[StellenanteilItemSet]" }
                 },
                 {
                   "properties": [ "Id" ],
-                  "id": "ApplicationData/Members[VertragItem_ProjektItemSet]/Members[ProjektItem]",
+                  "id": "ApplicationData/Members[StellenanteilItem_ProjektItemSet]/Members[ProjektItem]",
                   "name": "ProjektItem",
                   "entitySet": { "__id": "ApplicationData/Members[ProjektItemSet]" }
                 }
@@ -3344,6 +3672,46 @@
                   "id": "ApplicationData/Members[BeschäftigungsArtItem_VertragItemSet]/Members[VertragItem]",
                   "name": "VertragItem",
                   "entitySet": { "__id": "ApplicationData/Members[VertragItemSet]" }
+                }
+              ]
+            },
+            {
+              "id": "ApplicationData/Members[VertragItem_StellenanteilItemSet]",
+              "name": "VertragItem_StellenanteilItemSet",
+              "association": { "__id": "VertragItem_StellenanteilItem" },
+              "ends":
+              [
+                {
+                  "properties": [ "Id" ],
+                  "id": "ApplicationData/Members[VertragItem_StellenanteilItemSet]/Members[VertragItem]",
+                  "name": "VertragItem",
+                  "entitySet": { "__id": "ApplicationData/Members[VertragItemSet]" }
+                },
+                {
+                  "properties": [ "VertragItem_StellenanteilItem" ],
+                  "id": "ApplicationData/Members[VertragItem_StellenanteilItemSet]/Members[StellenanteilItem]",
+                  "name": "StellenanteilItem",
+                  "entitySet": { "__id": "ApplicationData/Members[StellenanteilItemSet]" }
+                }
+              ]
+            },
+            {
+              "id": "ApplicationData/Members[VertragJeMonatItem_StellenanteilItemSet]",
+              "name": "VertragJeMonatItem_StellenanteilItemSet",
+              "association": { "__id": "VertragJeMonatItem_StellenanteilItem" },
+              "ends":
+              [
+                {
+                  "properties": [ "VertragJeMonatItem_StellenanteilItem" ],
+                  "id": "ApplicationData/Members[VertragJeMonatItem_StellenanteilItemSet]/Members[VertragJeMonatItem]",
+                  "name": "VertragJeMonatItem",
+                  "entitySet": { "__id": "ApplicationData/Members[VertragJeMonatItemSet]" }
+                },
+                {
+                  "properties": [ "Id" ],
+                  "id": "ApplicationData/Members[VertragJeMonatItem_StellenanteilItemSet]/Members[StellenanteilItem]",
+                  "name": "StellenanteilItem",
+                  "entitySet": { "__id": "ApplicationData/Members[StellenanteilItemSet]" }
                 }
               ]
             }
@@ -3387,6 +3755,15 @@
               "entityType": { "__id": "ProjektItem" }
             },
             {
+              "id": "ApplicationData/Members[StellenanteilItemSet]",
+              "name": "StellenanteilItemSet",
+              "canDelete": true,
+              "canInsert": true,
+              "canUpdate": true,
+              "elementType": { "__id": "StellenanteilItem" },
+              "entityType": { "__id": "StellenanteilItem" }
+            },
+            {
               "id": "ApplicationData/Members[VertragItemSet]",
               "name": "VertragItemSet",
               "canDelete": true,
@@ -3394,6 +3771,15 @@
               "canUpdate": true,
               "elementType": { "__id": "VertragItem" },
               "entityType": { "__id": "VertragItem" }
+            },
+            {
+              "id": "ApplicationData/Members[VertragJeMonatItemSet]",
+              "name": "VertragJeMonatItemSet",
+              "canDelete": true,
+              "canInsert": true,
+              "canUpdate": true,
+              "elementType": { "__id": "VertragJeMonatItem" },
+              "entityType": { "__id": "VertragJeMonatItem" }
             }
           ],
           "queryOperations":
@@ -3597,6 +3983,44 @@
               ]
             },
             {
+              "id": "ApplicationData/Members[StellenanteilItemSet_Single]",
+              "name": "StellenanteilItemSet_Single",
+              "elementType": { "__id": "StellenanteilItem" },
+              "query": { "__id": "ApplicationData/Members[StellenanteilItemSet_Single]" },
+              "returnType": { "__id": "StellenanteilItem" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[StellenanteilItemSet]" }
+              },
+              "parameters":
+              [
+                {
+                  "id": "ApplicationData/Members[StellenanteilItemSet_Single]/Parameters[Id]",
+                  "name": "Id",
+                  "parameterType": { "__id": ":Int32?" }
+                }
+              ]
+            },
+            {
+              "id": "ApplicationData/Members[StellenanteilItemSet_SingleOrDefault]",
+              "name": "StellenanteilItemSet_SingleOrDefault",
+              "elementType": { "__id": "StellenanteilItem" },
+              "query": { "__id": "ApplicationData/Members[StellenanteilItemSet_SingleOrDefault]" },
+              "returnType": { "__id": "StellenanteilItem" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[StellenanteilItemSet]" }
+              },
+              "parameters":
+              [
+                {
+                  "id": "ApplicationData/Members[StellenanteilItemSet_SingleOrDefault]/Parameters[Id]",
+                  "name": "Id",
+                  "parameterType": { "__id": ":Int32?" }
+                }
+              ]
+            },
+            {
               "id": "ApplicationData/Members[VertragItemSet_Single]",
               "name": "VertragItemSet_Single",
               "elementType": { "__id": "VertragItem" },
@@ -3629,6 +4053,44 @@
               [
                 {
                   "id": "ApplicationData/Members[VertragItemSet_SingleOrDefault]/Parameters[Id]",
+                  "name": "Id",
+                  "parameterType": { "__id": ":Int32?" }
+                }
+              ]
+            },
+            {
+              "id": "ApplicationData/Members[VertragJeMonatItemSet_Single]",
+              "name": "VertragJeMonatItemSet_Single",
+              "elementType": { "__id": "VertragJeMonatItem" },
+              "query": { "__id": "ApplicationData/Members[VertragJeMonatItemSet_Single]" },
+              "returnType": { "__id": "VertragJeMonatItem" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[VertragJeMonatItemSet]" }
+              },
+              "parameters":
+              [
+                {
+                  "id": "ApplicationData/Members[VertragJeMonatItemSet_Single]/Parameters[Id]",
+                  "name": "Id",
+                  "parameterType": { "__id": ":Int32?" }
+                }
+              ]
+            },
+            {
+              "id": "ApplicationData/Members[VertragJeMonatItemSet_SingleOrDefault]",
+              "name": "VertragJeMonatItemSet_SingleOrDefault",
+              "elementType": { "__id": "VertragJeMonatItem" },
+              "query": { "__id": "ApplicationData/Members[VertragJeMonatItemSet_SingleOrDefault]" },
+              "returnType": { "__id": "VertragJeMonatItem" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[VertragJeMonatItemSet]" }
+              },
+              "parameters":
+              [
+                {
+                  "id": "ApplicationData/Members[VertragJeMonatItemSet_SingleOrDefault]/Parameters[Id]",
                   "name": "Id",
                   "parameterType": { "__id": ":Int32?" }
                 }
@@ -3673,26 +4135,6 @@
               "name": "VertragItem",
               "multiplicity": "Many",
               "entityType": { "__id": "VertragItem" }
-            }
-          ]
-        },
-        {
-          "id": "VertragItem_ProjektItem",
-          "name": "VertragItem_ProjektItem",
-          "ends":
-          [
-            {
-              "id": "VertragItem_ProjektItem/Ends[VertragItem]",
-              "name": "VertragItem",
-              "multiplicity": "Many",
-              "entityType": { "__id": "VertragItem" }
-            },
-            {
-              "id": "VertragItem_ProjektItem/Ends[ProjektItem]",
-              "name": "ProjektItem",
-              "multiplicity": "One",
-              "entityType": { "__id": "ProjektItem" },
-              ":@DeleteRule": { "action": "Restrict" }
             }
           ]
         },
@@ -3753,6 +4195,46 @@
               "multiplicity": "One",
               "entityType": { "__id": "MitarbeiterItem" },
               ":@DeleteRule": { "action": "Cascade" }
+            }
+          ]
+        },
+        {
+          "id": "VertragItem_StellenanteilItem",
+          "name": "VertragItem_StellenanteilItem",
+          "ends":
+          [
+            {
+              "id": "VertragItem_StellenanteilItem/Ends[VertragItem]",
+              "name": "VertragItem",
+              "multiplicity": "One",
+              "entityType": { "__id": "VertragItem" },
+              ":@DeleteRule": { "action": "Cascade" }
+            },
+            {
+              "id": "VertragItem_StellenanteilItem/Ends[StellenanteilItem]",
+              "name": "StellenanteilItem",
+              "multiplicity": "Many",
+              "entityType": { "__id": "StellenanteilItem" }
+            }
+          ]
+        },
+        {
+          "id": "StellenanteilItem_ProjektItem",
+          "name": "StellenanteilItem_ProjektItem",
+          "ends":
+          [
+            {
+              "id": "StellenanteilItem_ProjektItem/Ends[StellenanteilItem]",
+              "name": "StellenanteilItem",
+              "multiplicity": "Many",
+              "entityType": { "__id": "StellenanteilItem" }
+            },
+            {
+              "id": "StellenanteilItem_ProjektItem/Ends[ProjektItem]",
+              "name": "ProjektItem",
+              "multiplicity": "One",
+              "entityType": { "__id": "ProjektItem" },
+              ":@DeleteRule": { "action": "Restrict" }
             }
           ]
         },
@@ -5837,6 +6319,16 @@
                             "childContentItems":
                             [
                               {
+                                "displayName": "Personal Nr",
+                                "name": "PersonalNr",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "MitarbeiterItem/Properties[PersonalNr]" }
+                                }
+                              },
+                              {
                                 "displayName": "Raum",
                                 "name": "Raum",
                                 "kind": "Value",
@@ -6190,6 +6682,18 @@
                           {
                             "property": { "__id": ":RootCommand/Properties[Icon]" },
                             "value": "msls-add"
+                          },
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showAddEditMitarbeiter]" },
+                              ":@AssociatedCollection": { "collection": { "__id": "BrowseMitarbeiterSet/Properties[aktuelleMitarbeiter]" } },
+                              ":@CreateNewEntity":
+                              {
+                                "targetParameter": { "__id": "!module/Methods[showAddEditMitarbeiter]/Parameters[MitarbeiterItem]" }
+                              }
+                            }
                           }
                         ]
                       },
@@ -6203,6 +6707,21 @@
                           {
                             "property": { "__id": ":RootCommand/Properties[Icon]" },
                             "value": "msls-search"
+                          },
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "links":
+                              [
+                                {
+                                  "member": { "__id": "BrowseMitarbeiterSet/Properties[aktuelleMitarbeiter]" }
+                                },
+                                {
+                                  "target": { "__id": "CollectionView$MitarbeiterItem/Methods[showSearch]" }
+                                }
+                              ]
+                            }
                           }
                         ]
                       }
@@ -6475,7 +6994,7 @@
                         "childContentItems":
                         [
                           {
-                            "displayName": "Vertrag Item",
+                            "displayName": "Vertrag",
                             "name": "VertragItemCollectionTemplate",
                             "kind": "Details",
                             "view": { "__id": ":TableRowLayout" },
@@ -6513,83 +7032,6 @@
                                     "value": "StretchToContainer"
                                   }
                                 ]
-                              },
-                              {
-                                "displayName": "Projekt",
-                                "name": "ProjektKurzName",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
-                                    {
-                                      "member": { "__id": "VertragItem/Properties[ProjektItem]" }
-                                    },
-                                    {
-                                      "member": { "__id": "ProjektItem/Properties[ProjektKurzName]" }
-                                    }
-                                  ]
-                                },
-                                "propertySources":
-                                [
-                                  {
-                                    "property": { "__id": ":RootControl/Properties[Tap]" },
-                                    "source":
-                                    {
-                                      "target": { "__id": "!module/Methods[showViewProjektItem]" },
-                                      "arguments":
-                                      [
-                                        {
-                                          "parameter": { "__id": "!module/Methods[showViewProjektItem]/Parameters[ProjektItem]" },
-                                          "value":
-                                          {
-                                            "links":
-                                            [
-                                              {
-                                                "member": { "__id": "ViewMitarbeiter/Properties[VertragItemCollectionCurrent]" }
-                                              },
-                                              {
-                                                "member": { "__id": "CollectionView$VertragItem/Properties[selectedItem]" }
-                                              },
-                                              {
-                                                "member": { "__id": "VertragItem/Properties[ProjektItem]" }
-                                              }
-                                            ]
-                                          }
-                                        }
-                                      ]
-                                    }
-                                  }
-                                ]
-                              },
-                              {
-                                "displayName": "PSPElement",
-                                "name": "PSPElement1",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
-                                    {
-                                      "member": { "__id": "VertragItem/Properties[ProjektItem]" }
-                                    },
-                                    {
-                                      "member": { "__id": "ProjektItem/Properties[PSPElement]" }
-                                    }
-                                  ]
-                                }
-                              },
-                              {
-                                "displayName": "Stellenanteil",
-                                "name": "Stellenanteil1",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "VertragItem/Properties[Stellenanteil]" }
-                                }
                               },
                               {
                                 "displayName": "Art",
@@ -6718,7 +7160,7 @@
                         "childContentItems":
                         [
                           {
-                            "displayName": "Vertrag Item",
+                            "displayName": "Vertrag",
                             "name": "VertragItemCollectionPlannedTemplate",
                             "kind": "Details",
                             "view": { "__id": ":TableRowLayout" },
@@ -6748,52 +7190,6 @@
                                 "dataSource":
                                 {
                                   "member": { "__id": "VertragItem/Properties[bis]" }
-                                }
-                              },
-                              {
-                                "displayName": "Projekt",
-                                "name": "ProjektCode",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
-                                    {
-                                      "member": { "__id": "VertragItem/Properties[ProjektItem]" }
-                                    },
-                                    {
-                                      "member": { "__id": "ProjektItem/Properties[ProjektKurzName]" }
-                                    }
-                                  ]
-                                }
-                              },
-                              {
-                                "displayName": "PSPElement",
-                                "name": "PSPElement",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
-                                    {
-                                      "member": { "__id": "VertragItem/Properties[ProjektItem]" }
-                                    },
-                                    {
-                                      "member": { "__id": "ProjektItem/Properties[PSPElement]" }
-                                    }
-                                  ]
-                                }
-                              },
-                              {
-                                "displayName": "Stellenanteil",
-                                "name": "Stellenanteil",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "VertragItem/Properties[Stellenanteil]" }
                                 }
                               },
                               {
@@ -7274,6 +7670,10 @@
             {
               "id": "ViewMitarbeiter/Methods[RefreshTabs]",
               "name": "RefreshTabs"
+            },
+            {
+              "id": "ViewMitarbeiter/Methods[DeleteVertrag]",
+              "name": "DeleteVertrag"
             }
           ],
           "properties":
@@ -7358,6 +7758,12 @@
               {
                 "target": { "__id": "ViewMitarbeiter/Properties[VertragItemCollectionCurrent]/Query" }
               }
+            },
+            {
+              "id": "ViewMitarbeiter/Properties[Stellenanteil]",
+              "name": "Stellenanteil",
+              "elementType": { "__id": ":Decimal?" },
+              "propertyType": { "__id": ":Decimal?" }
             },
             {
               "id": "ViewMitarbeiter/Properties[VertragItemCollectionPlanned]",
@@ -7484,6 +7890,39 @@
               "source":
               {
                 "target": { "__id": "ViewMitarbeiter/Properties[VertragItemCollectionEnded]/Query" }
+              }
+            },
+            {
+              "id": "ViewMitarbeiter/Properties[StellenanteilItemCollection]",
+              "name": "StellenanteilItemCollection",
+              "pageSize": 45,
+              "elementType": { "__id": "StellenanteilItem" },
+              "propertyType": { "__id": "CollectionView$StellenanteilItem" },
+              "query":
+              {
+                "id": "ViewMitarbeiter/Properties[StellenanteilItemCollection]/Query",
+                "name": "StellenanteilItemCollectionQuery",
+                "elementType": { "__id": "StellenanteilItem" },
+                "returnType": { "__id": "StellenanteilItem*" },
+                "source":
+                {
+                  "links":
+                  [
+                    {
+                      "member": { "__id": "ViewMitarbeiter/Properties[VertragItemCollectionCurrent]" }
+                    },
+                    {
+                      "member": { "__id": "CollectionView$VertragItem/Properties[selectedItem]" }
+                    },
+                    {
+                      "member": { "__id": "VertragItem/Properties[StellenanteilItemCollection]" }
+                    }
+                  ]
+                }
+              },
+              "source":
+              {
+                "target": { "__id": "ViewMitarbeiter/Properties[StellenanteilItemCollection]/Query" }
               }
             }
           ]
@@ -8256,6 +8695,744 @@
           ]
         },
         {
+          "displayName": "Stellenanteile",
+          "id": "AddEditStellenanteilItem",
+          "name": "AddEditStellenanteilItem",
+          "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
+          },
+          "rootContentItem":
+          {
+            "displayName": "Stellenanteile",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Details",
+                    "name": "Details",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "columns",
+                        "name": "columns",
+                        "kind": "Details",
+                        "view": { "__id": ":ColumnsLayout" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "AddEditStellenanteilItem/Properties[StellenanteilItem]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "left",
+                            "name": "left",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Stellenanteil",
+                                "name": "Stellenanteil",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StellenanteilItem/Properties[Stellenanteil]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootValueControl/Properties[PlaceholderText]" },
+                                    "value": "z.B. 0,25 = viertel Stelle"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "Projekt",
+                                "name": "ProjektItem",
+                                "kind": "Details",
+                                "view": { "__id": ":DetailsModalPicker" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StellenanteilItem/Properties[ProjektItem]" }
+                                },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "Projekt",
+                                    "name": "ProjektItem1",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "ProjektItem/Properties[ProjektKurzName]" }
+                                    }
+                                  }
+                                ]
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          },
+                          {
+                            "displayName": "right",
+                            "name": "right",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "commandItems":
+                    [
+                      {
+                        "displayName": "Lösche Stellenanteil",
+                        "name": "DeleteStellenanteilItem",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "AddEditStellenanteilItem/Methods[Delete]" }
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-remove"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ],
+            "propertySources":
+            [
+              {
+                "property": { "__id": ":Screen/Properties[ScreenType]" },
+                "value": "Edit"
+              },
+              {
+                "property": { "__id": ":Screen/Properties[ShowAsDialog]" },
+                "value": true
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "AddEditStellenanteilItem/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "AddEditStellenanteilItem/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "AddEditStellenanteilItem/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "AddEditStellenanteilItem/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "AddEditStellenanteilItem/Methods[Delete]",
+              "name": "Delete"
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "AddEditStellenanteilItem/Properties[StellenanteilItem]",
+              "name": "StellenanteilItem",
+              "elementType": { "__id": "StellenanteilItem" },
+              "propertyType": { "__id": "StellenanteilItem" },
+              ":@IsParameter": { }
+            }
+          ]
+        },
+        {
+          "displayName": "StellenanteilItemSet",
+          "id": "BrowseStellenanteilItemSet",
+          "name": "BrowseStellenanteilItemSet",
+          "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
+          },
+          "rootContentItem":
+          {
+            "displayName": "StellenanteilItemSet",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Stellenanteil Item List",
+                    "name": "StellenanteilItemList",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "StellenanteilItemSet",
+                        "name": "StellenanteilItemSet",
+                        "kind": "Collection",
+                        "view": { "__id": ":TileList" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "BrowseStellenanteilItemSet/Properties[StellenanteilItemSet]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "rows",
+                            "name": "rows",
+                            "kind": "Details",
+                            "view": { "__id": ":RowsLayout" },
+                            "dataSource":
+                            {
+                              "links":
+                              [
+                              ]
+                            },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Id",
+                                "name": "Id",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StellenanteilItem/Properties[Id]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[FontStyle]" },
+                                    "value": "Large"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "Stellenanteil",
+                                "name": "Stellenanteil",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StellenanteilItem/Properties[Stellenanteil]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[FontStyle]" },
+                                    "value": "Small"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "Vertrag",
+                                "name": "VertragItem",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "StellenanteilItem/Properties[VertragItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "VertragItem/Properties[Id]" }
+                                    }
+                                  ]
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[FontStyle]" },
+                                    "value": "Small"
+                                  }
+                                ]
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
+                                "value": "FitToContent"
+                              }
+                            ]
+                          }
+                        ],
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showViewStellenanteilItem]" },
+                              ":@AssociatedCollection": { "collection": { "__id": "BrowseStellenanteilItemSet/Properties[StellenanteilItemSet]" } },
+                              "arguments":
+                              [
+                                {
+                                  "parameter": { "__id": "!module/Methods[showViewStellenanteilItem]/Parameters[StellenanteilItem]" },
+                                  "value":
+                                  {
+                                    "links":
+                                    [
+                                      {
+                                        "member": { "__id": "BrowseStellenanteilItemSet/Properties[StellenanteilItemSet]" }
+                                      },
+                                      {
+                                        "member": { "__id": "CollectionView$StellenanteilItem/Properties[selectedItem]" }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "commandItems":
+                    [
+                      {
+                        "displayName": "Add",
+                        "name": "AddStellenanteilItem",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showAddEditStellenanteilItem]" },
+                              ":@AssociatedCollection": { "collection": { "__id": "BrowseStellenanteilItemSet/Properties[StellenanteilItemSet]" } },
+                              ":@CreateNewEntity":
+                              {
+                                "targetParameter": { "__id": "!module/Methods[showAddEditStellenanteilItem]/Parameters[StellenanteilItem]" }
+                              }
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-add"
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Search",
+                        "name": "SearchStellenanteilItemSet",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "links":
+                              [
+                                {
+                                  "member": { "__id": "BrowseStellenanteilItemSet/Properties[StellenanteilItemSet]" }
+                                },
+                                {
+                                  "target": { "__id": "CollectionView$StellenanteilItem/Methods[showSearch]" }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-search"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "propertySources":
+                [
+                  {
+                    "property": { "__id": ":RootControl/Properties[BrowseOnly]" },
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "BrowseStellenanteilItemSet/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "BrowseStellenanteilItemSet/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "BrowseStellenanteilItemSet/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "BrowseStellenanteilItemSet/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "BrowseStellenanteilItemSet/Properties[StellenanteilItemSet]",
+              "name": "StellenanteilItemSet",
+              "pageSize": 45,
+              "elementType": { "__id": "StellenanteilItem" },
+              "propertyType": { "__id": "CollectionView$StellenanteilItem" },
+              "query":
+              {
+                "id": "BrowseStellenanteilItemSet/Properties[StellenanteilItemSet]/Query",
+                "name": "StellenanteilItemSetQuery",
+                "elementType": { "__id": "StellenanteilItem" },
+                "returnType": { "__id": "StellenanteilItem*" },
+                "source":
+                {
+                  "member": { "__id": "ApplicationData/Members[StellenanteilItemSet]" }
+                }
+              },
+              "source":
+              {
+                "target": { "__id": "BrowseStellenanteilItemSet/Properties[StellenanteilItemSet]/Query" }
+              }
+            }
+          ]
+        },
+        {
+          "displayName": "StellenanteilItem",
+          "id": "ViewStellenanteilItem",
+          "name": "ViewStellenanteilItem",
+          "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
+          },
+          "rootContentItem":
+          {
+            "displayName": "StellenanteilItem",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Details",
+                    "name": "Details",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "columns",
+                        "name": "columns",
+                        "kind": "Details",
+                        "view": { "__id": ":ColumnsLayout" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "ViewStellenanteilItem/Properties[StellenanteilItem]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "left",
+                            "name": "left",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Stellenanteil",
+                                "name": "Stellenanteil",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StellenanteilItem/Properties[Stellenanteil]" }
+                                }
+                              },
+                              {
+                                "displayName": "Vertrag",
+                                "name": "VertragItem",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "StellenanteilItem/Properties[VertragItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "VertragItem/Properties[Id]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Erstellt von",
+                                "name": "CreatedBy",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StellenanteilItem/Properties[CreatedBy]" }
+                                }
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          },
+                          {
+                            "displayName": "right",
+                            "name": "right",
+                            "kind": "Group",
+                            "view": { "__id": ":RowsLayout" },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Erstellt",
+                                "name": "Created",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StellenanteilItem/Properties[Created]" }
+                                }
+                              },
+                              {
+                                "displayName": "Geändert von",
+                                "name": "ModifiedBy",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StellenanteilItem/Properties[ModifiedBy]" }
+                                }
+                              },
+                              {
+                                "displayName": "Geändert",
+                                "name": "Modified",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StellenanteilItem/Properties[Modified]" }
+                                }
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                "value": 200
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MaxWidth]" },
+                                "value": 400
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "commandItems":
+                    [
+                      {
+                        "displayName": "Edit",
+                        "name": "EditStellenanteilItem",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showAddEditStellenanteilItem]" },
+                              "arguments":
+                              [
+                                {
+                                  "parameter": { "__id": "!module/Methods[showAddEditStellenanteilItem]/Parameters[StellenanteilItem]" },
+                                  "value":
+                                  {
+                                    "links":
+                                    [
+                                      {
+                                        "member": { "__id": "ViewStellenanteilItem/Properties[StellenanteilItem]" }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-edit"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "propertySources":
+                [
+                  {
+                    "property": { "__id": ":RootControl/Properties[BrowseOnly]" },
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "ViewStellenanteilItem/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "ViewStellenanteilItem/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "ViewStellenanteilItem/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "ViewStellenanteilItem/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "ViewStellenanteilItem/Properties[StellenanteilItem]",
+              "name": "StellenanteilItem",
+              "elementType": { "__id": "StellenanteilItem" },
+              "propertyType": { "__id": "StellenanteilItem" },
+              ":@IsParameter": { }
+            }
+          ]
+        },
+        {
           "displayName": "Vertrag",
           "id": "AddEditVertragItem",
           "name": "AddEditVertragItem",
@@ -8315,24 +9492,27 @@
                                 }
                               },
                               {
-                                "displayName": "bis",
-                                "name": "bis",
-                                "kind": "Value",
-                                "view": { "__id": ":DatePicker" },
+                                "displayName": "Beschäftigungs-Art",
+                                "name": "BeschäftigungsArtItem",
+                                "kind": "Details",
+                                "view": { "__id": ":DetailsModalPicker" },
                                 "dataSource":
                                 {
-                                  "member": { "__id": "VertragItem/Properties[bis]" }
-                                }
-                              },
-                              {
-                                "displayName": "Stellenanteil",
-                                "name": "Stellenanteil",
-                                "kind": "Value",
-                                "view": { "__id": ":TextBox" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "VertragItem/Properties[Stellenanteil]" }
-                                }
+                                  "member": { "__id": "VertragItem/Properties[BeschäftigungsArtItem]" }
+                                },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "Beschäftigungsart",
+                                    "name": "BeschäftigungsArtItem1",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "BeschäftigungsArtItem/Properties[Art]" }
+                                    }
+                                  }
+                                ]
                               }
                             ],
                             "propertySources":
@@ -8355,98 +9535,14 @@
                             "childContentItems":
                             [
                               {
-                                "displayName": "Mitarbeiter",
-                                "name": "MitarbeiterItem",
-                                "kind": "Details",
-                                "view": { "__id": ":DetailsModalPicker" },
+                                "displayName": "bis",
+                                "name": "bis",
+                                "kind": "Value",
+                                "view": { "__id": ":DatePicker" },
                                 "dataSource":
                                 {
-                                  "member": { "__id": "VertragItem/Properties[MitarbeiterItem]" }
-                                },
-                                "childContentItems":
-                                [
-                                  {
-                                    "displayName": "Mitarbeiter",
-                                    "name": "RowTemplate",
-                                    "kind": "Details",
-                                    "view": { "__id": ":ColumnsLayout" },
-                                    "dataSource":
-                                    {
-                                      "links":
-                                      [
-                                      ]
-                                    },
-                                    "childContentItems":
-                                    [
-                                      {
-                                        "displayName": "Nachname",
-                                        "name": "Nachname",
-                                        "kind": "Value",
-                                        "view": { "__id": ":Text" },
-                                        "dataSource":
-                                        {
-                                          "member": { "__id": "MitarbeiterItem/Properties[Nachname]" }
-                                        }
-                                      },
-                                      {
-                                        "displayName": "Vorname",
-                                        "name": "Vorname",
-                                        "kind": "Value",
-                                        "view": { "__id": ":Text" },
-                                        "dataSource":
-                                        {
-                                          "member": { "__id": "MitarbeiterItem/Properties[Vorname]" }
-                                        }
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              {
-                                "displayName": "Beschäftigungs-Art",
-                                "name": "BeschäftigungsArtItem",
-                                "kind": "Details",
-                                "view": { "__id": ":DetailsModalPicker" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "VertragItem/Properties[BeschäftigungsArtItem]" }
-                                },
-                                "childContentItems":
-                                [
-                                  {
-                                    "displayName": "Beschäftigungs Art Item",
-                                    "name": "BeschäftigungsArtItem1",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "BeschäftigungsArtItem/Properties[Art]" }
-                                    }
-                                  }
-                                ]
-                              },
-                              {
-                                "displayName": "Projekt Item",
-                                "name": "ProjektItem",
-                                "kind": "Details",
-                                "view": { "__id": ":DetailsModalPicker" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "VertragItem/Properties[ProjektItem]" }
-                                },
-                                "childContentItems":
-                                [
-                                  {
-                                    "displayName": "Projekt Item",
-                                    "name": "ProjektItemTemplate",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "ProjektItem/Properties[ProjektKurzName]" }
-                                    }
-                                  }
-                                ]
+                                  "member": { "__id": "VertragItem/Properties[bis]" }
+                                }
                               }
                             ],
                             "propertySources":
@@ -8460,6 +9556,144 @@
                                 "value": 400
                               }
                             ]
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Stellenanteile",
+                        "description": "Die Aufteilung in Stellenanteile",
+                        "name": "StellenanteilItemCollection",
+                        "kind": "Collection",
+                        "view": { "__id": ":Table" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "AddEditVertragItem/Properties[StellenanteilItemCollection]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "Stellenanteile",
+                            "name": "StellenanteilItemCollectionTemplate",
+                            "kind": "Details",
+                            "view": { "__id": ":TableRowLayout" },
+                            "dataSource":
+                            {
+                              "links":
+                              [
+                              ]
+                            },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Stellenanteil",
+                                "name": "Stellenanteil",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "StellenanteilItem/Properties[Stellenanteil]" }
+                                }
+                              },
+                              {
+                                "displayName": "Projekt",
+                                "name": "ProjektItem",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "StellenanteilItem/Properties[ProjektItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "ProjektItem/Properties[ProjektKurzName]" }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showAddEditStellenanteilItem]" },
+                              ":@AssociatedCollection": { "collection": { "__id": "AddEditVertragItem/Properties[StellenanteilItemCollection]" } },
+                              "arguments":
+                              [
+                                {
+                                  "parameter": { "__id": "!module/Methods[showAddEditStellenanteilItem]/Parameters[StellenanteilItem]" },
+                                  "value":
+                                  {
+                                    "links":
+                                    [
+                                      {
+                                        "member": { "__id": "AddEditVertragItem/Properties[StellenanteilItemCollection]" }
+                                      },
+                                      {
+                                        "member": { "__id": "CollectionView$StellenanteilItem/Properties[selectedItem]" }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCollectionControl/Properties[ShowHeader]" },
+                            "value": true
+                          }
+                        ]
+                      }
+                    ],
+                    "commandItems":
+                    [
+                      {
+                        "displayName": "Stellenanteil hinzufügen",
+                        "name": "AddStellenanteilItem",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showAddEditStellenanteilItem]" },
+                              ":@AssociatedCollection": { "collection": { "__id": "AddEditVertragItem/Properties[StellenanteilItemCollection]" } },
+                              ":@CreateNewEntity":
+                              {
+                                "targetParameter": { "__id": "!module/Methods[showAddEditStellenanteilItem]/Parameters[StellenanteilItem]" }
+                              }
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-add"
+                          }
+                        ]
+                      },
+                      {
+                        "displayName": "Vertrag löschen",
+                        "name": "DeleteVertrag",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "AddEditVertragItem/Methods[DeleteVertrag]" }
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-remove"
                           }
                         ]
                       }
@@ -8511,6 +9745,10 @@
                   "parameterType": { "__id": ":String" }
                 }
               ]
+            },
+            {
+              "id": "AddEditVertragItem/Methods[DeleteVertrag]",
+              "name": "DeleteVertrag"
             }
           ],
           "properties":
@@ -8521,6 +9759,36 @@
               "elementType": { "__id": "VertragItem" },
               "propertyType": { "__id": "VertragItem" },
               ":@IsParameter": { }
+            },
+            {
+              "id": "AddEditVertragItem/Properties[StellenanteilItemCollection]",
+              "name": "StellenanteilItemCollection",
+              "pageSize": 45,
+              "elementType": { "__id": "StellenanteilItem" },
+              "propertyType": { "__id": "CollectionView$StellenanteilItem" },
+              "query":
+              {
+                "id": "AddEditVertragItem/Properties[StellenanteilItemCollection]/Query",
+                "name": "StellenanteilItemCollectionQuery",
+                "elementType": { "__id": "StellenanteilItem" },
+                "returnType": { "__id": "StellenanteilItem*" },
+                "source":
+                {
+                  "links":
+                  [
+                    {
+                      "member": { "__id": "AddEditVertragItem/Properties[VertragItem]" }
+                    },
+                    {
+                      "member": { "__id": "VertragItem/Properties[StellenanteilItemCollection]" }
+                    }
+                  ]
+                }
+              },
+              "source":
+              {
+                "target": { "__id": "AddEditVertragItem/Properties[StellenanteilItemCollection]/Query" }
+              }
             }
           ]
         },
@@ -9189,6 +10457,456 @@
               "propertyType": { "__id": ":String" }
             }
           ]
+        },
+        {
+          "__isEntityType": 1,
+          ":@SummaryProperty": { "property": { "__id": "VertragJeMonatItem/Properties[Id]" } },
+          "id": "VertragJeMonatItem",
+          "name": "VertragJeMonatItem",
+          ":@CreatedModifiedPropertiesEnabled": { },
+          "methods":
+          [
+            {
+              "id": "VertragJeMonatItem/Methods[deleteEntity]",
+              "name": "deleteEntity"
+            },
+            {
+              "id": "VertragJeMonatItem/Methods[view]",
+              "name": "view"
+            },
+            {
+              "id": "VertragJeMonatItem/Methods[edit]",
+              "name": "edit"
+            }
+          ],
+          "properties":
+          [
+            {
+              "__isKeyProperty": 1,
+              "id": "VertragJeMonatItem/Properties[Id]",
+              "name": "Id",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Int32" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[Monat]",
+              "name": "Monat",
+              "propertyType": { "__id": ":Date" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[StellenanteilItem]",
+              "name": "StellenanteilItem",
+              "association": { "__id": "VertragJeMonatItem_StellenanteilItem" },
+              "elementType": { "__id": "StellenanteilItem" },
+              "fromEnd": { "__id": "VertragJeMonatItem_StellenanteilItem/Ends[VertragJeMonatItem]" },
+              "propertyType": { "__id": "StellenanteilItem" },
+              "toEnd": { "__id": "VertragJeMonatItem_StellenanteilItem/Ends[StellenanteilItem]" }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[CreatedBy]",
+              "name": "CreatedBy",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Person?" },
+              ":@NotSearchable": { },
+              ":@MaxLength":
+              {
+                "value": 255
+              }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[Created]",
+              "name": "Created",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":DateTimeOffset?" },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[ModifiedBy]",
+              "name": "ModifiedBy",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Person?" },
+              ":@NotSearchable": { },
+              ":@MaxLength":
+              {
+                "value": 255
+              }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[Modified]",
+              "name": "Modified",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":DateTimeOffset?" },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[RowVersion]",
+              "name": "RowVersion",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":RowVersion" },
+              ":@Hidden": { },
+              ":@UseForConcurrency": { },
+              ":@NotSearchable": { }
+            }
+          ]
+        },
+        {
+          "id": "VertragJeMonatItem_StellenanteilItem",
+          "name": "VertragJeMonatItem_StellenanteilItem",
+          "ends":
+          [
+            {
+              "id": "VertragJeMonatItem_StellenanteilItem/Ends[VertragJeMonatItem]",
+              "name": "VertragJeMonatItem",
+              "multiplicity": "Many",
+              "entityType": { "__id": "VertragJeMonatItem" }
+            },
+            {
+              "id": "VertragJeMonatItem_StellenanteilItem/Ends[StellenanteilItem]",
+              "name": "StellenanteilItem",
+              "multiplicity": "One",
+              "entityType": { "__id": "StellenanteilItem" },
+              ":@DeleteRule": { "action": "Cascade" }
+            }
+          ]
+        },
+        {
+          "displayName": "Browse Vertrag Je Monat Item Set",
+          "id": "BrowseVertragJeMonatItemSet",
+          "name": "BrowseVertragJeMonatItemSet",
+          "launchMode": "Single",
+          ":@SaveChangesTo":
+          {
+            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
+          },
+          "rootContentItem":
+          {
+            "displayName": "Root Content Item",
+            "name": "RootContentItem",
+            "kind": "Screen",
+            "view": { "__id": ":Screen" },
+            "childContentItems":
+            [
+              {
+                "displayName": "Tabs",
+                "name": "Tabs",
+                "kind": "Group",
+                "view": { "__id": ":TabPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Vertrag Je Monat Item List",
+                    "name": "VertragJeMonatItemList",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "VertragJeMonatItemSet",
+                        "name": "VertragJeMonatItemSet",
+                        "kind": "Collection",
+                        "view": { "__id": ":Table" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "BrowseVertragJeMonatItemSet/Properties[VertragJeMonatItemSet]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "rows",
+                            "name": "rows",
+                            "kind": "Details",
+                            "view": { "__id": ":TableRowLayout" },
+                            "dataSource":
+                            {
+                              "links":
+                              [
+                              ]
+                            },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Id",
+                                "name": "Id",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "VertragJeMonatItem/Properties[Id]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[FontStyle]" },
+                                    "value": "Large"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "Monat",
+                                "name": "Monat",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "VertragJeMonatItem/Properties[Monat]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[FontStyle]" },
+                                    "value": "Small"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "Stellenanteil",
+                                "name": "Stellenanteil",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "VertragJeMonatItem/Properties[StellenanteilItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "StellenanteilItem/Properties[Stellenanteil]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Projekt",
+                                "name": "ProjektKurzName",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "VertragJeMonatItem/Properties[StellenanteilItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "StellenanteilItem/Properties[ProjektItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "ProjektItem/Properties[ProjektKurzName]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Nachname",
+                                "name": "Nachname",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "VertragJeMonatItem/Properties[StellenanteilItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "StellenanteilItem/Properties[VertragItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "VertragItem/Properties[MitarbeiterItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "MitarbeiterItem/Properties[Nachname]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Abteilung",
+                                "name": "Kürzel",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "VertragJeMonatItem/Properties[StellenanteilItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "StellenanteilItem/Properties[VertragItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "VertragItem/Properties[MitarbeiterItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "MitarbeiterItem/Properties[AbteilungItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "AbteilungItem/Properties[Kürzel]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "Art",
+                                "name": "Art",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "VertragJeMonatItem/Properties[StellenanteilItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "StellenanteilItem/Properties[VertragItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "VertragItem/Properties[BeschäftigungsArtItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "BeschäftigungsArtItem/Properties[Art]" }
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
+                            "propertySources":
+                            [
+                              {
+                                "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
+                                "value": "FitToContent"
+                              }
+                            ]
+                          }
+                        ],
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
+                            "source":
+                            {
+                              "links":
+                              [
+                                {
+                                  "member": { "__id": "BrowseVertragJeMonatItemSet/Properties[VertragJeMonatItemSet]" }
+                                },
+                                {
+                                  "target": { "__id": "CollectionView$VertragJeMonatItem/Methods[viewSelected]" }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    ],
+                    "commandItems":
+                    [
+                      {
+                        "displayName": "Search",
+                        "name": "SearchVertragJeMonatItemSet",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "links":
+                              [
+                                {
+                                  "member": { "__id": "BrowseVertragJeMonatItemSet/Properties[VertragJeMonatItemSet]" }
+                                },
+                                {
+                                  "target": { "__id": "CollectionView$VertragJeMonatItem/Methods[showSearch]" }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-search"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "propertySources":
+                [
+                  {
+                    "property": { "__id": ":RootControl/Properties[BrowseOnly]" },
+                    "value": true
+                  }
+                ]
+              },
+              {
+                "displayName": "Popups",
+                "name": "Popups",
+                "kind": "Group",
+                "view": { "__id": ":DialogPages" }
+              }
+            ]
+          },
+          "methods":
+          [
+            {
+              "id": "BrowseVertragJeMonatItemSet/Methods[showTab]",
+              "name": "showTab",
+              "parameters":
+              [
+                {
+                  "id": "BrowseVertragJeMonatItemSet/Methods[showTab]/Parameters[tabName]",
+                  "name": "tabName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            },
+            {
+              "id": "BrowseVertragJeMonatItemSet/Methods[showDialog]",
+              "name": "showDialog",
+              "parameters":
+              [
+                {
+                  "id": "BrowseVertragJeMonatItemSet/Methods[showDialog]/Parameters[dialogName]",
+                  "name": "dialogName",
+                  "parameterType": { "__id": ":String" }
+                }
+              ]
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "BrowseVertragJeMonatItemSet/Properties[VertragJeMonatItemSet]",
+              "name": "VertragJeMonatItemSet",
+              "pageSize": 45,
+              "elementType": { "__id": "VertragJeMonatItem" },
+              "propertyType": { "__id": "CollectionView$VertragJeMonatItem" },
+              "query":
+              {
+                "id": "BrowseVertragJeMonatItemSet/Properties[VertragJeMonatItemSet]/Query",
+                "name": "VertragJeMonatItemSetQuery",
+                "elementType": { "__id": "VertragJeMonatItem" },
+                "returnType": { "__id": "VertragJeMonatItem*" },
+                "source":
+                {
+                  "member": { "__id": "ApplicationData/Members[VertragJeMonatItemSet]" }
+                }
+              },
+              "source":
+              {
+                "target": { "__id": "BrowseVertragJeMonatItemSet/Properties[VertragJeMonatItemSet]/Query" }
+              }
+            }
+          ]
         }
       ],
       "methods":
@@ -9333,6 +11051,37 @@
           ]
         },
         {
+          "id": "!module/Methods[showAddEditStellenanteilItem]",
+          "name": "showAddEditStellenanteilItem",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "AddEditStellenanteilItem" } },
+          "parameters":
+          [
+            {
+              "id": "!module/Methods[showAddEditStellenanteilItem]/Parameters[StellenanteilItem]",
+              "name": "StellenanteilItem",
+              "parameterType": { "__id": "StellenanteilItem" }
+            }
+          ]
+        },
+        {
+          "id": "!module/Methods[showBrowseStellenanteilItemSet]",
+          "name": "showBrowseStellenanteilItemSet",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "BrowseStellenanteilItemSet" } }
+        },
+        {
+          "id": "!module/Methods[showViewStellenanteilItem]",
+          "name": "showViewStellenanteilItem",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "ViewStellenanteilItem" } },
+          "parameters":
+          [
+            {
+              "id": "!module/Methods[showViewStellenanteilItem]/Parameters[StellenanteilItem]",
+              "name": "StellenanteilItem",
+              "parameterType": { "__id": "StellenanteilItem" }
+            }
+          ]
+        },
+        {
           "id": "!module/Methods[showAddEditVertragItem]",
           "name": "showAddEditVertragItem",
           ":@ShowScreenMethod": { "targetScreen": { "__id": "AddEditVertragItem" } },
@@ -9367,6 +11116,11 @@
           "id": "!module/Methods[showBrowse]",
           "name": "showBrowse",
           ":@ShowScreenMethod": { "targetScreen": { "__id": "Browse" } }
+        },
+        {
+          "id": "!module/Methods[showBrowseVertragJeMonatItemSet]",
+          "name": "showBrowseVertragJeMonatItemSet",
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "BrowseVertragJeMonatItemSet" } }
         }
       ],
       "navigationItems":
@@ -9390,6 +11144,21 @@
           "id": "!module/NavigationItems[link1]",
           "name": "link1",
           "method": { "__id": "!module/Methods[showBrowseAbteilungItemSet]" }
+        },
+        {
+          "id": "!module/NavigationItems[link2]",
+          "name": "link2",
+          "method": { "__id": "!module/Methods[showBrowseStellenanteilItemSet]" }
+        },
+        {
+          "id": "!module/NavigationItems[link6]",
+          "name": "link6",
+          "method": { "__id": "!module/Methods[showBrowseVertragItemSet]" }
+        },
+        {
+          "id": "!module/NavigationItems[link5]",
+          "name": "link5",
+          "method": { "__id": "!module/Methods[showBrowseVertragJeMonatItemSet]" }
         }
       ]
     }

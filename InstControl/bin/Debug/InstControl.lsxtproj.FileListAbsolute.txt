@@ -242,6 +242,10 @@ C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\Web\Man
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\Microsoft.LightSwitch.Server.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\System.ServiceModel.PollingDuplex.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\Application.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\EJ.DataVisualization.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\EJ.DataVisualization.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\EJ.Web.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\EJ.Web.Server.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\Microsoft.Data.Edm.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\Microsoft.Data.OData.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\Microsoft.Data.Services.Client.dll
@@ -279,9 +283,6 @@ C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\de\
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\de\System.ServiceModel.DomainServices.Server.resources.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\packages.config
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\ApplicationData.svc
-C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\Desktopclient\default.htm
-C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\Desktopclient\Silverlight.js
-C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\Desktopclient\web\InstControl.Desktopclient.xap
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\dark-theme-2.5.3.css
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\InstControll.css
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
@@ -324,6 +325,9 @@ C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLCli
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\MitarbeiterSet\BrowseMitarbeiterSet.lsml.js
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\MitarbeiterSet\ViewMitarbeiter.lsml.js
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\ProjektItemSet\ViewProjektItem.lsml.js
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\StellenanteilItemSet\AddEditStellenanteilItem.lsml.js
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\StellenanteilItemSet\ViewStellenanteilItem.lsml.js
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\VertragItemSet\AddEditVertragItem.lsml.js
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\VertragItemSet\ViewVertragItem.lsml.js
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Scripts\datajs-1.1.3.js
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Scripts\datajs-1.1.3.min.js

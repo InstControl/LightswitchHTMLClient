@@ -16,5 +16,14 @@
         </DefaultScreen.Attributes>
       </DefaultScreen>
     </EntityType.Attributes>
+    <EntityType.Properties>
+      <KeyProperty>
+        <KeyProperty.Attributes>
+          <Proxy
+            Target="ServiceInterface:VertragItem/Properties[Id]" />
+          <Hidden />
+        </KeyProperty.Attributes>
+      </KeyProperty>
+    </EntityType.Properties>
   </EntityType>
 </Application>

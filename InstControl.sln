@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstControl.Server", "InstC
 EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "InstControl.HTMLClient", "InstControl\InstControl.HTMLClient\InstControl.HTMLClient.jsproj", "{F9419073-FD96-453D-ABE4-F6B91316BD45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstControl.Desktopclient", "InstControl\InstControl.Desktopclient\InstControl.Desktopclient.csproj", "{0758EBFC-9EA2-445E-AA4A-32FABFD9FEAA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{F9419073-FD96-453D-ABE4-F6B91316BD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9419073-FD96-453D-ABE4-F6B91316BD45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9419073-FD96-453D-ABE4-F6B91316BD45}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0758EBFC-9EA2-445E-AA4A-32FABFD9FEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0758EBFC-9EA2-445E-AA4A-32FABFD9FEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0758EBFC-9EA2-445E-AA4A-32FABFD9FEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0758EBFC-9EA2-445E-AA4A-32FABFD9FEAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

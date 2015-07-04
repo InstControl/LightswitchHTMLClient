@@ -8,6 +8,8 @@
     Name="AbteilungItem">
     <EntityType.Attributes>
       <CreatedModifiedPropertiesEnabled />
+      <DisplayName
+        Value="Abteilung" />
     </EntityType.Attributes>
     <EntityType.Methods>
       <EntityMethod

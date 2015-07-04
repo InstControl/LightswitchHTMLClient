@@ -7,3 +7,4 @@ InstControl.Server.DataSources.ApplicationData.BeschäftigungsArtItemSet.lsml
 InstControl.Server.DataSources.ApplicationData.ProjektItemSet.lsml
 InstControl.Server.DataSources.ApplicationData.AbteilungItemSet.lsml
 InstControl.Server.DataSources.ApplicationData.aktuelleMitarbeiter.lsml
+InstControl.Server.DataSources.ApplicationData.StellenanteilItemSet.lsml

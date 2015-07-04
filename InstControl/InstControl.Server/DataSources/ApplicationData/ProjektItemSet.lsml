@@ -8,6 +8,8 @@
     Name="ProjektItem">
     <EntityType.Attributes>
       <CreatedModifiedPropertiesEnabled />
+      <DisplayName
+        Value="Projekt" />
     </EntityType.Attributes>
     <EntityType.Methods>
       <EntityMethod
@@ -75,11 +77,6 @@
           <Computed />
         </EntityProperty.Attributes>
       </EntityProperty>
-      <NavigationProperty
-        Name="VertragItemCollection"
-        Association="VertragItem_ProjektItem"
-        FromEnd="ProjektItem"
-        ToEnd="VertragItem" />
       <EntityProperty
         Name="PSPElement"
         PropertyType=":String?">
@@ -94,6 +91,11 @@
         Association="AbteilungItem_ProjektItem"
         FromEnd="ProjektItem"
         ToEnd="AbteilungItem" />
+      <NavigationProperty
+        Name="StellenanteilItem"
+        Association="StellenanteilItem_ProjektItem"
+        FromEnd="ProjektItem"
+        ToEnd="StellenanteilItem" />
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -238,11 +240,11 @@
       </QueryOperationParameter>
     </QueryOperation>
     <AssociationSet
-      Name="VertragItem_ProjektItemSet"
-      Association="VertragItem_ProjektItem">
+      Name="StellenanteilItem_ProjektItemSet"
+      Association="StellenanteilItem_ProjektItem">
       <AssociationSetEnd
-        Name="VertragItem"
-        EntitySet="VertragItemSet" />
+        Name="StellenanteilItem"
+        EntitySet="StellenanteilItemSet" />
       <AssociationSetEnd
         Name="ProjektItem"
         EntitySet="ProjektItemSet" />
@@ -267,19 +269,19 @@
       </EntitySetMapping.Attributes>
     </EntitySetMapping>
     <AssociationSetMapping
-      AssociationSet="VertragItem_ProjektItemSet">
+      AssociationSet="StellenanteilItem_ProjektItemSet">
       <AssociationSetMapping.Attributes>
         <SsdlAssociationSet
-          Name="VertragItem_ProjektItemSet" />
+          Name="StellenanteilItem_ProjektItemSet" />
         <SsdlAssociationSetEnd
-          End="ApplicationData/Members[VertragItem_ProjektItemSet]/Members[VertragItem]">
+          End="ApplicationData/Members[StellenanteilItem_ProjektItemSet]/Members[StellenanteilItem]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef
-              Name="VertragItem_ProjektItem" />
+              Name="StellenanteilItem_ProjektItem" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
         <SsdlAssociationSetEnd
-          End="ApplicationData/Members[VertragItem_ProjektItemSet]/Members[ProjektItem]">
+          End="ApplicationData/Members[StellenanteilItem_ProjektItemSet]/Members[ProjektItem]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef
               Name="Id" />
@@ -289,11 +291,11 @@
     </AssociationSetMapping>
   </DataService>
   <Association
-    Name="VertragItem_ProjektItem">
+    Name="StellenanteilItem_ProjektItem">
     <AssociationEnd
-      Name="VertragItem"
+      Name="StellenanteilItem"
       Multiplicity="Many"
-      EntityType="VertragItem" />
+      EntityType="StellenanteilItem" />
     <AssociationEnd
       Name="ProjektItem"
       Multiplicity="One"

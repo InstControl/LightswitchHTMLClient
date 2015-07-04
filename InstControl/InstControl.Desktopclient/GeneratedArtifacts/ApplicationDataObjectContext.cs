@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 // Ursprünglicher Dateiname:
-// Erstellungsdatum: 01.07.2015 14:37:06
+// Erstellungsdatum: 01.07.2015 16:09:04
 namespace LightSwitchApplication.Implementation
 {
     
@@ -131,6 +131,23 @@ namespace LightSwitchApplication.Implementation
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceQuery<ProjektItem> _ProjektItemSet;
         /// <summary>
+        /// Im Schema sind keine Kommentare für "StellenanteilItemSet" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<StellenanteilItem> StellenanteilItemSet
+        {
+            get
+            {
+                if ((this._StellenanteilItemSet == null))
+                {
+                    this._StellenanteilItemSet = base.CreateQuery<StellenanteilItem>("StellenanteilItemSet");
+                }
+                return this._StellenanteilItemSet;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<StellenanteilItem> _StellenanteilItemSet;
+        /// <summary>
         /// Im Schema sind keine Kommentare für "VertragItemSet" vorhanden.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -178,6 +195,14 @@ namespace LightSwitchApplication.Implementation
         public void AddToProjektItemSet(ProjektItem projektItem)
         {
             base.AddObject("ProjektItemSet", projektItem);
+        }
+        /// <summary>
+        /// Im Schema sind keine Kommentare für "StellenanteilItemSet" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToStellenanteilItemSet(StellenanteilItem stellenanteilItem)
+        {
+            base.AddObject("StellenanteilItemSet", stellenanteilItem);
         }
         /// <summary>
         /// Im Schema sind keine Kommentare für "VertragItemSet" vorhanden.
@@ -258,98 +283,121 @@ namespace LightSwitchApplication.Implementation
                 "ffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Proper" +
                 "ty Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVersion\" Type=" +
                 "\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:StoreGeneratedP" +
-                "attern=\"Computed\" /><NavigationProperty Name=\"VertragItemCollection\" Relationshi" +
-                "p=\"LightSwitchApplication.VertragItem_ProjektItem\" ToRole=\"VertragItem\" FromRole" +
-                "=\"ProjektItem\" /><NavigationProperty Name=\"AbteilungItem\" Relationship=\"LightSwi" +
-                "tchApplication.AbteilungItem_ProjektItem\" ToRole=\"AbteilungItem\" FromRole=\"Proje" +
-                "ktItem\" /></EntityType><EntityType Name=\"VertragItem\"><Key><PropertyRef Name=\"Id" +
-                "\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" annotation:Store" +
-                "GeneratedPattern=\"Identity\" /><Property Name=\"von\" Type=\"Edm.DateTime\" Nullable=" +
-                "\"false\" /><Property Name=\"bis\" Type=\"Edm.DateTime\" Nullable=\"false\" /><Property " +
-                "Name=\"VertragItem_MitarbeiterItem\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property" +
-                " Name=\"BeschäftigungsArtItem_VertragItem\" Type=\"Edm.Int32\" Nullable=\"false\" /><P" +
-                "roperty Name=\"VertragItem_ProjektItem\" Type=\"Edm.Int32\" Nullable=\"false\" /><Prop" +
-                "erty Name=\"Stellenanteil\" Type=\"Edm.Decimal\" Nullable=\"false\" Precision=\"3\" Scal" +
-                "e=\"2\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property" +
-                " Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Ed" +
-                "m.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" " +
-                "/><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode" +
-                "=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed\" /><NavigationProperty Name=" +
-                "\"MitarbeiterItem\" Relationship=\"LightSwitchApplication.VertragItem_MitarbeiterIt" +
-                "em\" ToRole=\"MitarbeiterItem\" FromRole=\"VertragItem\" /><NavigationProperty Name=\"" +
-                "BeschäftigungsArtItem\" Relationship=\"LightSwitchApplication.BeschäftigungsArtIte" +
-                "m_VertragItem\" ToRole=\"BeschäftigungsArtItem\" FromRole=\"VertragItem\" /><Navigati" +
-                "onProperty Name=\"ProjektItem\" Relationship=\"LightSwitchApplication.VertragItem_P" +
-                "rojektItem\" ToRole=\"ProjektItem\" FromRole=\"VertragItem\" /></EntityType><Associat" +
-                "ion Name=\"AbteilungItem_MitarbeiterItem\"><End Role=\"AbteilungItem\" Type=\"LightSw" +
-                "itchApplication.AbteilungItem\" Multiplicity=\"0..1\" /><End Role=\"MitarbeiterItem\"" +
-                " Type=\"LightSwitchApplication.MitarbeiterItem\" Multiplicity=\"*\" /><ReferentialCo" +
-                "nstraint><Principal Role=\"AbteilungItem\"><PropertyRef Name=\"Id\" /></Principal><D" +
-                "ependent Role=\"MitarbeiterItem\"><PropertyRef Name=\"AbteilungItem_MitarbeiterItem" +
-                "\" /></Dependent></ReferentialConstraint></Association><Asso";
+                "attern=\"Computed\" /><NavigationProperty Name=\"AbteilungItem\" Relationship=\"Light" +
+                "SwitchApplication.AbteilungItem_ProjektItem\" ToRole=\"AbteilungItem\" FromRole=\"Pr" +
+                "ojektItem\" /><NavigationProperty Name=\"StellenanteilItem\" Relationship=\"LightSwi" +
+                "tchApplication.StellenanteilItem_ProjektItem\" ToRole=\"StellenanteilItem\" FromRol" +
+                "e=\"ProjektItem\" /></EntityType><EntityType Name=\"StellenanteilItem\"><Key><Proper" +
+                "tyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false\" an" +
+                "notation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"Stellenanteil\" Type=" +
+                "\"Edm.Decimal\" Nullable=\"false\" Precision=\"3\" Scale=\"2\" /><Property Name=\"Vertrag" +
+                "Item_StellenanteilItem\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"Stel" +
+                "lenanteilItem_ProjektItem\" Type=\"Edm.Int32\" Nullable=\"false\" /><Property Name=\"C" +
+                "reatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Created\" Type=\"Edm" +
+                ".DateTimeOffset\" /><Property Name=\"ModifiedBy\" Type=\"Edm.String\" MaxLength=\"255\"" +
+                " /><Property Name=\"Modified\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"RowVers" +
+                "ion\" Type=\"Edm.Binary\" Nullable=\"false\" ConcurrencyMode=\"Fixed\" annotation:Store" +
+                "GeneratedPattern=\"Computed\" /><NavigationProperty Name=\"VertragItem\" Relationshi" +
+                "p=\"LightSwitchApplication.VertragItem_StellenanteilItem\" ToRole=\"VertragItem\" Fr" +
+                "omRole=\"StellenanteilItem\" /><NavigationProperty Name=\"ProjektItem\" Relationship" +
+                "=\"LightSwitchApplication.StellenanteilItem_ProjektItem\" ToRole=\"ProjektItem\" Fro" +
+                "mRole=\"StellenanteilItem\" /></EntityType><EntityType Name=\"VertragItem\"><Key><Pr" +
+                "opertyRef Name=\"Id\" /></Key><Property Name=\"Id\" Type=\"Edm.Int32\" Nullable=\"false" +
+                "\" annotation:StoreGeneratedPattern=\"Identity\" /><Property Name=\"von\" Type=\"Edm.D" +
+                "ateTime\" Nullable=\"false\" /><Property Name=\"bis\" Type=\"Edm.DateTime\" Nullable=\"f" +
+                "alse\" /><Property Name=\"VertragItem_MitarbeiterItem\" Type=\"Edm.Int32\" Nullable=\"" +
+                "false\" /><Property Name=\"BeschäftigungsArtItem_VertragItem\" Type=\"Edm.Int32\" Nul" +
+                "lable=\"false\" /><Property Name=\"CreatedBy\" Type=\"Edm.String\" MaxLength=\"255\" /><" +
+                "Property Name=\"Created\" Type=\"Edm.DateTimeOffset\" /><Property Name=\"ModifiedBy\" " +
+                "Type=\"Edm.String\" MaxLength=\"255\" /><Property Name=\"Modified\" Type=\"Edm.DateTime" +
+                "Offset\" /><Property Name=\"RowVersion\" Type=\"Edm.Binary\" Nullable=\"false\" Concurr" +
+                "encyMode=\"Fixed\" annotation:StoreGeneratedPattern=\"Computed";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-            private const string ModelPart1 = "ciation Name=\"AbteilungItem_ProjektItem\"><End Role=\"AbteilungItem\" Type=\"LightSwi" +
-                "tchApplication.AbteilungItem\" Multiplicity=\"0..1\" /><End Role=\"ProjektItem\" Type" +
-                "=\"LightSwitchApplication.ProjektItem\" Multiplicity=\"*\" /><ReferentialConstraint>" +
-                "<Principal Role=\"AbteilungItem\"><PropertyRef Name=\"Id\" /></Principal><Dependent " +
-                "Role=\"ProjektItem\"><PropertyRef Name=\"AbteilungItem_ProjektItem\" /></Dependent><" +
-                "/ReferentialConstraint></Association><Association Name=\"VertragItem_MitarbeiterI" +
-                "tem\"><End Role=\"MitarbeiterItem\" Type=\"LightSwitchApplication.MitarbeiterItem\" M" +
-                "ultiplicity=\"1\" /><End Role=\"VertragItem\" Type=\"LightSwitchApplication.VertragIt" +
-                "em\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"MitarbeiterItem\">" +
-                "<PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"VertragItem\"><PropertyRef " +
-                "Name=\"VertragItem_MitarbeiterItem\" /></Dependent></ReferentialConstraint></Assoc" +
-                "iation><Association Name=\"AbteilungItem_MitarbeiterItem1\"><End Role=\"Mitarbeiter" +
-                "Item\" Type=\"LightSwitchApplication.MitarbeiterItem\" Multiplicity=\"1\"><OnDelete A" +
-                "ction=\"Cascade\" /></End><End Role=\"AbteilungItem\" Type=\"LightSwitchApplication.A" +
-                "bteilungItem\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"Mitarbe" +
-                "iterItem\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"AbteilungItem\"><" +
-                "PropertyRef Name=\"AbteilungItem_MitarbeiterItem1\" /></Dependent></ReferentialCon" +
-                "straint></Association><Association Name=\"VertragItem_ProjektItem\"><End Role=\"Pro" +
-                "jektItem\" Type=\"LightSwitchApplication.ProjektItem\" Multiplicity=\"1\" /><End Role" +
-                "=\"VertragItem\" Type=\"LightSwitchApplication.VertragItem\" Multiplicity=\"*\" /><Ref" +
-                "erentialConstraint><Principal Role=\"ProjektItem\"><PropertyRef Name=\"Id\" /></Prin" +
-                "cipal><Dependent Role=\"VertragItem\"><PropertyRef Name=\"VertragItem_ProjektItem\" " +
-                "/></Dependent></ReferentialConstraint></Association><Association Name=\"Beschäfti" +
-                "gungsArtItem_VertragItem\"><End Role=\"BeschäftigungsArtItem\" Type=\"LightSwitchApp" +
-                "lication.BeschäftigungsArtItem\" Multiplicity=\"1\" /><End Role=\"VertragItem\" Type=" +
-                "\"LightSwitchApplication.VertragItem\" Multiplicity=\"*\" /><ReferentialConstraint><" +
-                "Principal Role=\"BeschäftigungsArtItem\"><PropertyRef Name=\"Id\" /></Principal><Dep" +
-                "endent Role=\"VertragItem\"><PropertyRef Name=\"BeschäftigungsArtItem_VertragItem\" " +
-                "/></Dependent></ReferentialConstraint></Association><EntityContainer Name=\"Appli" +
-                "cationData\" m:IsDefaultEntityContainer=\"true\"><EntitySet Name=\"AbteilungItemSet\"" +
-                " EntityType=\"LightSwitchApplication.AbteilungItem\" /><EntitySet Name=\"Beschäftig" +
-                "ungsArtItemSet\" EntityType=\"LightSwitchApplication.BeschäftigungsArtItem\" /><Ent" +
-                "itySet Name=\"MitarbeiterItemSet\" EntityType=\"LightSwitchApplication.MitarbeiterI" +
-                "tem\" /><EntitySet Name=\"ProjektItemSet\" EntityType=\"LightSwitchApplication.Proje" +
-                "ktItem\" /><EntitySet Name=\"VertragItemSet\" EntityType=\"LightSwitchApplication.Ve" +
-                "rtragItem\" /><AssociationSet Name=\"AbteilungItem_MitarbeiterItem\" Association=\"L" +
-                "ightSwitchApplication.AbteilungItem_MitarbeiterItem\"><End Role=\"AbteilungItem\" E" +
-                "ntitySet=\"AbteilungItemSet\" /><End Role=\"MitarbeiterItem\" EntitySet=\"Mitarbeiter" +
-                "ItemSet\" /></AssociationSet><AssociationSet Name=\"AbteilungItem_ProjektItem\" Ass" +
-                "ociation=\"LightSwitchApplication.AbteilungItem_ProjektItem\"><End Role=\"Abteilung" +
-                "Item\" EntitySet=\"AbteilungItemSet\" /><End Role=\"ProjektItem\" EntitySet=\"ProjektI" +
-                "temSet\" /></AssociationSet><AssociationSet Name=\"VertragItem_MitarbeiterItem\" As" +
-                "sociation=\"LightSwitchApplication.VertragItem_MitarbeiterItem\"><End Role=\"Mitarb" +
-                "eiterItem\" EntitySet=\"MitarbeiterItemSet\" /><End Role=\"VertragItem\" EntitySet=\"V" +
-                "ertragItemSet\" /></AssociationSet><AssociationSet Name=\"AbteilungItem_Mitarbeite" +
-                "rItem1\" Association=\"LightSwitchApplication.AbteilungItem_MitarbeiterItem1\"><End" +
-                " Role=\"MitarbeiterItem\" EntitySet=\"MitarbeiterItemSet\" /><End Role=\"AbteilungIte" +
-                "m\" EntitySet=\"AbteilungItemSet\" /></AssociationSet><AssociationSet Name=\"Vertrag" +
-                "Item_ProjektItem\" Association=\"LightSwitchApplication.VertragItem_ProjektItem\"><" +
-                "End Role=\"ProjektItem\" EntitySet=\"ProjektItemSet\" /><End Role=\"VertragItem\" Enti" +
-                "tySet=\"VertragItemSet\" /></AssociationSet><AssociationSet Name=\"BeschäftigungsAr" +
-                "tItem_VertragItem\" Association=\"LightSwitchApplication.BeschäftigungsArtItem_Ver" +
-                "tragItem\"><End Role=\"BeschäftigungsArtItem\" EntitySet=\"BeschäftigungsArtItemSet\"" +
-                " /><End Role=\"VertragItem\" EntitySet=\"VertragItemSet\" /></AssociationSet><Functi" +
-                "onImport Name=\"aktuelleMitarbeiter\" ReturnType=\"Collection(LightSwitchApplicatio" +
-                "n.MitarbeiterItem)\" EntitySet=\"MitarbeiterItemSet\" m:HttpMethod=\"GET\" /><Functio" +
-                "nImport Name=\"ausgeschiedeneMitarbeiter\" ReturnType=\"Collection(LightSwitchAppli" +
-                "cation.MitarbeiterItem)\" EntitySet=\"MitarbeiterItemSet\" m:HttpMethod=\"GET\" /><Fu" +
-                "nctionImport Name=\"Microsoft_LightSwitch_GetCanInformation\" ReturnType=\"Edm.Stri" +
-                "ng\" m:HttpMethod=\"GET\"><Parameter Name=\"dataServiceMembers\" Type=\"Edm.String\" Mo" +
-                "de=\"In\" /></FunctionImport></EntityContainer></Schema></edmx:DataServices></edmx" +
-                ":Edmx>";
+            private const string ModelPart1 = "\" /><NavigationProperty Name=\"MitarbeiterItem\" Relationship=\"LightSwitchApplicati" +
+                "on.VertragItem_MitarbeiterItem\" ToRole=\"MitarbeiterItem\" FromRole=\"VertragItem\" " +
+                "/><NavigationProperty Name=\"BeschäftigungsArtItem\" Relationship=\"LightSwitchAppl" +
+                "ication.BeschäftigungsArtItem_VertragItem\" ToRole=\"BeschäftigungsArtItem\" FromRo" +
+                "le=\"VertragItem\" /><NavigationProperty Name=\"StellenanteilItemCollection\" Relati" +
+                "onship=\"LightSwitchApplication.VertragItem_StellenanteilItem\" ToRole=\"Stellenant" +
+                "eilItem\" FromRole=\"VertragItem\" /></EntityType><Association Name=\"AbteilungItem_" +
+                "MitarbeiterItem\"><End Role=\"AbteilungItem\" Type=\"LightSwitchApplication.Abteilun" +
+                "gItem\" Multiplicity=\"0..1\" /><End Role=\"MitarbeiterItem\" Type=\"LightSwitchApplic" +
+                "ation.MitarbeiterItem\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role" +
+                "=\"AbteilungItem\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Mitarbeit" +
+                "erItem\"><PropertyRef Name=\"AbteilungItem_MitarbeiterItem\" /></Dependent></Refere" +
+                "ntialConstraint></Association><Association Name=\"AbteilungItem_ProjektItem\"><End" +
+                " Role=\"AbteilungItem\" Type=\"LightSwitchApplication.AbteilungItem\" Multiplicity=\"" +
+                "0..1\" /><End Role=\"ProjektItem\" Type=\"LightSwitchApplication.ProjektItem\" Multip" +
+                "licity=\"*\" /><ReferentialConstraint><Principal Role=\"AbteilungItem\"><PropertyRef" +
+                " Name=\"Id\" /></Principal><Dependent Role=\"ProjektItem\"><PropertyRef Name=\"Abteil" +
+                "ungItem_ProjektItem\" /></Dependent></ReferentialConstraint></Association><Associ" +
+                "ation Name=\"VertragItem_MitarbeiterItem\"><End Role=\"MitarbeiterItem\" Type=\"Light" +
+                "SwitchApplication.MitarbeiterItem\" Multiplicity=\"1\" /><End Role=\"VertragItem\" Ty" +
+                "pe=\"LightSwitchApplication.VertragItem\" Multiplicity=\"*\" /><ReferentialConstrain" +
+                "t><Principal Role=\"MitarbeiterItem\"><PropertyRef Name=\"Id\" /></Principal><Depend" +
+                "ent Role=\"VertragItem\"><PropertyRef Name=\"VertragItem_MitarbeiterItem\" /></Depen" +
+                "dent></ReferentialConstraint></Association><Association Name=\"AbteilungItem_Mita" +
+                "rbeiterItem1\"><End Role=\"MitarbeiterItem\" Type=\"LightSwitchApplication.Mitarbeit" +
+                "erItem\" Multiplicity=\"1\"><OnDelete Action=\"Cascade\" /></End><End Role=\"Abteilung" +
+                "Item\" Type=\"LightSwitchApplication.AbteilungItem\" Multiplicity=\"*\" /><Referentia" +
+                "lConstraint><Principal Role=\"MitarbeiterItem\"><PropertyRef Name=\"Id\" /></Princip" +
+                "al><Dependent Role=\"AbteilungItem\"><PropertyRef Name=\"AbteilungItem_MitarbeiterI" +
+                "tem1\" /></Dependent></ReferentialConstraint></Association><Association Name=\"Ste" +
+                "llenanteilItem_ProjektItem\"><End Role=\"ProjektItem\" Type=\"LightSwitchApplication" +
+                ".ProjektItem\" Multiplicity=\"1\" /><End Role=\"StellenanteilItem\" Type=\"LightSwitch" +
+                "Application.StellenanteilItem\" Multiplicity=\"*\" /><ReferentialConstraint><Princi" +
+                "pal Role=\"ProjektItem\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"Ste" +
+                "llenanteilItem\"><PropertyRef Name=\"StellenanteilItem_ProjektItem\" /></Dependent>" +
+                "</ReferentialConstraint></Association><Association Name=\"BeschäftigungsArtItem_V" +
+                "ertragItem\"><End Role=\"BeschäftigungsArtItem\" Type=\"LightSwitchApplication.Besch" +
+                "äftigungsArtItem\" Multiplicity=\"1\" /><End Role=\"VertragItem\" Type=\"LightSwitchAp" +
+                "plication.VertragItem\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role" +
+                "=\"BeschäftigungsArtItem\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"V" +
+                "ertragItem\"><PropertyRef Name=\"BeschäftigungsArtItem_VertragItem\" /></Dependent>" +
+                "</ReferentialConstraint></Association><Association Name=\"VertragItem_Stellenante" +
+                "ilItem\"><End Role=\"VertragItem\" Type=\"LightSwitchApplication.VertragItem\" Multip" +
+                "licity=\"1\" /><End Role=\"StellenanteilItem\" Type=\"LightSwitchApplication.Stellena" +
+                "nteilItem\" Multiplicity=\"*\" /><ReferentialConstraint><Principal Role=\"VertragIte" +
+                "m\"><PropertyRef Name=\"Id\" /></Principal><Dependent Role=\"StellenanteilItem\"><Pro" +
+                "pertyRef Name=\"VertragItem_StellenanteilItem\" /></Dependent></ReferentialConstra" +
+                "int></Association><EntityContainer Name=\"ApplicationData\" m:IsDefaultEntityConta" +
+                "iner=\"true\"><EntitySet Name=\"AbteilungItemSet\" EntityType=\"LightSwitchApplicatio" +
+                "n.AbteilungItem\" /><EntitySet Name=\"BeschäftigungsArtItemSet\" EntityType=\"LightS" +
+                "witchApplication.BeschäftigungsArtItem\" /><EntitySet Name=\"MitarbeiterItemSet\" E" +
+                "ntityType=\"LightSwitchApplication.MitarbeiterItem\" /><EntitySet Name=\"ProjektIte" +
+                "mSet\" EntityType=\"LightSwitchApplication.ProjektItem\" /><EntitySet Name=\"Stellen" +
+                "anteilItemSet\" EntityType=\"LightSwitchApplication.StellenanteilItem\" /><EntitySe" +
+                "t Name=\"VertragItemSet\" EntityType=\"LightSwitchApplication.VertragItem\" /><Assoc" +
+                "iationSet Name=\"AbteilungItem_MitarbeiterItem\" Association=\"LightSwitchApplicati" +
+                "on.AbteilungItem_MitarbeiterItem\"><End Role=\"AbteilungItem\" EntitySet=\"Abteilung" +
+                "ItemSet\" /><End Role=\"MitarbeiterItem\" EntitySet=\"MitarbeiterItemSet\" /></Associ" +
+                "ationSet><AssociationSet Name=\"AbteilungItem_ProjektItem\" Association=\"LightSwit" +
+                "chApplication.AbteilungItem_ProjektItem\"><End Role=\"AbteilungItem\" EntitySet=\"Ab" +
+                "teilungItemSet\" /><End Role=\"ProjektItem\" EntitySet=\"ProjektItemSet\" /></Associa" +
+                "tionSet><AssociationSet Name=\"VertragItem_MitarbeiterItem\" Association=\"LightSwi" +
+                "tchApplication.VertragItem_MitarbeiterItem\"><End Role=\"MitarbeiterItem\" EntitySe" +
+                "t=\"MitarbeiterItemSet\" /><End Role=\"VertragItem\" EntitySet=\"VertragItemSet\" /></" +
+                "AssociationSet><AssociationSet Name=\"AbteilungItem_MitarbeiterItem1\" Association" +
+                "=\"LightSwitchApplication.AbteilungItem_MitarbeiterItem1\"><End Role=\"MitarbeiterI" +
+                "tem\" EntitySet=\"MitarbeiterItemSet\" /><End Role=\"AbteilungItem\" EntitySet=\"Abtei" +
+                "lungItemSet\" /></AssociationSet><AssociationSet Name=\"StellenanteilItem_ProjektI" +
+                "tem\" Association=\"LightSwitchApplication.StellenanteilItem_ProjektItem\"><End Rol" +
+                "e=\"ProjektItem\" EntitySet=\"ProjektItemSet\" /><End Role=\"StellenanteilItem\" Entit" +
+                "ySet=\"StellenanteilItemSet\" /></AssociationSet><AssociationSet Name=\"Beschäftigu" +
+                "ngsArtItem_VertragItem\" Association=\"LightSwitchApplication.BeschäftigungsArtIte" +
+                "m_VertragItem\"><End Role=\"BeschäftigungsArtItem\" EntitySet=\"BeschäftigungsArtIte" +
+                "mSet\" /><End Role=\"VertragItem\" EntitySet=\"VertragItemSet\" /></AssociationSet><A" +
+                "ssociationSet Name=\"VertragItem_StellenanteilItem\" Association=\"LightSwitchAppli" +
+                "cation.VertragItem_StellenanteilItem\"><End Role=\"VertragItem\" EntitySet=\"Vertrag" +
+                "ItemSet\" /><End Role=\"StellenanteilItem\" EntitySet=\"StellenanteilItemSet\" /></As" +
+                "sociationSet><FunctionImport Name=\"aktuelleMitarbeiter\" ReturnType=\"Collection(L" +
+                "ightSwitchApplication.MitarbeiterItem)\" EntitySet=\"MitarbeiterItemSet\" m:HttpMet" +
+                "hod=\"GET\" /><FunctionImport Name=\"ausgeschiedeneMitarbeiter\" ReturnType=\"Collect" +
+                "ion(LightSwitchApplication.MitarbeiterItem)\" EntitySet=\"MitarbeiterItemSet\" m:Ht" +
+                "tpMethod=\"GET\" /><FunctionImport Name=\"Microsoft_LightSwitch_GetCanInformation\" " +
+                "ReturnType=\"Edm.String\" m:HttpMethod=\"GET\"><Parameter Name=\"dataServiceMembers\" " +
+                "Type=\"Edm.String\" Mode=\"In\" /></FunctionImport></EntityContainer></Schema></edmx" +
+                ":DataServices></edmx:Edmx>";
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
             private static string GetConcatenatedEdmxString()
             {
@@ -1925,25 +1973,6 @@ namespace LightSwitchApplication.Implementation
         partial void OnRowVersionChanging(byte[] value);
         partial void OnRowVersionChanged();
         /// <summary>
-        /// Im Schema sind keine Kommentare für "VertragItemCollection" vorhanden.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceCollection<VertragItem> VertragItemCollection
-        {
-            get
-            {
-                this.@__VertragItemCollection.EnsureValueInitialized();
-                return this._VertragItemCollection;
-            }
-            set
-            {
-                this._VertragItemCollection = value;
-                this.OnPropertyChanged("VertragItemCollection");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceCollection<VertragItem> _VertragItemCollection = new global::System.Data.Services.Client.DataServiceCollection<VertragItem>(null, global::System.Data.Services.Client.TrackingMode.None);
-        /// <summary>
         /// Im Schema sind keine Kommentare für "AbteilungItem" vorhanden.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -1990,6 +2019,400 @@ namespace LightSwitchApplication.Implementation
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private AbteilungItem _AbteilungItem;
+        /// <summary>
+        /// Im Schema sind keine Kommentare für "StellenanteilItem" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceCollection<StellenanteilItem> StellenanteilItem
+        {
+            get
+            {
+                this.@__StellenanteilItem.EnsureValueInitialized();
+                return this._StellenanteilItem;
+            }
+            set
+            {
+                this._StellenanteilItem = value;
+                this.OnPropertyChanged("StellenanteilItem");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceCollection<StellenanteilItem> _StellenanteilItem = new global::System.Data.Services.Client.DataServiceCollection<StellenanteilItem>(null, global::System.Data.Services.Client.TrackingMode.None);
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// Im Schema sind keine Kommentare für "LightSwitchApplication.StellenanteilItem" vorhanden.
+    /// </summary>
+    /// <KeyProperties>
+    /// Id
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.EntitySetAttribute("StellenanteilItemSet")]
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("Id")]
+    public partial class StellenanteilItem : global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityBase, global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Erstellt ein neues StellenanteilItem-Objekt.
+        /// </summary>
+        /// <param name="ID">Anfangswert von Id.</param>
+        /// <param name="stellenanteil">Anfangswert von Stellenanteil.</param>
+        /// <param name="vertragItem_StellenanteilItem">Anfangswert von VertragItem_StellenanteilItem.</param>
+        /// <param name="stellenanteilItem_ProjektItem">Anfangswert von StellenanteilItem_ProjektItem.</param>
+        /// <param name="rowVersion">Anfangswert von RowVersion.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static StellenanteilItem CreateStellenanteilItem(int ID, decimal stellenanteil, int vertragItem_StellenanteilItem, int stellenanteilItem_ProjektItem, byte[] rowVersion)
+        {
+            StellenanteilItem stellenanteilItem = new StellenanteilItem();
+            stellenanteilItem.Id = ID;
+            stellenanteilItem.Stellenanteil = stellenanteil;
+            stellenanteilItem.VertragItem_StellenanteilItem = vertragItem_StellenanteilItem;
+            stellenanteilItem.StellenanteilItem_ProjektItem = stellenanteilItem_ProjektItem;
+            stellenanteilItem.RowVersion = rowVersion;
+            return stellenanteilItem;
+        }
+        /// <summary>
+        /// Im Schema sind keine Kommentare für die Eigenschaft "Id" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int Id
+        {
+            get
+            {
+                return this._Id;
+            }
+            set
+            {
+                this.OnIdChanging(value);
+                if (object.Equals(this.Id, value))
+                {
+                    return;
+                }
+                this._Id = value;
+                this.OnIdChanged();
+                this.OnPropertyChanged("Id");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _Id;
+        partial void OnIdChanging(int value);
+        partial void OnIdChanged();
+        /// <summary>
+        /// Im Schema sind keine Kommentare für die Eigenschaft "Stellenanteil" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public decimal Stellenanteil
+        {
+            get
+            {
+                return this._Stellenanteil;
+            }
+            set
+            {
+                this.OnStellenanteilChanging(value);
+                if (object.Equals(this.Stellenanteil, value))
+                {
+                    return;
+                }
+                this._Stellenanteil = value;
+                this.OnStellenanteilChanged();
+                this.OnPropertyChanged("Stellenanteil");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private decimal _Stellenanteil;
+        partial void OnStellenanteilChanging(decimal value);
+        partial void OnStellenanteilChanged();
+        /// <summary>
+        /// Im Schema sind keine Kommentare für die Eigenschaft "VertragItem_StellenanteilItem" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int VertragItem_StellenanteilItem
+        {
+            get
+            {
+                return this._VertragItem_StellenanteilItem;
+            }
+            set
+            {
+                this.OnVertragItem_StellenanteilItemChanging(value);
+                if (object.Equals(this.VertragItem_StellenanteilItem, value))
+                {
+                    return;
+                }
+                this._VertragItem_StellenanteilItem = value;
+                this.OnVertragItem_StellenanteilItemChanged();
+                this.OnPropertyChanged("VertragItem_StellenanteilItem");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _VertragItem_StellenanteilItem;
+        partial void OnVertragItem_StellenanteilItemChanging(int value);
+        partial void OnVertragItem_StellenanteilItemChanged();
+        /// <summary>
+        /// Im Schema sind keine Kommentare für die Eigenschaft "StellenanteilItem_ProjektItem" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public int StellenanteilItem_ProjektItem
+        {
+            get
+            {
+                return this._StellenanteilItem_ProjektItem;
+            }
+            set
+            {
+                this.OnStellenanteilItem_ProjektItemChanging(value);
+                if (object.Equals(this.StellenanteilItem_ProjektItem, value))
+                {
+                    return;
+                }
+                this._StellenanteilItem_ProjektItem = value;
+                this.OnStellenanteilItem_ProjektItemChanged();
+                this.OnPropertyChanged("StellenanteilItem_ProjektItem");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private int _StellenanteilItem_ProjektItem;
+        partial void OnStellenanteilItem_ProjektItemChanging(int value);
+        partial void OnStellenanteilItem_ProjektItemChanged();
+        /// <summary>
+        /// Im Schema sind keine Kommentare für die Eigenschaft "CreatedBy" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string CreatedBy
+        {
+            get
+            {
+                return this._CreatedBy;
+            }
+            set
+            {
+                this.OnCreatedByChanging(value);
+                if (object.Equals(this.CreatedBy, value))
+                {
+                    return;
+                }
+                this._CreatedBy = value;
+                this.OnCreatedByChanged();
+                this.OnPropertyChanged("CreatedBy");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _CreatedBy;
+        partial void OnCreatedByChanging(string value);
+        partial void OnCreatedByChanged();
+        /// <summary>
+        /// Im Schema sind keine Kommentare für die Eigenschaft "Created" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<global::System.DateTimeOffset> Created
+        {
+            get
+            {
+                return this._Created;
+            }
+            set
+            {
+                this.OnCreatedChanging(value);
+                if (object.Equals(this.Created, value))
+                {
+                    return;
+                }
+                this._Created = value;
+                this.OnCreatedChanged();
+                this.OnPropertyChanged("Created");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _Created;
+        partial void OnCreatedChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnCreatedChanged();
+        /// <summary>
+        /// Im Schema sind keine Kommentare für die Eigenschaft "ModifiedBy" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string ModifiedBy
+        {
+            get
+            {
+                return this._ModifiedBy;
+            }
+            set
+            {
+                this.OnModifiedByChanging(value);
+                if (object.Equals(this.ModifiedBy, value))
+                {
+                    return;
+                }
+                this._ModifiedBy = value;
+                this.OnModifiedByChanged();
+                this.OnPropertyChanged("ModifiedBy");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _ModifiedBy;
+        partial void OnModifiedByChanging(string value);
+        partial void OnModifiedByChanged();
+        /// <summary>
+        /// Im Schema sind keine Kommentare für die Eigenschaft "Modified" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<global::System.DateTimeOffset> Modified
+        {
+            get
+            {
+                return this._Modified;
+            }
+            set
+            {
+                this.OnModifiedChanging(value);
+                if (object.Equals(this.Modified, value))
+                {
+                    return;
+                }
+                this._Modified = value;
+                this.OnModifiedChanged();
+                this.OnPropertyChanged("Modified");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _Modified;
+        partial void OnModifiedChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnModifiedChanged();
+        /// <summary>
+        /// Im Schema sind keine Kommentare für die Eigenschaft "RowVersion" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public byte[] RowVersion
+        {
+            get
+            {
+                if ((this._RowVersion != null))
+                {
+                    return ((byte[])(this._RowVersion.Clone()));
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            set
+            {
+                this.OnRowVersionChanging(value);
+                if (object.Equals(this.RowVersion, value))
+                {
+                    return;
+                }
+                this._RowVersion = value;
+                this.OnRowVersionChanged();
+                this.OnPropertyChanged("RowVersion");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private byte[] _RowVersion;
+        partial void OnRowVersionChanging(byte[] value);
+        partial void OnRowVersionChanged();
+        /// <summary>
+        /// Im Schema sind keine Kommentare für "VertragItem" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public VertragItem VertragItem
+        {
+            get
+            {
+                this.@__VertragItem.EnsureValueInitialized();
+                return this._VertragItem;
+            }
+            set
+            {
+                VertragItem previous = this.VertragItem;
+                if ((previous == value))
+                {
+                    return;
+                }
+                if ((previous != null))
+                {
+                    this._VertragItem = null;
+                    this.@__VertragItem.OnValueSet();
+                    previous.StellenanteilItemCollection.Remove(this);
+                }
+                if ((this.___Host != null))
+                {
+                    if ((value != null))
+                    {
+                        this.VertragItem_StellenanteilItem = value.Id;
+                    }
+                    else
+                    {
+                        this.VertragItem_StellenanteilItem = default(int);
+                    }
+                }
+                this._VertragItem = value;
+                this.@__VertragItem.OnValueSet();
+                if ((value != null))
+                {
+                    value.@__StellenanteilItemCollection.Add(this);
+                }
+                this.___OnPropertyChanged("VertragItem");
+                this.OnPropertyChanged("VertragItem");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private VertragItem _VertragItem;
+        /// <summary>
+        /// Im Schema sind keine Kommentare für "ProjektItem" vorhanden.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public ProjektItem ProjektItem
+        {
+            get
+            {
+                this.@__ProjektItem.EnsureValueInitialized();
+                return this._ProjektItem;
+            }
+            set
+            {
+                ProjektItem previous = this.ProjektItem;
+                if ((previous == value))
+                {
+                    return;
+                }
+                if ((previous != null))
+                {
+                    this._ProjektItem = null;
+                    this.@__ProjektItem.OnValueSet();
+                    previous.StellenanteilItem.Remove(this);
+                }
+                if ((this.___Host != null))
+                {
+                    if ((value != null))
+                    {
+                        this.StellenanteilItem_ProjektItem = value.Id;
+                    }
+                    else
+                    {
+                        this.StellenanteilItem_ProjektItem = default(int);
+                    }
+                }
+                this._ProjektItem = value;
+                this.@__ProjektItem.OnValueSet();
+                if ((value != null))
+                {
+                    value.@__StellenanteilItem.Add(this);
+                }
+                this.___OnPropertyChanged("ProjektItem");
+                this.OnPropertyChanged("ProjektItem");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private ProjektItem _ProjektItem;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -2019,11 +2442,9 @@ namespace LightSwitchApplication.Implementation
         /// <param name="bis">Anfangswert von bis.</param>
         /// <param name="vertragItem_MitarbeiterItem">Anfangswert von VertragItem_MitarbeiterItem.</param>
         /// <param name="beschäftigungsArtItem_VertragItem">Anfangswert von BeschäftigungsArtItem_VertragItem.</param>
-        /// <param name="vertragItem_ProjektItem">Anfangswert von VertragItem_ProjektItem.</param>
-        /// <param name="stellenanteil">Anfangswert von Stellenanteil.</param>
         /// <param name="rowVersion">Anfangswert von RowVersion.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static VertragItem CreateVertragItem(int ID, global::System.DateTime von, global::System.DateTime bis, int vertragItem_MitarbeiterItem, int beschäftigungsArtItem_VertragItem, int vertragItem_ProjektItem, decimal stellenanteil, byte[] rowVersion)
+        public static VertragItem CreateVertragItem(int ID, global::System.DateTime von, global::System.DateTime bis, int vertragItem_MitarbeiterItem, int beschäftigungsArtItem_VertragItem, byte[] rowVersion)
         {
             VertragItem vertragItem = new VertragItem();
             vertragItem.Id = ID;
@@ -2031,8 +2452,6 @@ namespace LightSwitchApplication.Implementation
             vertragItem.bis = bis;
             vertragItem.VertragItem_MitarbeiterItem = vertragItem_MitarbeiterItem;
             vertragItem.BeschäftigungsArtItem_VertragItem = beschäftigungsArtItem_VertragItem;
-            vertragItem.VertragItem_ProjektItem = vertragItem_ProjektItem;
-            vertragItem.Stellenanteil = stellenanteil;
             vertragItem.RowVersion = rowVersion;
             return vertragItem;
         }
@@ -2166,58 +2585,6 @@ namespace LightSwitchApplication.Implementation
         private int _BeschäftigungsArtItem_VertragItem;
         partial void OnBeschäftigungsArtItem_VertragItemChanging(int value);
         partial void OnBeschäftigungsArtItem_VertragItemChanged();
-        /// <summary>
-        /// Im Schema sind keine Kommentare für die Eigenschaft "VertragItem_ProjektItem" vorhanden.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public int VertragItem_ProjektItem
-        {
-            get
-            {
-                return this._VertragItem_ProjektItem;
-            }
-            set
-            {
-                this.OnVertragItem_ProjektItemChanging(value);
-                if (object.Equals(this.VertragItem_ProjektItem, value))
-                {
-                    return;
-                }
-                this._VertragItem_ProjektItem = value;
-                this.OnVertragItem_ProjektItemChanged();
-                this.OnPropertyChanged("VertragItem_ProjektItem");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private int _VertragItem_ProjektItem;
-        partial void OnVertragItem_ProjektItemChanging(int value);
-        partial void OnVertragItem_ProjektItemChanged();
-        /// <summary>
-        /// Im Schema sind keine Kommentare für die Eigenschaft "Stellenanteil" vorhanden.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public decimal Stellenanteil
-        {
-            get
-            {
-                return this._Stellenanteil;
-            }
-            set
-            {
-                this.OnStellenanteilChanging(value);
-                if (object.Equals(this.Stellenanteil, value))
-                {
-                    return;
-                }
-                this._Stellenanteil = value;
-                this.OnStellenanteilChanged();
-                this.OnPropertyChanged("Stellenanteil");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private decimal _Stellenanteil;
-        partial void OnStellenanteilChanging(decimal value);
-        partial void OnStellenanteilChanged();
         /// <summary>
         /// Im Schema sind keine Kommentare für die Eigenschaft "CreatedBy" vorhanden.
         /// </summary>
@@ -2450,52 +2817,24 @@ namespace LightSwitchApplication.Implementation
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private BeschäftigungsArtItem _BeschäftigungsArtItem;
         /// <summary>
-        /// Im Schema sind keine Kommentare für "ProjektItem" vorhanden.
+        /// Im Schema sind keine Kommentare für "StellenanteilItemCollection" vorhanden.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public ProjektItem ProjektItem
+        public global::System.Data.Services.Client.DataServiceCollection<StellenanteilItem> StellenanteilItemCollection
         {
             get
             {
-                this.@__ProjektItem.EnsureValueInitialized();
-                return this._ProjektItem;
+                this.@__StellenanteilItemCollection.EnsureValueInitialized();
+                return this._StellenanteilItemCollection;
             }
             set
             {
-                ProjektItem previous = this.ProjektItem;
-                if ((previous == value))
-                {
-                    return;
-                }
-                if ((previous != null))
-                {
-                    this._ProjektItem = null;
-                    this.@__ProjektItem.OnValueSet();
-                    previous.VertragItemCollection.Remove(this);
-                }
-                if ((this.___Host != null))
-                {
-                    if ((value != null))
-                    {
-                        this.VertragItem_ProjektItem = value.Id;
-                    }
-                    else
-                    {
-                        this.VertragItem_ProjektItem = default(int);
-                    }
-                }
-                this._ProjektItem = value;
-                this.@__ProjektItem.OnValueSet();
-                if ((value != null))
-                {
-                    value.@__VertragItemCollection.Add(this);
-                }
-                this.___OnPropertyChanged("ProjektItem");
-                this.OnPropertyChanged("ProjektItem");
+                this._StellenanteilItemCollection = value;
+                this.OnPropertyChanged("StellenanteilItemCollection");
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private ProjektItem _ProjektItem;
+        private global::System.Data.Services.Client.DataServiceCollection<StellenanteilItem> _StellenanteilItemCollection = new global::System.Data.Services.Client.DataServiceCollection<StellenanteilItem>(null, global::System.Data.Services.Client.TrackingMode.None);
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]

@@ -8,6 +8,8 @@
     Name="VertragItem">
     <EntityType.Attributes>
       <CreatedModifiedPropertiesEnabled />
+      <DisplayName
+        Value="Vertrag" />
     </EntityType.Attributes>
     <EntityType.Methods>
       <EntityMethod
@@ -64,22 +66,15 @@
         </NavigationProperty.Attributes>
       </NavigationProperty>
       <NavigationProperty
-        Name="ProjektItem"
-        Association="VertragItem_ProjektItem"
+        Name="StellenanteilItemCollection"
+        Association="VertragItem_StellenanteilItem"
         FromEnd="VertragItem"
-        ToEnd="ProjektItem" />
+        ToEnd="StellenanteilItem" />
       <EntityProperty
         Name="Stellenanteil"
-        PropertyType=":Decimal">
+        PropertyType=":Decimal?">
         <EntityProperty.Attributes>
-          <Required />
-          <NotSearchable />
-          <DecimalConstraint
-            Precision="3"
-            Scale="2" />
-          <Range
-            Maximum="1"
-            Minimum="0" />
+          <Computed />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -235,6 +230,16 @@
         Name="VertragItem"
         EntitySet="VertragItemSet" />
     </AssociationSet>
+    <AssociationSet
+      Name="VertragItem_StellenanteilItemSet"
+      Association="VertragItem_StellenanteilItem">
+      <AssociationSetEnd
+        Name="VertragItem"
+        EntitySet="VertragItemSet" />
+      <AssociationSetEnd
+        Name="StellenanteilItem"
+        EntitySet="StellenanteilItemSet" />
+    </AssociationSet>
   </EntityContainer>
   <DataService
     Name="ApplicationDataMapping">
@@ -262,5 +267,42 @@
           Type="int" />
       </EntitySetMapping.Attributes>
     </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="VertragItem_StellenanteilItemSet">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="VertragItem_StellenanteilItemSet" />
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[VertragItem_StellenanteilItemSet]/Members[VertragItem]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="ApplicationData/Members[VertragItem_StellenanteilItemSet]/Members[StellenanteilItem]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="VertragItem_StellenanteilItem" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
   </DataService>
+  <Association
+    Name="VertragItem_StellenanteilItem">
+    <AssociationEnd
+      Name="VertragItem"
+      Multiplicity="One"
+      EntityType="VertragItem">
+      <AssociationEnd.Attributes>
+        <DeleteRule
+          Action="Cascade" />
+      </AssociationEnd.Attributes>
+    </AssociationEnd>
+    <AssociationEnd
+      Name="StellenanteilItem"
+      Multiplicity="Many"
+      EntityType="StellenanteilItem" />
+  </Association>
 </ServiceApplication>

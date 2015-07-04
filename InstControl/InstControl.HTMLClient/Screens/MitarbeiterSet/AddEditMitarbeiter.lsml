@@ -141,6 +141,19 @@
                 Name="right"
                 Kind="Group">
                 <ContentItem
+                  Name="PersonalNr"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[PersonalNr]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
                   Name="Raum"
                   Kind="Value"
                   DataType=":String?">

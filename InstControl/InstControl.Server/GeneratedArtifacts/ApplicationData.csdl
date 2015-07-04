@@ -71,8 +71,25 @@
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Modified" Type="Edm.DateTimeOffset" />
     <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
-    <NavigationProperty Name="VertragItemCollection" Relationship="LightSwitchApplication.VertragItem_ProjektItem" ToRole="VertragItem" FromRole="ProjektItem" />
     <NavigationProperty Name="AbteilungItem" Relationship="LightSwitchApplication.AbteilungItem_ProjektItem" ToRole="AbteilungItem" FromRole="ProjektItem" />
+    <NavigationProperty Name="StellenanteilItem" Relationship="LightSwitchApplication.StellenanteilItem_ProjektItem" ToRole="StellenanteilItem" FromRole="ProjektItem" />
+  </EntityType>
+  <EntityType Name="StellenanteilItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Stellenanteil" Type="Edm.Decimal" Nullable="false" Precision="3" Scale="2" />
+    <Property Name="VertragItem_StellenanteilItem" Type="Edm.Int32" Nullable="false" />
+    <Property Name="StellenanteilItem_ProjektItem" Type="Edm.Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="VertragItem" Relationship="LightSwitchApplication.VertragItem_StellenanteilItem" ToRole="VertragItem" FromRole="StellenanteilItem" />
+    <NavigationProperty Name="ProjektItem" Relationship="LightSwitchApplication.StellenanteilItem_ProjektItem" ToRole="ProjektItem" FromRole="StellenanteilItem" />
+    <NavigationProperty Name="VertragJeMonatCollection" Relationship="LightSwitchApplication.VertragJeMonatItem_StellenanteilItem" ToRole="VertragJeMonatItem" FromRole="StellenanteilItem" />
   </EntityType>
   <EntityType Name="VertragItem">
     <Key>
@@ -83,8 +100,6 @@
     <Property Name="bis" Type="Edm.DateTime" Nullable="false" />
     <Property Name="VertragItem_MitarbeiterItem" Type="Edm.Int32" Nullable="false" />
     <Property Name="BeschäftigungsArtItem_VertragItem" Type="Edm.Int32" Nullable="false" />
-    <Property Name="VertragItem_ProjektItem" Type="Edm.Int32" Nullable="false" />
-    <Property Name="Stellenanteil" Type="Edm.Decimal" Nullable="false" Precision="3" Scale="2" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
@@ -92,7 +107,21 @@
     <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
     <NavigationProperty Name="MitarbeiterItem" Relationship="LightSwitchApplication.VertragItem_MitarbeiterItem" ToRole="MitarbeiterItem" FromRole="VertragItem" />
     <NavigationProperty Name="BeschäftigungsArtItem" Relationship="LightSwitchApplication.BeschäftigungsArtItem_VertragItem" ToRole="BeschäftigungsArtItem" FromRole="VertragItem" />
-    <NavigationProperty Name="ProjektItem" Relationship="LightSwitchApplication.VertragItem_ProjektItem" ToRole="ProjektItem" FromRole="VertragItem" />
+    <NavigationProperty Name="StellenanteilItemCollection" Relationship="LightSwitchApplication.VertragItem_StellenanteilItem" ToRole="StellenanteilItem" FromRole="VertragItem" />
+  </EntityType>
+  <EntityType Name="VertragJeMonatItem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Monat" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="VertragJeMonatItem_StellenanteilItem" Type="Edm.Int32" Nullable="false" />
+    <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Created" Type="Edm.DateTimeOffset" />
+    <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
+    <Property Name="Modified" Type="Edm.DateTimeOffset" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="StellenanteilItem" Relationship="LightSwitchApplication.VertragJeMonatItem_StellenanteilItem" ToRole="StellenanteilItem" FromRole="VertragJeMonatItem" />
   </EntityType>
   <Association Name="AbteilungItem_MitarbeiterItem">
     <End Role="AbteilungItem" Type="LightSwitchApplication.AbteilungItem" Multiplicity="0..1" />
@@ -144,15 +173,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="VertragItem_ProjektItem">
+  <Association Name="StellenanteilItem_ProjektItem">
     <End Role="ProjektItem" Type="LightSwitchApplication.ProjektItem" Multiplicity="1" />
-    <End Role="VertragItem" Type="LightSwitchApplication.VertragItem" Multiplicity="*" />
+    <End Role="StellenanteilItem" Type="LightSwitchApplication.StellenanteilItem" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="ProjektItem">
         <PropertyRef Name="Id" />
       </Principal>
-      <Dependent Role="VertragItem">
-        <PropertyRef Name="VertragItem_ProjektItem" />
+      <Dependent Role="StellenanteilItem">
+        <PropertyRef Name="StellenanteilItem_ProjektItem" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -168,12 +197,42 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="VertragItem_StellenanteilItem">
+    <End Role="VertragItem" Type="LightSwitchApplication.VertragItem" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="StellenanteilItem" Type="LightSwitchApplication.StellenanteilItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VertragItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StellenanteilItem">
+        <PropertyRef Name="VertragItem_StellenanteilItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="VertragJeMonatItem_StellenanteilItem">
+    <End Role="StellenanteilItem" Type="LightSwitchApplication.StellenanteilItem" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="VertragJeMonatItem" Type="LightSwitchApplication.VertragJeMonatItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StellenanteilItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VertragJeMonatItem">
+        <PropertyRef Name="VertragJeMonatItem_StellenanteilItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="ApplicationData" m:IsDefaultEntityContainer="true">
     <EntitySet Name="AbteilungItemSet" EntityType="LightSwitchApplication.AbteilungItem" />
     <EntitySet Name="BeschäftigungsArtItemSet" EntityType="LightSwitchApplication.BeschäftigungsArtItem" />
     <EntitySet Name="MitarbeiterItemSet" EntityType="LightSwitchApplication.MitarbeiterItem" />
     <EntitySet Name="ProjektItemSet" EntityType="LightSwitchApplication.ProjektItem" />
+    <EntitySet Name="StellenanteilItemSet" EntityType="LightSwitchApplication.StellenanteilItem" />
     <EntitySet Name="VertragItemSet" EntityType="LightSwitchApplication.VertragItem" />
+    <EntitySet Name="VertragJeMonatItemSet" EntityType="LightSwitchApplication.VertragJeMonatItem" />
     <AssociationSet Name="AbteilungItem_MitarbeiterItem" Association="LightSwitchApplication.AbteilungItem_MitarbeiterItem">
       <End Role="AbteilungItem" EntitySet="AbteilungItemSet" />
       <End Role="MitarbeiterItem" EntitySet="MitarbeiterItemSet" />
@@ -190,13 +249,21 @@
       <End Role="MitarbeiterItem" EntitySet="MitarbeiterItemSet" />
       <End Role="AbteilungItem" EntitySet="AbteilungItemSet" />
     </AssociationSet>
-    <AssociationSet Name="VertragItem_ProjektItem" Association="LightSwitchApplication.VertragItem_ProjektItem">
+    <AssociationSet Name="StellenanteilItem_ProjektItem" Association="LightSwitchApplication.StellenanteilItem_ProjektItem">
       <End Role="ProjektItem" EntitySet="ProjektItemSet" />
-      <End Role="VertragItem" EntitySet="VertragItemSet" />
+      <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
     </AssociationSet>
     <AssociationSet Name="BeschäftigungsArtItem_VertragItem" Association="LightSwitchApplication.BeschäftigungsArtItem_VertragItem">
       <End Role="BeschäftigungsArtItem" EntitySet="BeschäftigungsArtItemSet" />
       <End Role="VertragItem" EntitySet="VertragItemSet" />
+    </AssociationSet>
+    <AssociationSet Name="VertragItem_StellenanteilItem" Association="LightSwitchApplication.VertragItem_StellenanteilItem">
+      <End Role="VertragItem" EntitySet="VertragItemSet" />
+      <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
+    </AssociationSet>
+    <AssociationSet Name="VertragJeMonatItem_StellenanteilItem" Association="LightSwitchApplication.VertragJeMonatItem_StellenanteilItem">
+      <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
+      <End Role="VertragJeMonatItem" EntitySet="VertragJeMonatItemSet" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

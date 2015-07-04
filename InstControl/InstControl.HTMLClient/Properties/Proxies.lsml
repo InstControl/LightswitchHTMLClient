@@ -25,12 +25,6 @@
   <Association>
     <Association.Attributes>
       <Proxy
-        Target="ServiceInterface:VertragItem_ProjektItem" />
-    </Association.Attributes>
-  </Association>
-  <Association>
-    <Association.Attributes>
-      <Proxy
         Target="ServiceInterface:AbteilungItem_MitarbeiterItem" />
     </Association.Attributes>
   </Association>
@@ -44,6 +38,36 @@
     <Association.Attributes>
       <Proxy
         Target="ServiceInterface:AbteilungItem_MitarbeiterItem1" />
+    </Association.Attributes>
+  </Association>
+  <Association>
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:VertragItem_StellenanteilItem" />
+    </Association.Attributes>
+  </Association>
+  <Association>
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:StellenanteilItem_ProjektItem" />
+    </Association.Attributes>
+  </Association>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:MitarbeiterItem" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:VertragJeMonatItem" />
+    </EntityType.Attributes>
+  </EntityType>
+  <Association>
+    <Association.Attributes>
+      <Proxy
+        Target="ServiceInterface:VertragJeMonatItem_StellenanteilItem" />
     </Association.Attributes>
   </Association>
 </Application>

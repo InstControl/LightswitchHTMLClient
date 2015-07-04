@@ -90,75 +90,10 @@
                   </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem
-                  Name="ProjektKurzName"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="VertragItem/Properties[ProjektItem]" />
-                        <MemberExpression
-                          Member="ProjektKurzName" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                  <ContentItem.PropertySources>
-                    <ControlPropertySource
-                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <CallExpression
-                            Target="!module/Methods[showViewProjektItem]">
-                            <ArgumentExpression
-                              Parameter="ProjektItem">
-                              <ChainExpression>
-                                <MemberExpression
-                                  Member="ViewMitarbeiter/Properties[VertragItemCollectionCurrent]" />
-                                <MemberExpression
-                                  Member="selectedItem" />
-                                <MemberExpression
-                                  Member="ProjektItem" />
-                              </ChainExpression>
-                            </ArgumentExpression>
-                          </CallExpression>
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ControlPropertySource>
-                  </ContentItem.PropertySources>
-                </ContentItem>
-                <ContentItem
-                  Name="PSPElement1"
-                  Kind="Value"
-                  DataType=":String?">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="VertragItem/Properties[ProjektItem]" />
-                        <MemberExpression
-                          Member="PSPElement" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="Stellenanteil1"
-                  Kind="Value"
-                  DataType=":Decimal">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="VertragItem/Properties[Stellenanteil]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
                   Name="Art1"
                   Kind="Value"
-                  DataType=":String">
+                  DataType=":String"
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -339,49 +274,6 @@
                       <ChainExpression>
                         <MemberExpression
                           Member="VertragItem/Properties[bis]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="ProjektCode"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="VertragItem/Properties[ProjektItem]" />
-                        <MemberExpression
-                          Member="ProjektKurzName" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="PSPElement"
-                  Kind="Value"
-                  DataType=":String?">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="VertragItem/Properties[ProjektItem]" />
-                        <MemberExpression
-                          Member="PSPElement" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="Stellenanteil"
-                  Kind="Value"
-                  DataType=":Decimal">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="VertragItem/Properties[Stellenanteil]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
@@ -933,6 +825,8 @@
         Name="UpdateTab" />
       <ScreenMethod
         Name="RefreshTabs" />
+      <ScreenMethod
+        Name="DeleteVertrag" />
     </Screen.Methods>
     <Screen.Properties>
       <ScreenProperty
@@ -1018,6 +912,9 @@
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>
+      <ScreenProperty
+        Name="Stellenanteil"
+        PropertyType=":Decimal?" />
       <ScreenCollectionProperty
         Name="VertragItemCollectionPlanned"
         PageSize="45"
@@ -1144,6 +1041,38 @@
           <ChainExpression>
             <CallExpression
               Target="ViewMitarbeiter/Properties[VertragItemCollectionEnded]/Query" />
+          </ChainExpression>
+        </ScreenExpressionTree>
+      </ScreenCollectionProperty>
+      <ScreenCollectionProperty
+        Name="StellenanteilItemCollection"
+        PageSize="45"
+        PropertyType="CollectionView$StellenanteilItem">
+        <ScreenCollectionProperty.Query>
+          <ScreenQueryDefinition
+            Name="StellenanteilItemCollectionQuery"
+            ReturnType="StellenanteilItem*">
+            <ScreenQueryDefinition.FilterExpression>
+              <QueryFilterExpressionTree />
+            </ScreenQueryDefinition.FilterExpression>
+            <ScreenQueryDefinition.Source>
+              <QuerySourceExpressionTree>
+                <ChainExpression>
+                  <MemberExpression
+                    Member="ViewMitarbeiter/Properties[VertragItemCollectionCurrent]" />
+                  <MemberExpression
+                    Member="selectedItem" />
+                  <MemberExpression
+                    Member="StellenanteilItemCollection" />
+                </ChainExpression>
+              </QuerySourceExpressionTree>
+            </ScreenQueryDefinition.Source>
+          </ScreenQueryDefinition>
+        </ScreenCollectionProperty.Query>
+        <ScreenExpressionTree>
+          <ChainExpression>
+            <CallExpression
+              Target="ViewMitarbeiter/Properties[StellenanteilItemCollection]/Query" />
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>

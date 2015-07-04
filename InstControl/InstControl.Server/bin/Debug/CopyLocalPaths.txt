@@ -1,3 +1,7 @@
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\EJ.DataVisualization\Server\Reference\EJ.DataVisualization.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\EJ.DataVisualization\Server\Reference\EJ.DataVisualization.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\EJ.Web\Server\Reference\EJ.Web.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\EJ.Web\Server\Reference\EJ.Web.Server.dll
 C:\Program Files (x86)\Microsoft SDKs\LightSwitch\v5.0\\Server\Microsoft.Data.Edm.dll
 C:\Program Files (x86)\Microsoft SDKs\LightSwitch\v5.0\\Server\Microsoft.Data.OData.dll
 C:\Program Files (x86)\Microsoft SDKs\LightSwitch\v5.0\\Server\Microsoft.Data.Services.Client.dll

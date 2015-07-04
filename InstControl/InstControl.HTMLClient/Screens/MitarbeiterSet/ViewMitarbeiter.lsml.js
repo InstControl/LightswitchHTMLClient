@@ -23,7 +23,9 @@ myapp.ViewMitarbeiter.RefreshTabs_execute = function (screen) {
     screen.VertragItemCollectionPlanned.refresh();
     screen.VertragItemCollectionEnded.refresh();
 };
+
 myapp.ViewMitarbeiter.Tab_VertragItemCollectionPlanned_postRender = function (element, contentItem) {
     // Write code here.
 
 };
+

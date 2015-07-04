@@ -366,29 +366,6 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.VertragItem> VertragItemCollection
-        {
-            get
-            {
-                return global::LightSwitchApplication.ProjektItem.DetailsClass.GetValue(this, global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties.VertragItemCollection);
-            }
-        }
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.VertragItem> VertragItemCollectionQuery
-        {
-            get
-            {
-                return global::LightSwitchApplication.ProjektItem.DetailsClass.GetQuery(this, global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties.VertragItemCollection);
-            }
-        }
-
-        /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::LightSwitchApplication.AbteilungItem AbteilungItem
         {
             get
@@ -407,6 +384,29 @@ namespace LightSwitchApplication
         partial void AbteilungItem_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void AbteilungItem_Changed();
+
+        /// <summary>
+        /// Keine modellierte Beschreibung verfügbar
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.StellenanteilItem> StellenanteilItem
+        {
+            get
+            {
+                return global::LightSwitchApplication.ProjektItem.DetailsClass.GetValue(this, global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties.StellenanteilItem);
+            }
+        }
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.StellenanteilItem> StellenanteilItemQuery
+        {
+            get
+            {
+                return global::LightSwitchApplication.ProjektItem.DetailsClass.GetQuery(this, global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties.StellenanteilItem);
+            }
+        }
 
         #endregion
     
@@ -586,19 +586,19 @@ namespace LightSwitchApplication
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.VertragItem> VertragItemCollection
-                {
-                    get
-                    {
-                        return base.GetItem(global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties.VertragItemCollection) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.VertragItem>;
-                    }
-                }
-                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.AbteilungItem> AbteilungItem
                 {
                     get
                     {
                         return base.GetItem(global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties.AbteilungItem) as global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.StellenanteilItem> StellenanteilItem
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties.StellenanteilItem) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.StellenanteilItem>;
                     }
                 }
                 
@@ -619,8 +619,8 @@ namespace LightSwitchApplication
                 new string ModifiedBy { get; }
                 new global::System.Nullable<global::System.DateTimeOffset> Modified { get; }
                 new byte[] RowVersion { get; set; }
-                new global::System.Collections.IEnumerable VertragItemCollection { get; }
                 new global::Microsoft.LightSwitch.Internal.IEntityImplementation AbteilungItem { get; set; }
+                new global::System.Collections.IEnumerable StellenanteilItem { get; }
             }
             #pragma warning restore 109
     
@@ -1044,26 +1044,6 @@ namespace LightSwitchApplication
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.VertragItem>.Entry
-                    VertragItemCollection = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.VertragItem>.Entry(
-                        "VertragItemCollection",
-                        global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties._VertragItemCollection_Stub,
-                        global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties._VertragItemCollection_GetReferencedEntities,
-                        global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties._VertragItemCollection_GetEntityCollection);
-                private static void _VertragItemCollection_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ProjektItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.VertragItem>.Data> c, global::LightSwitchApplication.ProjektItem.DetailsClass d, object sf)
-                {
-                    c(d, ref d._VertragItemCollection, sf);
-                }
-                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.VertragItem> _VertragItemCollection_GetReferencedEntities(global::LightSwitchApplication.ProjektItem.DetailsClass d)
-                {
-                    return d.GetReferencedEntities<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass>(global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties.VertragItemCollection, ref d._VertragItemCollection);
-                }
-                private static global::System.Collections.IEnumerable _VertragItemCollection_GetEntityCollection(global::LightSwitchApplication.ProjektItem.DetailsClass d)
-                {
-                    return d.ImplementationEntity.VertragItemCollection;
-                }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Entry
                     AbteilungItem = new global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Entry(
                         "AbteilungItem",
@@ -1110,6 +1090,26 @@ namespace LightSwitchApplication
                     e.AbteilungItem_Changed();
                 }
     
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.StellenanteilItem>.Entry
+                    StellenanteilItem = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.StellenanteilItem>.Entry(
+                        "StellenanteilItem",
+                        global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties._StellenanteilItem_Stub,
+                        global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties._StellenanteilItem_GetReferencedEntities,
+                        global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties._StellenanteilItem_GetEntityCollection);
+                private static void _StellenanteilItem_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ProjektItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.StellenanteilItem>.Data> c, global::LightSwitchApplication.ProjektItem.DetailsClass d, object sf)
+                {
+                    c(d, ref d._StellenanteilItem, sf);
+                }
+                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.StellenanteilItem> _StellenanteilItem_GetReferencedEntities(global::LightSwitchApplication.ProjektItem.DetailsClass d)
+                {
+                    return d.GetReferencedEntities<global::LightSwitchApplication.StellenanteilItem, global::LightSwitchApplication.StellenanteilItem.DetailsClass>(global::LightSwitchApplication.ProjektItem.DetailsClass.PropertySetProperties.StellenanteilItem, ref d._StellenanteilItem);
+                }
+                private static global::System.Collections.IEnumerable _StellenanteilItem_GetEntityCollection(global::LightSwitchApplication.ProjektItem.DetailsClass d)
+                {
+                    return d.ImplementationEntity.StellenanteilItem;
+                }
+    
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -1149,10 +1149,10 @@ namespace LightSwitchApplication
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, byte[]>.Data _RowVersion;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.VertragItem>.Data _VertragItemCollection;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Data _AbteilungItem;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Data _AbteilungItem;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.ProjektItem, global::LightSwitchApplication.ProjektItem.DetailsClass, global::LightSwitchApplication.StellenanteilItem>.Data _StellenanteilItem;
             
         }
     

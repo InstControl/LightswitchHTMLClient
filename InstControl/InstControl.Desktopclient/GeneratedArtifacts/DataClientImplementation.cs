@@ -469,32 +469,6 @@ namespace LightSwitchApplication.Implementation
             this.___OnPropertyChanged("RowVersion");
         }
         
-        global::System.Collections.IEnumerable global::LightSwitchApplication.ProjektItem.DetailsClass.IImplementation.VertragItemCollection
-        {
-            get
-            {
-                return this.VertragItemCollection;
-            }
-        }
-        
-        internal global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRefCollection<global::LightSwitchApplication.Implementation.VertragItem> __VertragItemCollection
-        {
-            get
-            {
-                if (this.___VertragItemCollection == null)
-                {
-                    this.___VertragItemCollection = new global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRefCollection<global::LightSwitchApplication.Implementation.VertragItem>(
-                        this,
-                        "VertragItemCollection",
-                        () => this._VertragItemCollection,
-                        e => global::System.Object.Equals(e.VertragItem_ProjektItem, this.Id));
-                }
-                return this.___VertragItemCollection;
-            }
-        }
-        
-        private global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRefCollection<global::LightSwitchApplication.Implementation.VertragItem> ___VertragItemCollection;
-        
         global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.ProjektItem.DetailsClass.IImplementation.AbteilungItem
         {
             get
@@ -527,6 +501,153 @@ namespace LightSwitchApplication.Implementation
         
         private global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRef<global::LightSwitchApplication.Implementation.AbteilungItem> ___AbteilungItem;
         
+        global::System.Collections.IEnumerable global::LightSwitchApplication.ProjektItem.DetailsClass.IImplementation.StellenanteilItem
+        {
+            get
+            {
+                return this.StellenanteilItem;
+            }
+        }
+        
+        internal global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRefCollection<global::LightSwitchApplication.Implementation.StellenanteilItem> __StellenanteilItem
+        {
+            get
+            {
+                if (this.___StellenanteilItem == null)
+                {
+                    this.___StellenanteilItem = new global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRefCollection<global::LightSwitchApplication.Implementation.StellenanteilItem>(
+                        this,
+                        "StellenanteilItem",
+                        () => this._StellenanteilItem,
+                        e => global::System.Object.Equals(e.StellenanteilItem_ProjektItem, this.Id));
+                }
+                return this.___StellenanteilItem;
+            }
+        }
+        
+        private global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRefCollection<global::LightSwitchApplication.Implementation.StellenanteilItem> ___StellenanteilItem;
+        
+    }
+    #endregion
+    
+    #region StellenanteilItem
+    [global::System.Runtime.Serialization.DataContract(Namespace = "http://schemas.datacontract.org/2004/07/ApplicationData.Implementation")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public partial class StellenanteilItem :
+        global::LightSwitchApplication.StellenanteilItem.DetailsClass.IImplementation
+    {
+        partial void OnVertragItem_StellenanteilItemChanged()
+        {
+            this.___OnPropertyChanged("VertragItem_StellenanteilItem");
+            this.___OnPropertyChanged("VertragItem");
+        }
+        
+        partial void OnStellenanteilItem_ProjektItemChanged()
+        {
+            this.___OnPropertyChanged("StellenanteilItem_ProjektItem");
+            this.___OnPropertyChanged("ProjektItem");
+        }
+        
+        partial void OnIdChanged()
+        {
+            this.___OnPropertyChanged("Id");
+        }
+        
+        partial void OnStellenanteilChanged()
+        {
+            this.___OnPropertyChanged("Stellenanteil");
+        }
+        
+        partial void OnCreatedByChanged()
+        {
+            this.___OnPropertyChanged("CreatedBy");
+        }
+        
+        partial void OnCreatedChanged()
+        {
+            this.___OnPropertyChanged("Created");
+        }
+        
+        partial void OnModifiedByChanged()
+        {
+            this.___OnPropertyChanged("ModifiedBy");
+        }
+        
+        partial void OnModifiedChanged()
+        {
+            this.___OnPropertyChanged("Modified");
+        }
+        
+        partial void OnRowVersionChanged()
+        {
+            this.___OnPropertyChanged("RowVersion");
+        }
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.StellenanteilItem.DetailsClass.IImplementation.VertragItem
+        {
+            get
+            {
+                return this.VertragItem;
+            }
+            set
+            {
+                this.VertragItem = (global::LightSwitchApplication.Implementation.VertragItem)value;
+            }
+        }
+        
+        private global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRef<global::LightSwitchApplication.Implementation.VertragItem> __VertragItem
+        {
+            get
+            {
+                if (this.___VertragItem == null)
+                {
+                    this.___VertragItem = new global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRef<global::LightSwitchApplication.Implementation.VertragItem>(
+                        this,
+                        "VertragItem",
+                        new string[] { "VertragItem_StellenanteilItem" },
+                        e => global::System.Object.Equals(e.Id, this.VertragItem_StellenanteilItem),
+                        () => this._VertragItem,
+                        e => this._VertragItem = e);
+                }
+                return this.___VertragItem;
+            }
+        }
+        
+        private global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRef<global::LightSwitchApplication.Implementation.VertragItem> ___VertragItem;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.StellenanteilItem.DetailsClass.IImplementation.ProjektItem
+        {
+            get
+            {
+                return this.ProjektItem;
+            }
+            set
+            {
+                this.ProjektItem = (global::LightSwitchApplication.Implementation.ProjektItem)value;
+            }
+        }
+        
+        private global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRef<global::LightSwitchApplication.Implementation.ProjektItem> __ProjektItem
+        {
+            get
+            {
+                if (this.___ProjektItem == null)
+                {
+                    this.___ProjektItem = new global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRef<global::LightSwitchApplication.Implementation.ProjektItem>(
+                        this,
+                        "ProjektItem",
+                        new string[] { "StellenanteilItem_ProjektItem" },
+                        e => global::System.Object.Equals(e.Id, this.StellenanteilItem_ProjektItem),
+                        () => this._ProjektItem,
+                        e => this._ProjektItem = e);
+                }
+                return this.___ProjektItem;
+            }
+        }
+        
+        private global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRef<global::LightSwitchApplication.Implementation.ProjektItem> ___ProjektItem;
+        
     }
     #endregion
     
@@ -549,12 +670,6 @@ namespace LightSwitchApplication.Implementation
             this.___OnPropertyChanged("BeschäftigungsArtItem");
         }
         
-        partial void OnVertragItem_ProjektItemChanged()
-        {
-            this.___OnPropertyChanged("VertragItem_ProjektItem");
-            this.___OnPropertyChanged("ProjektItem");
-        }
-        
         partial void OnIdChanged()
         {
             this.___OnPropertyChanged("Id");
@@ -568,11 +683,6 @@ namespace LightSwitchApplication.Implementation
         partial void OnbisChanged()
         {
             this.___OnPropertyChanged("bis");
-        }
-        
-        partial void OnStellenanteilChanged()
-        {
-            this.___OnPropertyChanged("Stellenanteil");
         }
         
         partial void OnCreatedByChanged()
@@ -664,37 +774,31 @@ namespace LightSwitchApplication.Implementation
         
         private global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRef<global::LightSwitchApplication.Implementation.BeschäftigungsArtItem> ___BeschäftigungsArtItem;
         
-        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.VertragItem.DetailsClass.IImplementation.ProjektItem
+        global::System.Collections.IEnumerable global::LightSwitchApplication.VertragItem.DetailsClass.IImplementation.StellenanteilItemCollection
         {
             get
             {
-                return this.ProjektItem;
-            }
-            set
-            {
-                this.ProjektItem = (global::LightSwitchApplication.Implementation.ProjektItem)value;
+                return this.StellenanteilItemCollection;
             }
         }
         
-        private global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRef<global::LightSwitchApplication.Implementation.ProjektItem> __ProjektItem
+        internal global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRefCollection<global::LightSwitchApplication.Implementation.StellenanteilItem> __StellenanteilItemCollection
         {
             get
             {
-                if (this.___ProjektItem == null)
+                if (this.___StellenanteilItemCollection == null)
                 {
-                    this.___ProjektItem = new global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRef<global::LightSwitchApplication.Implementation.ProjektItem>(
+                    this.___StellenanteilItemCollection = new global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRefCollection<global::LightSwitchApplication.Implementation.StellenanteilItem>(
                         this,
-                        "ProjektItem",
-                        new string[] { "VertragItem_ProjektItem" },
-                        e => global::System.Object.Equals(e.Id, this.VertragItem_ProjektItem),
-                        () => this._ProjektItem,
-                        e => this._ProjektItem = e);
+                        "StellenanteilItemCollection",
+                        () => this._StellenanteilItemCollection,
+                        e => global::System.Object.Equals(e.VertragItem_StellenanteilItem, this.Id));
                 }
-                return this.___ProjektItem;
+                return this.___StellenanteilItemCollection;
             }
         }
         
-        private global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRef<global::LightSwitchApplication.Implementation.ProjektItem> ___ProjektItem;
+        private global::Microsoft.LightSwitch.ClientGenerated.Implementation.EntityRefCollection<global::LightSwitchApplication.Implementation.StellenanteilItem> ___StellenanteilItemCollection;
         
     }
     #endregion
@@ -721,6 +825,10 @@ namespace LightSwitchApplication.Implementation
             if (typeof(T) == typeof(global::LightSwitchApplication.ProjektItem))
             {
                 return new global::LightSwitchApplication.Implementation.ProjektItem();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.StellenanteilItem))
+            {
+                return new global::LightSwitchApplication.Implementation.StellenanteilItem();
             }
             if (typeof(T) == typeof(global::LightSwitchApplication.VertragItem))
             {
@@ -790,6 +898,10 @@ namespace LightSwitchApplication.Implementation
             if (typeof(global::LightSwitchApplication.ProjektItem) == definitionType)
             {
                 return typeof(global::LightSwitchApplication.Implementation.ProjektItem);
+            }
+            if (typeof(global::LightSwitchApplication.StellenanteilItem) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.StellenanteilItem);
             }
             if (typeof(global::LightSwitchApplication.VertragItem) == definitionType)
             {

@@ -100,12 +100,6 @@
     </_BuildFile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="InstControl.Desktopclient\InstControl.Desktopclient.csproj">
-      <Name>InstControl.Desktopclient</Name>
-      <Project>{0758ebfc-9ea2-445e-aa4a-32fabfd9feaa}</Project>
-      <Private>True</Private>
-      <Type>Client</Type>
-    </ProjectReference>
     <ProjectReference Include="InstControl.HTMLClient\InstControl.HTMLClient.jsproj">
       <Name>InstControl.HTMLClient</Name>
       <Project>{f9419073-fd96-453d-abe4-f6b91316bd45}</Project>
@@ -120,6 +114,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <LightSwitchExtension Include="Extensions\EJ.DataVisualization.lspkg">
+      <ExtensionId>EJ.DataVisualization</ExtensionId>
+      <Server>EJ.DATAVISUALIZATION.COMMON;EJ.DATAVISUALIZATION.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\EJ.Web.lspkg">
+      <ExtensionId>EJ.Web</ExtensionId>
+      <Server>EJ.WEB.COMMON;EJ.WEB.SERVER</Server>
+    </LightSwitchExtension>
     <LightSwitchExtension Include="Extensions\Microsoft.LightSwitch.Cosmopolitan.lspkg">
       <ExtensionId>Microsoft.LightSwitch.Cosmopolitan</ExtensionId>
       <Client>MICROSOFT.LIGHTSWITCH.COSMOPOLITAN.CLIENT</Client>

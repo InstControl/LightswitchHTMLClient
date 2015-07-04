@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
 <ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Documents>
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Properties\ApplicationData\ProjektItemSet.lsml" Checksum="37A812F0DFABFC4A6B91460C23258CC2005DA932C9CDAD4259D0014F19891BA6" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Properties\ApplicationData\VertragItemSet.lsml" Checksum="17BFCD3F10C3BD02A57319058CFDD897E7538898AE9B57CBFFB7EBAAF2363796" />
     <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Properties\Client.lsml" Checksum="221C915BFFFF3C304A81EC171FD3BC9C65D10C005B0F1626FB65356E253FBB1B" />
-    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Properties\Proxies.lsml" Checksum="7B839B8B7A187D4616BE01C7226B44044A3CBE4C4612C75241EACBB585802045" />
+    <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Properties\Proxies.lsml" Checksum="EB771E35F4F75A62A5FFF21035C6D140C029E0C3A407934027E6D6BCCD91BEFE" />
     <Document FullPath="C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Desktopclient\Screens\SearchAbteilungItemSet.lsml" Checksum="9F9CB4FDBDC35FF3B0EF352676FD3612A8DFFCD7AFF216064593D128F280BF6A" />
   </Documents>
 </ModelDocumentManifest>

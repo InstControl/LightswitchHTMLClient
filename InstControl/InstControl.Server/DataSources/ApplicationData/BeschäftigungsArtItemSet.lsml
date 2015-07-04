@@ -8,6 +8,8 @@
     Name="BeschäftigungsArtItem">
     <EntityType.Attributes>
       <CreatedModifiedPropertiesEnabled />
+      <DisplayName
+        Value="Beschäftigungsart" />
     </EntityType.Attributes>
     <EntityType.Methods>
       <EntityMethod

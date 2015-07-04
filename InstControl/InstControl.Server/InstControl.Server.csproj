@@ -58,6 +58,18 @@
     <NoWarn>1522</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EJ.DataVisualization.Common">
+      <HintPath>..\_Pvt_Extensions\EJ.DataVisualization\Server\Reference\EJ.DataVisualization.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EJ.DataVisualization.Server">
+      <HintPath>..\_Pvt_Extensions\EJ.DataVisualization\Server\Reference\EJ.DataVisualization.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="EJ.Web.Common">
+      <HintPath>..\_Pvt_Extensions\EJ.Web\Server\Reference\EJ.Web.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="EJ.Web.Server">
+      <HintPath>..\_Pvt_Extensions\EJ.Web\Server\Reference\EJ.Web.Server.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.LightSwitch.Extensions.Server">
       <HintPath>..\_Pvt_Extensions\Microsoft.LightSwitch.Extensions\Server\Reference\Microsoft.LightSwitch.Extensions.Server.dll</HintPath>
     </Reference>
@@ -195,6 +207,12 @@
     <Compile Include="DataSources\ApplicationData\MitarbeiterItem.lsml.cs">
       <DependentUpon>MitarbeiterItemSet.lsml</DependentUpon>
     </Compile>
+    <Compile Include="DataSources\ApplicationData\StellenanteilItem.lsml.cs">
+      <DependentUpon>StellenanteilItemSet.lsml</DependentUpon>
+    </Compile>
+    <Compile Include="DataSources\ApplicationData\VertragItem.lsml.cs">
+      <DependentUpon>VertragItemSet.lsml</DependentUpon>
+    </Compile>
     <Compile Include="DataSources\ApplicationData\_ApplicationDataService.lsml.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -217,6 +235,8 @@
     <LightSwitchModel Include="DataSources\ApplicationData\aktuelleMitarbeiter.lsml">
       <DependentUpon>MitarbeiterItemSet.lsml</DependentUpon>
     </LightSwitchModel>
+    <LightSwitchModel Include="DataSources\ApplicationData\StellenanteilItemSet.lsml" />
+    <LightSwitchModel Include="DataSources\ApplicationData\VertragJeMonatItemSet.lsml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

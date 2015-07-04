@@ -204,6 +204,42 @@ namespace LightSwitchApplication
         partial void ProjektItemSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.ProjektItem, bool>> filter);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StellenanteilItemSet_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StellenanteilItemSet_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StellenanteilItemSet_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StellenanteilItemSet_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StellenanteilItemSet_Inserting(global::LightSwitchApplication.StellenanteilItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StellenanteilItemSet_Inserted(global::LightSwitchApplication.StellenanteilItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StellenanteilItemSet_Updating(global::LightSwitchApplication.StellenanteilItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StellenanteilItemSet_Updated(global::LightSwitchApplication.StellenanteilItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StellenanteilItemSet_Deleting(global::LightSwitchApplication.StellenanteilItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StellenanteilItemSet_Deleted(global::LightSwitchApplication.StellenanteilItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StellenanteilItemSet_Validate(global::LightSwitchApplication.StellenanteilItem entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void StellenanteilItemSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.StellenanteilItem, bool>> filter);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void VertragItemSet_CanInsert(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -238,6 +274,42 @@ namespace LightSwitchApplication
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void VertragItemSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.VertragItem, bool>> filter);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VertragJeMonatItemSet_CanInsert(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VertragJeMonatItemSet_CanUpdate(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VertragJeMonatItemSet_CanDelete(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VertragJeMonatItemSet_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VertragJeMonatItemSet_Inserting(global::LightSwitchApplication.VertragJeMonatItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VertragJeMonatItemSet_Inserted(global::LightSwitchApplication.VertragJeMonatItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VertragJeMonatItemSet_Updating(global::LightSwitchApplication.VertragJeMonatItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VertragJeMonatItemSet_Updated(global::LightSwitchApplication.VertragJeMonatItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VertragJeMonatItemSet_Deleting(global::LightSwitchApplication.VertragJeMonatItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VertragJeMonatItemSet_Deleted(global::LightSwitchApplication.VertragJeMonatItem entity);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VertragJeMonatItemSet_Validate(global::LightSwitchApplication.VertragJeMonatItem entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void VertragJeMonatItemSet_Filter(ref global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.VertragJeMonatItem, bool>> filter);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void SaveChanges_CanExecute(ref bool result);
@@ -614,6 +686,82 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.StellenanteilItem>
+                __StellenanteilItemSetEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.StellenanteilItem>(
+                    "StellenanteilItemSet",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__StellenanteilItemSet_CanInsert,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__StellenanteilItemSet_CanUpdate,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__StellenanteilItemSet_CanDelete,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__StellenanteilItemSet_CanRead,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__StellenanteilItemSet_Inserting,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__StellenanteilItemSet_Inserted,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__StellenanteilItemSet_Updating,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__StellenanteilItemSet_Updated,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__StellenanteilItemSet_Deleting,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__StellenanteilItemSet_Deleted,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__StellenanteilItemSet_Validate,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__StellenanteilItemSet_Filter);
+            private static bool __StellenanteilItemSet_CanInsert(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.StellenanteilItemSet_CanInsert(ref result);
+                return result;
+            }
+            private static bool __StellenanteilItemSet_CanUpdate(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.StellenanteilItemSet_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __StellenanteilItemSet_CanDelete(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.StellenanteilItemSet_CanDelete(ref result);
+                return result;
+            }
+            private static bool __StellenanteilItemSet_CanRead(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.StellenanteilItemSet_CanRead(ref result);
+                return result;
+            }
+            private static void __StellenanteilItemSet_Inserting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.StellenanteilItem e)
+            {
+                d.StellenanteilItemSet_Inserting(e);
+            }
+            private static void __StellenanteilItemSet_Inserted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.StellenanteilItem e)
+            {
+                d.StellenanteilItemSet_Inserted(e);
+            }
+            private static void __StellenanteilItemSet_Updating(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.StellenanteilItem e)
+            {
+                d.StellenanteilItemSet_Updating(e);
+            }
+            private static void __StellenanteilItemSet_Updated(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.StellenanteilItem e)
+            {
+                d.StellenanteilItemSet_Updated(e);
+            }
+            private static void __StellenanteilItemSet_Deleting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.StellenanteilItem e)
+            {
+                d.StellenanteilItemSet_Deleting(e);
+            }
+            private static void __StellenanteilItemSet_Deleted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.StellenanteilItem e)
+            {
+                d.StellenanteilItemSet_Deleted(e);
+            }
+            private static void __StellenanteilItemSet_Validate(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.StellenanteilItem e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.StellenanteilItemSet_Validate(e, r);
+            }
+            private static global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.StellenanteilItem, bool>> __StellenanteilItemSet_Filter(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.StellenanteilItem, bool>> filter = null;
+                d.StellenanteilItemSet_Filter(ref filter);
+                return filter;
+            }
+            
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.VertragItem>
                 __VertragItemSetEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.VertragItem>(
                     "VertragItemSet",
@@ -685,6 +833,82 @@ namespace LightSwitchApplication
             {
                 global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.VertragItem, bool>> filter = null;
                 d.VertragItemSet_Filter(ref filter);
+                return filter;
+            }
+            
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.VertragJeMonatItem>
+                __VertragJeMonatItemSetEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.VertragJeMonatItem>(
+                    "VertragJeMonatItemSet",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__VertragJeMonatItemSet_CanInsert,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__VertragJeMonatItemSet_CanUpdate,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__VertragJeMonatItemSet_CanDelete,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__VertragJeMonatItemSet_CanRead,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__VertragJeMonatItemSet_Inserting,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__VertragJeMonatItemSet_Inserted,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__VertragJeMonatItemSet_Updating,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__VertragJeMonatItemSet_Updated,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__VertragJeMonatItemSet_Deleting,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__VertragJeMonatItemSet_Deleted,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__VertragJeMonatItemSet_Validate,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__VertragJeMonatItemSet_Filter);
+            private static bool __VertragJeMonatItemSet_CanInsert(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.VertragJeMonatItemSet_CanInsert(ref result);
+                return result;
+            }
+            private static bool __VertragJeMonatItemSet_CanUpdate(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.VertragJeMonatItemSet_CanUpdate(ref result);
+                return result;
+            }
+            private static bool __VertragJeMonatItemSet_CanDelete(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.VertragJeMonatItemSet_CanDelete(ref result);
+                return result;
+            }
+            private static bool __VertragJeMonatItemSet_CanRead(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                bool result = true;
+                d.VertragJeMonatItemSet_CanRead(ref result);
+                return result;
+            }
+            private static void __VertragJeMonatItemSet_Inserting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.VertragJeMonatItem e)
+            {
+                d.VertragJeMonatItemSet_Inserting(e);
+            }
+            private static void __VertragJeMonatItemSet_Inserted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.VertragJeMonatItem e)
+            {
+                d.VertragJeMonatItemSet_Inserted(e);
+            }
+            private static void __VertragJeMonatItemSet_Updating(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.VertragJeMonatItem e)
+            {
+                d.VertragJeMonatItemSet_Updating(e);
+            }
+            private static void __VertragJeMonatItemSet_Updated(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.VertragJeMonatItem e)
+            {
+                d.VertragJeMonatItemSet_Updated(e);
+            }
+            private static void __VertragJeMonatItemSet_Deleting(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.VertragJeMonatItem e)
+            {
+                d.VertragJeMonatItemSet_Deleting(e);
+            }
+            private static void __VertragJeMonatItemSet_Deleted(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.VertragJeMonatItem e)
+            {
+                d.VertragJeMonatItemSet_Deleted(e);
+            }
+            private static void __VertragJeMonatItemSet_Validate(global::LightSwitchApplication.ApplicationDataService d, global::LightSwitchApplication.VertragJeMonatItem e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.VertragJeMonatItemSet_Validate(e, r);
+            }
+            private static global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.VertragJeMonatItem, bool>> __VertragJeMonatItemSet_Filter(global::LightSwitchApplication.ApplicationDataService d)
+            {
+                global::System.Linq.Expressions.Expression<global::System.Func<global::LightSwitchApplication.VertragJeMonatItem, bool>> filter = null;
+                d.VertragJeMonatItemSet_Filter(ref filter);
                 return filter;
             }
             

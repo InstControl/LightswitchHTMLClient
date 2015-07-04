@@ -90,9 +90,17 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.Implementation.ProjektItem();
             }
+            if (type == typeof(global::LightSwitchApplication.Implementation.StellenanteilItem))
+            {
+                return new global::LightSwitchApplication.Implementation.StellenanteilItem();
+            }
             if (type == typeof(global::LightSwitchApplication.Implementation.VertragItem))
             {
                 return new global::LightSwitchApplication.Implementation.VertragItem();
+            }
+            if (type == typeof(global::LightSwitchApplication.Implementation.VertragJeMonatItem))
+            {
+                return new global::LightSwitchApplication.Implementation.VertragJeMonatItem();
             }
     
             return base.CreateObject(type);
@@ -126,9 +134,17 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.Implementation.ProjektItem();
             }
+            if (typeof(T) == typeof(global::LightSwitchApplication.StellenanteilItem))
+            {
+                return new global::LightSwitchApplication.Implementation.StellenanteilItem();
+            }
             if (typeof(T) == typeof(global::LightSwitchApplication.VertragItem))
             {
                 return new global::LightSwitchApplication.Implementation.VertragItem();
+            }
+            if (typeof(T) == typeof(global::LightSwitchApplication.VertragJeMonatItem))
+            {
+                return new global::LightSwitchApplication.Implementation.VertragJeMonatItem();
             }
             return null;
         }
@@ -191,9 +207,17 @@ namespace LightSwitchApplication.Implementation
             {
                 return typeof(global::LightSwitchApplication.Implementation.ProjektItem);
             }
+            if (typeof(global::LightSwitchApplication.StellenanteilItem) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.StellenanteilItem);
+            }
             if (typeof(global::LightSwitchApplication.VertragItem) == definitionType)
             {
                 return typeof(global::LightSwitchApplication.Implementation.VertragItem);
+            }
+            if (typeof(global::LightSwitchApplication.VertragJeMonatItem) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.VertragJeMonatItem);
             }
             return null;
         }
@@ -399,14 +423,6 @@ namespace LightSwitchApplication.Implementation
     
     {
     
-        global::System.Collections.IEnumerable global::LightSwitchApplication.ProjektItem.DetailsClass.IImplementation.VertragItemCollection
-        {
-            get
-            {
-                return this.VertragItemCollection;
-            }
-        }
-        
         global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.ProjektItem.DetailsClass.IImplementation.AbteilungItem
         {
             get
@@ -423,11 +439,110 @@ namespace LightSwitchApplication.Implementation
             }
         }
         
+        global::System.Collections.IEnumerable global::LightSwitchApplication.ProjektItem.DetailsClass.IImplementation.StellenanteilItem
+        {
+            get
+            {
+                return this.StellenanteilItem;
+            }
+        }
+        
         partial void OnAbteilungItem_ProjektItemChanged()
         {
             if (this.__host != null)
             {
                 this.__host.RaisePropertyChanged("AbteilungItem");
+            }
+        }
+        
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(string propertyName)
+        {
+            base.OnPropertyChanged(propertyName);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(propertyName);
+            }
+        }
+        #endregion
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public partial class StellenanteilItem :
+        global::LightSwitchApplication.StellenanteilItem.DetailsClass.IImplementation,
+        global::Microsoft.LightSwitch.Internal.ICreatedModifiedPropertiesImplementation
+    
+    {
+    
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.StellenanteilItem.DetailsClass.IImplementation.VertragItem
+        {
+            get
+            {
+                return this.VertragItem;
+            }
+            set
+            {
+                this.VertragItem = (global::LightSwitchApplication.Implementation.VertragItem)value;
+                if (this.__host != null)
+                {
+                    this.__host.RaisePropertyChanged("VertragItem");
+                }
+            }
+        }
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.StellenanteilItem.DetailsClass.IImplementation.ProjektItem
+        {
+            get
+            {
+                return this.ProjektItem;
+            }
+            set
+            {
+                this.ProjektItem = (global::LightSwitchApplication.Implementation.ProjektItem)value;
+                if (this.__host != null)
+                {
+                    this.__host.RaisePropertyChanged("ProjektItem");
+                }
+            }
+        }
+        
+        global::System.Collections.IEnumerable global::LightSwitchApplication.StellenanteilItem.DetailsClass.IImplementation.VertragJeMonatCollection
+        {
+            get
+            {
+                return this.VertragJeMonatCollection;
+            }
+        }
+        
+        partial void OnVertragItem_StellenanteilItemChanged()
+        {
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged("VertragItem");
+            }
+        }
+        
+        partial void OnStellenanteilItem_ProjektItemChanged()
+        {
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged("ProjektItem");
             }
         }
         
@@ -498,19 +613,11 @@ namespace LightSwitchApplication.Implementation
             }
         }
         
-        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.VertragItem.DetailsClass.IImplementation.ProjektItem
+        global::System.Collections.IEnumerable global::LightSwitchApplication.VertragItem.DetailsClass.IImplementation.StellenanteilItemCollection
         {
             get
             {
-                return this.ProjektItem;
-            }
-            set
-            {
-                this.ProjektItem = (global::LightSwitchApplication.Implementation.ProjektItem)value;
-                if (this.__host != null)
-                {
-                    this.__host.RaisePropertyChanged("ProjektItem");
-                }
+                return this.StellenanteilItemCollection;
             }
         }
         
@@ -530,11 +637,62 @@ namespace LightSwitchApplication.Implementation
             }
         }
         
-        partial void OnVertragItem_ProjektItemChanged()
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(string propertyName)
+        {
+            base.OnPropertyChanged(propertyName);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(propertyName);
+            }
+        }
+        #endregion
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public partial class VertragJeMonatItem :
+        global::LightSwitchApplication.VertragJeMonatItem.DetailsClass.IImplementation,
+        global::Microsoft.LightSwitch.Internal.ICreatedModifiedPropertiesImplementation
+    
+    {
+    
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.VertragJeMonatItem.DetailsClass.IImplementation.StellenanteilItem
+        {
+            get
+            {
+                return this.StellenanteilItem;
+            }
+            set
+            {
+                this.StellenanteilItem = (global::LightSwitchApplication.Implementation.StellenanteilItem)value;
+                if (this.__host != null)
+                {
+                    this.__host.RaisePropertyChanged("StellenanteilItem");
+                }
+            }
+        }
+        
+        partial void OnVertragJeMonatItem_StellenanteilItemChanged()
         {
             if (this.__host != null)
             {
-                this.__host.RaisePropertyChanged("ProjektItem");
+                this.__host.RaisePropertyChanged("StellenanteilItem");
             }
         }
         

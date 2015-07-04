@@ -95,6 +95,15 @@
     <Content Include="Screens\ProjektItemSet\ViewProjektItem.lsml.js">
       <DependentUpon>ViewProjektItem.lsml</DependentUpon>
     </Content>
+    <Content Include="Screens\StellenanteilItemSet\AddEditStellenanteilItem.lsml.js">
+      <DependentUpon>AddEditStellenanteilItem.lsml</DependentUpon>
+    </Content>
+    <Content Include="Screens\StellenanteilItemSet\ViewStellenanteilItem.lsml.js">
+      <DependentUpon>ViewStellenanteilItem.lsml</DependentUpon>
+    </Content>
+    <Content Include="Screens\VertragItemSet\AddEditVertragItem.lsml.js">
+      <DependentUpon>AddEditVertragItem.lsml</DependentUpon>
+    </Content>
     <Content Include="Screens\VertragItemSet\ViewVertragItem.lsml.js">
       <DependentUpon>ViewVertragItem.lsml</DependentUpon>
     </Content>
@@ -121,8 +130,8 @@
   <ItemGroup>
     <LightSwitchModel Include="Properties\ApplicationData\AbteilungItemSet.lsml" />
     <LightSwitchModel Include="Properties\ApplicationData\BeschäftigungsArtItemSet.lsml" />
-    <LightSwitchModel Include="Properties\ApplicationData\MitarbeiterItemSet.lsml" />
     <LightSwitchModel Include="Properties\ApplicationData\ProjektItemSet.lsml" />
+    <LightSwitchModel Include="Properties\ApplicationData\StellenanteilItemSet.lsml" />
     <LightSwitchModel Include="Properties\ApplicationData\VertragItemSet.lsml" />
     <LightSwitchModel Include="Properties\Client.lsml">
       <ProjectCritical>true</ProjectCritical>
@@ -135,6 +144,7 @@
     <LightSwitchModel Include="Screens\BeschäftigungsArtItemSet\BrowseBeschäftigungsArtItemSet.lsml" />
     <LightSwitchModel Include="Screens\BeschäftigungsArtItemSet\ViewBeschäftigungsArtItem.lsml" />
     <LightSwitchModel Include="Screens\Browse.lsml" />
+    <LightSwitchModel Include="Screens\BrowseVertragJeMonatItemSet.lsml" />
     <LightSwitchModel Include="Screens\KontoItem\AddEditKontoItem.lsml" />
     <LightSwitchModel Include="Screens\KontoItem\BrowseKontoItem.lsml" />
     <LightSwitchModel Include="Screens\KontoItem\ViewKontoItem.lsml" />
@@ -144,6 +154,9 @@
     <LightSwitchModel Include="Screens\ProjektItemSet\AddEditProjektItem.lsml" />
     <LightSwitchModel Include="Screens\ProjektItemSet\BrowseProjektItemSet.lsml" />
     <LightSwitchModel Include="Screens\ProjektItemSet\ViewProjektItem.lsml" />
+    <LightSwitchModel Include="Screens\StellenanteilItemSet\AddEditStellenanteilItem.lsml" />
+    <LightSwitchModel Include="Screens\StellenanteilItemSet\BrowseStellenanteilItemSet.lsml" />
+    <LightSwitchModel Include="Screens\StellenanteilItemSet\ViewStellenanteilItem.lsml" />
     <LightSwitchModel Include="Screens\VertragItemSet\AddEditVertragItem.lsml" />
     <LightSwitchModel Include="Screens\VertragItemSet\BrowseVertragItemSet.lsml" />
     <LightSwitchModel Include="Screens\VertragItemSet\ViewVertragItem.lsml" />

@@ -106,6 +106,10 @@ C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Serve
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\Application.Server.dll.config
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\Application.Server.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\Application.Server.pdb
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\EJ.DataVisualization.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\EJ.DataVisualization.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\EJ.Web.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\EJ.Web.Server.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\Microsoft.Data.Edm.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\Microsoft.Data.OData.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\Microsoft.Data.Services.Client.dll
@@ -148,6 +152,5 @@ C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Serve
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\de\System.ServiceModel.DomainServices.Hosting.resources.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\de\System.ServiceModel.DomainServices.Hosting.OData.resources.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\de\System.ServiceModel.DomainServices.Server.resources.dll
-C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\obj\Debug\InstControl.Server.csprojResolveAssemblyReference.cache
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\obj\Debug\Application.Server.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\obj\Debug\Application.Server.pdb
