@@ -29,3 +29,8 @@ myapp.ViewMitarbeiter.Tab_VertragItemCollectionPlanned_postRender = function (el
 
 };
 
+
+myapp.ViewMitarbeiter.DeleteVertrag_execute = function (screen) {
+    // Write code here.
+    screen.VertragItemCollectionEnded.selectedItem.deleteEntity();
+};

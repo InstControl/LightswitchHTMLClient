@@ -20,12 +20,6 @@ namespace LightSwitchApplication
             }
         }
 
-        partial void Stellenanteil_Compute(ref decimal? result)
-        {
-            // Ergebnis auf den gewünschten Feldwert festlegen
-            result = StellenanteilItemCollection.Sum(p => p.Stellenanteil);
-        }
-
         partial void Dauer_Compute(ref int result)
         {
             result = (bis.Year - von.Year) * 12 + bis.Month - von.Month;

@@ -131,24 +131,6 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public int Dauer
-        {
-            get
-            {
-                return global::LightSwitchApplication.VertragItem.DetailsClass.GetValue(this, global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties.Dauer);
-            }
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Dauer_Compute(ref int result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Dauer_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
-
-        /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public global::System.DateTime bis
         {
             get
@@ -173,18 +155,18 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::System.Nullable<decimal> Stellenanteil
+        public int Dauer
         {
             get
             {
-                return global::LightSwitchApplication.VertragItem.DetailsClass.GetValue(this, global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties.Stellenanteil);
+                return global::LightSwitchApplication.VertragItem.DetailsClass.GetValue(this, global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties.Dauer);
             }
         }
         
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Stellenanteil_Compute(ref global::System.Nullable<decimal> result);
+        partial void Dauer_Compute(ref int result);
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void Stellenanteil_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        partial void Dauer_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
 
         /// <summary>
         /// Keine modellierte Beschreibung verfügbar
@@ -476,14 +458,6 @@ namespace LightSwitchApplication
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int> Dauer
-                {
-                    get
-                    {
-                        return base.GetItem(global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties.Dauer) as global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>;
-                    }
-                }
-                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.DateTime> bis
                 {
                     get
@@ -492,11 +466,11 @@ namespace LightSwitchApplication
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<decimal>> Stellenanteil
+                public global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int> Dauer
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties.Stellenanteil) as global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<decimal>>;
+                        return base.GetItem(global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties.Dauer) as global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>;
                     }
                 }
                 
@@ -665,28 +639,6 @@ namespace LightSwitchApplication
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>.Entry
-                    Dauer = new global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>.Entry(
-                        "Dauer",
-                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._Dauer_Stub,
-                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._Dauer_Validate,
-                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._Dauer_ComputeValue);
-                private static void _Dauer_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.VertragItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>.Data> c, global::LightSwitchApplication.VertragItem.DetailsClass d, object sf)
-                {
-                    c(d, ref d._Dauer, sf);
-                }
-                private static void _Dauer_Validate(global::LightSwitchApplication.VertragItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
-                {
-                    e.Dauer_Validate(r);
-                }
-                private static int _Dauer_ComputeValue(global::LightSwitchApplication.VertragItem e)
-                {
-                    int value = default(int);
-                    e.Dauer_Compute(ref value);
-                    return value;
-                }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.DateTime>.Entry
                     bis = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.DateTime>.Entry(
                         "bis",
@@ -724,24 +676,24 @@ namespace LightSwitchApplication
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<decimal>>.Entry
-                    Stellenanteil = new global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<decimal>>.Entry(
-                        "Stellenanteil",
-                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._Stellenanteil_Stub,
-                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._Stellenanteil_Validate,
-                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._Stellenanteil_ComputeValue);
-                private static void _Stellenanteil_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.VertragItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<decimal>>.Data> c, global::LightSwitchApplication.VertragItem.DetailsClass d, object sf)
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>.Entry
+                    Dauer = new global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>.Entry(
+                        "Dauer",
+                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._Dauer_Stub,
+                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._Dauer_Validate,
+                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._Dauer_ComputeValue);
+                private static void _Dauer_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.VertragItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>.Data> c, global::LightSwitchApplication.VertragItem.DetailsClass d, object sf)
                 {
-                    c(d, ref d._Stellenanteil, sf);
+                    c(d, ref d._Dauer, sf);
                 }
-                private static void _Stellenanteil_Validate(global::LightSwitchApplication.VertragItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                private static void _Dauer_Validate(global::LightSwitchApplication.VertragItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
                 {
-                    e.Stellenanteil_Validate(r);
+                    e.Dauer_Validate(r);
                 }
-                private static global::System.Nullable<decimal> _Stellenanteil_ComputeValue(global::LightSwitchApplication.VertragItem e)
+                private static int _Dauer_ComputeValue(global::LightSwitchApplication.VertragItem e)
                 {
-                    global::System.Nullable<decimal> value = default(global::System.Nullable<decimal>);
-                    e.Stellenanteil_Compute(ref value);
+                    int value = default(int);
+                    e.Dauer_Compute(ref value);
                     return value;
                 }
     
@@ -1037,13 +989,10 @@ namespace LightSwitchApplication
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.DateTime>.Data _von;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>.Data _Dauer;
-            
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.DateTime>.Data _bis;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<decimal>>.Data _Stellenanteil;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>.Data _Dauer;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, string>.Data _CreatedBy;

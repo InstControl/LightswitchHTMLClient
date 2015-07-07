@@ -284,7 +284,6 @@ C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\de\
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\packages.config
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\ApplicationData.svc
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\dark-theme-2.5.3.css
-C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\InstControll.css
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.min.css
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\jquery.mobile.structure-1.3.0.css
@@ -351,3 +350,4 @@ C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLCli
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\Resources\msls.lang-de.resjson
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\BrowseVertragJeMonatItemSet.lsml.js

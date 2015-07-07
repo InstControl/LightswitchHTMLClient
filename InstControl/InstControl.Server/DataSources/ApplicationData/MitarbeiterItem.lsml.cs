@@ -8,5 +8,9 @@ namespace LightSwitchApplication
 {
     public partial class MitarbeiterItem
     {
+        partial void Name_Compute(ref string result)
+        {
+            result = Name +", "+ Vorname.ElementAtOrDefault(1);
+        }
     }
 }

@@ -28,3 +28,21 @@ myapp.BrowseMitarbeiterSet.Delete_execute = function (screen) {
 
     });
 };
+
+
+myapp.BrowseMitarbeiterSet.beforeApplyChanges = function (screen) {
+    screen.MitarbeiterAktuell.refresh();
+    screen.MitarbeiterAusgeschieden.refresh();
+    screen.MitarbeiterOhneVertrag.refresh();
+};
+myapp.BrowseMitarbeiterSet.Monate_postRender = function (element, contentItem) {
+    // Write code here.
+    contentItem.value = 2;
+};
+myapp.BrowseMitarbeiterSet.Group4_postRender = function (element, contentItem) {
+    contentItem.displayName = "hallo";
+};
+myapp.BrowseMitarbeiterSet.Group3_postRender = function (element, contentItem) {
+    // Write code here.
+
+};

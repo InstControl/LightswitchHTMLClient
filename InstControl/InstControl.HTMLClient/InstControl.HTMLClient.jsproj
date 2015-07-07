@@ -51,7 +51,6 @@
     <Content Include="Content\Images\msls-white-icons-18.png" />
     <Content Include="Content\Images\msls-white-icons-36.png" />
     <Content Include="Content\Images\msls-blue-icons-36.png" />
-    <Content Include="Content\InstControll.css" />
     <Content Include="Content\jquery.mobile-1.3.0.css" />
     <Content Include="Content\jquery.mobile-1.3.0.min.css" />
     <Content Include="Content\jquery.mobile.structure-1.3.0.css" />
@@ -79,6 +78,9 @@
     </Content>
     <Content Include="Screens\Browse.lsml.js">
       <DependentUpon>Browse.lsml</DependentUpon>
+    </Content>
+    <Content Include="Screens\BrowseVertragJeMonatItemSet.lsml.js">
+      <DependentUpon>BrowseVertragJeMonatItemSet.lsml</DependentUpon>
     </Content>
     <Content Include="Screens\KontoItem\ViewKontoItem.lsml.js">
       <DependentUpon>ViewKontoItem.lsml</DependentUpon>

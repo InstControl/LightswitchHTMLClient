@@ -154,3 +154,4 @@ C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Serve
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\bin\Debug\de\System.ServiceModel.DomainServices.Server.resources.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\obj\Debug\Application.Server.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\obj\Debug\Application.Server.pdb
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\InstControl.Server\obj\Debug\InstControl.Server.csprojResolveAssemblyReference.cache

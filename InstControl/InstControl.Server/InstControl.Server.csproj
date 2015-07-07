@@ -31,8 +31,8 @@
     <WCFRIASERVICESSDKPath Condition=" '$(WCFRIASERVICESSDKPath)' == '' ">$(Registry:HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\WCFRIAServices\v1.0@InstallPath)</WCFRIASERVICESSDKPath>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
-    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
   </PropertyGroup>
@@ -225,18 +225,24 @@
     <Content Include="Web.config" />
     <LightSwitchModel Include="Properties\DataSources\ApplicationData.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\MitarbeiterItemSet.lsml" />
-    <LightSwitchModel Include="DataSources\ApplicationData\ausgeschiedeneMitarbeiter.lsml">
+    <LightSwitchModel Include="DataSources\ApplicationData\MitarbeiterAusgeschieden.lsml">
       <DependentUpon>MitarbeiterItemSet.lsml</DependentUpon>
     </LightSwitchModel>
     <LightSwitchModel Include="DataSources\ApplicationData\VertragItemSet.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\BeschäftigungsArtItemSet.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\ProjektItemSet.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\AbteilungItemSet.lsml" />
-    <LightSwitchModel Include="DataSources\ApplicationData\aktuelleMitarbeiter.lsml">
+    <LightSwitchModel Include="DataSources\ApplicationData\MitarbeiterMitAktuellemVertrag.lsml">
       <DependentUpon>MitarbeiterItemSet.lsml</DependentUpon>
     </LightSwitchModel>
     <LightSwitchModel Include="DataSources\ApplicationData\StellenanteilItemSet.lsml" />
     <LightSwitchModel Include="DataSources\ApplicationData\VertragJeMonatItemSet.lsml" />
+    <LightSwitchModel Include="DataSources\ApplicationData\MitarbeiterOhneAktuellenVertrag.lsml">
+      <DependentUpon>MitarbeiterItemSet.lsml</DependentUpon>
+    </LightSwitchModel>
+    <LightSwitchModel Include="DataSources\ApplicationData\MitarbeiterMitAuslaufendenVertrag.lsml">
+      <DependentUpon>MitarbeiterItemSet.lsml</DependentUpon>
+    </LightSwitchModel>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

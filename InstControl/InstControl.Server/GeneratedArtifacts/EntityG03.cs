@@ -347,6 +347,24 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string Name
+        {
+            get
+            {
+                return global::LightSwitchApplication.MitarbeiterItem.DetailsClass.GetValue(this, global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.Name);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Name_Compute(ref string result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Name_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+
+        /// <summary>
+        /// Keine modellierte Beschreibung verfügbar
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public string CreatedBy
         {
             get
@@ -700,6 +718,14 @@ namespace LightSwitchApplication
                     get
                     {
                         return base.GetItem(global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.PersonalNr) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string> Name
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.Name) as global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>;
                     }
                 }
                 
@@ -1209,6 +1235,28 @@ namespace LightSwitchApplication
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Entry
+                    Name = new global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Entry(
+                        "Name",
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Name_Stub,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Name_Validate,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Name_ComputeValue);
+                private static void _Name_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Data> c, global::LightSwitchApplication.MitarbeiterItem.DetailsClass d, object sf)
+                {
+                    c(d, ref d._Name, sf);
+                }
+                private static void _Name_Validate(global::LightSwitchApplication.MitarbeiterItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.Name_Validate(r);
+                }
+                private static string _Name_ComputeValue(global::LightSwitchApplication.MitarbeiterItem e)
+                {
+                    string value = default(string);
+                    e.Name_Compute(ref value);
+                    return value;
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Entry
                     CreatedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Entry(
                         "CreatedBy",
@@ -1498,6 +1546,9 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Data _PersonalNr;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Data _Name;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Data _CreatedBy;

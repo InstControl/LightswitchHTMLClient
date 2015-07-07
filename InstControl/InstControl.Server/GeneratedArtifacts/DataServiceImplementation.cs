@@ -37,7 +37,7 @@ namespace LightSwitchApplication.Implementation
         }
     
     #region Queries
-        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> aktuelleMitarbeiter()
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> MitarbeiterMitAktuellemVertrag()
         {
             global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> query;
             global::System.DateTime today1 = global::Microsoft.LightSwitch.RelativeDates.Today();
@@ -53,7 +53,7 @@ namespace LightSwitchApplication.Implementation
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> ausgeschiedeneMitarbeiter()
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> MitarbeiterAusgeschieden()
         {
             global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> query;
             global::System.DateTime today1 = global::Microsoft.LightSwitch.RelativeDates.Today();
@@ -66,6 +66,20 @@ namespace LightSwitchApplication.Implementation
                         (m) => m.Ausscheidedatum),
                     (m) => m.Nachname),
                 (m) => m.Vorname);
+            return query;
+        }
+    
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> MitarbeiterOhneAktuellenVertrag()
+        {
+            global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> query;
+            query = this.GetQuery<global::LightSwitchApplication.Implementation.MitarbeiterItem>("MitarbeiterItemSet");
+            return query;
+        }
+    
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> MitarbeiterMitAuslaufendenVertrag(global::System.Nullable<int> Monate)
+        {
+            global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> query;
+            query = this.GetQuery<global::LightSwitchApplication.Implementation.MitarbeiterItem>("MitarbeiterItemSet");
             return query;
         }
     

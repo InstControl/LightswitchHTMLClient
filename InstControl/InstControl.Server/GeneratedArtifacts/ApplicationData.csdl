@@ -185,6 +185,20 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="VertragJeMonatItem_StellenanteilItem">
+    <End Role="StellenanteilItem" Type="LightSwitchApplication.StellenanteilItem" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="VertragJeMonatItem" Type="LightSwitchApplication.VertragJeMonatItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StellenanteilItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VertragJeMonatItem">
+        <PropertyRef Name="VertragJeMonatItem_StellenanteilItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="BeschäftigungsArtItem_VertragItem">
     <End Role="BeschäftigungsArtItem" Type="LightSwitchApplication.BeschäftigungsArtItem" Multiplicity="1" />
     <End Role="VertragItem" Type="LightSwitchApplication.VertragItem" Multiplicity="*" />
@@ -208,20 +222,6 @@
       </Principal>
       <Dependent Role="StellenanteilItem">
         <PropertyRef Name="VertragItem_StellenanteilItem" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="VertragJeMonatItem_StellenanteilItem">
-    <End Role="StellenanteilItem" Type="LightSwitchApplication.StellenanteilItem" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="VertragJeMonatItem" Type="LightSwitchApplication.VertragJeMonatItem" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="StellenanteilItem">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="VertragJeMonatItem">
-        <PropertyRef Name="VertragJeMonatItem_StellenanteilItem" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -253,6 +253,10 @@
       <End Role="ProjektItem" EntitySet="ProjektItemSet" />
       <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
     </AssociationSet>
+    <AssociationSet Name="VertragJeMonatItem_StellenanteilItem" Association="LightSwitchApplication.VertragJeMonatItem_StellenanteilItem">
+      <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
+      <End Role="VertragJeMonatItem" EntitySet="VertragJeMonatItemSet" />
+    </AssociationSet>
     <AssociationSet Name="BeschäftigungsArtItem_VertragItem" Association="LightSwitchApplication.BeschäftigungsArtItem_VertragItem">
       <End Role="BeschäftigungsArtItem" EntitySet="BeschäftigungsArtItemSet" />
       <End Role="VertragItem" EntitySet="VertragItemSet" />
@@ -260,10 +264,6 @@
     <AssociationSet Name="VertragItem_StellenanteilItem" Association="LightSwitchApplication.VertragItem_StellenanteilItem">
       <End Role="VertragItem" EntitySet="VertragItemSet" />
       <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
-    </AssociationSet>
-    <AssociationSet Name="VertragJeMonatItem_StellenanteilItem" Association="LightSwitchApplication.VertragJeMonatItem_StellenanteilItem">
-      <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
-      <End Role="VertragJeMonatItem" EntitySet="VertragJeMonatItemSet" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

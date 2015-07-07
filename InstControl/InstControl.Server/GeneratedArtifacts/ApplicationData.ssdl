@@ -28,6 +28,10 @@
       <End Role="ProjektItem" EntitySet="ProjektItemSet" />
       <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
     </AssociationSet>
+    <AssociationSet Name="VertragJeMonatItem_StellenanteilItem" Association="ApplicationDataStore.VertragJeMonatItem_StellenanteilItem">
+      <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
+      <End Role="VertragJeMonatItem" EntitySet="VertragJeMonatItemSet" />
+    </AssociationSet>
     <AssociationSet Name="BeschäftigungsArtItem_VertragItem" Association="ApplicationDataStore.BeschäftigungsArtItem_VertragItem">
       <End Role="BeschäftigungsArtItem" EntitySet="BeschäftigungsArtItemSet" />
       <End Role="VertragItem" EntitySet="VertragItemSet" />
@@ -35,10 +39,6 @@
     <AssociationSet Name="VertragItem_StellenanteilItem" Association="ApplicationDataStore.VertragItem_StellenanteilItem">
       <End Role="VertragItem" EntitySet="VertragItemSet" />
       <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
-    </AssociationSet>
-    <AssociationSet Name="VertragJeMonatItem_StellenanteilItem" Association="ApplicationDataStore.VertragJeMonatItem_StellenanteilItem">
-      <End Role="StellenanteilItem" EntitySet="StellenanteilItemSet" />
-      <End Role="VertragJeMonatItem" EntitySet="VertragJeMonatItemSet" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="AbteilungItem">
@@ -85,7 +85,9 @@
     <Property Name="Raum" Type="nvarchar" MaxLength="255" />
     <Property Name="Telefon" Type="nvarchar" MaxLength="255" />
     <Property Name="Foto" Type="varbinary(max)" />
-    <Property Name="PersonalNr" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="PersonalNr" Type="nvarchar" Nullable="false" MaxLength="255">
+      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </Property>
     <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Created" Type="datetimeoffset" />
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
@@ -230,6 +232,20 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="VertragJeMonatItem_StellenanteilItem">
+    <End Role="StellenanteilItem" Type="ApplicationDataStore.StellenanteilItem" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="VertragJeMonatItem" Type="ApplicationDataStore.VertragJeMonatItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StellenanteilItem">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VertragJeMonatItem">
+        <PropertyRef Name="VertragJeMonatItem_StellenanteilItem" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="BeschäftigungsArtItem_VertragItem">
     <End Role="BeschäftigungsArtItem" Type="ApplicationDataStore.BeschäftigungsArtItem" Multiplicity="1">
       <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
@@ -255,20 +271,6 @@
       </Principal>
       <Dependent Role="StellenanteilItem">
         <PropertyRef Name="VertragItem_StellenanteilItem" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="VertragJeMonatItem_StellenanteilItem">
-    <End Role="StellenanteilItem" Type="ApplicationDataStore.StellenanteilItem" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="VertragJeMonatItem" Type="ApplicationDataStore.VertragJeMonatItem" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="StellenanteilItem">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="VertragJeMonatItem">
-        <PropertyRef Name="VertragJeMonatItem_StellenanteilItem" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

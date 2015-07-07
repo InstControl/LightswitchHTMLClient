@@ -116,6 +116,7 @@
           <Required />
           <MaxLength
             Value="255" />
+          <IncludeInUniqueIndex />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty
@@ -128,6 +129,13 @@
         Association="AbteilungItem_MitarbeiterItem1"
         FromEnd="MitarbeiterItem"
         ToEnd="AbteilungItem" />
+      <EntityProperty
+        Name="Name"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Computed />
+        </EntityProperty.Attributes>
+      </EntityProperty>
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"

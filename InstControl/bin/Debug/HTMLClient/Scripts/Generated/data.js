@@ -524,17 +524,25 @@ window.myapp = msls.application;
                 }
             },
             {
-                name: "aktuelleMitarbeiter", value: function () {
+                name: "MitarbeiterMitAktuellemVertrag", value: function () {
                     return new $DataServiceQuery({ _entitySet: this.MitarbeiterItemSet },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/aktuelleMitarbeiter()",
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/MitarbeiterMitAktuellemVertrag()",
                         {
                         });
                 }
             },
             {
-                name: "ausgeschiedeneMitarbeiter", value: function () {
+                name: "MitarbeiterAusgeschieden", value: function () {
                     return new $DataServiceQuery({ _entitySet: this.MitarbeiterItemSet },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/ausgeschiedeneMitarbeiter()",
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/MitarbeiterAusgeschieden()",
+                        {
+                        });
+                }
+            },
+            {
+                name: "MitarbeiterOhneAktuellenVertrag", value: function () {
+                    return new $DataServiceQuery({ _entitySet: this.MitarbeiterItemSet },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/MitarbeiterOhneAktuellenVertrag()",
                         {
                         });
                 }
@@ -565,6 +573,15 @@ window.myapp = msls.application;
                     return new $DataServiceQuery({ _entitySet: this.VertragJeMonatItemSet },
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/VertragJeMonatItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
                     );
+                }
+            },
+            {
+                name: "MitarbeiterMitAuslaufendenVertrag", value: function (Monate) {
+                    return new $DataServiceQuery({ _entitySet: this.MitarbeiterItemSet },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/MitarbeiterMitAuslaufendenVertrag()",
+                        {
+                            Monate: $toODataString(Monate, "Int32?")
+                        });
                 }
             }
         ]),

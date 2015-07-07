@@ -26,7 +26,7 @@
             Kind="Group">
             <ContentItem.Attributes>
               <DisplayName
-                Value="aktuelle" />
+                Value="mit aktuellem Vertrag" />
             </ContentItem.Attributes>
             <ContentItem
               Name="aktuelleMitarbeiter"
@@ -37,7 +37,7 @@
                 <ScreenExpressionTree>
                   <ChainExpression>
                     <MemberExpression
-                      Member="BrowseMitarbeiterSet/Properties[aktuelleMitarbeiter]" />
+                      Member="BrowseMitarbeiterSet/Properties[MitarbeiterAktuell]" />
                   </ChainExpression>
                 </ScreenExpressionTree>
               </ContentItem.DataSource>
@@ -123,13 +123,13 @@
                         Target="!module/Methods[showViewMitarbeiter]">
                         <CallExpression.Attributes>
                           <AssociatedCollection
-                            Collection="BrowseMitarbeiterSet/Properties[aktuelleMitarbeiter]" />
+                            Collection="BrowseMitarbeiterSet/Properties[MitarbeiterAktuell]" />
                         </CallExpression.Attributes>
                         <ArgumentExpression
                           Parameter="MitarbeiterItem">
                           <ChainExpression>
                             <MemberExpression
-                              Member="BrowseMitarbeiterSet/Properties[aktuelleMitarbeiter]" />
+                              Member="BrowseMitarbeiterSet/Properties[MitarbeiterAktuell]" />
                             <MemberExpression
                               Member="selectedItem" />
                           </ChainExpression>
@@ -167,7 +167,7 @@
                           Target="!module/Methods[showAddEditMitarbeiter]">
                           <CallExpression.Attributes>
                             <AssociatedCollection
-                              Collection="BrowseMitarbeiterSet/Properties[aktuelleMitarbeiter]" />
+                              Collection="BrowseMitarbeiterSet/Properties[MitarbeiterAktuell]" />
                             <CreateNewEntity
                               TargetParameter="!module/Methods[showAddEditMitarbeiter]/Parameters[MitarbeiterItem]" />
                           </CallExpression.Attributes>
@@ -200,7 +200,7 @@
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
-                          Member="BrowseMitarbeiterSet/Properties[aktuelleMitarbeiter]" />
+                          Member="BrowseMitarbeiterSet/Properties[MitarbeiterAktuell]" />
                         <CallExpression
                           Target="showSearch" />
                       </ChainExpression>
@@ -211,11 +211,306 @@
             </ContentItem.CommandItems>
           </ContentItem>
           <ContentItem
+            Name="Group3"
+            Kind="Group"
+            View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
+            <ContentItem.Attributes>
+              <DisplayName
+                Value="ohne aktuellen Vertrag" />
+            </ContentItem.Attributes>
+            <ContentItem
+              Name="MitarbeiterOhneVertrag"
+              Kind="Collection"
+              DataType="CollectionView$MitarbeiterItem"
+              View="Microsoft.LightSwitch.MobileWeb:TileList">
+              <ContentItem.DataSource>
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <MemberExpression
+                      Member="BrowseMitarbeiterSet/Properties[MitarbeiterOhneVertrag]" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ContentItem.DataSource>
+              <ContentItem
+                Name="MitarbeiterOhneVertragTemplate"
+                Kind="Details"
+                DataType="MitarbeiterItem">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression />
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+                <ContentItem
+                  Name="Nachname2"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[Nachname]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="Vorname2"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[Vorname]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="Ausscheidedatum"
+                  Kind="Value"
+                  DataType=":Date?">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[Ausscheidedatum]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="Bermerkung"
+                  Kind="Value"
+                  DataType=":String?">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[Bermerkung]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+              </ContentItem>
+              <ContentItem.PropertySources>
+                <ControlPropertySource
+                  Property="EJ.Web:CollectionCustomControl/Properties[Control]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="ejGrid"
+                        ResultType=":String" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootCollectionControl/Properties[ItemTap]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <CallExpression
+                        Target="!module/Methods[showViewMitarbeiter]">
+                        <CallExpression.Attributes>
+                          <AssociatedCollection
+                            Collection="BrowseMitarbeiterSet/Properties[MitarbeiterOhneVertrag]" />
+                        </CallExpression.Attributes>
+                        <ArgumentExpression
+                          Parameter="MitarbeiterItem">
+                          <ChainExpression>
+                            <MemberExpression
+                              Member="BrowseMitarbeiterSet/Properties[MitarbeiterOhneVertrag]" />
+                            <MemberExpression
+                              Member="selectedItem" />
+                          </ChainExpression>
+                        </ArgumentExpression>
+                      </CallExpression>
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
+            </ContentItem>
+          </ContentItem>
+          <ContentItem
+            Name="Group4"
+            Kind="Group"
+            View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
+            <ContentItem.Attributes>
+              <DisplayName
+                Value="mit auslaufendem Vertrag" />
+            </ContentItem.Attributes>
+            <ContentItem
+              Name="Monate"
+              Kind="Value"
+              DataType=":Int32"
+              View="Microsoft.LightSwitch.MobileWeb:TextBox">
+              <ContentItem.Attributes>
+                <DisplayName
+                  Value="Restlaufzeit in Monaten" />
+              </ContentItem.Attributes>
+              <ContentItem.DataSource>
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <MemberExpression
+                      Member="BrowseMitarbeiterSet/Properties[Monate]" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ContentItem.DataSource>
+              <ContentItem.PropertySources>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="FixedSize"
+                        ResultType=":String" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Width]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="50"
+                        ResultType=":Double" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
+            </ContentItem>
+            <ContentItem
+              Name="MitarbeiterMitAuslaufendenVertrag"
+              Kind="Collection"
+              DataType="CollectionView$MitarbeiterItem"
+              View="Microsoft.LightSwitch.MobileWeb:TileList">
+              <ContentItem.DataSource>
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <MemberExpression
+                      Member="BrowseMitarbeiterSet/Properties[MitarbeiterMitAuslaufendenVertrag]" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ContentItem.DataSource>
+              <ContentItem
+                Name="MitarbeiterMitAuslaufendenVertragTemplate"
+                Kind="Details"
+                DataType="MitarbeiterItem"
+                View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression />
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+                <ContentItem
+                  Name="Nachname3"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[Nachname]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[FontStyle]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="Large"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+                <ContentItem
+                  Name="Vorname3"
+                  Kind="Value"
+                  DataType=":String"
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[Vorname]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="Bermerkung1"
+                  Kind="Value"
+                  DataType=":String?">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[Bermerkung]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[FontStyle]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="Small"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+              </ContentItem>
+              <ContentItem.PropertySources>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootCollectionControl/Properties[ItemTap]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <CallExpression
+                        Target="!module/Methods[showViewMitarbeiter]">
+                        <CallExpression.Attributes>
+                          <AssociatedCollection
+                            Collection="BrowseMitarbeiterSet/Properties[MitarbeiterMitAuslaufendenVertrag]" />
+                        </CallExpression.Attributes>
+                        <ArgumentExpression
+                          Parameter="MitarbeiterItem">
+                          <ChainExpression>
+                            <MemberExpression
+                              Member="BrowseMitarbeiterSet/Properties[MitarbeiterMitAuslaufendenVertrag]" />
+                            <MemberExpression
+                              Member="selectedItem" />
+                          </ChainExpression>
+                        </ArgumentExpression>
+                      </CallExpression>
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
+            </ContentItem>
+            <ContentItem.PropertySources>
+              <ControlPropertySource
+                Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[BrowseOnly]">
+                <ScreenExpressionTree>
+                  <ChainExpression>
+                    <ConstantExpression
+                      Value="False"
+                      ResultType=":Boolean" />
+                  </ChainExpression>
+                </ScreenExpressionTree>
+              </ControlPropertySource>
+            </ContentItem.PropertySources>
+          </ContentItem>
+          <ContentItem
             Name="Group2"
             Kind="Group">
             <ContentItem.Attributes>
               <DisplayName
-                Value="ausgeschiedene" />
+                Value="ausgeschieden" />
               <Description
                 Value="Mitarbeiter mit gesetztem Auslaufdatum" />
             </ContentItem.Attributes>
@@ -228,7 +523,7 @@
                 <ScreenExpressionTree>
                   <ChainExpression>
                     <MemberExpression
-                      Member="BrowseMitarbeiterSet/Properties[ausgeschiedeneMitarbeiter]" />
+                      Member="BrowseMitarbeiterSet/Properties[MitarbeiterAusgeschieden]" />
                   </ChainExpression>
                 </ScreenExpressionTree>
               </ContentItem.DataSource>
@@ -236,99 +531,98 @@
                 Name="ausgeschiedeneMitarbeiterTemplate"
                 Kind="Details"
                 DataType="MitarbeiterItem"
-                View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
+                View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
                 <ContentItem.DataSource>
                   <ScreenExpressionTree>
                     <ChainExpression />
                   </ScreenExpressionTree>
                 </ContentItem.DataSource>
                 <ContentItem
-                  Name="Group"
-                  Kind="Group">
-                  <ContentItem
-                    Name="Nachname1"
-                    Kind="Value"
-                    DataType=":String">
-                    <ContentItem.DataSource>
+                  Name="Nachname1"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[Nachname]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[FontStyle]">
                       <ScreenExpressionTree>
                         <ChainExpression>
-                          <MemberExpression
-                            Member="MitarbeiterItem/Properties[Nachname]" />
+                          <ConstantExpression
+                            Value="Large"
+                            ResultType=":String" />
                         </ChainExpression>
                       </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                    <ContentItem.PropertySources>
-                      <ControlPropertySource
-                        Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[FontStyle]">
-                        <ScreenExpressionTree>
-                          <ChainExpression>
-                            <ConstantExpression
-                              Value="Large"
-                              ResultType=":String" />
-                          </ChainExpression>
-                        </ScreenExpressionTree>
-                      </ControlPropertySource>
-                    </ContentItem.PropertySources>
-                  </ContentItem>
-                  <ContentItem
-                    Name="Vorname1"
-                    Kind="Value"
-                    DataType=":String">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="MitarbeiterItem/Properties[Vorname]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
-                  <ContentItem
-                    Name="Ausscheidedatum1"
-                    Kind="Value"
-                    DataType=":Date?">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <MemberExpression
-                            Member="MitarbeiterItem/Properties[Ausscheidedatum]" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                    <ContentItem.PropertySources>
-                      <ControlPropertySource
-                        Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
-                        <ScreenExpressionTree>
-                          <ChainExpression>
-                            <ConstantExpression
-                              Value="Top"
-                              ResultType=":String" />
-                          </ChainExpression>
-                        </ScreenExpressionTree>
-                      </ControlPropertySource>
-                      <ControlPropertySource
-                        Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[FontStyle]">
-                        <ScreenExpressionTree>
-                          <ChainExpression>
-                            <ConstantExpression
-                              Value="Small"
-                              ResultType=":String" />
-                          </ChainExpression>
-                        </ScreenExpressionTree>
-                      </ControlPropertySource>
-                      <ControlPropertySource
-                        Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[TextAlignment]">
-                        <ScreenExpressionTree>
-                          <ChainExpression>
-                            <ConstantExpression
-                              Value="Right"
-                              ResultType=":String" />
-                          </ChainExpression>
-                        </ScreenExpressionTree>
-                      </ControlPropertySource>
-                    </ContentItem.PropertySources>
-                  </ContentItem>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
                 </ContentItem>
+                <ContentItem
+                  Name="Vorname1"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[Vorname]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="Ausscheidedatum1"
+                  Kind="Value"
+                  DataType=":Date?">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[Ausscheidedatum]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="Top"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[FontStyle]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="Small"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[TextAlignment]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="Right"
+                            ResultType=":String" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+                <ContentItem
+                  Name="Group"
+                  Kind="Group" />
               </ContentItem>
               <ContentItem.PropertySources>
                 <ControlPropertySource
@@ -339,13 +633,13 @@
                         Target="!module/Methods[showAddEditMitarbeiter]">
                         <CallExpression.Attributes>
                           <AssociatedCollection
-                            Collection="BrowseMitarbeiterSet/Properties[ausgeschiedeneMitarbeiter]" />
+                            Collection="BrowseMitarbeiterSet/Properties[MitarbeiterAusgeschieden]" />
                         </CallExpression.Attributes>
                         <ArgumentExpression
                           Parameter="MitarbeiterItem">
                           <ChainExpression>
                             <MemberExpression
-                              Member="BrowseMitarbeiterSet/Properties[ausgeschiedeneMitarbeiter]" />
+                              Member="BrowseMitarbeiterSet/Properties[MitarbeiterAusgeschieden]" />
                             <MemberExpression
                               Member="selectedItem" />
                           </ChainExpression>
@@ -414,12 +708,12 @@
     </Screen.Methods>
     <Screen.Properties>
       <ScreenCollectionProperty
-        Name="ausgeschiedeneMitarbeiter"
+        Name="MitarbeiterAktuell"
         PageSize="45"
         PropertyType="CollectionView$MitarbeiterItem">
         <ScreenCollectionProperty.Query>
           <ScreenQueryDefinition
-            Name="ausgeschiedeneMitarbeiterQuery"
+            Name="MitarbeiterAktuellQuery"
             ReturnType="MitarbeiterItem*">
             <ScreenQueryDefinition.FilterExpression>
               <QueryFilterExpressionTree />
@@ -427,7 +721,7 @@
             <ScreenQueryDefinition.Source>
               <QuerySourceExpressionTree>
                 <MemberExpression
-                  Member="ApplicationData/Members[ausgeschiedeneMitarbeiter]" />
+                  Member="ApplicationData/Members[MitarbeiterMitAktuellemVertrag]" />
               </QuerySourceExpressionTree>
             </ScreenQueryDefinition.Source>
           </ScreenQueryDefinition>
@@ -435,25 +729,55 @@
         <ScreenExpressionTree>
           <ChainExpression>
             <CallExpression
-              Target="BrowseMitarbeiterSet/Properties[ausgeschiedeneMitarbeiter]/Query" />
+              Target="BrowseMitarbeiterSet/Properties[MitarbeiterAktuell]/Query" />
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>
       <ScreenCollectionProperty
-        Name="aktuelleMitarbeiter"
+        Name="MitarbeiterOhneVertrag"
         PageSize="45"
         PropertyType="CollectionView$MitarbeiterItem">
         <ScreenCollectionProperty.Query>
           <ScreenQueryDefinition
-            Name="aktuelleMitarbeiterQuery"
+            Name="MitarbeiterOhneVertragQuery"
             ReturnType="MitarbeiterItem*">
             <ScreenQueryDefinition.FilterExpression>
-              <QueryFilterExpressionTree />
+              <QueryFilterExpressionTree>
+                <BinaryExpression
+                  NodeType="Or">
+                  <BinaryExpression.Left>
+                    <BinaryExpression
+                      NodeType="Equal">
+                      <BinaryExpression.Left>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="MitarbeiterItem/Properties[Ausscheidedatum]" />
+                        </ChainExpression>
+                      </BinaryExpression.Left>
+                    </BinaryExpression>
+                  </BinaryExpression.Left>
+                  <BinaryExpression.Right>
+                    <BinaryExpression
+                      NodeType="GreaterThan">
+                      <BinaryExpression.Left>
+                        <ChainExpression>
+                          <MemberExpression
+                            Member="MitarbeiterItem/Properties[Ausscheidedatum]" />
+                        </ChainExpression>
+                      </BinaryExpression.Left>
+                      <BinaryExpression.Right>
+                        <CallExpression
+                          Target=":RelativeDates/GlobalValues[Today]" />
+                      </BinaryExpression.Right>
+                    </BinaryExpression>
+                  </BinaryExpression.Right>
+                </BinaryExpression>
+              </QueryFilterExpressionTree>
             </ScreenQueryDefinition.FilterExpression>
             <ScreenQueryDefinition.Source>
               <QuerySourceExpressionTree>
                 <MemberExpression
-                  Member="ApplicationData/Members[aktuelleMitarbeiter]" />
+                  Member="ApplicationData/Members[MitarbeiterOhneAktuellenVertrag]" />
               </QuerySourceExpressionTree>
             </ScreenQueryDefinition.Source>
           </ScreenQueryDefinition>
@@ -461,10 +785,73 @@
         <ScreenExpressionTree>
           <ChainExpression>
             <CallExpression
-              Target="BrowseMitarbeiterSet/Properties[aktuelleMitarbeiter]/Query" />
+              Target="BrowseMitarbeiterSet/Properties[MitarbeiterOhneVertrag]/Query" />
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>
+      <ScreenCollectionProperty
+        Name="MitarbeiterAusgeschieden"
+        PageSize="45"
+        PropertyType="CollectionView$MitarbeiterItem">
+        <ScreenCollectionProperty.Query>
+          <ScreenQueryDefinition
+            Name="MitarbeiterAusgeschiedenQuery"
+            ReturnType="MitarbeiterItem*">
+            <ScreenQueryDefinition.FilterExpression>
+              <QueryFilterExpressionTree />
+            </ScreenQueryDefinition.FilterExpression>
+            <ScreenQueryDefinition.Source>
+              <QuerySourceExpressionTree>
+                <MemberExpression
+                  Member="ApplicationData/Members[MitarbeiterAusgeschieden]" />
+              </QuerySourceExpressionTree>
+            </ScreenQueryDefinition.Source>
+          </ScreenQueryDefinition>
+        </ScreenCollectionProperty.Query>
+        <ScreenExpressionTree>
+          <ChainExpression>
+            <CallExpression
+              Target="BrowseMitarbeiterSet/Properties[MitarbeiterAusgeschieden]/Query" />
+          </ChainExpression>
+        </ScreenExpressionTree>
+      </ScreenCollectionProperty>
+      <ScreenCollectionProperty
+        Name="MitarbeiterMitAuslaufendenVertrag"
+        PageSize="45"
+        PropertyType="CollectionView$MitarbeiterItem">
+        <ScreenCollectionProperty.Query>
+          <ScreenQueryDefinition
+            Name="MitarbeiterMitAuslaufendenVertragQuery"
+            ReturnType="MitarbeiterItem*">
+            <ScreenQueryDefinition.FilterExpression>
+              <QueryFilterExpressionTree />
+            </ScreenQueryDefinition.FilterExpression>
+            <ScreenQueryDefinition.Source>
+              <QuerySourceExpressionTree>
+                <MemberExpression
+                  Member="ApplicationData/Members[MitarbeiterMitAuslaufendenVertrag]" />
+              </QuerySourceExpressionTree>
+            </ScreenQueryDefinition.Source>
+          </ScreenQueryDefinition>
+        </ScreenCollectionProperty.Query>
+        <ScreenExpressionTree>
+          <ChainExpression>
+            <CallExpression
+              Target="BrowseMitarbeiterSet/Properties[MitarbeiterMitAuslaufendenVertrag]/Query">
+              <ArgumentExpression
+                Parameter="Monate">
+                <ChainExpression>
+                  <MemberExpression
+                    Member="BrowseMitarbeiterSet/Properties[Monate]" />
+                </ChainExpression>
+              </ArgumentExpression>
+            </CallExpression>
+          </ChainExpression>
+        </ScreenExpressionTree>
+      </ScreenCollectionProperty>
+      <ScreenProperty
+        Name="Monate"
+        PropertyType=":Int32" />
     </Screen.Properties>
   </Screen>
   <Application.Methods>

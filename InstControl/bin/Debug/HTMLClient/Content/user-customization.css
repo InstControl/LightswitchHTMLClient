@@ -25,11 +25,12 @@
     position:relative for these features.  However, this setting performs poorly on certain mobile 
     devices (webkit based in particular) when there are large numbers of items in the list. */
 /*
+    */
 .msls-ctl-list .ui-listview > .ui-li,
 .msls-ctl-list .ui-field-contain.ui-li {
     position: relative;
 }
-*/
+
 
 /* Phone media query (portrait and landscape) */
 @media 

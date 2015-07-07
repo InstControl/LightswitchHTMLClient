@@ -10,13 +10,43 @@ namespace LightSwitchApplication
     public partial class ApplicationDataService
     {
         partial void StellenanteilItemSet_Inserted(StellenanteilItem entity)
-        {  
+        {
+            //füllt die Tabelle VertragJeMonat aus
+
             for (int i = 0; i <= entity.VertragItem.Dauer; i++)
             {
-                VertragJeMonatItem VertragjeMonat=entity.VertragJeMonatCollection.AddNew();
-                VertragjeMonat.Monat = entity.VertragItem.von.AddMonths(i);
-                VertragjeMonat.Monat = new DateTime(VertragjeMonat.Monat.Year, VertragjeMonat.Monat.Month, 1);
+                VertragJeMonatItem VertragJeMonat=entity.VertragJeMonatCollection.AddNew();
+                VertragJeMonat.Monat = entity.VertragItem.von.AddMonths(i);
+                VertragJeMonat.Monat = new DateTime(VertragJeMonat.Monat.Year, VertragJeMonat.Monat.Month, 1);
             }
          }
+
+        partial void MitarbeiterOhneAktuellenVertrag_PreprocessQuery(ref IQueryable<MitarbeiterItem> query)
+        {
+            //Mitarbeiter deren letzter Vertrag bereits geendet ist oder die noch keinen Vertrag haben
+            query = query.Where(p => (p.VertragItemCollection.Max(q => q.bis) < DateTime.Today || p.VertragItemCollection.Count() == 0));
+        }
+
+
+        partial void MitarbeiterMitAktuellemVertrag_PreprocessQuery(ref IQueryable<MitarbeiterItem> query)
+        {
+            //Mitarbeiter, die einen aktuellen Vertrag haben
+            query = query.Where(p => p.VertragItemCollection.Max(q => q.bis) >= DateTime.Today);
+        }
+
+        partial void MitarbeiterMitAuslaufendenVertrag_PreprocessQuery(int? Monate, ref IQueryable<MitarbeiterItem> query)
+        {
+            if (Monate==null)
+            {
+                Monate = 0;
+            }
+            DateTime DueDate = DateTime.Today.AddMonths(Monate.Value);
+            query = query.Where(p => p.VertragItemCollection.Max(q => q.bis) < DueDate);
+        }
+
+        partial void Query_Executing(QueryExecutingDescriptor queryDescriptor)
+        {
+
+        }
     }
 }

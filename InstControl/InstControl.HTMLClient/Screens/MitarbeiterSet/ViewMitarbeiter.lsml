@@ -454,7 +454,63 @@
                   </ContentItem.DataSource>
                 </ContentItem>
               </ContentItem>
+              <ContentItem.PropertySources>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootCollectionControl/Properties[ItemTap]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <CallExpression
+                        Target="!module/Methods[showViewVertragItem]">
+                        <CallExpression.Attributes>
+                          <AssociatedCollection
+                            Collection="ViewMitarbeiter/Properties[VertragItemCollectionEnded]" />
+                        </CallExpression.Attributes>
+                        <ArgumentExpression
+                          Parameter="VertragItem">
+                          <ChainExpression>
+                            <MemberExpression
+                              Member="ViewMitarbeiter/Properties[VertragItemCollectionEnded]" />
+                            <MemberExpression
+                              Member="selectedItem" />
+                          </ChainExpression>
+                        </ArgumentExpression>
+                      </CallExpression>
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+              </ContentItem.PropertySources>
             </ContentItem>
+            <ContentItem.CommandItems>
+              <ContentItem
+                Name="DeleteVertrag"
+                Kind="Command">
+                <ContentItem.Attributes>
+                  <DisplayName
+                    Value="Lösche Vertrag" />
+                </ContentItem.Attributes>
+                <ContentItem.PropertySources>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <CallExpression
+                          Target="ViewMitarbeiter/Methods[DeleteVertrag]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootCommand/Properties[Icon]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <ConstantExpression
+                          Value="msls-remove"
+                          ResultType=":String" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                </ContentItem.PropertySources>
+              </ContentItem>
+            </ContentItem.CommandItems>
           </ContentItem>
           <ContentItem
             Name="Stammdaten"

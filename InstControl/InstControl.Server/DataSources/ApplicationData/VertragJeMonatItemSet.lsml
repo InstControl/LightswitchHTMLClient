@@ -5,11 +5,9 @@
     <Partial />
   </ServiceApplication.Attributes>
   <EntityType
-    Name="VertragItem">
+    Name="VertragJeMonatItem">
     <EntityType.Attributes>
       <CreatedModifiedPropertiesEnabled />
-      <DisplayName
-        Value="Vertrag" />
     </EntityType.Attributes>
     <EntityType.Methods>
       <EntityMethod
@@ -29,47 +27,18 @@
         </KeyProperty.Attributes>
       </KeyProperty>
       <EntityProperty
-        Name="von"
+        Name="Monat"
         PropertyType=":Date">
         <EntityProperty.Attributes>
           <Required />
           <NotSearchable />
         </EntityProperty.Attributes>
       </EntityProperty>
-      <EntityProperty
-        Name="bis"
-        PropertyType=":Date">
-        <EntityProperty.Attributes>
-          <Required />
-        </EntityProperty.Attributes>
-      </EntityProperty>
       <NavigationProperty
-        Name="MitarbeiterItem"
-        Association="VertragItem_MitarbeiterItem"
-        FromEnd="VertragItem"
-        ToEnd="MitarbeiterItem" />
-      <NavigationProperty
-        Name="BeschäftigungsArtItem"
-        Association="BeschäftigungsArtItem_VertragItem"
-        FromEnd="VertragItem"
-        ToEnd="BeschäftigungsArtItem">
-        <NavigationProperty.Attributes>
-          <DisplayName
-            Value="Beschäftigungs-Art" />
-        </NavigationProperty.Attributes>
-      </NavigationProperty>
-      <NavigationProperty
-        Name="StellenanteilItemCollection"
-        Association="VertragItem_StellenanteilItem"
-        FromEnd="VertragItem"
+        Name="StellenanteilItem"
+        Association="VertragJeMonatItem_StellenanteilItem"
+        FromEnd="VertragJeMonatItem"
         ToEnd="StellenanteilItem" />
-      <EntityProperty
-        Name="Dauer"
-        PropertyType=":Int32">
-        <EntityProperty.Attributes>
-          <Computed />
-        </EntityProperty.Attributes>
-      </EntityProperty>
       <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
@@ -128,14 +97,14 @@
       <Partial />
     </EntityContainer.Attributes>
     <EntitySet
-      Name="VertragItemSet"
+      Name="VertragJeMonatItemSet"
       CanDelete="True"
       CanInsert="True"
       CanUpdate="True"
-      EntityType="VertragItem" />
+      EntityType="VertragJeMonatItem" />
     <QueryOperation
-      Name="VertragItemSet_Single"
-      ReturnType="VertragItem">
+      Name="VertragJeMonatItemSet_Single"
+      ReturnType="VertragJeMonatItem">
       <QueryOperation.Attributes>
         <Generated />
         <Description
@@ -161,7 +130,7 @@
       <QueryOperation.Source>
         <QuerySourceExpressionTree>
           <MemberExpression
-            Member="VertragItemSet" />
+            Member="VertragJeMonatItemSet" />
         </QuerySourceExpressionTree>
       </QueryOperation.Source>
       <QueryOperationParameter
@@ -174,8 +143,8 @@
       </QueryOperationParameter>
     </QueryOperation>
     <QueryOperation
-      Name="VertragItemSet_SingleOrDefault"
-      ReturnType="VertragItem">
+      Name="VertragJeMonatItemSet_SingleOrDefault"
+      ReturnType="VertragJeMonatItem">
       <QueryOperation.Attributes>
         <Generated />
         <Description
@@ -201,7 +170,7 @@
       <QueryOperation.Source>
         <QuerySourceExpressionTree>
           <MemberExpression
-            Member="VertragItemSet" />
+            Member="VertragJeMonatItemSet" />
         </QuerySourceExpressionTree>
       </QueryOperation.Source>
       <QueryOperationParameter
@@ -213,26 +182,6 @@
         </QueryOperationParameter.Attributes>
       </QueryOperationParameter>
     </QueryOperation>
-    <AssociationSet
-      Name="BeschäftigungsArtItem_VertragItemSet"
-      Association="BeschäftigungsArtItem_VertragItem">
-      <AssociationSetEnd
-        Name="BeschäftigungsArtItem"
-        EntitySet="BeschäftigungsArtItemSet" />
-      <AssociationSetEnd
-        Name="VertragItem"
-        EntitySet="VertragItemSet" />
-    </AssociationSet>
-    <AssociationSet
-      Name="VertragItem_StellenanteilItemSet"
-      Association="VertragItem_StellenanteilItem">
-      <AssociationSetEnd
-        Name="VertragItem"
-        EntitySet="VertragItemSet" />
-      <AssociationSetEnd
-        Name="StellenanteilItem"
-        EntitySet="StellenanteilItemSet" />
-    </AssociationSet>
   </EntityContainer>
   <DataService
     Name="ApplicationDataMapping">
@@ -240,62 +189,17 @@
       <Partial />
     </DataService.Attributes>
     <EntitySetMapping
-      EntitySet="VertragItemSet">
+      EntitySet="VertragJeMonatItemSet">
       <EntitySetMapping.Attributes>
         <SsdlForeignKeyProperty
-          Name="VertragItem_MitarbeiterItem"
+          Name="VertragJeMonatItem_VertragItem"
           Nullable="False"
           Type="int" />
         <SsdlForeignKeyProperty
-          Name="KontoItem_VertragItem"
-          Nullable="False"
-          Type="int" />
-        <SsdlForeignKeyProperty
-          Name="BeschäftigungsArtItem_VertragItem"
-          Nullable="False"
-          Type="int" />
-        <SsdlForeignKeyProperty
-          Name="VertragItem_ProjektItem"
+          Name="VertragJeMonatItem_StellenanteilItem"
           Nullable="False"
           Type="int" />
       </EntitySetMapping.Attributes>
     </EntitySetMapping>
-    <AssociationSetMapping
-      AssociationSet="VertragItem_StellenanteilItemSet">
-      <AssociationSetMapping.Attributes>
-        <SsdlAssociationSet
-          Name="VertragItem_StellenanteilItemSet" />
-        <SsdlAssociationSetEnd
-          End="ApplicationData/Members[VertragItem_StellenanteilItemSet]/Members[VertragItem]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef
-              Name="Id" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-        <SsdlAssociationSetEnd
-          End="ApplicationData/Members[VertragItem_StellenanteilItemSet]/Members[StellenanteilItem]">
-          <SsdlAssociationSetEnd.Attributes>
-            <SsdlPropertyRef
-              Name="VertragItem_StellenanteilItem" />
-          </SsdlAssociationSetEnd.Attributes>
-        </SsdlAssociationSetEnd>
-      </AssociationSetMapping.Attributes>
-    </AssociationSetMapping>
   </DataService>
-  <Association
-    Name="VertragItem_StellenanteilItem">
-    <AssociationEnd
-      Name="VertragItem"
-      Multiplicity="One"
-      EntityType="VertragItem">
-      <AssociationEnd.Attributes>
-        <DeleteRule
-          Action="Cascade" />
-      </AssociationEnd.Attributes>
-    </AssociationEnd>
-    <AssociationEnd
-      Name="StellenanteilItem"
-      Multiplicity="Many"
-      EntityType="StellenanteilItem" />
-  </Association>
 </ServiceApplication>

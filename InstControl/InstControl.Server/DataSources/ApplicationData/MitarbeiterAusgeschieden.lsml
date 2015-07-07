@@ -10,15 +10,26 @@
       <Partial />
     </EntityContainer.Attributes>
     <QueryOperation
-      Name="aktuelleMitarbeiter"
+      Name="MitarbeiterAusgeschieden"
       ReturnType="MitarbeiterItem*">
       <QueryOperation.FilterExpression>
         <QueryFilterExpressionTree>
           <BinaryExpression
-            NodeType="Or">
+            NodeType="And">
             <BinaryExpression.Left>
               <BinaryExpression
-                NodeType="GreaterThanOrEqual">
+                NodeType="NotEqual">
+                <BinaryExpression.Left>
+                  <ChainExpression>
+                    <MemberExpression
+                      Member="Ausscheidedatum" />
+                  </ChainExpression>
+                </BinaryExpression.Left>
+              </BinaryExpression>
+            </BinaryExpression.Left>
+            <BinaryExpression.Right>
+              <BinaryExpression
+                NodeType="LessThan">
                 <BinaryExpression.Left>
                   <ChainExpression>
                     <MemberExpression
@@ -29,17 +40,6 @@
                   <CallExpression
                     Target=":RelativeDates/GlobalValues[Today]" />
                 </BinaryExpression.Right>
-              </BinaryExpression>
-            </BinaryExpression.Left>
-            <BinaryExpression.Right>
-              <BinaryExpression
-                NodeType="Equal">
-                <BinaryExpression.Left>
-                  <ChainExpression>
-                    <MemberExpression
-                      Member="Ausscheidedatum" />
-                  </ChainExpression>
-                </BinaryExpression.Left>
               </BinaryExpression>
             </BinaryExpression.Right>
           </BinaryExpression>
@@ -55,6 +55,12 @@
         <SortCriterion>
           <ChainExpression>
             <MemberExpression
+              Member="Ausscheidedatum" />
+          </ChainExpression>
+        </SortCriterion>
+        <SortCriterion>
+          <ChainExpression>
+            <MemberExpression
               Member="Nachname" />
           </ChainExpression>
         </SortCriterion>
@@ -62,12 +68,6 @@
           <ChainExpression>
             <MemberExpression
               Member="Vorname" />
-          </ChainExpression>
-        </SortCriterion>
-        <SortCriterion>
-          <ChainExpression>
-            <MemberExpression
-              Member="Geburtstag" />
           </ChainExpression>
         </SortCriterion>
       </QueryOperation.SortCriteria>

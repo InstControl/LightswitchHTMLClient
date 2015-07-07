@@ -1380,6 +1380,130 @@
             data: lightSwitchApplication.MitarbeiterItem,
             value: Date
         },
+        Group3: {
+            _$class: msls.ContentItem,
+            _$name: "Group3",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.BrowseMitarbeiterSet,
+            value: lightSwitchApplication.BrowseMitarbeiterSet
+        },
+        MitarbeiterOhneVertrag: {
+            _$class: msls.ContentItem,
+            _$name: "MitarbeiterOhneVertrag",
+            _$parentName: "Group3",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.BrowseMitarbeiterSet,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.BrowseMitarbeiterSet,
+                _$entry: {
+                    elementType: lightSwitchApplication.MitarbeiterItem
+                }
+            }
+        },
+        MitarbeiterOhneVertragTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "MitarbeiterOhneVertragTemplate",
+            _$parentName: "MitarbeiterOhneVertrag",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: lightSwitchApplication.MitarbeiterItem
+        },
+        Nachname2: {
+            _$class: msls.ContentItem,
+            _$name: "Nachname2",
+            _$parentName: "MitarbeiterOhneVertragTemplate",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: String
+        },
+        Vorname2: {
+            _$class: msls.ContentItem,
+            _$name: "Vorname2",
+            _$parentName: "MitarbeiterOhneVertragTemplate",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: String
+        },
+        Ausscheidedatum: {
+            _$class: msls.ContentItem,
+            _$name: "Ausscheidedatum",
+            _$parentName: "MitarbeiterOhneVertragTemplate",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: Date
+        },
+        Bermerkung: {
+            _$class: msls.ContentItem,
+            _$name: "Bermerkung",
+            _$parentName: "MitarbeiterOhneVertragTemplate",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: String
+        },
+        Group4: {
+            _$class: msls.ContentItem,
+            _$name: "Group4",
+            _$parentName: "Tabs",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.BrowseMitarbeiterSet,
+            value: lightSwitchApplication.BrowseMitarbeiterSet
+        },
+        Monate: {
+            _$class: msls.ContentItem,
+            _$name: "Monate",
+            _$parentName: "Group4",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.BrowseMitarbeiterSet,
+            value: Number
+        },
+        MitarbeiterMitAuslaufendenVertrag: {
+            _$class: msls.ContentItem,
+            _$name: "MitarbeiterMitAuslaufendenVertrag",
+            _$parentName: "Group4",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.BrowseMitarbeiterSet,
+            value: {
+                _$class: msls.VisualCollection,
+                screen: lightSwitchApplication.BrowseMitarbeiterSet,
+                _$entry: {
+                    elementType: lightSwitchApplication.MitarbeiterItem
+                }
+            }
+        },
+        MitarbeiterMitAuslaufendenVertragTemplate: {
+            _$class: msls.ContentItem,
+            _$name: "MitarbeiterMitAuslaufendenVertragTemplate",
+            _$parentName: "MitarbeiterMitAuslaufendenVertrag",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: lightSwitchApplication.MitarbeiterItem
+        },
+        Nachname3: {
+            _$class: msls.ContentItem,
+            _$name: "Nachname3",
+            _$parentName: "MitarbeiterMitAuslaufendenVertragTemplate",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: String
+        },
+        Vorname3: {
+            _$class: msls.ContentItem,
+            _$name: "Vorname3",
+            _$parentName: "MitarbeiterMitAuslaufendenVertragTemplate",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: String
+        },
+        Bermerkung1: {
+            _$class: msls.ContentItem,
+            _$name: "Bermerkung1",
+            _$parentName: "MitarbeiterMitAuslaufendenVertragTemplate",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: String
+        },
         Group2: {
             _$class: msls.ContentItem,
             _$name: "Group2",
@@ -1410,18 +1534,10 @@
             data: lightSwitchApplication.MitarbeiterItem,
             value: lightSwitchApplication.MitarbeiterItem
         },
-        Group: {
-            _$class: msls.ContentItem,
-            _$name: "Group",
-            _$parentName: "ausgeschiedeneMitarbeiterTemplate",
-            screen: lightSwitchApplication.BrowseMitarbeiterSet,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: lightSwitchApplication.MitarbeiterItem
-        },
         Nachname1: {
             _$class: msls.ContentItem,
             _$name: "Nachname1",
-            _$parentName: "Group",
+            _$parentName: "ausgeschiedeneMitarbeiterTemplate",
             screen: lightSwitchApplication.BrowseMitarbeiterSet,
             data: lightSwitchApplication.MitarbeiterItem,
             value: String
@@ -1429,7 +1545,7 @@
         Vorname1: {
             _$class: msls.ContentItem,
             _$name: "Vorname1",
-            _$parentName: "Group",
+            _$parentName: "ausgeschiedeneMitarbeiterTemplate",
             screen: lightSwitchApplication.BrowseMitarbeiterSet,
             data: lightSwitchApplication.MitarbeiterItem,
             value: String
@@ -1437,10 +1553,18 @@
         Ausscheidedatum1: {
             _$class: msls.ContentItem,
             _$name: "Ausscheidedatum1",
-            _$parentName: "Group",
+            _$parentName: "ausgeschiedeneMitarbeiterTemplate",
             screen: lightSwitchApplication.BrowseMitarbeiterSet,
             data: lightSwitchApplication.MitarbeiterItem,
             value: Date
+        },
+        Group: {
+            _$class: msls.ContentItem,
+            _$name: "Group",
+            _$parentName: "ausgeschiedeneMitarbeiterTemplate",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: lightSwitchApplication.MitarbeiterItem
         },
         Popups: {
             _$class: msls.ContentItem,
@@ -1502,6 +1626,76 @@
         /// </field>
         Geburtstag_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Geburtstag"); }],
         /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Group3 gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group3_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Group3"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterOhneVertrag gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MitarbeiterOhneVertrag_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("MitarbeiterOhneVertrag"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterOhneVertragTemplate gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MitarbeiterOhneVertragTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("MitarbeiterOhneVertragTemplate"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Nachname2 gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Nachname2_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Nachname2"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Vorname2 gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Vorname2_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Vorname2"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Ausscheidedatum gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Ausscheidedatum_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Ausscheidedatum"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Bermerkung gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Bermerkung_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Bermerkung"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Group4 gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group4_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Group4"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Monate gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Monate_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Monate"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterMitAuslaufendenVertrag gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MitarbeiterMitAuslaufendenVertrag_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("MitarbeiterMitAuslaufendenVertrag"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterMitAuslaufendenVertragTemplate gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MitarbeiterMitAuslaufendenVertragTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("MitarbeiterMitAuslaufendenVertragTemplate"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Nachname3 gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Nachname3_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Nachname3"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Vorname3 gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Vorname3_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Vorname3"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Bermerkung1 gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Bermerkung1_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Bermerkung1"); }],
+        /// <field>
         /// Wird aufgerufen, nachdem das Inhaltselement Group2 gerendert wurde.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
@@ -1517,11 +1711,6 @@
         /// </field>
         ausgeschiedeneMitarbeiterTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("ausgeschiedeneMitarbeiterTemplate"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Group gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Group_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Group"); }],
-        /// <field>
         /// Wird aufgerufen, nachdem das Inhaltselement Nachname1 gerendert wurde.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
@@ -1535,7 +1724,12 @@
         /// Wird aufgerufen, nachdem das Inhaltselement Ausscheidedatum1 gerendert wurde.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        Ausscheidedatum1_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Ausscheidedatum1"); }]
+        Ausscheidedatum1_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Ausscheidedatum1"); }],
+        /// <field>
+        /// Wird aufgerufen, nachdem das Inhaltselement Group gerendert wurde.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Group"); }]
     });
 
     lightSwitchApplication.ViewMitarbeiter.prototype._$contentItems = {

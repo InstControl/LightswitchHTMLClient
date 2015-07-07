@@ -238,11 +238,20 @@
         /// <param name="dataWorkspace" type="msls.application.DataWorkspace" optional="true">
         /// Ein bestehender Datenarbeitsbereich, der für diesen Bildschirm benutzt werden soll. Standardmäßig wird ein neuer Datenarbeitsbereich erstellt.
         /// </param>
-        /// <field name="ausgeschiedeneMitarbeiter" type="msls.VisualCollection" elementType="msls.application.MitarbeiterItem">
-        /// Ruft den ausgeschiedeneMitarbeiter für diesen Bildschirm ab.
+        /// <field name="MitarbeiterAktuell" type="msls.VisualCollection" elementType="msls.application.MitarbeiterItem">
+        /// Ruft den mitarbeiterAktuell für diesen Bildschirm ab.
         /// </field>
-        /// <field name="aktuelleMitarbeiter" type="msls.VisualCollection" elementType="msls.application.MitarbeiterItem">
-        /// Ruft den aktuelleMitarbeiter für diesen Bildschirm ab.
+        /// <field name="MitarbeiterOhneVertrag" type="msls.VisualCollection" elementType="msls.application.MitarbeiterItem">
+        /// Ruft den mitarbeiterOhneVertrag für diesen Bildschirm ab.
+        /// </field>
+        /// <field name="MitarbeiterAusgeschieden" type="msls.VisualCollection" elementType="msls.application.MitarbeiterItem">
+        /// Ruft den mitarbeiterAusgeschieden für diesen Bildschirm ab.
+        /// </field>
+        /// <field name="MitarbeiterMitAuslaufendenVertrag" type="msls.VisualCollection" elementType="msls.application.MitarbeiterItem">
+        /// Ruft den mitarbeiterMitAuslaufendenVertrag für diesen Bildschirm ab.
+        /// </field>
+        /// <field name="Monate" type="Number">
+        /// Ruft den monate für diesen Bildschirm ab oder legt diesen fest.
         /// </field>
         /// <field name="details" type="msls.application.BrowseMitarbeiterSet.Details">
         /// Ruft die Details für diesen Bildschirm ab.
@@ -633,17 +642,31 @@
 
         BrowseMitarbeiterSet: $defineScreen(BrowseMitarbeiterSet, [
             {
-                name: "ausgeschiedeneMitarbeiter", kind: "collection", elementType: lightSwitchApplication.MitarbeiterItem,
+                name: "MitarbeiterAktuell", kind: "collection", elementType: lightSwitchApplication.MitarbeiterItem,
                 createQuery: function () {
-                    return this.dataWorkspace.ApplicationData.ausgeschiedeneMitarbeiter();
+                    return this.dataWorkspace.ApplicationData.MitarbeiterMitAktuellemVertrag();
                 }
             },
             {
-                name: "aktuelleMitarbeiter", kind: "collection", elementType: lightSwitchApplication.MitarbeiterItem,
+                name: "MitarbeiterOhneVertrag", kind: "collection", elementType: lightSwitchApplication.MitarbeiterItem,
                 createQuery: function () {
-                    return this.dataWorkspace.ApplicationData.aktuelleMitarbeiter();
+                    var today1 = msls.relativeDates.today();
+                    return this.dataWorkspace.ApplicationData.MitarbeiterOhneAktuellenVertrag().filter("(Ausscheidedatum eq null) or ((Ausscheidedatum ne null) and (Ausscheidedatum gt " + $toODataString(today1, "DateTime") + "))");
                 }
-            }
+            },
+            {
+                name: "MitarbeiterAusgeschieden", kind: "collection", elementType: lightSwitchApplication.MitarbeiterItem,
+                createQuery: function () {
+                    return this.dataWorkspace.ApplicationData.MitarbeiterAusgeschieden();
+                }
+            },
+            {
+                name: "MitarbeiterMitAuslaufendenVertrag", kind: "collection", elementType: lightSwitchApplication.MitarbeiterItem,
+                createQuery: function (Monate) {
+                    return this.dataWorkspace.ApplicationData.MitarbeiterMitAuslaufendenVertrag(Monate);
+                }
+            },
+            { name: "Monate", kind: "local", type: Number }
         ], [
             { name: "Delete" }
         ]),

@@ -20,7 +20,7 @@
     <BaseIntermediateOutputPath>bin</BaseIntermediateOutputPath>
     <ApplicationClientType>Browser</ApplicationClientType>
     <ApplicationServerType>IIS</ApplicationServerType>
-    <AuthenticationType>Windows</AuthenticationType>
+    <AuthenticationType>None</AuthenticationType>
     <ApplicationName>InstControl</ApplicationName>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <ServiceDefinitionFile>ServiceDefinition.csdef</ServiceDefinitionFile>

@@ -324,34 +324,64 @@ namespace LightSwitchApplication
         partial void SaveChanges_ExecuteFailed(global::System.Exception exception);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void aktuelleMitarbeiter_CanExecute(ref bool result);
+        partial void MitarbeiterMitAktuellemVertrag_CanExecute(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        partial void aktuelleMitarbeiter_Executing();
+        partial void MitarbeiterMitAktuellemVertrag_Executing();
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void aktuelleMitarbeiter_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem> query);
+        partial void MitarbeiterMitAktuellemVertrag_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem> query);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        partial void aktuelleMitarbeiter_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MitarbeiterItem> result);
+        partial void MitarbeiterMitAktuellemVertrag_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MitarbeiterItem> result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        partial void aktuelleMitarbeiter_ExecuteFailed(global::System.Exception exception);
+        partial void MitarbeiterMitAktuellemVertrag_ExecuteFailed(global::System.Exception exception);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ausgeschiedeneMitarbeiter_CanExecute(ref bool result);
+        partial void MitarbeiterAusgeschieden_CanExecute(ref bool result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        partial void ausgeschiedeneMitarbeiter_Executing();
+        partial void MitarbeiterAusgeschieden_Executing();
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void ausgeschiedeneMitarbeiter_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem> query);
+        partial void MitarbeiterAusgeschieden_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem> query);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        partial void ausgeschiedeneMitarbeiter_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MitarbeiterItem> result);
+        partial void MitarbeiterAusgeschieden_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MitarbeiterItem> result);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        partial void ausgeschiedeneMitarbeiter_ExecuteFailed(global::System.Exception exception);
+        partial void MitarbeiterAusgeschieden_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MitarbeiterOhneAktuellenVertrag_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void MitarbeiterOhneAktuellenVertrag_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MitarbeiterOhneAktuellenVertrag_PreprocessQuery(ref global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void MitarbeiterOhneAktuellenVertrag_Executed(global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MitarbeiterItem> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void MitarbeiterOhneAktuellenVertrag_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MitarbeiterMitAuslaufendenVertrag_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void MitarbeiterMitAuslaufendenVertrag_Executing(global::System.Nullable<int> Monate);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MitarbeiterMitAuslaufendenVertrag_PreprocessQuery(global::System.Nullable<int> Monate, ref global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem> query);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void MitarbeiterMitAuslaufendenVertrag_Executed(global::System.Nullable<int> Monate, global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MitarbeiterItem> result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        partial void MitarbeiterMitAuslaufendenVertrag_ExecuteFailed(global::System.Nullable<int> Monate, global::System.Exception exception);
     
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void Query_Executing(global::Microsoft.LightSwitch.QueryExecutingDescriptor queryDescriptor);
@@ -942,68 +972,136 @@ namespace LightSwitchApplication
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.MitarbeiterItem>
-                __aktuelleMitarbeiterEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.MitarbeiterItem>(
-                    "aktuelleMitarbeiter",
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__aktuelleMitarbeiter_CanExecute,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__aktuelleMitarbeiter_Executing,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__aktuelleMitarbeiter_Executed,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__aktuelleMitarbeiter_Failed,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__aktuelleMitarbeiter_PreprocessQuery);
-            private static bool __aktuelleMitarbeiter_CanExecute(global::LightSwitchApplication.ApplicationDataService d, bool r)
+                __MitarbeiterMitAktuellemVertragEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.MitarbeiterItem>(
+                    "MitarbeiterMitAktuellemVertrag",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterMitAktuellemVertrag_CanExecute,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterMitAktuellemVertrag_Executing,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterMitAktuellemVertrag_Executed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterMitAktuellemVertrag_Failed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterMitAktuellemVertrag_PreprocessQuery);
+            private static bool __MitarbeiterMitAktuellemVertrag_CanExecute(global::LightSwitchApplication.ApplicationDataService d, bool r)
             {
-                d.aktuelleMitarbeiter_CanExecute(ref r);
+                d.MitarbeiterMitAktuellemVertrag_CanExecute(ref r);
                 return r;
             }
-            private static void __aktuelleMitarbeiter_Executing(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            private static void __MitarbeiterMitAktuellemVertrag_Executing(global::LightSwitchApplication.ApplicationDataService d, object[] args)
             {
-                d.aktuelleMitarbeiter_Executing();
+                d.MitarbeiterMitAktuellemVertrag_Executing();
             }
-            private static void __aktuelleMitarbeiter_Executed(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            private static void __MitarbeiterMitAktuellemVertrag_Executed(global::LightSwitchApplication.ApplicationDataService d, object[] args)
             {
-                d.aktuelleMitarbeiter_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MitarbeiterItem>)args[0]);
+                d.MitarbeiterMitAktuellemVertrag_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MitarbeiterItem>)args[0]);
             }
-            private static void __aktuelleMitarbeiter_Failed(global::LightSwitchApplication.ApplicationDataService d, object[] args, global::System.Exception ex)
+            private static void __MitarbeiterMitAktuellemVertrag_Failed(global::LightSwitchApplication.ApplicationDataService d, object[] args, global::System.Exception ex)
             {
-                d.aktuelleMitarbeiter_ExecuteFailed(ex);
+                d.MitarbeiterMitAktuellemVertrag_ExecuteFailed(ex);
             }
-            private static global::System.Linq.IQueryable __aktuelleMitarbeiter_PreprocessQuery(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            private static global::System.Linq.IQueryable __MitarbeiterMitAktuellemVertrag_PreprocessQuery(global::LightSwitchApplication.ApplicationDataService d, object[] args)
             {
                 global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem>)args[0];
-                d.aktuelleMitarbeiter_PreprocessQuery(ref query);
+                d.MitarbeiterMitAktuellemVertrag_PreprocessQuery(ref query);
                 return query;
             }
             
             [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.MitarbeiterItem>
-                __ausgeschiedeneMitarbeiterEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.MitarbeiterItem>(
-                    "ausgeschiedeneMitarbeiter",
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ausgeschiedeneMitarbeiter_CanExecute,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ausgeschiedeneMitarbeiter_Executing,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ausgeschiedeneMitarbeiter_Executed,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ausgeschiedeneMitarbeiter_Failed,
-                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__ausgeschiedeneMitarbeiter_PreprocessQuery);
-            private static bool __ausgeschiedeneMitarbeiter_CanExecute(global::LightSwitchApplication.ApplicationDataService d, bool r)
+                __MitarbeiterAusgeschiedenEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.MitarbeiterItem>(
+                    "MitarbeiterAusgeschieden",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterAusgeschieden_CanExecute,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterAusgeschieden_Executing,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterAusgeschieden_Executed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterAusgeschieden_Failed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterAusgeschieden_PreprocessQuery);
+            private static bool __MitarbeiterAusgeschieden_CanExecute(global::LightSwitchApplication.ApplicationDataService d, bool r)
             {
-                d.ausgeschiedeneMitarbeiter_CanExecute(ref r);
+                d.MitarbeiterAusgeschieden_CanExecute(ref r);
                 return r;
             }
-            private static void __ausgeschiedeneMitarbeiter_Executing(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            private static void __MitarbeiterAusgeschieden_Executing(global::LightSwitchApplication.ApplicationDataService d, object[] args)
             {
-                d.ausgeschiedeneMitarbeiter_Executing();
+                d.MitarbeiterAusgeschieden_Executing();
             }
-            private static void __ausgeschiedeneMitarbeiter_Executed(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            private static void __MitarbeiterAusgeschieden_Executed(global::LightSwitchApplication.ApplicationDataService d, object[] args)
             {
-                d.ausgeschiedeneMitarbeiter_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MitarbeiterItem>)args[0]);
+                d.MitarbeiterAusgeschieden_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MitarbeiterItem>)args[0]);
             }
-            private static void __ausgeschiedeneMitarbeiter_Failed(global::LightSwitchApplication.ApplicationDataService d, object[] args, global::System.Exception ex)
+            private static void __MitarbeiterAusgeschieden_Failed(global::LightSwitchApplication.ApplicationDataService d, object[] args, global::System.Exception ex)
             {
-                d.ausgeschiedeneMitarbeiter_ExecuteFailed(ex);
+                d.MitarbeiterAusgeschieden_ExecuteFailed(ex);
             }
-            private static global::System.Linq.IQueryable __ausgeschiedeneMitarbeiter_PreprocessQuery(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            private static global::System.Linq.IQueryable __MitarbeiterAusgeschieden_PreprocessQuery(global::LightSwitchApplication.ApplicationDataService d, object[] args)
             {
                 global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem>)args[0];
-                d.ausgeschiedeneMitarbeiter_PreprocessQuery(ref query);
+                d.MitarbeiterAusgeschieden_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.MitarbeiterItem>
+                __MitarbeiterOhneAktuellenVertragEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.MitarbeiterItem>(
+                    "MitarbeiterOhneAktuellenVertrag",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterOhneAktuellenVertrag_CanExecute,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterOhneAktuellenVertrag_Executing,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterOhneAktuellenVertrag_Executed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterOhneAktuellenVertrag_Failed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterOhneAktuellenVertrag_PreprocessQuery);
+            private static bool __MitarbeiterOhneAktuellenVertrag_CanExecute(global::LightSwitchApplication.ApplicationDataService d, bool r)
+            {
+                d.MitarbeiterOhneAktuellenVertrag_CanExecute(ref r);
+                return r;
+            }
+            private static void __MitarbeiterOhneAktuellenVertrag_Executing(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                d.MitarbeiterOhneAktuellenVertrag_Executing();
+            }
+            private static void __MitarbeiterOhneAktuellenVertrag_Executed(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                d.MitarbeiterOhneAktuellenVertrag_Executed((global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MitarbeiterItem>)args[0]);
+            }
+            private static void __MitarbeiterOhneAktuellenVertrag_Failed(global::LightSwitchApplication.ApplicationDataService d, object[] args, global::System.Exception ex)
+            {
+                d.MitarbeiterOhneAktuellenVertrag_ExecuteFailed(ex);
+            }
+            private static global::System.Linq.IQueryable __MitarbeiterOhneAktuellenVertrag_PreprocessQuery(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem>)args[0];
+                d.MitarbeiterOhneAktuellenVertrag_PreprocessQuery(ref query);
+                return query;
+            }
+            
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.MitarbeiterItem>
+                __MitarbeiterMitAuslaufendenVertragEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryOperationEntry<global::LightSwitchApplication.ApplicationDataService, global::LightSwitchApplication.MitarbeiterItem>(
+                    "MitarbeiterMitAuslaufendenVertrag",
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterMitAuslaufendenVertrag_CanExecute,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterMitAuslaufendenVertrag_Executing,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterMitAuslaufendenVertrag_Executed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterMitAuslaufendenVertrag_Failed,
+                    global::LightSwitchApplication.ApplicationDataService.DetailsClass.__MitarbeiterMitAuslaufendenVertrag_PreprocessQuery);
+            private static bool __MitarbeiterMitAuslaufendenVertrag_CanExecute(global::LightSwitchApplication.ApplicationDataService d, bool r)
+            {
+                d.MitarbeiterMitAuslaufendenVertrag_CanExecute(ref r);
+                return r;
+            }
+            private static void __MitarbeiterMitAuslaufendenVertrag_Executing(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                d.MitarbeiterMitAuslaufendenVertrag_Executing((global::System.Nullable<int>)args[0]);
+            }
+            private static void __MitarbeiterMitAuslaufendenVertrag_Executed(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                d.MitarbeiterMitAuslaufendenVertrag_Executed((global::System.Nullable<int>)args[0], (global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.MitarbeiterItem>)args[1]);
+            }
+            private static void __MitarbeiterMitAuslaufendenVertrag_Failed(global::LightSwitchApplication.ApplicationDataService d, object[] args, global::System.Exception ex)
+            {
+                d.MitarbeiterMitAuslaufendenVertrag_ExecuteFailed((global::System.Nullable<int>)args[0], ex);
+            }
+            private static global::System.Linq.IQueryable __MitarbeiterMitAuslaufendenVertrag_PreprocessQuery(global::LightSwitchApplication.ApplicationDataService d, object[] args)
+            {
+                global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem> query = (global::System.Linq.IQueryable<global::LightSwitchApplication.MitarbeiterItem>)args[1];
+                d.MitarbeiterMitAuslaufendenVertrag_PreprocessQuery((global::System.Nullable<int>)args[0], ref query);
                 return query;
             }
     

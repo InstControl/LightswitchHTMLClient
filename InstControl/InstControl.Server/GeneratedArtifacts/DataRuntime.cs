@@ -306,17 +306,25 @@ namespace LightSwitchApplication
         /// <summary>
         /// Keine modellierte Beschreibung verfügbar
         /// </summary>
-        public global::Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.MitarbeiterItem> aktuelleMitarbeiter()
+        public global::Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.MitarbeiterItem> MitarbeiterMitAktuellemVertrag()
         {
-            return this.Details.Methods.aktuelleMitarbeiter.CreateInvocation().Execute();
+            return this.Details.Methods.MitarbeiterMitAktuellemVertrag.CreateInvocation().Execute();
         }
         
         /// <summary>
         /// Keine modellierte Beschreibung verfügbar
         /// </summary>
-        public global::Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.MitarbeiterItem> ausgeschiedeneMitarbeiter()
+        public global::Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.MitarbeiterItem> MitarbeiterAusgeschieden()
         {
-            return this.Details.Methods.ausgeschiedeneMitarbeiter.CreateInvocation().Execute();
+            return this.Details.Methods.MitarbeiterAusgeschieden.CreateInvocation().Execute();
+        }
+        
+        /// <summary>
+        /// Keine modellierte Beschreibung verfügbar
+        /// </summary>
+        public global::Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.MitarbeiterItem> MitarbeiterOhneAktuellenVertrag()
+        {
+            return this.Details.Methods.MitarbeiterOhneAktuellenVertrag.CreateInvocation().Execute();
         }
         
         /// <summary>
@@ -405,6 +413,17 @@ namespace LightSwitchApplication
         public global::LightSwitchApplication.VertragJeMonatItem VertragJeMonatItemSet_SingleOrDefault(global::System.Nullable<int> Id)
         {
             return this.Details.Methods.VertragJeMonatItemSet_SingleOrDefault.CreateInvocation(Id).Execute();
+        }
+        
+        /// <summary>
+        /// Keine modellierte Beschreibung verfügbar
+        /// </summary>
+        /// <param name="Monate">
+        /// Keine modellierte Beschreibung verfügbar
+        /// </param>
+        public global::Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.MitarbeiterItem> MitarbeiterMitAuslaufendenVertrag(global::System.Nullable<int> Monate)
+        {
+            return this.Details.Methods.MitarbeiterMitAuslaufendenVertrag.CreateInvocation(Monate).Execute();
         }
         
         #endregion
@@ -503,19 +522,27 @@ namespace LightSwitchApplication
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem> aktuelleMitarbeiter
+                public global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem> MitarbeiterMitAktuellemVertrag
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties.aktuelleMitarbeiter) as global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>;
+                        return base.GetItem(global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties.MitarbeiterMitAktuellemVertrag) as global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>;
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem> ausgeschiedeneMitarbeiter
+                public global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem> MitarbeiterAusgeschieden
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties.ausgeschiedeneMitarbeiter) as global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>;
+                        return base.GetItem(global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties.MitarbeiterAusgeschieden) as global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem> MitarbeiterOhneAktuellenVertrag
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties.MitarbeiterOhneAktuellenVertrag) as global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>;
                     }
                 }
                 
@@ -580,6 +607,14 @@ namespace LightSwitchApplication
                     get
                     {
                         return base.GetItem(global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties.VertragJeMonatItemSet_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.VertragJeMonatItem>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem> MitarbeiterMitAuslaufendenVertrag
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties.MitarbeiterMitAuslaufendenVertrag) as global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>;
                     }
                 }
                 
@@ -722,22 +757,32 @@ namespace LightSwitchApplication
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Entry
-                    aktuelleMitarbeiter = new global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Entry(
-                        "aktuelleMitarbeiter",
-                        global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties._aktuelleMitarbeiter_Stub);
-                private static void _aktuelleMitarbeiter_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ApplicationData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data> c, global::LightSwitchApplication.ApplicationData.DetailsClass d, object sf)
+                    MitarbeiterMitAktuellemVertrag = new global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Entry(
+                        "MitarbeiterMitAktuellemVertrag",
+                        global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties._MitarbeiterMitAktuellemVertrag_Stub);
+                private static void _MitarbeiterMitAktuellemVertrag_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ApplicationData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data> c, global::LightSwitchApplication.ApplicationData.DetailsClass d, object sf)
                 {
-                    c(d, ref d._aktuelleMitarbeiter, sf);
+                    c(d, ref d._MitarbeiterMitAktuellemVertrag, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Entry
-                    ausgeschiedeneMitarbeiter = new global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Entry(
-                        "ausgeschiedeneMitarbeiter",
-                        global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties._ausgeschiedeneMitarbeiter_Stub);
-                private static void _ausgeschiedeneMitarbeiter_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ApplicationData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data> c, global::LightSwitchApplication.ApplicationData.DetailsClass d, object sf)
+                    MitarbeiterAusgeschieden = new global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Entry(
+                        "MitarbeiterAusgeschieden",
+                        global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties._MitarbeiterAusgeschieden_Stub);
+                private static void _MitarbeiterAusgeschieden_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ApplicationData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data> c, global::LightSwitchApplication.ApplicationData.DetailsClass d, object sf)
                 {
-                    c(d, ref d._ausgeschiedeneMitarbeiter, sf);
+                    c(d, ref d._MitarbeiterAusgeschieden, sf);
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Entry
+                    MitarbeiterOhneAktuellenVertrag = new global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Entry(
+                        "MitarbeiterOhneAktuellenVertrag",
+                        global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties._MitarbeiterOhneAktuellenVertrag_Stub);
+                private static void _MitarbeiterOhneAktuellenVertrag_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ApplicationData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data> c, global::LightSwitchApplication.ApplicationData.DetailsClass d, object sf)
+                {
+                    c(d, ref d._MitarbeiterOhneAktuellenVertrag, sf);
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -818,6 +863,16 @@ namespace LightSwitchApplication
                 private static void _VertragJeMonatItemSet_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ApplicationData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.VertragJeMonatItem>.Data> c, global::LightSwitchApplication.ApplicationData.DetailsClass d, object sf)
                 {
                     c(d, ref d._VertragJeMonatItemSet_SingleOrDefault, sf);
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Entry
+                    MitarbeiterMitAuslaufendenVertrag = new global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Entry(
+                        "MitarbeiterMitAuslaufendenVertrag",
+                        global::LightSwitchApplication.ApplicationData.DetailsClass.MethodSetProperties._MitarbeiterMitAuslaufendenVertrag_Stub);
+                private static void _MitarbeiterMitAuslaufendenVertrag_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.ApplicationData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data> c, global::LightSwitchApplication.ApplicationData.DetailsClass d, object sf)
+                {
+                    c(d, ref d._MitarbeiterMitAuslaufendenVertrag, sf);
                 }
     
             }
@@ -940,10 +995,13 @@ namespace LightSwitchApplication
             private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data _MitarbeiterItemSet_SingleOrDefault;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data _aktuelleMitarbeiter;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data _MitarbeiterMitAktuellemVertrag;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data _ausgeschiedeneMitarbeiter;
+            private global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data _MitarbeiterAusgeschieden;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data _MitarbeiterOhneAktuellenVertrag;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.ProjektItem>.Data _ProjektItemSet_Single;
@@ -968,6 +1026,9 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.VertragJeMonatItem>.Data _VertragJeMonatItemSet_SingleOrDefault;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.CreateQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.MitarbeiterItem>.Data _MitarbeiterMitAuslaufendenVertrag;
             
         }
     

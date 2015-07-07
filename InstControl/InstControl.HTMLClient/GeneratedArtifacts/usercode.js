@@ -2,6 +2,7 @@
 document.writeln("<script type=\"text/javascript\" src=\"Screens/AbteilungItemSet/ViewAbteilungItem.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BeschäftigungsArtItemSet/ViewBeschäftigungsArtItem.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/Browse.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseVertragJeMonatItemSet.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/KontoItem/ViewKontoItem.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MitarbeiterSet/AddEditMitarbeiter.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MitarbeiterSet/BrowseMitarbeiterSet.lsml.js\"></script>");
