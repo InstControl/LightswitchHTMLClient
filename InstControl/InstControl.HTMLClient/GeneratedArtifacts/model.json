@@ -3708,6 +3708,29 @@
               ]
             },
             {
+              "id": "ApplicationData/Members[MitarbeiterAusgeschieden]",
+              "name": "MitarbeiterAusgeschieden",
+              "elementType": { "__id": "MitarbeiterItem" },
+              "query": { "__id": "ApplicationData/Members[MitarbeiterAusgeschieden]" },
+              "returnType": { "__id": "MitarbeiterItem*" },
+              "source":
+              {
+                "member": { "__id": "ApplicationData/Members[MitarbeiterItemSet]" }
+              },
+              "sortCriteria":
+              [
+                {
+                  "member": { "__id": "MitarbeiterItem/Properties[Ausscheidedatum]" }
+                },
+                {
+                  "member": { "__id": "MitarbeiterItem/Properties[Nachname]" }
+                },
+                {
+                  "member": { "__id": "MitarbeiterItem/Properties[Vorname]" }
+                }
+              ]
+            },
+            {
               "id": "ApplicationData/Members[MitarbeiterMitAktuellemVertrag]",
               "name": "MitarbeiterMitAktuellemVertrag",
               "elementType": { "__id": "MitarbeiterItem" },
@@ -3731,25 +3754,21 @@
               ]
             },
             {
-              "id": "ApplicationData/Members[MitarbeiterAusgeschieden]",
-              "name": "MitarbeiterAusgeschieden",
+              "id": "ApplicationData/Members[MitarbeiterMitAuslaufendemVertrag]",
+              "name": "MitarbeiterMitAuslaufendemVertrag",
               "elementType": { "__id": "MitarbeiterItem" },
-              "query": { "__id": "ApplicationData/Members[MitarbeiterAusgeschieden]" },
+              "query": { "__id": "ApplicationData/Members[MitarbeiterMitAuslaufendemVertrag]" },
               "returnType": { "__id": "MitarbeiterItem*" },
               "source":
               {
                 "member": { "__id": "ApplicationData/Members[MitarbeiterItemSet]" }
               },
-              "sortCriteria":
+              "parameters":
               [
                 {
-                  "member": { "__id": "MitarbeiterItem/Properties[Ausscheidedatum]" }
-                },
-                {
-                  "member": { "__id": "MitarbeiterItem/Properties[Nachname]" }
-                },
-                {
-                  "member": { "__id": "MitarbeiterItem/Properties[Vorname]" }
+                  "id": "ApplicationData/Members[MitarbeiterMitAuslaufendemVertrag]/Parameters[Monate]",
+                  "name": "Monate",
+                  "parameterType": { "__id": ":Int32?" }
                 }
               ]
             },
@@ -3912,25 +3931,6 @@
                 {
                   "id": "ApplicationData/Members[VertragJeMonatItemSet_SingleOrDefault]/Parameters[Id]",
                   "name": "Id",
-                  "parameterType": { "__id": ":Int32?" }
-                }
-              ]
-            },
-            {
-              "id": "ApplicationData/Members[MitarbeiterMitAuslaufendenVertrag]",
-              "name": "MitarbeiterMitAuslaufendenVertrag",
-              "elementType": { "__id": "MitarbeiterItem" },
-              "query": { "__id": "ApplicationData/Members[MitarbeiterMitAuslaufendenVertrag]" },
-              "returnType": { "__id": "MitarbeiterItem*" },
-              "source":
-              {
-                "member": { "__id": "ApplicationData/Members[MitarbeiterItemSet]" }
-              },
-              "parameters":
-              [
-                {
-                  "id": "ApplicationData/Members[MitarbeiterMitAuslaufendenVertrag]/Parameters[Monate]",
-                  "name": "Monate",
                   "parameterType": { "__id": ":Int32?" }
                 }
               ]
@@ -6874,112 +6874,6 @@
                     ]
                   },
                   {
-                    "displayName": "ohne aktuellen Vertrag",
-                    "name": "Group3",
-                    "kind": "Tab",
-                    "view": { "__id": ":RowsLayout" },
-                    "childContentItems":
-                    [
-                      {
-                        "displayName": "Mitarbeiter Ohne Vertrag",
-                        "name": "MitarbeiterOhneVertrag",
-                        "kind": "Collection",
-                        "view": { "__id": ":TileList" },
-                        "dataSource":
-                        {
-                          "member": { "__id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneVertrag]" }
-                        },
-                        "childContentItems":
-                        [
-                          {
-                            "displayName": "Mitarbeiter",
-                            "name": "MitarbeiterOhneVertragTemplate",
-                            "kind": "Details",
-                            "view": { "__id": ":RowsLayout" },
-                            "dataSource":
-                            {
-                              "links":
-                              [
-                              ]
-                            },
-                            "childContentItems":
-                            [
-                              {
-                                "displayName": "Nachname",
-                                "name": "Nachname2",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Nachname]" }
-                                }
-                              },
-                              {
-                                "displayName": "Vorname",
-                                "name": "Vorname2",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Vorname]" }
-                                }
-                              },
-                              {
-                                "displayName": "Ausscheidedatum",
-                                "name": "Ausscheidedatum",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Ausscheidedatum]" }
-                                }
-                              },
-                              {
-                                "displayName": "Bermerkung",
-                                "name": "Bermerkung",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Bermerkung]" }
-                                }
-                              }
-                            ]
-                          }
-                        ],
-                        "propertySources":
-                        [
-                          {
-                            "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
-                            "source":
-                            {
-                              "target": { "__id": "!module/Methods[showViewMitarbeiter]" },
-                              ":@AssociatedCollection": { "collection": { "__id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneVertrag]" } },
-                              "arguments":
-                              [
-                                {
-                                  "parameter": { "__id": "!module/Methods[showViewMitarbeiter]/Parameters[MitarbeiterItem]" },
-                                  "value":
-                                  {
-                                    "links":
-                                    [
-                                      {
-                                        "member": { "__id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneVertrag]" }
-                                      },
-                                      {
-                                        "member": { "__id": "CollectionView$MitarbeiterItem/Properties[selectedItem]" }
-                                      }
-                                    ]
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
                     "displayName": "mit auslaufendem Vertrag",
                     "name": "Group4",
                     "kind": "Tab",
@@ -7114,6 +7008,112 @@
                       {
                         "property": { "__id": ":RootControl/Properties[BrowseOnly]" },
                         "value": false
+                      }
+                    ]
+                  },
+                  {
+                    "displayName": "ohne aktuellen Vertrag",
+                    "name": "Group3",
+                    "kind": "Tab",
+                    "view": { "__id": ":RowsLayout" },
+                    "childContentItems":
+                    [
+                      {
+                        "displayName": "Mitarbeiter Ohne Aktuellen Vertrag",
+                        "name": "MitarbeiterOhneVertrag",
+                        "kind": "Collection",
+                        "view": { "__id": ":TileList" },
+                        "dataSource":
+                        {
+                          "member": { "__id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneAktuellenVertrag]" }
+                        },
+                        "childContentItems":
+                        [
+                          {
+                            "displayName": "Mitarbeiter",
+                            "name": "MitarbeiterOhneVertragTemplate",
+                            "kind": "Details",
+                            "view": { "__id": ":RowsLayout" },
+                            "dataSource":
+                            {
+                              "links":
+                              [
+                              ]
+                            },
+                            "childContentItems":
+                            [
+                              {
+                                "displayName": "Nachname",
+                                "name": "Nachname2",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "MitarbeiterItem/Properties[Nachname]" }
+                                }
+                              },
+                              {
+                                "displayName": "Vorname",
+                                "name": "Vorname2",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "MitarbeiterItem/Properties[Vorname]" }
+                                }
+                              },
+                              {
+                                "displayName": "Ausscheidedatum",
+                                "name": "Ausscheidedatum",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "MitarbeiterItem/Properties[Ausscheidedatum]" }
+                                }
+                              },
+                              {
+                                "displayName": "Bermerkung",
+                                "name": "Bermerkung",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "MitarbeiterItem/Properties[Bermerkung]" }
+                                }
+                              }
+                            ]
+                          }
+                        ],
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showViewMitarbeiter]" },
+                              ":@AssociatedCollection": { "collection": { "__id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneAktuellenVertrag]" } },
+                              "arguments":
+                              [
+                                {
+                                  "parameter": { "__id": "!module/Methods[showViewMitarbeiter]/Parameters[MitarbeiterItem]" },
+                                  "value":
+                                  {
+                                    "links":
+                                    [
+                                      {
+                                        "member": { "__id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneAktuellenVertrag]" }
+                                      },
+                                      {
+                                        "member": { "__id": "CollectionView$MitarbeiterItem/Properties[selectedItem]" }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
                       }
                     ]
                   },
@@ -7315,51 +7315,17 @@
               }
             },
             {
-              "id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneVertrag]",
-              "name": "MitarbeiterOhneVertrag",
+              "id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneAktuellenVertrag]",
+              "name": "MitarbeiterOhneAktuellenVertrag",
               "pageSize": 45,
               "elementType": { "__id": "MitarbeiterItem" },
               "propertyType": { "__id": "CollectionView$MitarbeiterItem" },
               "query":
               {
-                "id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneVertrag]/Query",
-                "name": "MitarbeiterOhneVertragQuery",
+                "id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneAktuellenVertrag]/Query",
+                "name": "MitarbeiterOhneAktuellenVertragQuery",
                 "elementType": { "__id": "MitarbeiterItem" },
                 "returnType": { "__id": "MitarbeiterItem*" },
-                "filterExpression":
-                {
-                  "nodeType": "Or",
-                  "left":
-                  {
-                    "nodeType": "Equal",
-                    "left":
-                    {
-                      "links":
-                      [
-                        {
-                          "member": { "__id": "MitarbeiterItem/Properties[Ausscheidedatum]" }
-                        }
-                      ]
-                    }
-                  },
-                  "right":
-                  {
-                    "nodeType": "GreaterThan",
-                    "left":
-                    {
-                      "links":
-                      [
-                        {
-                          "member": { "__id": "MitarbeiterItem/Properties[Ausscheidedatum]" }
-                        }
-                      ]
-                    },
-                    "right":
-                    {
-                      "target": { "__id": ":RelativeDates/GlobalValues[Today]" }
-                    }
-                  }
-                },
                 "source":
                 {
                   "member": { "__id": "ApplicationData/Members[MitarbeiterOhneAktuellenVertrag]" }
@@ -7367,7 +7333,7 @@
               },
               "source":
               {
-                "target": { "__id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneVertrag]/Query" }
+                "target": { "__id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneAktuellenVertrag]/Query" }
               }
             },
             {
@@ -7406,7 +7372,7 @@
                 "returnType": { "__id": "MitarbeiterItem*" },
                 "source":
                 {
-                  "member": { "__id": "ApplicationData/Members[MitarbeiterMitAuslaufendenVertrag]" }
+                  "member": { "__id": "ApplicationData/Members[MitarbeiterMitAuslaufendemVertrag]" }
                 }
               },
               "source":
@@ -7415,7 +7381,7 @@
                 "arguments":
                 [
                   {
-                    "parameter": { "__id": "ApplicationData/Members[MitarbeiterMitAuslaufendenVertrag]/Parameters[Monate]" },
+                    "parameter": { "__id": "ApplicationData/Members[MitarbeiterMitAuslaufendemVertrag]/Parameters[Monate]" },
                     "value":
                     {
                       "links":

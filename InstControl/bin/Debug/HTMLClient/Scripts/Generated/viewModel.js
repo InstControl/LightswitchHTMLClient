@@ -241,8 +241,8 @@
         /// <field name="MitarbeiterAktuell" type="msls.VisualCollection" elementType="msls.application.MitarbeiterItem">
         /// Ruft den mitarbeiterAktuell für diesen Bildschirm ab.
         /// </field>
-        /// <field name="MitarbeiterOhneVertrag" type="msls.VisualCollection" elementType="msls.application.MitarbeiterItem">
-        /// Ruft den mitarbeiterOhneVertrag für diesen Bildschirm ab.
+        /// <field name="MitarbeiterOhneAktuellenVertrag" type="msls.VisualCollection" elementType="msls.application.MitarbeiterItem">
+        /// Ruft den mitarbeiterOhneAktuellenVertrag für diesen Bildschirm ab.
         /// </field>
         /// <field name="MitarbeiterAusgeschieden" type="msls.VisualCollection" elementType="msls.application.MitarbeiterItem">
         /// Ruft den mitarbeiterAusgeschieden für diesen Bildschirm ab.
@@ -648,10 +648,9 @@
                 }
             },
             {
-                name: "MitarbeiterOhneVertrag", kind: "collection", elementType: lightSwitchApplication.MitarbeiterItem,
+                name: "MitarbeiterOhneAktuellenVertrag", kind: "collection", elementType: lightSwitchApplication.MitarbeiterItem,
                 createQuery: function () {
-                    var today1 = msls.relativeDates.today();
-                    return this.dataWorkspace.ApplicationData.MitarbeiterOhneAktuellenVertrag().filter("(Ausscheidedatum eq null) or ((Ausscheidedatum ne null) and (Ausscheidedatum gt " + $toODataString(today1, "DateTime") + "))");
+                    return this.dataWorkspace.ApplicationData.MitarbeiterOhneAktuellenVertrag();
                 }
             },
             {
@@ -663,7 +662,7 @@
             {
                 name: "MitarbeiterMitAuslaufendenVertrag", kind: "collection", elementType: lightSwitchApplication.MitarbeiterItem,
                 createQuery: function (Monate) {
-                    return this.dataWorkspace.ApplicationData.MitarbeiterMitAuslaufendenVertrag(Monate);
+                    return this.dataWorkspace.ApplicationData.MitarbeiterMitAuslaufendemVertrag(Monate);
                 }
             },
             { name: "Monate", kind: "local", type: Number }

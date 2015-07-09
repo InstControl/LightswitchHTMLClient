@@ -10,7 +10,7 @@
       <Partial />
     </EntityContainer.Attributes>
     <QueryOperation
-      Name="MitarbeiterOhneAktuellenVertrag"
+      Name="MitarbeiterMitAuslaufendemVertrag"
       ReturnType="MitarbeiterItem*">
       <QueryOperation.FilterExpression>
         <QueryFilterExpressionTree>
@@ -18,7 +18,7 @@
             NodeType="Or">
             <BinaryExpression.Left>
               <BinaryExpression
-                NodeType="GreaterThanOrEqual">
+                NodeType="GreaterThan">
                 <BinaryExpression.Left>
                   <ChainExpression>
                     <MemberExpression
@@ -51,6 +51,14 @@
             Member="MitarbeiterItemSet" />
         </QuerySourceExpressionTree>
       </QueryOperation.Source>
+      <QueryOperationParameter
+        Name="Monate"
+        ParameterType=":Int32?">
+        <QueryOperationParameter.Attributes>
+          <DisplayName
+            Value="Restlaufzeit in Monaten" />
+        </QueryOperationParameter.Attributes>
+      </QueryOperationParameter>
     </QueryOperation>
   </EntityContainer>
 </ServiceApplication>

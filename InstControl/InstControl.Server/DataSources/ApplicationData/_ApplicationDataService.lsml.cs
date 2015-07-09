@@ -24,7 +24,7 @@ namespace LightSwitchApplication
         partial void MitarbeiterOhneAktuellenVertrag_PreprocessQuery(ref IQueryable<MitarbeiterItem> query)
         {
             //Mitarbeiter deren letzter Vertrag bereits geendet ist oder die noch keinen Vertrag haben
-            query = query.Where(p => (p.VertragItemCollection.Max(q => q.bis) < DateTime.Today || p.VertragItemCollection.Count() == 0));
+            query = query.Where(p => (p.VertragItemCollection.Max(q => q.bis) <= DateTime.Today || p.VertragItemCollection.Count() == 0));
         }
 
 
@@ -34,9 +34,9 @@ namespace LightSwitchApplication
             query = query.Where(p => p.VertragItemCollection.Max(q => q.bis) >= DateTime.Today);
         }
 
-        partial void MitarbeiterMitAuslaufendenVertrag_PreprocessQuery(int? Monate, ref IQueryable<MitarbeiterItem> query)
+        partial void MitarbeiterMitAuslaufendemVertrag_PreprocessQuery(int? Monate, ref IQueryable<MitarbeiterItem> query)
         {
-            if (Monate==null)
+            if (Monate == null)
             {
                 Monate = 0;
             }

@@ -524,6 +524,14 @@ window.myapp = msls.application;
                 }
             },
             {
+                name: "MitarbeiterAusgeschieden", value: function () {
+                    return new $DataServiceQuery({ _entitySet: this.MitarbeiterItemSet },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/MitarbeiterAusgeschieden()",
+                        {
+                        });
+                }
+            },
+            {
                 name: "MitarbeiterMitAktuellemVertrag", value: function () {
                     return new $DataServiceQuery({ _entitySet: this.MitarbeiterItemSet },
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/MitarbeiterMitAktuellemVertrag()",
@@ -532,10 +540,11 @@ window.myapp = msls.application;
                 }
             },
             {
-                name: "MitarbeiterAusgeschieden", value: function () {
+                name: "MitarbeiterMitAuslaufendemVertrag", value: function (Monate) {
                     return new $DataServiceQuery({ _entitySet: this.MitarbeiterItemSet },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/MitarbeiterAusgeschieden()",
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/MitarbeiterMitAuslaufendemVertrag()",
                         {
+                            Monate: $toODataString(Monate, "Int32?")
                         });
                 }
             },
@@ -573,15 +582,6 @@ window.myapp = msls.application;
                     return new $DataServiceQuery({ _entitySet: this.VertragJeMonatItemSet },
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/VertragJeMonatItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
                     );
-                }
-            },
-            {
-                name: "MitarbeiterMitAuslaufendenVertrag", value: function (Monate) {
-                    return new $DataServiceQuery({ _entitySet: this.MitarbeiterItemSet },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/MitarbeiterMitAuslaufendenVertrag()",
-                        {
-                            Monate: $toODataString(Monate, "Int32?")
-                        });
                 }
             }
         ]),

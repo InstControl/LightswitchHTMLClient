@@ -319,6 +319,7 @@ C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLCli
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\AbteilungItemSet\ViewAbteilungItem.lsml.js
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\BeschäftigungsArtItemSet\ViewBeschäftigungsArtItem.lsml.js
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\Browse.lsml.js
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\BrowseVertragJeMonatItemSet.lsml.js
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\KontoItem\ViewKontoItem.lsml.js
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\MitarbeiterSet\AddEditMitarbeiter.lsml.js
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\MitarbeiterSet\BrowseMitarbeiterSet.lsml.js
@@ -350,4 +351,3 @@ C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLCli
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\Resources\Generated\model.json
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\Resources\msls.lang-en-us.resjson
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\Resources\msls.lang-de.resjson
-C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Screens\BrowseVertragJeMonatItemSet.lsml.js

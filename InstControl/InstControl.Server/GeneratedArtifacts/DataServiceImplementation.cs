@@ -37,22 +37,6 @@ namespace LightSwitchApplication.Implementation
         }
     
     #region Queries
-        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> MitarbeiterMitAktuellemVertrag()
-        {
-            global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> query;
-            global::System.DateTime today1 = global::Microsoft.LightSwitch.RelativeDates.Today();
-            query = global::System.Linq.Queryable.ThenBy(
-                global::System.Linq.Queryable.ThenBy(
-                    global::System.Linq.Queryable.OrderBy(
-                        global::System.Linq.Queryable.Where(
-                            this.GetQuery<global::LightSwitchApplication.Implementation.MitarbeiterItem>("MitarbeiterItemSet"),
-                            (m) => ((m.Ausscheidedatum.HasValue && (m.Ausscheidedatum >= today1)) || (m.Ausscheidedatum.HasValue == false))),
-                        (m) => m.Nachname),
-                    (m) => m.Vorname),
-                (m) => m.Geburtstag);
-            return query;
-        }
-    
         public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> MitarbeiterAusgeschieden()
         {
             global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> query;
@@ -69,17 +53,39 @@ namespace LightSwitchApplication.Implementation
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> MitarbeiterOhneAktuellenVertrag()
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> MitarbeiterMitAktuellemVertrag()
         {
             global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> query;
-            query = this.GetQuery<global::LightSwitchApplication.Implementation.MitarbeiterItem>("MitarbeiterItemSet");
+            global::System.DateTime today1 = global::Microsoft.LightSwitch.RelativeDates.Today();
+            query = global::System.Linq.Queryable.ThenBy(
+                global::System.Linq.Queryable.ThenBy(
+                    global::System.Linq.Queryable.OrderBy(
+                        global::System.Linq.Queryable.Where(
+                            this.GetQuery<global::LightSwitchApplication.Implementation.MitarbeiterItem>("MitarbeiterItemSet"),
+                            (m) => ((m.Ausscheidedatum.HasValue && (m.Ausscheidedatum >= today1)) || (m.Ausscheidedatum.HasValue == false))),
+                        (m) => m.Nachname),
+                    (m) => m.Vorname),
+                (m) => m.Geburtstag);
             return query;
         }
     
-        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> MitarbeiterMitAuslaufendenVertrag(global::System.Nullable<int> Monate)
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> MitarbeiterMitAuslaufendemVertrag(global::System.Nullable<int> Monate)
         {
             global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> query;
-            query = this.GetQuery<global::LightSwitchApplication.Implementation.MitarbeiterItem>("MitarbeiterItemSet");
+            global::System.DateTime today1 = global::Microsoft.LightSwitch.RelativeDates.Today();
+            query = global::System.Linq.Queryable.Where(
+                this.GetQuery<global::LightSwitchApplication.Implementation.MitarbeiterItem>("MitarbeiterItemSet"),
+                (m) => ((m.Ausscheidedatum.HasValue && (m.Ausscheidedatum > today1)) || (m.Ausscheidedatum.HasValue == false)));
+            return query;
+        }
+    
+        public global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> MitarbeiterOhneAktuellenVertrag()
+        {
+            global::System.Linq.IQueryable<global::LightSwitchApplication.Implementation.MitarbeiterItem> query;
+            global::System.DateTime today1 = global::Microsoft.LightSwitch.RelativeDates.Today();
+            query = global::System.Linq.Queryable.Where(
+                this.GetQuery<global::LightSwitchApplication.Implementation.MitarbeiterItem>("MitarbeiterItemSet"),
+                (m) => ((m.Ausscheidedatum.HasValue && (m.Ausscheidedatum >= today1)) || (m.Ausscheidedatum.HasValue == false)));
             return query;
         }
     
