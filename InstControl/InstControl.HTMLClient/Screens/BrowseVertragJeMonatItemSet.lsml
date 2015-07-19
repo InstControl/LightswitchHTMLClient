@@ -175,25 +175,6 @@
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
                 </ContentItem>
-                <ContentItem
-                  Name="Art"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="VertragJeMonatItem/Properties[StellenanteilItem]" />
-                        <MemberExpression
-                          Member="VertragItem" />
-                        <MemberExpression
-                          Member="BeschäftigungsArtItem" />
-                        <MemberExpression
-                          Member="Art" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
                 <ContentItem.PropertySources>
                   <ControlPropertySource
                     Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
@@ -316,6 +297,30 @@
                   Member="ApplicationData/Members[VertragJeMonatItemSet]" />
               </QuerySourceExpressionTree>
             </ScreenQueryDefinition.Source>
+            <ScreenQueryDefinition.SortCriteria>
+              <SortCriterion>
+                <ChainExpression>
+                  <MemberExpression
+                    Member="StellenanteilItem" />
+                  <MemberExpression
+                    Member="VertragItem" />
+                  <MemberExpression
+                    Member="MitarbeiterItem" />
+                  <MemberExpression
+                    Member="Nachname" />
+                </ChainExpression>
+              </SortCriterion>
+              <SortCriterion>
+                <ChainExpression>
+                  <MemberExpression
+                    Member="StellenanteilItem" />
+                  <MemberExpression
+                    Member="VertragItem" />
+                  <MemberExpression
+                    Member="von" />
+                </ChainExpression>
+              </SortCriterion>
+            </ScreenQueryDefinition.SortCriteria>
           </ScreenQueryDefinition>
         </ScreenCollectionProperty.Query>
         <ScreenExpressionTree>

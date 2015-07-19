@@ -90,20 +90,27 @@
                   </ContentItem.PropertySources>
                 </ContentItem>
                 <ContentItem
-                  Name="Art1"
-                  Kind="Value"
-                  DataType=":String"
-                  View="Microsoft.LightSwitch.MobileWeb:Text">
+                  Name="BeschäftigungsArtItem"
+                  Kind="Details"
+                  DataType="BeschäftigungsArtItem">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
                           Member="VertragItem/Properties[BeschäftigungsArtItem]" />
-                        <MemberExpression
-                          Member="Art" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem
+                    Name="BeschäftigungsArtItem1"
+                    Kind="Details"
+                    DataType="BeschäftigungsArtItem">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression />
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
                 </ContentItem>
                 <ContentItem.PropertySources>
                   <ControlPropertySource
@@ -274,21 +281,6 @@
                       <ChainExpression>
                         <MemberExpression
                           Member="VertragItem/Properties[bis]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="Art"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="VertragItem/Properties[BeschäftigungsArtItem]" />
-                        <MemberExpression
-                          Member="Art" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
@@ -968,9 +960,6 @@
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>
-      <ScreenProperty
-        Name="Stellenanteil"
-        PropertyType=":Decimal?" />
       <ScreenCollectionProperty
         Name="VertragItemCollectionPlanned"
         PageSize="45"

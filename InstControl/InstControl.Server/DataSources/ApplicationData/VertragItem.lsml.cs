@@ -14,15 +14,11 @@ namespace LightSwitchApplication
             {
                 results.AddPropertyError("Bis-Datum liegt vor dem Von-Datum");
             }
-            if (StellenanteilItemCollection.Count() <= 0)
-            {
-                results.AddPropertyError("Kein Stellenanteil erfasst");
-            }
         }
 
         partial void Dauer_Compute(ref int result)
         {
-            result = (bis.Year - von.Year) * 12 + bis.Month - von.Month;
+            result = (bis.Month - von.Month) + 12 * (bis.Year - von.Year);
         }
     }
 }

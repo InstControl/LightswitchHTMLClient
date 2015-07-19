@@ -251,11 +251,11 @@
           Nullable="False"
           Type="int" />
         <SsdlForeignKeyProperty
-          Name="BeschäftigungsArtItem_VertragItem"
+          Name="VertragItem_ProjektItem"
           Nullable="False"
           Type="int" />
         <SsdlForeignKeyProperty
-          Name="VertragItem_ProjektItem"
+          Name="BeschäftigungsArtItem_VertragItem"
           Nullable="False"
           Type="int" />
       </EntitySetMapping.Attributes>

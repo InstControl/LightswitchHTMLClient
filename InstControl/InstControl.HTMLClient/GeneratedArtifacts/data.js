@@ -13,89 +13,6 @@ window.myapp = msls.application;
         $DataServiceQuery = msls.DataServiceQuery,
         $toODataString = msls._toODataString;
 
-    function AbteilungItem(entitySet) {
-        /// <summary>
-        /// Stellt den Entitätstyp AbteilungItem dar.
-        /// </summary>
-        /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// Der Entitätssatz, der diesen abteilungItem enthalten sollte.
-        /// </param>
-        /// <field name="Id" type="Number">
-        /// Ruft den id für diesen abteilungItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="Kürzel" type="String">
-        /// Ruft den kürzel für diesen abteilungItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="Langname" type="String">
-        /// Ruft den langname für diesen abteilungItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="MitarbeiterItemCollection" type="msls.EntityCollection" elementType="msls.application.MitarbeiterItem">
-        /// Ruft den mitarbeiterItemCollection für diesen abteilungItem ab.
-        /// </field>
-        /// <field name="ProjektItemCollection" type="msls.EntityCollection" elementType="msls.application.ProjektItem">
-        /// Ruft den projektItemCollection für diesen abteilungItem ab.
-        /// </field>
-        /// <field name="Abteilungsleiter" type="msls.application.MitarbeiterItem">
-        /// Ruft den abteilungsleiter für diesen abteilungItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="CreatedBy" type="String">
-        /// Ruft den createdBy für diesen abteilungItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="Created" type="Date">
-        /// Ruft den created für diesen abteilungItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="ModifiedBy" type="String">
-        /// Ruft den modifiedBy für diesen abteilungItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="Modified" type="Date">
-        /// Ruft den modified für diesen abteilungItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="RowVersion" type="Array">
-        /// Ruft den rowVersion für diesen abteilungItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="details" type="msls.application.AbteilungItem.Details">
-        /// Ruft die Details für diesen abteilungItem ab.
-        /// </field>
-        $Entity.call(this, entitySet);
-    }
-
-    function BeschäftigungsArtItem(entitySet) {
-        /// <summary>
-        /// Stellt den Entitätstyp BeschäftigungsArtItem dar.
-        /// </summary>
-        /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// Der Entitätssatz, der diesen beschäftigungsArtItem enthalten sollte.
-        /// </param>
-        /// <field name="Id" type="Number">
-        /// Ruft den id für diesen beschäftigungsArtItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="Art" type="String">
-        /// Ruft den art für diesen beschäftigungsArtItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="VertragItem" type="msls.EntityCollection" elementType="msls.application.VertragItem">
-        /// Ruft den vertragItem für diesen beschäftigungsArtItem ab.
-        /// </field>
-        /// <field name="CreatedBy" type="String">
-        /// Ruft den createdBy für diesen beschäftigungsArtItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="Created" type="Date">
-        /// Ruft den created für diesen beschäftigungsArtItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="ModifiedBy" type="String">
-        /// Ruft den modifiedBy für diesen beschäftigungsArtItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="Modified" type="Date">
-        /// Ruft den modified für diesen beschäftigungsArtItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="RowVersion" type="Array">
-        /// Ruft den rowVersion für diesen beschäftigungsArtItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="details" type="msls.application.BeschäftigungsArtItem.Details">
-        /// Ruft die Details für diesen beschäftigungsArtItem ab.
-        /// </field>
-        $Entity.call(this, entitySet);
-    }
-
     function MitarbeiterItem(entitySet) {
         /// <summary>
         /// Stellt den Entitätstyp MitarbeiterItem dar.
@@ -166,6 +83,89 @@ window.myapp = msls.application;
         $Entity.call(this, entitySet);
     }
 
+    function VertragItem(entitySet) {
+        /// <summary>
+        /// Stellt den Entitätstyp VertragItem dar.
+        /// </summary>
+        /// <param name="entitySet" type="msls.EntitySet" optional="true">
+        /// Der Entitätssatz, der diesen vertragItem enthalten sollte.
+        /// </param>
+        /// <field name="Id" type="Number">
+        /// Ruft den id für diesen vertragItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="von" type="Date">
+        /// Ruft den von für diesen vertragItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="bis" type="Date">
+        /// Ruft den bis für diesen vertragItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="MitarbeiterItem" type="msls.application.MitarbeiterItem">
+        /// Ruft den mitarbeiterItem für diesen vertragItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="BeschäftigungsArtItem" type="msls.application.BeschäftigungsArtItem">
+        /// Ruft den beschäftigungsArtItem für diesen vertragItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="StellenanteilItemCollection" type="msls.EntityCollection" elementType="msls.application.StellenanteilItem">
+        /// Ruft den stellenanteilItemCollection für diesen vertragItem ab.
+        /// </field>
+        /// <field name="CreatedBy" type="String">
+        /// Ruft den createdBy für diesen vertragItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="Created" type="Date">
+        /// Ruft den created für diesen vertragItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="ModifiedBy" type="String">
+        /// Ruft den modifiedBy für diesen vertragItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="Modified" type="Date">
+        /// Ruft den modified für diesen vertragItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="RowVersion" type="Array">
+        /// Ruft den rowVersion für diesen vertragItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="details" type="msls.application.VertragItem.Details">
+        /// Ruft die Details für diesen vertragItem ab.
+        /// </field>
+        $Entity.call(this, entitySet);
+    }
+
+    function BeschäftigungsArtItem(entitySet) {
+        /// <summary>
+        /// Stellt den Entitätstyp BeschäftigungsArtItem dar.
+        /// </summary>
+        /// <param name="entitySet" type="msls.EntitySet" optional="true">
+        /// Der Entitätssatz, der diesen beschäftigungsArtItem enthalten sollte.
+        /// </param>
+        /// <field name="Id" type="Number">
+        /// Ruft den id für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="Art" type="String">
+        /// Ruft den art für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="VertragItem" type="msls.EntityCollection" elementType="msls.application.VertragItem">
+        /// Ruft den vertragItem für diesen beschäftigungsArtItem ab.
+        /// </field>
+        /// <field name="CreatedBy" type="String">
+        /// Ruft den createdBy für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="Created" type="Date">
+        /// Ruft den created für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="ModifiedBy" type="String">
+        /// Ruft den modifiedBy für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="Modified" type="Date">
+        /// Ruft den modified für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="RowVersion" type="Array">
+        /// Ruft den rowVersion für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="details" type="msls.application.BeschäftigungsArtItem.Details">
+        /// Ruft die Details für diesen beschäftigungsArtItem ab.
+        /// </field>
+        $Entity.call(this, entitySet);
+    }
+
     function ProjektItem(entitySet) {
         /// <summary>
         /// Stellt den Entitätstyp ProjektItem dar.
@@ -218,6 +218,52 @@ window.myapp = msls.application;
         $Entity.call(this, entitySet);
     }
 
+    function AbteilungItem(entitySet) {
+        /// <summary>
+        /// Stellt den Entitätstyp AbteilungItem dar.
+        /// </summary>
+        /// <param name="entitySet" type="msls.EntitySet" optional="true">
+        /// Der Entitätssatz, der diesen abteilungItem enthalten sollte.
+        /// </param>
+        /// <field name="Id" type="Number">
+        /// Ruft den id für diesen abteilungItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="Kürzel" type="String">
+        /// Ruft den kürzel für diesen abteilungItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="Langname" type="String">
+        /// Ruft den langname für diesen abteilungItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="MitarbeiterItemCollection" type="msls.EntityCollection" elementType="msls.application.MitarbeiterItem">
+        /// Ruft den mitarbeiterItemCollection für diesen abteilungItem ab.
+        /// </field>
+        /// <field name="ProjektItemCollection" type="msls.EntityCollection" elementType="msls.application.ProjektItem">
+        /// Ruft den projektItemCollection für diesen abteilungItem ab.
+        /// </field>
+        /// <field name="Abteilungsleiter" type="msls.application.MitarbeiterItem">
+        /// Ruft den abteilungsleiter für diesen abteilungItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="CreatedBy" type="String">
+        /// Ruft den createdBy für diesen abteilungItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="Created" type="Date">
+        /// Ruft den created für diesen abteilungItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="ModifiedBy" type="String">
+        /// Ruft den modifiedBy für diesen abteilungItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="Modified" type="Date">
+        /// Ruft den modified für diesen abteilungItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="RowVersion" type="Array">
+        /// Ruft den rowVersion für diesen abteilungItem ab oder legt diesen fest.
+        /// </field>
+        /// <field name="details" type="msls.application.AbteilungItem.Details">
+        /// Ruft die Details für diesen abteilungItem ab.
+        /// </field>
+        $Entity.call(this, entitySet);
+    }
+
     function StellenanteilItem(entitySet) {
         /// <summary>
         /// Stellt den Entitätstyp StellenanteilItem dar.
@@ -257,52 +303,6 @@ window.myapp = msls.application;
         /// </field>
         /// <field name="details" type="msls.application.StellenanteilItem.Details">
         /// Ruft die Details für diesen stellenanteilItem ab.
-        /// </field>
-        $Entity.call(this, entitySet);
-    }
-
-    function VertragItem(entitySet) {
-        /// <summary>
-        /// Stellt den Entitätstyp VertragItem dar.
-        /// </summary>
-        /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// Der Entitätssatz, der diesen vertragItem enthalten sollte.
-        /// </param>
-        /// <field name="Id" type="Number">
-        /// Ruft den id für diesen vertragItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="von" type="Date">
-        /// Ruft den von für diesen vertragItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="bis" type="Date">
-        /// Ruft den bis für diesen vertragItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="MitarbeiterItem" type="msls.application.MitarbeiterItem">
-        /// Ruft den mitarbeiterItem für diesen vertragItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="BeschäftigungsArtItem" type="msls.application.BeschäftigungsArtItem">
-        /// Ruft den beschäftigungsArtItem für diesen vertragItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="StellenanteilItemCollection" type="msls.EntityCollection" elementType="msls.application.StellenanteilItem">
-        /// Ruft den stellenanteilItemCollection für diesen vertragItem ab.
-        /// </field>
-        /// <field name="CreatedBy" type="String">
-        /// Ruft den createdBy für diesen vertragItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="Created" type="Date">
-        /// Ruft den created für diesen vertragItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="ModifiedBy" type="String">
-        /// Ruft den modifiedBy für diesen vertragItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="Modified" type="Date">
-        /// Ruft den modified für diesen vertragItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="RowVersion" type="Array">
-        /// Ruft den rowVersion für diesen vertragItem ab oder legt diesen fest.
-        /// </field>
-        /// <field name="details" type="msls.application.VertragItem.Details">
-        /// Ruft die Details für diesen vertragItem ab.
         /// </field>
         $Entity.call(this, entitySet);
     }
@@ -351,23 +351,23 @@ window.myapp = msls.application;
         /// <param name="dataWorkspace" type="msls.DataWorkspace">
         /// Der Datenarbeitsbereich, der diesen Datendienst erstellt hat.
         /// </param>
-        /// <field name="AbteilungItemSet" type="msls.EntitySet">
-        /// Ruft die Entitätenmenge AbteilungItemSet ab.
+        /// <field name="MitarbeiterItemSet" type="msls.EntitySet">
+        /// Ruft die Entitätenmenge MitarbeiterItemSet ab.
+        /// </field>
+        /// <field name="VertragItemSet" type="msls.EntitySet">
+        /// Ruft die Entitätenmenge VertragItemSet ab.
         /// </field>
         /// <field name="BeschäftigungsArtItemSet" type="msls.EntitySet">
         /// Ruft die Entitätenmenge BeschäftigungsArtItemSet ab.
         /// </field>
-        /// <field name="MitarbeiterItemSet" type="msls.EntitySet">
-        /// Ruft die Entitätenmenge MitarbeiterItemSet ab.
-        /// </field>
         /// <field name="ProjektItemSet" type="msls.EntitySet">
         /// Ruft die Entitätenmenge ProjektItemSet ab.
         /// </field>
+        /// <field name="AbteilungItemSet" type="msls.EntitySet">
+        /// Ruft die Entitätenmenge AbteilungItemSet ab.
+        /// </field>
         /// <field name="StellenanteilItemSet" type="msls.EntitySet">
         /// Ruft die Entitätenmenge StellenanteilItemSet ab.
-        /// </field>
-        /// <field name="VertragItemSet" type="msls.EntitySet">
-        /// Ruft die Entitätenmenge VertragItemSet ab.
         /// </field>
         /// <field name="VertragJeMonatItemSet" type="msls.EntitySet">
         /// Ruft die Entitätenmenge VertragJeMonatItemSet ab.
@@ -392,31 +392,6 @@ window.myapp = msls.application;
 
     msls._addToNamespace("msls.application", {
 
-        AbteilungItem: $defineEntity(AbteilungItem, [
-            { name: "Id", type: Number },
-            { name: "Kürzel", type: String },
-            { name: "Langname", type: String },
-            { name: "MitarbeiterItemCollection", kind: "collection", elementType: MitarbeiterItem },
-            { name: "ProjektItemCollection", kind: "collection", elementType: ProjektItem },
-            { name: "Abteilungsleiter", kind: "reference", type: MitarbeiterItem },
-            { name: "CreatedBy", type: String, isReadOnly: true },
-            { name: "Created", type: Date, isReadOnly: true },
-            { name: "ModifiedBy", type: String, isReadOnly: true },
-            { name: "Modified", type: Date, isReadOnly: true },
-            { name: "RowVersion", type: Array }
-        ]),
-
-        BeschäftigungsArtItem: $defineEntity(BeschäftigungsArtItem, [
-            { name: "Id", type: Number },
-            { name: "Art", type: String },
-            { name: "VertragItem", kind: "collection", elementType: VertragItem },
-            { name: "CreatedBy", type: String, isReadOnly: true },
-            { name: "Created", type: Date, isReadOnly: true },
-            { name: "ModifiedBy", type: String, isReadOnly: true },
-            { name: "Modified", type: Date, isReadOnly: true },
-            { name: "RowVersion", type: Array }
-        ]),
-
         MitarbeiterItem: $defineEntity(MitarbeiterItem, [
             { name: "Id", type: Number },
             { name: "Nachname", type: String },
@@ -432,6 +407,31 @@ window.myapp = msls.application;
             { name: "PersonalNr", type: String },
             { name: "AbteilungItem", kind: "reference", type: AbteilungItem },
             { name: "Abteilungsleiter", kind: "collection", elementType: AbteilungItem },
+            { name: "CreatedBy", type: String, isReadOnly: true },
+            { name: "Created", type: Date, isReadOnly: true },
+            { name: "ModifiedBy", type: String, isReadOnly: true },
+            { name: "Modified", type: Date, isReadOnly: true },
+            { name: "RowVersion", type: Array }
+        ]),
+
+        VertragItem: $defineEntity(VertragItem, [
+            { name: "Id", type: Number },
+            { name: "von", type: Date },
+            { name: "bis", type: Date },
+            { name: "MitarbeiterItem", kind: "reference", type: MitarbeiterItem },
+            { name: "BeschäftigungsArtItem", kind: "reference", type: BeschäftigungsArtItem },
+            { name: "StellenanteilItemCollection", kind: "collection", elementType: StellenanteilItem },
+            { name: "CreatedBy", type: String, isReadOnly: true },
+            { name: "Created", type: Date, isReadOnly: true },
+            { name: "ModifiedBy", type: String, isReadOnly: true },
+            { name: "Modified", type: Date, isReadOnly: true },
+            { name: "RowVersion", type: Array }
+        ]),
+
+        BeschäftigungsArtItem: $defineEntity(BeschäftigungsArtItem, [
+            { name: "Id", type: Number },
+            { name: "Art", type: String },
+            { name: "VertragItem", kind: "collection", elementType: VertragItem },
             { name: "CreatedBy", type: String, isReadOnly: true },
             { name: "Created", type: Date, isReadOnly: true },
             { name: "ModifiedBy", type: String, isReadOnly: true },
@@ -455,12 +455,13 @@ window.myapp = msls.application;
             { name: "RowVersion", type: Array }
         ]),
 
-        StellenanteilItem: $defineEntity(StellenanteilItem, [
+        AbteilungItem: $defineEntity(AbteilungItem, [
             { name: "Id", type: Number },
-            { name: "Stellenanteil", type: String },
-            { name: "VertragItem", kind: "reference", type: VertragItem },
-            { name: "ProjektItem", kind: "reference", type: ProjektItem },
-            { name: "VertragJeMonatCollection", kind: "collection", elementType: VertragJeMonatItem },
+            { name: "Kürzel", type: String },
+            { name: "Langname", type: String },
+            { name: "MitarbeiterItemCollection", kind: "collection", elementType: MitarbeiterItem },
+            { name: "ProjektItemCollection", kind: "collection", elementType: ProjektItem },
+            { name: "Abteilungsleiter", kind: "reference", type: MitarbeiterItem },
             { name: "CreatedBy", type: String, isReadOnly: true },
             { name: "Created", type: Date, isReadOnly: true },
             { name: "ModifiedBy", type: String, isReadOnly: true },
@@ -468,13 +469,12 @@ window.myapp = msls.application;
             { name: "RowVersion", type: Array }
         ]),
 
-        VertragItem: $defineEntity(VertragItem, [
+        StellenanteilItem: $defineEntity(StellenanteilItem, [
             { name: "Id", type: Number },
-            { name: "von", type: Date },
-            { name: "bis", type: Date },
-            { name: "MitarbeiterItem", kind: "reference", type: MitarbeiterItem },
-            { name: "BeschäftigungsArtItem", kind: "reference", type: BeschäftigungsArtItem },
-            { name: "StellenanteilItemCollection", kind: "collection", elementType: StellenanteilItem },
+            { name: "Stellenanteil", type: String },
+            { name: "VertragItem", kind: "reference", type: VertragItem },
+            { name: "ProjektItem", kind: "reference", type: ProjektItem },
+            { name: "VertragJeMonatCollection", kind: "collection", elementType: VertragJeMonatItem },
             { name: "CreatedBy", type: String, isReadOnly: true },
             { name: "Created", type: Date, isReadOnly: true },
             { name: "ModifiedBy", type: String, isReadOnly: true },
@@ -494,28 +494,14 @@ window.myapp = msls.application;
         ]),
 
         ApplicationData: $defineDataService(ApplicationData, lightSwitchApplication.rootUri + "/ApplicationData.svc", [
-            { name: "AbteilungItemSet", elementType: AbteilungItem },
-            { name: "BeschäftigungsArtItemSet", elementType: BeschäftigungsArtItem },
             { name: "MitarbeiterItemSet", elementType: MitarbeiterItem },
-            { name: "ProjektItemSet", elementType: ProjektItem },
-            { name: "StellenanteilItemSet", elementType: StellenanteilItem },
             { name: "VertragItemSet", elementType: VertragItem },
+            { name: "BeschäftigungsArtItemSet", elementType: BeschäftigungsArtItem },
+            { name: "ProjektItemSet", elementType: ProjektItem },
+            { name: "AbteilungItemSet", elementType: AbteilungItem },
+            { name: "StellenanteilItemSet", elementType: StellenanteilItem },
             { name: "VertragJeMonatItemSet", elementType: VertragJeMonatItem }
         ], [
-            {
-                name: "AbteilungItemSet_SingleOrDefault", value: function (Id) {
-                    return new $DataServiceQuery({ _entitySet: this.AbteilungItemSet },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/AbteilungItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
-                    );
-                }
-            },
-            {
-                name: "BeschäftigungsArtItemSet_SingleOrDefault", value: function (Id) {
-                    return new $DataServiceQuery({ _entitySet: this.BeschäftigungsArtItemSet },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/BeschäftigungsArtItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
-                    );
-                }
-            },
             {
                 name: "MitarbeiterItemSet_SingleOrDefault", value: function (Id) {
                     return new $DataServiceQuery({ _entitySet: this.MitarbeiterItemSet },
@@ -532,6 +518,34 @@ window.myapp = msls.application;
                 }
             },
             {
+                name: "VertragItemSet_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.VertragItemSet },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/VertragItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
+                }
+            },
+            {
+                name: "BeschäftigungsArtItemSet_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.BeschäftigungsArtItemSet },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/BeschäftigungsArtItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
+                }
+            },
+            {
+                name: "ProjektItemSet_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.ProjektItemSet },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/ProjektItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
+                }
+            },
+            {
+                name: "AbteilungItemSet_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.AbteilungItemSet },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/AbteilungItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
+                }
+            },
+            {
                 name: "MitarbeiterMitAktuellemVertrag", value: function () {
                     return new $DataServiceQuery({ _entitySet: this.MitarbeiterItemSet },
                         lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/MitarbeiterMitAktuellemVertrag()",
@@ -540,12 +554,17 @@ window.myapp = msls.application;
                 }
             },
             {
-                name: "MitarbeiterMitAuslaufendemVertrag", value: function (Monate) {
-                    return new $DataServiceQuery({ _entitySet: this.MitarbeiterItemSet },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/MitarbeiterMitAuslaufendemVertrag()",
-                        {
-                            Monate: $toODataString(Monate, "Int32?")
-                        });
+                name: "StellenanteilItemSet_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.StellenanteilItemSet },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/StellenanteilItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
+                }
+            },
+            {
+                name: "VertragJeMonatItemSet_SingleOrDefault", value: function (Id) {
+                    return new $DataServiceQuery({ _entitySet: this.VertragJeMonatItemSet },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/VertragJeMonatItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
+                    );
                 }
             },
             {
@@ -557,31 +576,12 @@ window.myapp = msls.application;
                 }
             },
             {
-                name: "ProjektItemSet_SingleOrDefault", value: function (Id) {
-                    return new $DataServiceQuery({ _entitySet: this.ProjektItemSet },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/ProjektItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
-                    );
-                }
-            },
-            {
-                name: "StellenanteilItemSet_SingleOrDefault", value: function (Id) {
-                    return new $DataServiceQuery({ _entitySet: this.StellenanteilItemSet },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/StellenanteilItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
-                    );
-                }
-            },
-            {
-                name: "VertragItemSet_SingleOrDefault", value: function (Id) {
-                    return new $DataServiceQuery({ _entitySet: this.VertragItemSet },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/VertragItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
-                    );
-                }
-            },
-            {
-                name: "VertragJeMonatItemSet_SingleOrDefault", value: function (Id) {
-                    return new $DataServiceQuery({ _entitySet: this.VertragJeMonatItemSet },
-                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/VertragJeMonatItemSet(" + "Id=" + $toODataString(Id, "Int32?") + ")"
-                    );
+                name: "MitarbeiterMitAuslaufendemVertrag", value: function (Monate) {
+                    return new $DataServiceQuery({ _entitySet: this.MitarbeiterItemSet },
+                        lightSwitchApplication.rootUri + "/ApplicationData.svc" + "/MitarbeiterMitAuslaufendemVertrag()",
+                        {
+                            Monate: $toODataString(Monate, "Int32?")
+                        });
                 }
             }
         ]),

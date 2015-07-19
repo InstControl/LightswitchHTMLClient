@@ -282,6 +282,7 @@ C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\de\
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\de\System.ServiceModel.DomainServices.Hosting.OData.resources.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\bin\de\System.ServiceModel.DomainServices.Server.resources.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\packages.config
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\ClassDiagram1.cd
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\ApplicationData.svc
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\dark-theme-2.5.3.css
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\bin\Debug\HTMLClient\Content\jquery.mobile-1.3.0.css

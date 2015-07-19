@@ -8,5 +8,6 @@ namespace LightSwitchApplication
 {
     public partial class StellenanteilItem
     {
+
     }
 }

@@ -243,6 +243,7 @@
     <LightSwitchModel Include="DataSources\ApplicationData\MitarbeiterMitAuslaufendemVertrag.lsml">
       <DependentUpon>MitarbeiterItemSet.lsml</DependentUpon>
     </LightSwitchModel>
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
