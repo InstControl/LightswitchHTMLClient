@@ -90,7 +90,7 @@ namespace LightSwitchApplication
                     q => q.VertragJeMonatCollection.Any(
                         r => (r.Monat.Month == p.von.Month) && (r.Monat.Year == p.von.Year)))) > 0)
             {
-                results.AddEntityError("Ein Vertrag in diesem Zeitraum existiert bereits.");
+                //results.AddEntityError("Ein Vertrag in diesem Zeitraum existiert bereits.");
             }
         }
 

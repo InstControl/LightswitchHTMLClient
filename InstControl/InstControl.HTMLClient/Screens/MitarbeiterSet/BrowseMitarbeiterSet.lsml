@@ -32,7 +32,7 @@
               Name="aktuelleMitarbeiter"
               Kind="Collection"
               DataType="CollectionView$MitarbeiterItem"
-              View="Microsoft.LightSwitch.MobileWeb:TileList">
+              View="EJ.Web:CollectionCustomControl">
               <ContentItem.DataSource>
                 <ScreenExpressionTree>
                   <ChainExpression>
@@ -135,6 +135,16 @@
                           </ChainExpression>
                         </ArgumentExpression>
                       </CallExpression>
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+                <ControlPropertySource
+                  Property="EJ.Web:CollectionCustomControl/Properties[Control]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="ejGrid"
+                        ResultType=":String" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>

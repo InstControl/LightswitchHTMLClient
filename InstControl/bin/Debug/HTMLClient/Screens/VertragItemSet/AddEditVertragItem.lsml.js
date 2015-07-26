@@ -8,3 +8,7 @@ myapp.AddEditVertragItem.beforeApplyChanges = function (screen) {
     // Write code here.
 
 };
+myapp.AddEditVertragItem.StellenanteilItemCollection_postRender = function (element, contentItem) {
+    // Write code here.
+
+};

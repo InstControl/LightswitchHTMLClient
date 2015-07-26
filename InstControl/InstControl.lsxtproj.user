@@ -4,7 +4,7 @@
     <EnableENC>False</EnableENC>
     <ProjectView>ProjectFiles</ProjectView>
     <StartUpClientProject>InstControl.HTMLClient</StartUpClientProject>
-    <SchemaManagementLastSsdlWriteTime>635729346488297141</SchemaManagementLastSsdlWriteTime>
+    <SchemaManagementLastSsdlWriteTime>635734395447575725</SchemaManagementLastSsdlWriteTime>
     <SchemaManagementSchemaBuildState>0</SchemaManagementSchemaBuildState>
     <SchemaManagementDatabaseIncludesSecurityObjects>True</SchemaManagementDatabaseIncludesSecurityObjects>
     <GrantedPermissions>Microsoft.LightSwitch.Security:SecurityAdministration</GrantedPermissions>

@@ -15,6 +15,36 @@ C:\Program Files (x86)\Microsoft SDKs\LightSwitch\v5.0\\Server\Microsoft.LightSw
 C:\Program Files (x86)\Microsoft SDKs\LightSwitch\v5.0\\Server\Microsoft.LightSwitch.Model.Xaml.dll
 C:\Program Files (x86)\Microsoft SDKs\LightSwitch\v5.0\\Server\Microsoft.LightSwitch.Server.dll
 C:\Program Files (x86)\Microsoft SDKs\LightSwitch\v5.0\\Server\Microsoft.LightSwitch.Server.Host.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Chart\Server\Reference\Syncfusion.LightSwitch.Extension.Chart.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Chart\Server\Reference\Syncfusion.LightSwitch.Extension.Chart.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.DocIO\Server\Reference\Syncfusion.LightSwitch.Extension.DocIO.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.DocIO\Server\Reference\Syncfusion.LightSwitch.Extension.DocIO.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Editors\Server\Reference\Syncfusion.LightSwitch.Extension.Editors.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Editors\Server\Reference\Syncfusion.LightSwitch.Extension.Editors.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.OlapClient\Server\Reference\Syncfusion.LightSwitch.Extension.OlapClient.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.OlapClient\Server\Reference\Syncfusion.LightSwitch.Extension.OlapClient.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.RangeNavigator\Server\Reference\Syncfusion.LightSwitch.Extension.RangeNavigator.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.RangeNavigator\Server\Reference\Syncfusion.LightSwitch.Extension.RangeNavigator.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.ReportViewer\Server\Reference\Syncfusion.LightSwitch.Extension.ReportViewer.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.ReportViewer\Server\Reference\Syncfusion.LightSwitch.Extension.ReportViewer.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfBulletGraph\Server\Reference\Syncfusion.LightSwitch.Extension.SfBulletGraph.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfBulletGraph\Server\Reference\Syncfusion.LightSwitch.Extension.SfBulletGraph.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfDataGrid\Server\Reference\Syncfusion.LightSwitch.Extension.SfDataGrid.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfDataGrid\Server\Reference\Syncfusion.LightSwitch.Extension.SfDataGrid.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfGauge\Server\Reference\Syncfusion.LightSwitch.Extension.SfGauge.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfGauge\Server\Reference\Syncfusion.LightSwitch.Extension.SfGauge.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfMaps\Server\Reference\Syncfusion.LightSwitch.Extension.SfMaps.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfMaps\Server\Reference\Syncfusion.LightSwitch.Extension.SfMaps.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfTreeMap\Server\Reference\Syncfusion.LightSwitch.Extension.SfTreeMap.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfTreeMap\Server\Reference\Syncfusion.LightSwitch.Extension.SfTreeMap.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Shell.Ribbon\Server\Reference\Syncfusion.LightSwitch.Extension.Shell.Ribbon.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Shell.Ribbon\Server\Reference\Syncfusion.LightSwitch.Extension.Shell.Ribbon.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SparkLine\Server\Reference\Syncfusion.LightSwitch.Extension.SparkLine.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SparkLine\Server\Reference\Syncfusion.LightSwitch.Extension.SparkLine.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Themes\Server\Reference\Syncfusion.LightSwitch.Extension.Themes.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Themes\Server\Reference\Syncfusion.LightSwitch.Extension.Themes.Server.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.XlsIO\Server\Reference\Syncfusion.LightSwitch.Extension.XlsIO.Common.dll
+C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\InstControl\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.XlsIO\Server\Reference\Syncfusion.LightSwitch.Extension.XlsIO.Server.dll
 C:\Users\Thomas\Source\Repos\LightswitchHTMLClient\Packages\System.IdentityModel.Tokens.Jwt.1.0.0\lib\net45\System.IdentityModel.Tokens.Jwt.dll
 C:\Program Files (x86)\Microsoft SDKs\RIA Services\\v1.0\Libraries\Server\System.ServiceModel.DomainServices.EntityFramework.dll
 C:\Program Files (x86)\Microsoft SDKs\RIA Services\\v1.0\Libraries\Server\System.ServiceModel.DomainServices.Hosting.dll

@@ -4,6 +4,7 @@ document.writeln("<script type=\"text/javascript\" src=\"Screens/Beschäftigungs
 document.writeln("<script type=\"text/javascript\" src=\"Screens/Browse.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/BrowseVertragJeMonatItemSet.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/KontoItem/ViewKontoItem.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/MitarbeiterMitAktuellemVertragGridSortingTemplate.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MitarbeiterSet/AddEditMitarbeiter.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MitarbeiterSet/BrowseMitarbeiterSet.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MitarbeiterSet/ViewMitarbeiter.lsml.js\"></script>");

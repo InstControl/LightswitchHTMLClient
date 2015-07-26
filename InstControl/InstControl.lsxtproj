@@ -124,12 +124,70 @@
     </LightSwitchExtension>
     <LightSwitchExtension Include="Extensions\Microsoft.LightSwitch.Cosmopolitan.lspkg">
       <ExtensionId>Microsoft.LightSwitch.Cosmopolitan</ExtensionId>
-      <Client>MICROSOFT.LIGHTSWITCH.COSMOPOLITAN.CLIENT</Client>
     </LightSwitchExtension>
     <LightSwitchExtension Include="Extensions\Microsoft.LightSwitch.Extensions.lspkg">
       <ExtensionId>Microsoft.LightSwitch.Extensions</ExtensionId>
-      <Client>MICROSOFT.LIGHTSWITCH.EXTENSIONS.CLIENT;MICROSOFT.LIGHTSWITCH.EXTENSIONS.DESIGN.CLIENT</Client>
       <Server>MICROSOFT.LIGHTSWITCH.EXTENSIONS.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.Chart.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.Chart</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.CHART.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.CHART.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.DocIO.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.DocIO</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.DOCIO.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.DOCIO.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.Editors.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.Editors</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.EDITORS.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.EDITORS.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.OlapClient.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.OlapClient</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.OLAPCLIENT.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.OLAPCLIENT.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.RangeNavigator.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.RangeNavigator</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.RANGENAVIGATOR.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.RANGENAVIGATOR.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.ReportViewer.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.ReportViewer</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.REPORTVIEWER.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.REPORTVIEWER.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.SfBulletGraph.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.SfBulletGraph</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.SFBULLETGRAPH.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.SFBULLETGRAPH.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.SfDataGrid.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.SfDataGrid</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.SFDATAGRID.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.SFDATAGRID.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.SfGauge.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.SfGauge</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.SFGAUGE.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.SFGAUGE.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.SfMaps.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.SfMaps</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.SFMAPS.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.SFMAPS.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.SfTreeMap.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.SfTreeMap</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.SFTREEMAP.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.SFTREEMAP.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.Shell.Ribbon.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.Shell.Ribbon</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.SHELL.RIBBON.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.SHELL.RIBBON</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.SparkLine.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.SparkLine</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.SPARKLINE.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.SPARKLINE.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.Themes.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.Themes</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.THEMES.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.THEMES.SERVER</Server>
+    </LightSwitchExtension>
+    <LightSwitchExtension Include="Extensions\Syncfusion.LightSwitch.Extension.XlsIO.lspkg">
+      <ExtensionId>Syncfusion.LightSwitch.Extension.XlsIO</ExtensionId>
+      <Server>SYNCFUSION.LIGHTSWITCH.EXTENSION.XLSIO.COMMON;SYNCFUSION.LIGHTSWITCH.EXTENSION.XLSIO.SERVER</Server>
     </LightSwitchExtension>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\LightSwitch\$(LightSwitchVersion)\Microsoft.LightSwitch.targets" />

@@ -154,7 +154,7 @@
               Name="StellenanteilItemCollection"
               Kind="Collection"
               DataType="CollectionView$StellenanteilItem"
-              View="Microsoft.LightSwitch.MobileWeb:Table">
+              View="Microsoft.LightSwitch.MobileWeb:List">
               <ContentItem.Attributes>
                 <DisplayName
                   Value="Stellenanteile" />
@@ -172,7 +172,8 @@
               <ContentItem
                 Name="StellenanteilItemCollectionTemplate"
                 Kind="Details"
-                DataType="StellenanteilItem">
+                DataType="StellenanteilItem"
+                View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
                 <ContentItem.DataSource>
                   <ScreenExpressionTree>
                     <ChainExpression />
@@ -181,7 +182,8 @@
                 <ContentItem
                   Name="Stellenanteil"
                   Kind="Value"
-                  DataType=":Decimal">
+                  DataType=":Decimal"
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -192,27 +194,20 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
-                  Name="ProjektItem"
-                  Kind="Details"
-                  DataType="ProjektItem">
+                  Name="ProjektKurzName"
+                  Kind="Value"
+                  DataType=":String"
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
                           Member="StellenanteilItem/Properties[ProjektItem]" />
+                        <MemberExpression
+                          Member="ProjektKurzName" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
-                  <ContentItem
-                    Name="ProjektItem1"
-                    Kind="Details"
-                    DataType="ProjektItem">
-                    <ContentItem.DataSource>
-                      <ScreenExpressionTree>
-                        <ChainExpression />
-                      </ScreenExpressionTree>
-                    </ContentItem.DataSource>
-                  </ContentItem>
                 </ContentItem>
               </ContentItem>
               <ContentItem.PropertySources>
@@ -256,6 +251,16 @@
                       <ConstantExpression
                         Value="True"
                         ResultType=":Boolean" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+                <ControlPropertySource
+                  Property="EJ.Web:CollectionCustomControl/Properties[Control]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="ejGrid"
+                        ResultType=":String" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>

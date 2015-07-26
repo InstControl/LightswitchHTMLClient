@@ -73,6 +73,96 @@
     <Reference Include="Microsoft.LightSwitch.Extensions.Server">
       <HintPath>..\_Pvt_Extensions\Microsoft.LightSwitch.Extensions\Server\Reference\Microsoft.LightSwitch.Extensions.Server.dll</HintPath>
     </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.Chart.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Chart\Server\Reference\Syncfusion.LightSwitch.Extension.Chart.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.Chart.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Chart\Server\Reference\Syncfusion.LightSwitch.Extension.Chart.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.DocIO.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.DocIO\Server\Reference\Syncfusion.LightSwitch.Extension.DocIO.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.DocIO.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.DocIO\Server\Reference\Syncfusion.LightSwitch.Extension.DocIO.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.Editors.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Editors\Server\Reference\Syncfusion.LightSwitch.Extension.Editors.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.Editors.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Editors\Server\Reference\Syncfusion.LightSwitch.Extension.Editors.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.OlapClient.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.OlapClient\Server\Reference\Syncfusion.LightSwitch.Extension.OlapClient.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.OlapClient.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.OlapClient\Server\Reference\Syncfusion.LightSwitch.Extension.OlapClient.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.RangeNavigator.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.RangeNavigator\Server\Reference\Syncfusion.LightSwitch.Extension.RangeNavigator.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.RangeNavigator.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.RangeNavigator\Server\Reference\Syncfusion.LightSwitch.Extension.RangeNavigator.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.ReportViewer.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.ReportViewer\Server\Reference\Syncfusion.LightSwitch.Extension.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.ReportViewer.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.ReportViewer\Server\Reference\Syncfusion.LightSwitch.Extension.ReportViewer.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.SfBulletGraph.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfBulletGraph\Server\Reference\Syncfusion.LightSwitch.Extension.SfBulletGraph.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.SfBulletGraph.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfBulletGraph\Server\Reference\Syncfusion.LightSwitch.Extension.SfBulletGraph.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.SfDataGrid.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfDataGrid\Server\Reference\Syncfusion.LightSwitch.Extension.SfDataGrid.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.SfDataGrid.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfDataGrid\Server\Reference\Syncfusion.LightSwitch.Extension.SfDataGrid.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.SfGauge.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfGauge\Server\Reference\Syncfusion.LightSwitch.Extension.SfGauge.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.SfGauge.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfGauge\Server\Reference\Syncfusion.LightSwitch.Extension.SfGauge.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.SfMaps.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfMaps\Server\Reference\Syncfusion.LightSwitch.Extension.SfMaps.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.SfMaps.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfMaps\Server\Reference\Syncfusion.LightSwitch.Extension.SfMaps.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.SfTreeMap.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfTreeMap\Server\Reference\Syncfusion.LightSwitch.Extension.SfTreeMap.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.SfTreeMap.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SfTreeMap\Server\Reference\Syncfusion.LightSwitch.Extension.SfTreeMap.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.Shell.Ribbon">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Shell.Ribbon\Server\Reference\Syncfusion.LightSwitch.Extension.Shell.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.Shell.Ribbon.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Shell.Ribbon\Server\Reference\Syncfusion.LightSwitch.Extension.Shell.Ribbon.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.SparkLine.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SparkLine\Server\Reference\Syncfusion.LightSwitch.Extension.SparkLine.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.SparkLine.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.SparkLine\Server\Reference\Syncfusion.LightSwitch.Extension.SparkLine.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.Themes.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Themes\Server\Reference\Syncfusion.LightSwitch.Extension.Themes.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.Themes.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.Themes\Server\Reference\Syncfusion.LightSwitch.Extension.Themes.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.XlsIO.Common">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.XlsIO\Server\Reference\Syncfusion.LightSwitch.Extension.XlsIO.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.LightSwitch.Extension.XlsIO.Server">
+      <HintPath>..\_Pvt_Extensions\Syncfusion.LightSwitch.Extension.XlsIO\Server\Reference\Syncfusion.LightSwitch.Extension.XlsIO.Server.dll</HintPath>
+    </Reference>
     <Reference Include="System">
       <ProjectCritical>True</ProjectCritical>
     </Reference>

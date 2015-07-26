@@ -32,7 +32,6 @@ myapp.BrowseMitarbeiterSet.beforeApplyChanges = function (screen) {
     screen.MitarbeiterAktuell.refresh();
     screen.MitarbeiterAusgeschieden.refresh();
     screen.MitarbeiterOhneVertrag.refresh();
-    
 };
 myapp.BrowseMitarbeiterSet.Monate_postRender = function (element, contentItem) {
     // Write code here.
@@ -44,10 +43,28 @@ myapp.BrowseMitarbeiterSet.Group4_postRender = function (element, contentItem) {
     var Anzahl = contentItem.screen.MitarbeiterMitAuslaufendenVertrag.count;
     contentItem.screen.findContentItem("Group4").displayName = "mit auslaufende Verträgen (" + Anzahl.toString() + ")";
 };
-myapp.BrowseMitarbeiterSet.Group3_postRender = function (element, contentItem) {
+myapp.BrowseMitarbeiterSet.aktuelleMitarbeiter_render = function (element, contentItem) {
     // Write code here.
+    var itemTemplate = $("<div></div>").attr('id', 'aktuelleMitarbeiter')
 
-};
-myapp.BrowseMitarbeiterSet.created = function (screen) {
-    // Write code here.
+    // Append the div element to screen 
+    itemTemplate.appendTo($(element));
+
+    contentItem.value.oncollectionchange = function () {
+
+        if (itemTemplate.hasClass('e-grid')) {
+            itemTemplate.ejGrid('destroy');
+        }
+        var first = contentItem.children[0], fieldname = [];
+        for (i = 0; i < first.children.length; i++) {
+            fieldname[i] = { field: first.children[i].valueModel.name };
+        }
+
+        //Rendering the Grid Control
+        itemTemplate.ejGrid(
+            {
+                dataSource: contentItem.value.data,
+                columns: fieldname,
+            });
+    };
 };
