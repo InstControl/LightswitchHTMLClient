@@ -142,8 +142,8 @@ window.myapp = msls.application;
         /// <field name="AbteilungItem" type="msls.application.AbteilungItem">
         /// Ruft den abteilungItem für diesen mitarbeiterItem ab oder legt diesen fest.
         /// </field>
-        /// <field name="Abteilungsleiter" type="msls.EntityCollection" elementType="msls.application.AbteilungItem">
-        /// Ruft den abteilungsleiter für diesen mitarbeiterItem ab.
+        /// <field name="Abteilungsleiter" type="msls.application.AbteilungItem">
+        /// Ruft den abteilungsleiter für diesen mitarbeiterItem ab oder legt diesen fest.
         /// </field>
         /// <field name="CreatedBy" type="String">
         /// Ruft den createdBy für diesen mitarbeiterItem ab oder legt diesen fest.
@@ -431,7 +431,7 @@ window.myapp = msls.application;
             { name: "VertragItemCollection", kind: "collection", elementType: VertragItem },
             { name: "PersonalNr", type: String },
             { name: "AbteilungItem", kind: "reference", type: AbteilungItem },
-            { name: "Abteilungsleiter", kind: "collection", elementType: AbteilungItem },
+            { name: "Abteilungsleiter", kind: "reference", type: AbteilungItem },
             { name: "CreatedBy", type: String, isReadOnly: true },
             { name: "Created", type: Date, isReadOnly: true },
             { name: "ModifiedBy", type: String, isReadOnly: true },

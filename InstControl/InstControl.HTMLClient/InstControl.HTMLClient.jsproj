@@ -418,6 +418,9 @@
     <Content Include="Screens\MitarbeiterSet\ViewMitarbeiter.lsml.js">
       <DependentUpon>ViewMitarbeiter.lsml</DependentUpon>
     </Content>
+    <Content Include="Screens\ProjektItemSet\AddEditProjektItem.lsml.js">
+      <DependentUpon>AddEditProjektItem.lsml</DependentUpon>
+    </Content>
     <Content Include="Screens\ProjektItemSet\ViewProjektItem.lsml.js">
       <DependentUpon>ViewProjektItem.lsml</DependentUpon>
     </Content>

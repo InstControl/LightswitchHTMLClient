@@ -282,7 +282,7 @@ namespace LightSwitchApplication.Implementation
             }
         }
         
-        partial void OnAbteilungItem_MitarbeiterItem1Changed()
+        partial void OnIdChanged()
         {
             if (this.__host != null)
             {
@@ -392,11 +392,19 @@ namespace LightSwitchApplication.Implementation
             }
         }
         
-        global::System.Collections.IEnumerable global::LightSwitchApplication.MitarbeiterItem.DetailsClass.IImplementation.Abteilungsleiter
+        global::Microsoft.LightSwitch.Internal.IEntityImplementation global::LightSwitchApplication.MitarbeiterItem.DetailsClass.IImplementation.Abteilungsleiter
         {
             get
             {
                 return this.Abteilungsleiter;
+            }
+            set
+            {
+                this.Abteilungsleiter = (global::LightSwitchApplication.Implementation.AbteilungItem)value;
+                if (this.__host != null)
+                {
+                    this.__host.RaisePropertyChanged("Abteilungsleiter");
+                }
             }
         }
         

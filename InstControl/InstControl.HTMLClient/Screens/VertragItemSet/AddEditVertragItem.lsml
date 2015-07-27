@@ -154,7 +154,7 @@
               Name="StellenanteilItemCollection"
               Kind="Collection"
               DataType="CollectionView$StellenanteilItem"
-              View="Microsoft.LightSwitch.MobileWeb:List">
+              View="Microsoft.LightSwitch.MobileWeb:Table">
               <ContentItem.Attributes>
                 <DisplayName
                   Value="Stellenanteile" />
@@ -173,7 +173,7 @@
                 Name="StellenanteilItemCollectionTemplate"
                 Kind="Details"
                 DataType="StellenanteilItem"
-                View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
+                View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
                 <ContentItem.DataSource>
                   <ScreenExpressionTree>
                     <ChainExpression />
@@ -205,6 +205,21 @@
                           Member="StellenanteilItem/Properties[ProjektItem]" />
                         <MemberExpression
                           Member="ProjektKurzName" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
+                  Name="PSPElement"
+                  Kind="Value"
+                  DataType=":String?">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="StellenanteilItem/Properties[ProjektItem]" />
+                        <MemberExpression
+                          Member="PSPElement" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>

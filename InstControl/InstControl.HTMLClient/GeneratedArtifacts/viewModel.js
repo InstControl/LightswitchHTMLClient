@@ -557,9 +557,6 @@
         /// <field name="VertragItemCollection" type="msls.VisualCollection" elementType="msls.application.VertragItem">
         /// Ruft den vertragItemCollection für diesen Bildschirm ab.
         /// </field>
-        /// <field name="Abteilungsleiter" type="msls.VisualCollection" elementType="msls.application.AbteilungItem">
-        /// Ruft den abteilungsleiter für diesen Bildschirm ab.
-        /// </field>
         /// <field name="details" type="msls.application.MitarbeiterMitAktuellemVertragGridSortingTemplate.Details">
         /// Ruft die Details für diesen Bildschirm ab.
         /// </field>
@@ -580,7 +577,7 @@
             {
                 name: "AbteilungItemSet", kind: "collection", elementType: lightSwitchApplication.AbteilungItem,
                 createQuery: function () {
-                    return this.dataWorkspace.ApplicationData.AbteilungItemSet.expand("Abteilungsleiter");
+                    return this.dataWorkspace.ApplicationData.AbteilungItemSet;
                 }
             }
         ], [
@@ -855,18 +852,6 @@
                 getNavigationProperty: function () {
                     if (this.owner.MitarbeiterMitAktuellemVertrag.selectedItem) {
                         return this.owner.MitarbeiterMitAktuellemVertrag.selectedItem.details.properties.VertragItemCollection;
-                    }
-                    return null;
-                },
-                appendQuery: function () {
-                    return this;
-                }
-            },
-            {
-                name: "Abteilungsleiter", kind: "collection", elementType: lightSwitchApplication.AbteilungItem,
-                getNavigationProperty: function () {
-                    if (this.owner.MitarbeiterMitAktuellemVertrag.selectedItem) {
-                        return this.owner.MitarbeiterMitAktuellemVertrag.selectedItem.details.properties.Abteilungsleiter;
                     }
                     return null;
                 },

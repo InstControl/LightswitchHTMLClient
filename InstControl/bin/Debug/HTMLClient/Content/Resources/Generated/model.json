@@ -2160,8 +2160,7 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:EmailAddress",
           "name": "EmailAddress",
-          "underlyingType": { "__id": ":String" },
-          "Microsoft.LightSwitch.Extensions:@EmailAddressValidation": { "domainRequired": true }
+          "underlyingType": { "__id": ":String" }
         },
         {
           "__isSemanticType": 1,
@@ -2179,15 +2178,13 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:PhoneNumber",
           "name": "PhoneNumber",
-          "underlyingType": { "__id": ":String" },
-          "Microsoft.LightSwitch.Extensions:@PhoneNumberValidation": { "formats": "C (AAA) NNN-NNNN;C (AAA) NNNNNNN;CAAANNNNNNN;(AAA) NNN-NNNN;(AAA) NNNNNNN;AAANNNNNNN;NNN-NNNN;NNNNNNN" }
+          "underlyingType": { "__id": ":String" }
         },
         {
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:Percent",
           "name": "Percent",
           "underlyingType": { "__id": ":Decimal" },
-          "Microsoft.LightSwitch.Extensions:@FormatParameter": { "decimalDigits": 2 },
           ":@DecimalConstraint":
           {
             "scale": 9
@@ -2197,8 +2194,7 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:WebAddress",
           "name": "WebAddress",
-          "underlyingType": { "__id": ":String" },
-          "Microsoft.LightSwitch.Extensions:@WebAddressValidation": { }
+          "underlyingType": { "__id": ":String" }
         }
       ]
     },
@@ -3521,7 +3517,7 @@
               "ends":
               [
                 {
-                  "properties": [ "AbteilungItem_MitarbeiterItem1" ],
+                  "properties": [ "Id" ],
                   "id": "ApplicationData/Members[AbteilungItem_MitarbeiterItem1Set]/Members[AbteilungItem]",
                   "name": "AbteilungItem",
                   "entitySet": { "__id": "ApplicationData/Members[AbteilungItemSet]" }
@@ -4115,7 +4111,7 @@
             {
               "id": "AbteilungItem_MitarbeiterItem1/Ends[AbteilungItem]",
               "name": "AbteilungItem",
-              "multiplicity": "Many",
+              "multiplicity": "ZeroOrOne",
               "entityType": { "__id": "AbteilungItem" }
             },
             {
@@ -4309,7 +4305,7 @@
               "association": { "__id": "AbteilungItem_MitarbeiterItem1" },
               "elementType": { "__id": "AbteilungItem" },
               "fromEnd": { "__id": "AbteilungItem_MitarbeiterItem1/Ends[MitarbeiterItem]" },
-              "propertyType": { "__id": "AbteilungItem*" },
+              "propertyType": { "__id": "AbteilungItem" },
               "toEnd": { "__id": "AbteilungItem_MitarbeiterItem1/Ends[AbteilungItem]" }
             },
             {
@@ -4561,32 +4557,6 @@
                             "name": "right",
                             "kind": "Group",
                             "view": { "__id": ":RowsLayout" },
-                            "childContentItems":
-                            [
-                              {
-                                "displayName": "Abteilungsleiter",
-                                "name": "Abteilungsleiter",
-                                "kind": "Details",
-                                "view": { "__id": ":DetailsModalPicker" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "AbteilungItem/Properties[Abteilungsleiter]" }
-                                },
-                                "childContentItems":
-                                [
-                                  {
-                                    "displayName": "Mitarbeiter",
-                                    "name": "RowTemplate",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "MitarbeiterItem/Properties[Nachname]" }
-                                    }
-                                  }
-                                ]
-                              }
-                            ],
                             "propertySources":
                             [
                               {
@@ -4742,31 +4712,6 @@
                                 "dataSource":
                                 {
                                   "member": { "__id": "AbteilungItem/Properties[Langname]" }
-                                },
-                                "propertySources":
-                                [
-                                  {
-                                    "property": { "__id": ":RootControl/Properties[FontStyle]" },
-                                    "value": "Small"
-                                  }
-                                ]
-                              },
-                              {
-                                "displayName": "Abteilungsleiter",
-                                "name": "Abteilungsleiter",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
-                                    {
-                                      "member": { "__id": "AbteilungItem/Properties[Abteilungsleiter]" }
-                                    },
-                                    {
-                                      "member": { "__id": "MitarbeiterItem/Properties[Nachname]" }
-                                    }
-                                  ]
                                 },
                                 "propertySources":
                                 [
@@ -5011,24 +4956,6 @@
                                 "dataSource":
                                 {
                                   "member": { "__id": "AbteilungItem/Properties[Langname]" }
-                                }
-                              },
-                              {
-                                "displayName": "Abteilungsleiter",
-                                "name": "Abteilungsleiter",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
-                                    {
-                                      "member": { "__id": "AbteilungItem/Properties[Abteilungsleiter]" }
-                                    },
-                                    {
-                                      "member": { "__id": "MitarbeiterItem/Properties[Nachname]" }
-                                    }
-                                  ]
                                 }
                               },
                               {
@@ -6555,6 +6482,29 @@
                             "childContentItems":
                             [
                               {
+                                "displayName": "Abteilung",
+                                "name": "AbteilungItem",
+                                "kind": "Details",
+                                "view": { "__id": ":DetailsModalPicker" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "MitarbeiterItem/Properties[AbteilungItem]" }
+                                },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "Abteilung",
+                                    "name": "AbteilungItem1",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "AbteilungItem/Properties[Kürzel]" }
+                                    }
+                                  }
+                                ]
+                              },
+                              {
                                 "displayName": "Personal Nr",
                                 "name": "PersonalNr",
                                 "kind": "Value",
@@ -6620,7 +6570,7 @@
                             "displayName": "Bermerkung",
                             "name": "Bermerkung",
                             "kind": "Value",
-                            "view": { "__id": ":TextBox" },
+                            "view": { "__id": ":TextArea" },
                             "dataSource":
                             {
                               "links":
@@ -6642,6 +6592,10 @@
                               {
                                 "property": { "__id": ":RootControl/Properties[MinWidth]" },
                                 "value": 50
+                              },
+                              {
+                                "property": { "__id": ":RootControl/Properties[MinHeight]" },
+                                "value": 100
                               }
                             ]
                           }
@@ -6808,7 +6762,7 @@
                         "displayName": "Mitarbeiter Aktuell",
                         "name": "aktuelleMitarbeiter",
                         "kind": "Collection",
-                        "view": { "__id": "EJ.Web:CollectionCustomControl" },
+                        "view": { "__id": ":TileList" },
                         "dataSource":
                         {
                           "member": { "__id": "BrowseMitarbeiterSet/Properties[MitarbeiterAktuell]" }
@@ -6878,8 +6832,30 @@
                         "propertySources":
                         [
                           {
-                            "property": { "__id": "EJ.Web:CollectionCustomControl/Properties[Control]" },
-                            "value": "ejGrid"
+                            "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
+                            "source":
+                            {
+                              "target": { "__id": "!module/Methods[showViewMitarbeiter]" },
+                              ":@AssociatedCollection": { "collection": { "__id": "BrowseMitarbeiterSet/Properties[MitarbeiterAktuell]" } },
+                              "arguments":
+                              [
+                                {
+                                  "parameter": { "__id": "!module/Methods[showViewMitarbeiter]/Parameters[MitarbeiterItem]" },
+                                  "value":
+                                  {
+                                    "links":
+                                    [
+                                      {
+                                        "member": { "__id": "BrowseMitarbeiterSet/Properties[MitarbeiterAktuell]" }
+                                      },
+                                      {
+                                        "member": { "__id": "CollectionView$MitarbeiterItem/Properties[selectedItem]" }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
                           }
                         ]
                       }
@@ -8014,6 +7990,24 @@
                             "childContentItems":
                             [
                               {
+                                "displayName": "Abteilung",
+                                "name": "Kürzel",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "MitarbeiterItem/Properties[AbteilungItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "AbteilungItem/Properties[Kürzel]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
                                 "displayName": "Telefon",
                                 "name": "Telefon",
                                 "kind": "Value",
@@ -8118,7 +8112,7 @@
                             "displayName": "Bermerkung",
                             "name": "Bermerkung",
                             "kind": "Value",
-                            "view": { "__id": ":Text" },
+                            "view": { "__id": ":TextArea" },
                             "dataSource":
                             {
                               "links":
@@ -8535,16 +8529,6 @@
                                 }
                               },
                               {
-                                "displayName": "Projekt-Langname",
-                                "name": "Projektname",
-                                "kind": "Value",
-                                "view": { "__id": ":TextBox" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "ProjektItem/Properties[ProjektLangName]" }
-                                }
-                              },
-                              {
                                 "displayName": "Start",
                                 "name": "Start",
                                 "kind": "Value",
@@ -8553,6 +8537,29 @@
                                 {
                                   "member": { "__id": "ProjektItem/Properties[Start]" }
                                 }
+                              },
+                              {
+                                "displayName": "Abteilung Item",
+                                "name": "AbteilungItem",
+                                "kind": "Details",
+                                "view": { "__id": ":DetailsModalPicker" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "ProjektItem/Properties[AbteilungItem]" }
+                                },
+                                "childContentItems":
+                                [
+                                  {
+                                    "displayName": "Abteilung",
+                                    "name": "AbteilungItem1",
+                                    "kind": "Value",
+                                    "view": { "__id": ":Text" },
+                                    "dataSource":
+                                    {
+                                      "member": { "__id": "AbteilungItem/Properties[Kürzel]" }
+                                    }
+                                  }
+                                ]
                               }
                             ],
                             "propertySources":
@@ -8575,6 +8582,16 @@
                             "childContentItems":
                             [
                               {
+                                "displayName": "Projekt-Langname",
+                                "name": "Projektname",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "ProjektItem/Properties[ProjektLangName]" }
+                                }
+                              },
+                              {
                                 "displayName": "Laufzeit",
                                 "name": "Laufzeit",
                                 "kind": "Value",
@@ -8582,6 +8599,23 @@
                                 "dataSource":
                                 {
                                   "member": { "__id": "ProjektItem/Properties[Laufzeit]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootValueControl/Properties[PlaceholderText]" },
+                                    "value": "Laufzeit in Monaten"
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "PSPElement",
+                                "name": "PSPElement",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "ProjektItem/Properties[PSPElement]" }
                                 }
                               }
                             ],
@@ -8774,6 +8808,10 @@
                                       {
                                         "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
                                         "value": "StretchToContainer"
+                                      },
+                                      {
+                                        "property": { "__id": ":RootControl/Properties[MinWidth]" },
+                                        "value": 40
                                       }
                                     ]
                                   },
@@ -8793,10 +8831,6 @@
                                         "value": "StretchToContainer"
                                       },
                                       {
-                                        "property": { "__id": ":RootControl/Properties[TextAlignment]" },
-                                        "value": "Right"
-                                      },
-                                      {
                                         "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
                                         "value": "Top"
                                       }
@@ -8806,12 +8840,25 @@
                                 "propertySources":
                                 [
                                   {
-                                    "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
-                                    "value": "FitToContent"
-                                  },
-                                  {
                                     "property": { "__id": ":RootControl/Properties[MinWidth]" },
                                     "value": 30
+                                  }
+                                ]
+                              },
+                              {
+                                "displayName": "PSPElement",
+                                "name": "PSPElement",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "ProjektItem/Properties[PSPElement]" }
+                                },
+                                "propertySources":
+                                [
+                                  {
+                                    "property": { "__id": ":RootControl/Properties[AttachedLabelPosition]" },
+                                    "value": "Top"
                                   }
                                 ]
                               }
@@ -8831,12 +8878,11 @@
                             "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
                             "source":
                             {
-                              "target": { "__id": "!module/Methods[showViewProjektItem]" },
-                              ":@AssociatedCollection": { "collection": { "__id": "BrowseProjektItemSet/Properties[ProjektItemSet]" } },
+                              "target": { "__id": "!module/Methods[showAddEditProjektItem]" },
                               "arguments":
                               [
                                 {
-                                  "parameter": { "__id": "!module/Methods[showViewProjektItem]/Parameters[ProjektItem]" },
+                                  "parameter": { "__id": "!module/Methods[showAddEditProjektItem]/Parameters[ProjektItem]" },
                                   "value":
                                   {
                                     "links":
@@ -9043,16 +9089,6 @@
                                 }
                               },
                               {
-                                "displayName": "Projekt-Langname",
-                                "name": "Projektname",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "ProjektItem/Properties[ProjektLangName]" }
-                                }
-                              },
-                              {
                                 "displayName": "Start",
                                 "name": "Start",
                                 "kind": "Value",
@@ -9063,13 +9099,21 @@
                                 }
                               },
                               {
-                                "displayName": "Laufzeit",
-                                "name": "Laufzeit",
+                                "displayName": "Abteilung Item",
+                                "name": "AbteilungItem",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
-                                  "member": { "__id": "ProjektItem/Properties[Laufzeit]" }
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "ProjektItem/Properties[AbteilungItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "AbteilungItem/Properties[Kürzel]" }
+                                    }
+                                  ]
                                 }
                               }
                             ],
@@ -9093,43 +9137,33 @@
                             "childContentItems":
                             [
                               {
-                                "displayName": "Erstellt von",
-                                "name": "CreatedBy",
+                                "displayName": "Projekt-Langname",
+                                "name": "Projektname",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
-                                  "member": { "__id": "ProjektItem/Properties[CreatedBy]" }
+                                  "member": { "__id": "ProjektItem/Properties[ProjektLangName]" }
                                 }
                               },
                               {
-                                "displayName": "Erstellt",
-                                "name": "Created",
+                                "displayName": "Laufzeit",
+                                "name": "Laufzeit",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
-                                  "member": { "__id": "ProjektItem/Properties[Created]" }
+                                  "member": { "__id": "ProjektItem/Properties[Laufzeit]" }
                                 }
                               },
                               {
-                                "displayName": "Geändert von",
-                                "name": "ModifiedBy",
+                                "displayName": "PSPElement",
+                                "name": "PSPElement",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
-                                  "member": { "__id": "ProjektItem/Properties[ModifiedBy]" }
-                                }
-                              },
-                              {
-                                "displayName": "Geändert",
-                                "name": "Modified",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "ProjektItem/Properties[Modified]" }
+                                  "member": { "__id": "ProjektItem/Properties[PSPElement]" }
                                 }
                               }
                             ],
@@ -10120,7 +10154,7 @@
                         "description": "Die Aufteilung in Stellenanteile",
                         "name": "StellenanteilItemCollection",
                         "kind": "Collection",
-                        "view": { "__id": ":List" },
+                        "view": { "__id": ":Table" },
                         "dataSource":
                         {
                           "member": { "__id": "AddEditVertragItem/Properties[StellenanteilItemCollection]" }
@@ -10131,7 +10165,7 @@
                             "displayName": "Stellenanteile",
                             "name": "StellenanteilItemCollectionTemplate",
                             "kind": "Details",
-                            "view": { "__id": ":RowsLayout" },
+                            "view": { "__id": ":TableRowLayout" },
                             "dataSource":
                             {
                               "links":
@@ -10164,6 +10198,24 @@
                                     },
                                     {
                                       "member": { "__id": "ProjektItem/Properties[ProjektKurzName]" }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "displayName": "PSPElement",
+                                "name": "PSPElement",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "links":
+                                  [
+                                    {
+                                      "member": { "__id": "StellenanteilItem/Properties[ProjektItem]" }
+                                    },
+                                    {
+                                      "member": { "__id": "ProjektItem/Properties[PSPElement]" }
                                     }
                                   ]
                                 }
@@ -11682,39 +11734,6 @@
               "source":
               {
                 "target": { "__id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[VertragItemCollection]/Query" }
-              }
-            },
-            {
-              "id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[Abteilungsleiter]",
-              "name": "Abteilungsleiter",
-              "pageSize": 15,
-              "elementType": { "__id": "AbteilungItem" },
-              "propertyType": { "__id": "CollectionView$AbteilungItem" },
-              "query":
-              {
-                "id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[Abteilungsleiter]/Query",
-                "name": "AbteilungsleiterQuery",
-                "elementType": { "__id": "AbteilungItem" },
-                "returnType": { "__id": "AbteilungItem*" },
-                "source":
-                {
-                  "links":
-                  [
-                    {
-                      "member": { "__id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[MitarbeiterMitAktuellemVertrag]" }
-                    },
-                    {
-                      "member": { "__id": "CollectionView$MitarbeiterItem/Properties[selectedItem]" }
-                    },
-                    {
-                      "member": { "__id": "MitarbeiterItem/Properties[Abteilungsleiter]" }
-                    }
-                  ]
-                }
-              },
-              "source":
-              {
-                "target": { "__id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[Abteilungsleiter]/Query" }
               }
             }
           ]

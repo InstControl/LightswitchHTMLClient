@@ -4,10 +4,9 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" />
     <Property Name="Kürzel" Type="Edm.String" Nullable="false" MaxLength="20" />
     <Property Name="Langname" Type="Edm.String" Nullable="false" MaxLength="255" />
-    <Property Name="AbteilungItem_MitarbeiterItem1" Type="Edm.Int32" Nullable="false" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />
@@ -163,13 +162,13 @@
     <End Role="MitarbeiterItem" Type="LightSwitchApplication.MitarbeiterItem" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="AbteilungItem" Type="LightSwitchApplication.AbteilungItem" Multiplicity="*" />
+    <End Role="AbteilungItem" Type="LightSwitchApplication.AbteilungItem" Multiplicity="0..1" />
     <ReferentialConstraint>
       <Principal Role="MitarbeiterItem">
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="AbteilungItem">
-        <PropertyRef Name="AbteilungItem_MitarbeiterItem1" />
+        <PropertyRef Name="Id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

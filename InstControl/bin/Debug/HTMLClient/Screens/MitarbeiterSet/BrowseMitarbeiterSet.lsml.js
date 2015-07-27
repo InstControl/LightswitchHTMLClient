@@ -68,3 +68,8 @@ myapp.BrowseMitarbeiterSet.aktuelleMitarbeiter_render = function (element, conte
             });
     };
 };
+
+myapp.BrowseMitarbeiterSet.aktuelleMitarbeiter_postRender = function (element, contentItem) {
+    // Write code here.
+
+};

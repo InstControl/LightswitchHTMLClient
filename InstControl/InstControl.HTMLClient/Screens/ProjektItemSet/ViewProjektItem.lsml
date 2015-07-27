@@ -63,19 +63,6 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
-                  Name="Projektname"
-                  Kind="Value"
-                  DataType=":String?">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="ProjektItem/Properties[ProjektLangName]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
                   Name="Start"
                   Kind="Value"
                   DataType=":Date">
@@ -89,17 +76,27 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
-                  Name="Laufzeit"
-                  Kind="Value"
-                  DataType=":Int32">
+                  Name="AbteilungItem"
+                  Kind="Details"
+                  DataType="AbteilungItem">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
-                          Member="ProjektItem/Properties[Laufzeit]" />
+                          Member="ProjektItem/Properties[AbteilungItem]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
+                  <ContentItem
+                    Name="AbteilungItem1"
+                    Kind="Details"
+                    DataType="AbteilungItem">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression />
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
                 </ContentItem>
                 <ContentItem.PropertySources>
                   <ControlPropertySource
@@ -128,53 +125,40 @@
                 Name="right"
                 Kind="Group">
                 <ContentItem
-                  Name="CreatedBy"
+                  Name="Projektname"
                   Kind="Value"
-                  DataType=":Person?">
+                  DataType=":String?">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
-                          Member="ProjektItem/Properties[CreatedBy]" />
+                          Member="ProjektItem/Properties[ProjektLangName]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
-                  Name="Created"
+                  Name="Laufzeit"
                   Kind="Value"
-                  DataType=":DateTimeOffset?">
+                  DataType=":Int32">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
-                          Member="ProjektItem/Properties[Created]" />
+                          Member="ProjektItem/Properties[Laufzeit]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
-                  Name="ModifiedBy"
+                  Name="PSPElement"
                   Kind="Value"
-                  DataType=":Person?">
+                  DataType=":String?">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
-                          Member="ProjektItem/Properties[ModifiedBy]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="Modified"
-                  Kind="Value"
-                  DataType=":DateTimeOffset?">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="ProjektItem/Properties[Modified]" />
+                          Member="ProjektItem/Properties[PSPElement]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>

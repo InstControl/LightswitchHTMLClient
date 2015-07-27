@@ -45,7 +45,7 @@
     <Key>
       <PropertyRef Name="Id" />
     </Key>
-    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Id" Type="int" Nullable="false" />
     <Property Name="Kürzel" Type="nvarchar" Nullable="false" MaxLength="20" />
     <Property Name="Langname" Type="nvarchar" Nullable="false" MaxLength="255" />
     <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
@@ -53,7 +53,6 @@
     <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
     <Property Name="Modified" Type="datetimeoffset" />
     <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
-    <Property Name="AbteilungItem_MitarbeiterItem1" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="BeschäftigungsArtItem">
     <Key>
@@ -208,13 +207,13 @@
     <End Role="MitarbeiterItem" Type="ApplicationDataStore.MitarbeiterItem" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="AbteilungItem" Type="ApplicationDataStore.AbteilungItem" Multiplicity="*" />
+    <End Role="AbteilungItem" Type="ApplicationDataStore.AbteilungItem" Multiplicity="0..1" />
     <ReferentialConstraint>
       <Principal Role="MitarbeiterItem">
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="AbteilungItem">
-        <PropertyRef Name="AbteilungItem_MitarbeiterItem1" />
+        <PropertyRef Name="Id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

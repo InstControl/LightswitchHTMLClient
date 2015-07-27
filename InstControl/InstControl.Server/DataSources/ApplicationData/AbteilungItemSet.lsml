@@ -300,14 +300,7 @@
       </AssociationSetMapping.Attributes>
     </AssociationSetMapping>
     <EntitySetMapping
-      EntitySet="AbteilungItemSet">
-      <EntitySetMapping.Attributes>
-        <SsdlForeignKeyProperty
-          Name="AbteilungItem_MitarbeiterItem1"
-          Nullable="False"
-          Type="int" />
-      </EntitySetMapping.Attributes>
-    </EntitySetMapping>
+      EntitySet="AbteilungItemSet" />
   </DataService>
   <Association
     Name="AbteilungItem_ProjektItem">

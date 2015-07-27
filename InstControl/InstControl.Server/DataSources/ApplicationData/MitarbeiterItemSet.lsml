@@ -128,7 +128,12 @@
         Name="Abteilungsleiter"
         Association="AbteilungItem_MitarbeiterItem1"
         FromEnd="MitarbeiterItem"
-        ToEnd="AbteilungItem" />
+        ToEnd="AbteilungItem">
+        <NavigationProperty.Attributes>
+          <DisplayName
+            Value="Abteilungsleiter von" />
+        </NavigationProperty.Attributes>
+      </NavigationProperty>
       <EntityProperty
         Name="Name"
         PropertyType=":String">
@@ -360,7 +365,7 @@
           End="ApplicationData/Members[AbteilungItem_MitarbeiterItem1Set]/Members[AbteilungItem]">
           <SsdlAssociationSetEnd.Attributes>
             <SsdlPropertyRef
-              Name="AbteilungItem_MitarbeiterItem1" />
+              Name="Id" />
           </SsdlAssociationSetEnd.Attributes>
         </SsdlAssociationSetEnd>
         <SsdlAssociationSetEnd
@@ -377,7 +382,6 @@
     Name="AbteilungItem_MitarbeiterItem1">
     <AssociationEnd
       Name="AbteilungItem"
-      Multiplicity="Many"
       EntityType="AbteilungItem" />
     <AssociationEnd
       Name="MitarbeiterItem"

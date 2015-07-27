@@ -22,7 +22,7 @@ using System.Xml.Serialization;
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "AbteilungItem_MitarbeiterItem", "AbteilungItem", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(LightSwitchApplication.Implementation.AbteilungItem), "MitarbeiterItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.MitarbeiterItem), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "AbteilungItem_ProjektItem", "AbteilungItem", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(LightSwitchApplication.Implementation.AbteilungItem), "ProjektItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.ProjektItem), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "VertragItem_MitarbeiterItem", "MitarbeiterItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.MitarbeiterItem), "VertragItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.VertragItem), true)]
-[assembly: EdmRelationshipAttribute("LightSwitchApplication", "AbteilungItem_MitarbeiterItem1", "MitarbeiterItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.MitarbeiterItem), "AbteilungItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.AbteilungItem), true)]
+[assembly: EdmRelationshipAttribute("LightSwitchApplication", "AbteilungItem_MitarbeiterItem1", "MitarbeiterItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.MitarbeiterItem), "AbteilungItem", System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne, typeof(LightSwitchApplication.Implementation.AbteilungItem), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "StellenanteilItem_ProjektItem", "ProjektItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.ProjektItem), "StellenanteilItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.StellenanteilItem), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "VertragJeMonatItem_StellenanteilItem", "StellenanteilItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.StellenanteilItem), "VertragJeMonatItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.VertragJeMonatItem), true)]
 [assembly: EdmRelationshipAttribute("LightSwitchApplication", "BeschäftigungsArtItem_VertragItem", "BeschäftigungsArtItem", System.Data.Metadata.Edm.RelationshipMultiplicity.One, typeof(LightSwitchApplication.Implementation.BeschäftigungsArtItem), "VertragItem", System.Data.Metadata.Edm.RelationshipMultiplicity.Many, typeof(LightSwitchApplication.Implementation.VertragItem), true)]
@@ -271,15 +271,13 @@ namespace LightSwitchApplication.Implementation
         /// <param name="id">Anfangswert der Eigenschaft Id.</param>
         /// <param name="kürzel">Anfangswert der Eigenschaft Kürzel.</param>
         /// <param name="langname">Anfangswert der Eigenschaft Langname.</param>
-        /// <param name="abteilungItem_MitarbeiterItem1">Anfangswert der Eigenschaft AbteilungItem_MitarbeiterItem1.</param>
         /// <param name="rowVersion">Anfangswert der Eigenschaft RowVersion.</param>
-        public static AbteilungItem CreateAbteilungItem(global::System.Int32 id, global::System.String kürzel, global::System.String langname, global::System.Int32 abteilungItem_MitarbeiterItem1, global::System.Byte[] rowVersion)
+        public static AbteilungItem CreateAbteilungItem(global::System.Int32 id, global::System.String kürzel, global::System.String langname, global::System.Byte[] rowVersion)
         {
             AbteilungItem abteilungItem = new AbteilungItem();
             abteilungItem.Id = id;
             abteilungItem.Kürzel = kürzel;
             abteilungItem.Langname = langname;
-            abteilungItem.AbteilungItem_MitarbeiterItem1 = abteilungItem_MitarbeiterItem1;
             abteilungItem.RowVersion = rowVersion;
             return abteilungItem;
         }
@@ -362,30 +360,6 @@ namespace LightSwitchApplication.Implementation
         private global::System.String _Langname;
         partial void OnLangnameChanging(global::System.String value);
         partial void OnLangnameChanged();
-    
-        /// <summary>
-        /// Keine Dokumentation für Metadaten verfügbar.
-        /// </summary>
-        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
-        [DataMemberAttribute()]
-        public global::System.Int32 AbteilungItem_MitarbeiterItem1
-        {
-            get
-            {
-                return _AbteilungItem_MitarbeiterItem1;
-            }
-            set
-            {
-                OnAbteilungItem_MitarbeiterItem1Changing(value);
-                ReportPropertyChanging("AbteilungItem_MitarbeiterItem1");
-                _AbteilungItem_MitarbeiterItem1 = value;
-                ReportPropertyChanged("AbteilungItem_MitarbeiterItem1");
-                OnAbteilungItem_MitarbeiterItem1Changed();
-            }
-        }
-        private global::System.Int32 _AbteilungItem_MitarbeiterItem1;
-        partial void OnAbteilungItem_MitarbeiterItem1Changing(global::System.Int32 value);
-        partial void OnAbteilungItem_MitarbeiterItem1Changed();
     
         /// <summary>
         /// Keine Dokumentation für Metadaten verfügbar.
@@ -1349,17 +1323,33 @@ namespace LightSwitchApplication.Implementation
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
         [EdmRelationshipNavigationPropertyAttribute("LightSwitchApplication", "AbteilungItem_MitarbeiterItem1", "AbteilungItem")]
-        public EntityCollection<AbteilungItem> Abteilungsleiter
+        public AbteilungItem Abteilungsleiter
         {
             get
             {
-                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedCollection<AbteilungItem>("LightSwitchApplication.AbteilungItem_MitarbeiterItem1", "AbteilungItem");
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<AbteilungItem>("LightSwitchApplication.AbteilungItem_MitarbeiterItem1", "AbteilungItem").Value;
+            }
+            set
+            {
+                ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<AbteilungItem>("LightSwitchApplication.AbteilungItem_MitarbeiterItem1", "AbteilungItem").Value = value;
+            }
+        }
+        /// <summary>
+        /// Keine Dokumentation für Metadaten verfügbar.
+        /// </summary>
+        [BrowsableAttribute(false)]
+        [DataMemberAttribute()]
+        public EntityReference<AbteilungItem> AbteilungsleiterReference
+        {
+            get
+            {
+                return ((IEntityWithRelationships)this).RelationshipManager.GetRelatedReference<AbteilungItem>("LightSwitchApplication.AbteilungItem_MitarbeiterItem1", "AbteilungItem");
             }
             set
             {
                 if ((value != null))
                 {
-                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedCollection<AbteilungItem>("LightSwitchApplication.AbteilungItem_MitarbeiterItem1", "AbteilungItem", value);
+                    ((IEntityWithRelationships)this).RelationshipManager.InitializeRelatedReference<AbteilungItem>("LightSwitchApplication.AbteilungItem_MitarbeiterItem1", "AbteilungItem", value);
                 }
             }
         }

@@ -32,7 +32,7 @@
               Name="aktuelleMitarbeiter"
               Kind="Collection"
               DataType="CollectionView$MitarbeiterItem"
-              View="EJ.Web:CollectionCustomControl">
+              View="Microsoft.LightSwitch.MobileWeb:TileList">
               <ContentItem.DataSource>
                 <ScreenExpressionTree>
                   <ChainExpression>

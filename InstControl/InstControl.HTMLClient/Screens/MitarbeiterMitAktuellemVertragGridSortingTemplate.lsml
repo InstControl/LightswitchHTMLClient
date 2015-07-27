@@ -354,38 +354,6 @@
           </ChainExpression>
         </ScreenExpressionTree>
       </ScreenCollectionProperty>
-      <ScreenCollectionProperty
-        Name="Abteilungsleiter"
-        PageSize="15"
-        PropertyType="CollectionView$AbteilungItem">
-        <ScreenCollectionProperty.Query>
-          <ScreenQueryDefinition
-            Name="AbteilungsleiterQuery"
-            ReturnType="AbteilungItem*">
-            <ScreenQueryDefinition.FilterExpression>
-              <QueryFilterExpressionTree />
-            </ScreenQueryDefinition.FilterExpression>
-            <ScreenQueryDefinition.Source>
-              <QuerySourceExpressionTree>
-                <ChainExpression>
-                  <MemberExpression
-                    Member="MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[MitarbeiterMitAktuellemVertrag]" />
-                  <MemberExpression
-                    Member="selectedItem" />
-                  <MemberExpression
-                    Member="Abteilungsleiter" />
-                </ChainExpression>
-              </QuerySourceExpressionTree>
-            </ScreenQueryDefinition.Source>
-          </ScreenQueryDefinition>
-        </ScreenCollectionProperty.Query>
-        <ScreenExpressionTree>
-          <ChainExpression>
-            <CallExpression
-              Target="MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[Abteilungsleiter]/Query" />
-          </ChainExpression>
-        </ScreenExpressionTree>
-      </ScreenCollectionProperty>
     </Screen.Properties>
   </Screen>
   <Application.Methods>

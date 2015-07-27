@@ -142,6 +142,16 @@
                           </ChainExpression>
                         </ScreenExpressionTree>
                       </ControlPropertySource>
+                      <ControlPropertySource
+                        Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MinWidth]">
+                        <ScreenExpressionTree>
+                          <ChainExpression>
+                            <ConstantExpression
+                              Value="40"
+                              ResultType=":Double" />
+                          </ChainExpression>
+                        </ScreenExpressionTree>
+                      </ControlPropertySource>
                     </ContentItem.PropertySources>
                   </ContentItem>
                   <ContentItem
@@ -168,16 +178,6 @@
                         </ScreenExpressionTree>
                       </ControlPropertySource>
                       <ControlPropertySource
-                        Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[TextAlignment]">
-                        <ScreenExpressionTree>
-                          <ChainExpression>
-                            <ConstantExpression
-                              Value="Right"
-                              ResultType=":String" />
-                          </ChainExpression>
-                        </ScreenExpressionTree>
-                      </ControlPropertySource>
-                      <ControlPropertySource
                         Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
                         <ScreenExpressionTree>
                           <ChainExpression>
@@ -191,22 +191,37 @@
                   </ContentItem>
                   <ContentItem.PropertySources>
                     <ControlPropertySource
-                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
-                      <ScreenExpressionTree>
-                        <ChainExpression>
-                          <ConstantExpression
-                            Value="FitToContent"
-                            ResultType=":String" />
-                        </ChainExpression>
-                      </ScreenExpressionTree>
-                    </ControlPropertySource>
-                    <ControlPropertySource
                       Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MinWidth]">
                       <ScreenExpressionTree>
                         <ChainExpression>
                           <ConstantExpression
                             Value="30"
                             ResultType=":Double" />
+                        </ChainExpression>
+                      </ScreenExpressionTree>
+                    </ControlPropertySource>
+                  </ContentItem.PropertySources>
+                </ContentItem>
+                <ContentItem
+                  Name="PSPElement"
+                  Kind="Value"
+                  DataType=":String?">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="ProjektItem/Properties[PSPElement]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem.PropertySources>
+                    <ControlPropertySource
+                      Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[AttachedLabelPosition]">
+                      <ScreenExpressionTree>
+                        <ChainExpression>
+                          <ConstantExpression
+                            Value="Top"
+                            ResultType=":String" />
                         </ChainExpression>
                       </ScreenExpressionTree>
                     </ControlPropertySource>
@@ -231,11 +246,7 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showViewProjektItem]">
-                        <CallExpression.Attributes>
-                          <AssociatedCollection
-                            Collection="BrowseProjektItemSet/Properties[ProjektItemSet]" />
-                        </CallExpression.Attributes>
+                        Target="!module/Methods[showAddEditProjektItem]">
                         <ArgumentExpression
                           Parameter="ProjektItem">
                           <ChainExpression>

@@ -533,23 +533,24 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::Microsoft.LightSwitch.Framework.EntityCollection<global::LightSwitchApplication.AbteilungItem> Abteilungsleiter
+        public global::LightSwitchApplication.AbteilungItem Abteilungsleiter
         {
             get
             {
                 return global::LightSwitchApplication.MitarbeiterItem.DetailsClass.GetValue(this, global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.Abteilungsleiter);
             }
-        }
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.AbteilungItem> AbteilungsleiterQuery
-        {
-            get
+            set
             {
-                return global::LightSwitchApplication.MitarbeiterItem.DetailsClass.GetQuery(this, global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.Abteilungsleiter);
+                global::LightSwitchApplication.MitarbeiterItem.DetailsClass.SetValue(this, global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.Abteilungsleiter, value);
             }
         }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Abteilungsleiter_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Abteilungsleiter_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Abteilungsleiter_Changed();
 
         #endregion
     
@@ -785,11 +786,11 @@ namespace LightSwitchApplication
                     }
                 }
                 
-                public global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem> Abteilungsleiter
+                public global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem> Abteilungsleiter
                 {
                     get
                     {
-                        return base.GetItem(global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.Abteilungsleiter) as global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>;
+                        return base.GetItem(global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.Abteilungsleiter) as global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>;
                     }
                 }
                 
@@ -817,7 +818,7 @@ namespace LightSwitchApplication
                 new byte[] RowVersion { get; set; }
                 new global::System.Collections.IEnumerable VertragItemCollection { get; }
                 new global::Microsoft.LightSwitch.Internal.IEntityImplementation AbteilungItem { get; set; }
-                new global::System.Collections.IEnumerable Abteilungsleiter { get; }
+                new global::Microsoft.LightSwitch.Internal.IEntityImplementation Abteilungsleiter { get; set; }
             }
             #pragma warning restore 109
     
@@ -1493,23 +1494,50 @@ namespace LightSwitchApplication
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Entry
-                    Abteilungsleiter = new global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Entry(
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Entry
+                    Abteilungsleiter = new global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Entry(
                         "Abteilungsleiter",
                         global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Abteilungsleiter_Stub,
-                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Abteilungsleiter_GetReferencedEntities,
-                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Abteilungsleiter_GetEntityCollection);
-                private static void _Abteilungsleiter_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Data> c, global::LightSwitchApplication.MitarbeiterItem.DetailsClass d, object sf)
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Abteilungsleiter_ComputeIsReadOnly,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Abteilungsleiter_Validate,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Abteilungsleiter_GetCoreImplementationValue,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Abteilungsleiter_GetImplementationValue,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Abteilungsleiter_SetImplementationValue,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Abteilungsleiter_Refresh,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._Abteilungsleiter_OnValueChanged);
+                private static void _Abteilungsleiter_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Data> c, global::LightSwitchApplication.MitarbeiterItem.DetailsClass d, object sf)
                 {
                     c(d, ref d._Abteilungsleiter, sf);
                 }
-                private static global::System.Collections.Generic.IEnumerable<global::LightSwitchApplication.AbteilungItem> _Abteilungsleiter_GetReferencedEntities(global::LightSwitchApplication.MitarbeiterItem.DetailsClass d)
+                private static bool _Abteilungsleiter_ComputeIsReadOnly(global::LightSwitchApplication.MitarbeiterItem e)
                 {
-                    return d.GetReferencedEntities<global::LightSwitchApplication.AbteilungItem, global::LightSwitchApplication.AbteilungItem.DetailsClass>(global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.Abteilungsleiter, ref d._Abteilungsleiter);
+                    bool result = false;
+                    e.Abteilungsleiter_IsReadOnly(ref result);
+                    return result;
                 }
-                private static global::System.Collections.IEnumerable _Abteilungsleiter_GetEntityCollection(global::LightSwitchApplication.MitarbeiterItem.DetailsClass d)
+                private static void _Abteilungsleiter_Validate(global::LightSwitchApplication.MitarbeiterItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.Abteilungsleiter_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.Internal.IEntityImplementation _Abteilungsleiter_GetCoreImplementationValue(global::LightSwitchApplication.MitarbeiterItem.DetailsClass d)
                 {
                     return d.ImplementationEntity.Abteilungsleiter;
+                }
+                private static global::LightSwitchApplication.AbteilungItem _Abteilungsleiter_GetImplementationValue(global::LightSwitchApplication.MitarbeiterItem.DetailsClass d)
+                {
+                    return d.GetImplementationValue<global::LightSwitchApplication.AbteilungItem, global::LightSwitchApplication.AbteilungItem.DetailsClass>(global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.Abteilungsleiter, ref d._Abteilungsleiter);
+                }
+                private static void _Abteilungsleiter_SetImplementationValue(global::LightSwitchApplication.MitarbeiterItem.DetailsClass d, global::LightSwitchApplication.AbteilungItem v)
+                {
+                    d.SetImplementationValue(global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.Abteilungsleiter, ref d._Abteilungsleiter, (i, ev) => i.Abteilungsleiter = ev, v);
+                }
+                private static void _Abteilungsleiter_Refresh(global::LightSwitchApplication.MitarbeiterItem.DetailsClass d)
+                {
+                    d.RefreshNavigationProperty(global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.Abteilungsleiter, ref d._Abteilungsleiter);
+                }
+                private static void _Abteilungsleiter_OnValueChanged(global::LightSwitchApplication.MitarbeiterItem e)
+                {
+                    e.Abteilungsleiter_Changed();
                 }
     
             }
@@ -1572,7 +1600,7 @@ namespace LightSwitchApplication
             private global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Data _AbteilungItem;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityCollectionProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Data _Abteilungsleiter;
+            private global::Microsoft.LightSwitch.Details.Framework.EntityReferenceProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::LightSwitchApplication.AbteilungItem>.Data _Abteilungsleiter;
             
         }
     

@@ -141,6 +141,33 @@
                 Name="right"
                 Kind="Group">
                 <ContentItem
+                  Name="AbteilungItem"
+                  Kind="Details"
+                  DataType="AbteilungItem">
+                  <ContentItem.Attributes>
+                    <DisplayName
+                      Value="Abteilung" />
+                  </ContentItem.Attributes>
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[AbteilungItem]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                  <ContentItem
+                    Name="AbteilungItem1"
+                    Kind="Details"
+                    DataType="AbteilungItem">
+                    <ContentItem.DataSource>
+                      <ScreenExpressionTree>
+                        <ChainExpression />
+                      </ScreenExpressionTree>
+                    </ContentItem.DataSource>
+                  </ContentItem>
+                </ContentItem>
+                <ContentItem
                   Name="PersonalNr"
                   Kind="Value"
                   DataType=":String">
@@ -223,7 +250,8 @@
               <ContentItem
                 Name="Bermerkung"
                 Kind="Value"
-                DataType=":String?">
+                DataType=":String?"
+                View="Microsoft.LightSwitch.MobileWeb:TextArea">
                 <ContentItem.DataSource>
                   <ScreenExpressionTree>
                     <ChainExpression>
@@ -251,6 +279,16 @@
                       <ChainExpression>
                         <ConstantExpression
                           Value="50"
+                          ResultType=":Double" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[MinHeight]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <ConstantExpression
+                          Value="100"
                           ResultType=":Double" />
                       </ChainExpression>
                     </ScreenExpressionTree>

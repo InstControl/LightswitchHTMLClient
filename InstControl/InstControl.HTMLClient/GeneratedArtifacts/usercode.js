@@ -8,6 +8,7 @@ document.writeln("<script type=\"text/javascript\" src=\"Screens/MitarbeiterMitA
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MitarbeiterSet/AddEditMitarbeiter.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MitarbeiterSet/BrowseMitarbeiterSet.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/MitarbeiterSet/ViewMitarbeiter.lsml.js\"></script>");
+document.writeln("<script type=\"text/javascript\" src=\"Screens/ProjektItemSet/AddEditProjektItem.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/ProjektItemSet/ViewProjektItem.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/StellenanteilItemSet/AddEditStellenanteilItem.lsml.js\"></script>");
 document.writeln("<script type=\"text/javascript\" src=\"Screens/StellenanteilItemSet/ViewStellenanteilItem.lsml.js\"></script>");
