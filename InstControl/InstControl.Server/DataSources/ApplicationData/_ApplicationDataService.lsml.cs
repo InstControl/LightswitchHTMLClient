@@ -67,6 +67,10 @@ namespace LightSwitchApplication
             {
                 results.AddEntityError("Kein Projekt ausgewählt.");
             }
+            if (entity.VertragItem.StellenanteilItemCollection.Sum(P => P.Stellenanteil) > 1)
+            {
+                results.AddEntityError("Summe der Stellenanteile darf nicht grösser als 1 sein!");
+            }
         }
 
         partial void VertragItemSet_Validate(VertragItem entity, EntitySetValidationResultsBuilder results)
@@ -78,21 +82,25 @@ namespace LightSwitchApplication
             }
             if (entity.StellenanteilItemCollection.Count() == 0 )
             {
-                results.AddEntityError("Kein Stellenanteil hinzugefügt.");
-                
+                results.AddEntityError("Kein Stellenanteil hinzugefügt."); 
             }
-            if (entity.StellenanteilItemCollection.Sum(P => P.Stellenanteil ) >1 )
+            if (entity.MitarbeiterItem.VertragItemCollection.Any(p => IsOverlapping(entity,p)) == true)
             {
-                results.AddEntityError("Summe Stellenanteile grösser als 1,0.");
-            }
-            if (entity.MitarbeiterItem.VertragItemCollection.Count(
-                p => p.StellenanteilItemCollection.Any(
-                    q => q.VertragJeMonatCollection.Any(
-                        r => (r.Monat.Month == p.von.Month) && (r.Monat.Year == p.von.Year)))) > 0)
-            {
-                //results.AddEntityError("Ein Vertrag in diesem Zeitraum existiert bereits.");
+                results.AddEntityError("Ein Vertrag in diesem Zeitraum existiert bereits.");
             }
         }
 
+        partial void StellenanteilItemSet_Deleting(StellenanteilItem entity)
+        {
+            if (entity.VertragItem.StellenanteilItemCollection.Count() == 0)
+            {
+                throw new ValidationException("Es muss mindestens ein Stellenanteil vorhanden sein!");
+            }
+        }
+
+        internal bool IsOverlapping(VertragItem entityNew, VertragItem entityExist)
+        {
+            return (entityNew.bis >= entityExist.von) && (entityNew.von <= entityExist.bis) && (entityNew.Id != entityExist.Id) ;
+        }
     }
 }

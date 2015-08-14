@@ -20,5 +20,11 @@ namespace LightSwitchApplication
         {
             result = (bis.Month - von.Month) + 12 * (bis.Year - von.Year);
         }
+
+        partial void isOverlapping_Compute(ref bool? result)
+        {
+            // Ergebnis auf den gewünschten Feldwert festlegen
+
+        }
     }
 }

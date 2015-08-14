@@ -11,7 +11,8 @@ myapp.AddEditVertragItem.beforeApplyChanges = function (screen) {
 myapp.AddEditVertragItem.StellenanteilItemCollection_postRender = function (element, contentItem) {
     // Write code here.
 
-};myapp.AddEditVertragItem.StellenanteilItemCollection_render = function (element, contentItem) {
+};
+myapp.AddEditVertragItem.StellenanteilItemCollection_render = function (element, contentItem) {
     // Write code here.
     var itemTemplate = $("<div></div>").attr('id', 'StellenanteilItemCollection')
 

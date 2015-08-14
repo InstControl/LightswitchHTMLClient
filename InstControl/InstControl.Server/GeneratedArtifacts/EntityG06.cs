@@ -173,6 +173,24 @@ namespace LightSwitchApplication
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.Nullable<bool> isOverlapping
+        {
+            get
+            {
+                return global::LightSwitchApplication.VertragItem.DetailsClass.GetValue(this, global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties.isOverlapping);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void isOverlapping_Compute(ref global::System.Nullable<bool> result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void isOverlapping_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+
+        /// <summary>
+        /// Keine modellierte Beschreibung verfügbar
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         public string CreatedBy
         {
             get
@@ -474,6 +492,14 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<bool>> isOverlapping
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties.isOverlapping) as global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<bool>>;
+                    }
+                }
+                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, string> CreatedBy
                 {
                     get
@@ -694,6 +720,28 @@ namespace LightSwitchApplication
                 {
                     int value = default(int);
                     e.Dauer_Compute(ref value);
+                    return value;
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<bool>>.Entry
+                    isOverlapping = new global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<bool>>.Entry(
+                        "isOverlapping",
+                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._isOverlapping_Stub,
+                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._isOverlapping_Validate,
+                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._isOverlapping_ComputeValue);
+                private static void _isOverlapping_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.VertragItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<bool>>.Data> c, global::LightSwitchApplication.VertragItem.DetailsClass d, object sf)
+                {
+                    c(d, ref d._isOverlapping, sf);
+                }
+                private static void _isOverlapping_Validate(global::LightSwitchApplication.VertragItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.isOverlapping_Validate(r);
+                }
+                private static global::System.Nullable<bool> _isOverlapping_ComputeValue(global::LightSwitchApplication.VertragItem e)
+                {
+                    global::System.Nullable<bool> value = default(global::System.Nullable<bool>);
+                    e.isOverlapping_Compute(ref value);
                     return value;
                 }
     
@@ -993,6 +1041,9 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>.Data _Dauer;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<bool>>.Data _isOverlapping;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, string>.Data _CreatedBy;
