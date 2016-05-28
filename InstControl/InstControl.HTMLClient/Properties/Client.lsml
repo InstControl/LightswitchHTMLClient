@@ -29,6 +29,9 @@
     <EntityContainerGroupProperty
       Name="ApplicationData"
       EntityContainer="ApplicationData" />
+    <EntityContainerGroupProperty
+      Name="WCF_RIA_ServiceData"
+      EntityContainer="WCF_RIA_ServiceData" />
   </EntityContainerGroup>
   <GlobalAttributeGroup>
     <GlobalAttributeGroup.Attributes>
@@ -50,10 +53,10 @@
       Name="link1"
       Method="!module/Methods[showBrowseAbteilungItemSet]" />
     <ApplicationNavigationMethodLink
+      Name="link2"
+      Method="!module/Methods[showBrowseKontoItem]" />
+    <ApplicationNavigationMethodLink
       Name="link5"
       Method="!module/Methods[showBrowseVertragJeMonatItemSet]" />
-    <ApplicationNavigationMethodLink
-      Name="link7"
-      Method="!module/Methods[showMitarbeiterMitAktuellemVertragGridSortingTemplate]" />
   </Application.NavigationItems>
 </Application>

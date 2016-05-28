@@ -42,8 +42,7 @@
               <ContentItem
                 Name="rows"
                 Kind="Details"
-                DataType="VertragJeMonatItem"
-                View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
+                DataType="VertragJeMonatItem">
                 <ContentItem.Attributes>
                   <DisplayName
                     Value="rows" />
@@ -154,27 +153,6 @@
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
                 </ContentItem>
-                <ContentItem
-                  Name="Kürzel"
-                  Kind="Value"
-                  DataType=":String">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="VertragJeMonatItem/Properties[StellenanteilItem]" />
-                        <MemberExpression
-                          Member="VertragItem" />
-                        <MemberExpression
-                          Member="MitarbeiterItem" />
-                        <MemberExpression
-                          Member="AbteilungItem" />
-                        <MemberExpression
-                          Member="Kürzel" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
                 <ContentItem.PropertySources>
                   <ControlPropertySource
                     Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[WidthSizingMode]">
@@ -197,6 +175,16 @@
                         Member="BrowseVertragJeMonatItemSet/Properties[VertragJeMonatItemSet]" />
                       <CallExpression
                         Target="viewSelected" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+                <ControlPropertySource
+                  Property="EJ.Web:CollectionCustomControl/Properties[Control]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="ejGrid"
+                        ResultType=":String" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>

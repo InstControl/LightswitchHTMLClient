@@ -56,7 +56,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	background-image:         linear-gradient( #191919 /*{a-bar-background-start}*/, #191919 /*{a-bar-background-end}*/);
 }
 .ui-bar-a .ui-link-inherit {
-	color: #555555 /*{a-bar-color}*/;
+	color: #FFFFFF /*{a-bar-color}*/;
 }
 
 .ui-bar-a a.ui-link {

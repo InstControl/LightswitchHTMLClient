@@ -14,7 +14,7 @@ namespace LightSwitchApplication
     #region Entities
     
     /// <summary>
-    /// Keine modellierte Beschreibung verfügbar
+    /// No Modeled Description Available
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
     public sealed partial class VertragItem : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass>
@@ -22,7 +22,7 @@ namespace LightSwitchApplication
         #region Constructors
     
         /// <summary>
-        /// Initialisiert eine neue Instanz der Entität VertragItem.
+        /// Initializes a new instance of the VertragItem entity.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -49,7 +49,7 @@ namespace LightSwitchApplication
         #region Private Properties
         
         /// <summary>
-        /// Ruft das Application-Objekt für diese Anwendung ab. Das Application-Objekt stellt Zugriff auf aktive Bildschirme, Methoden zum Öffnen von Bildschirmen sowie Zugriff auf den aktuellen Benutzer bereit.
+        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -62,7 +62,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Ruft den übergeordneten Datenarbeitsbereich ab. Der Datenarbeitsbereich stellt Zugriff auf alle Datenquellen in der Anwendung bereit.
+        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -79,7 +79,7 @@ namespace LightSwitchApplication
         #region Public Properties
     
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -103,7 +103,7 @@ namespace LightSwitchApplication
         partial void Id_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -127,7 +127,7 @@ namespace LightSwitchApplication
         partial void von_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -151,7 +151,7 @@ namespace LightSwitchApplication
         partial void bis_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -169,25 +169,7 @@ namespace LightSwitchApplication
         partial void Dauer_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::System.Nullable<bool> isOverlapping
-        {
-            get
-            {
-                return global::LightSwitchApplication.VertragItem.DetailsClass.GetValue(this, global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties.isOverlapping);
-            }
-        }
-        
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void isOverlapping_Compute(ref global::System.Nullable<bool> result);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void isOverlapping_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
-
-        /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -215,7 +197,7 @@ namespace LightSwitchApplication
         }
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -235,7 +217,7 @@ namespace LightSwitchApplication
         partial void Created_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -263,7 +245,7 @@ namespace LightSwitchApplication
         }
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -283,7 +265,7 @@ namespace LightSwitchApplication
         partial void Modified_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
@@ -308,7 +290,7 @@ namespace LightSwitchApplication
         partial void RowVersion_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -332,7 +314,7 @@ namespace LightSwitchApplication
         partial void MitarbeiterItem_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -356,7 +338,7 @@ namespace LightSwitchApplication
         partial void BeschäftigungsArtItem_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -489,14 +471,6 @@ namespace LightSwitchApplication
                     get
                     {
                         return base.GetItem(global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties.Dauer) as global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>;
-                    }
-                }
-                
-                public global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<bool>> isOverlapping
-                {
-                    get
-                    {
-                        return base.GetItem(global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties.isOverlapping) as global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<bool>>;
                     }
                 }
                 
@@ -720,28 +694,6 @@ namespace LightSwitchApplication
                 {
                     int value = default(int);
                     e.Dauer_Compute(ref value);
-                    return value;
-                }
-    
-                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<bool>>.Entry
-                    isOverlapping = new global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<bool>>.Entry(
-                        "isOverlapping",
-                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._isOverlapping_Stub,
-                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._isOverlapping_Validate,
-                        global::LightSwitchApplication.VertragItem.DetailsClass.PropertySetProperties._isOverlapping_ComputeValue);
-                private static void _isOverlapping_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.VertragItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<bool>>.Data> c, global::LightSwitchApplication.VertragItem.DetailsClass d, object sf)
-                {
-                    c(d, ref d._isOverlapping, sf);
-                }
-                private static void _isOverlapping_Validate(global::LightSwitchApplication.VertragItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
-                {
-                    e.isOverlapping_Validate(r);
-                }
-                private static global::System.Nullable<bool> _isOverlapping_ComputeValue(global::LightSwitchApplication.VertragItem e)
-                {
-                    global::System.Nullable<bool> value = default(global::System.Nullable<bool>);
-                    e.isOverlapping_Compute(ref value);
                     return value;
                 }
     
@@ -1041,9 +993,6 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, int>.Data _Dauer;
-            
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, global::System.Nullable<bool>>.Data _isOverlapping;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.VertragItem, global::LightSwitchApplication.VertragItem.DetailsClass, string>.Data _CreatedBy;

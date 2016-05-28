@@ -45,6 +45,7 @@
     <Property Name="Foto" Type="Edm.Binary" MaxLength="Max" />
     <Property Name="PersonalNr" Type="Edm.String" Nullable="false" MaxLength="255" />
     <Property Name="AbteilungItem_MitarbeiterItem" Type="Edm.Int32" />
+    <Property Name="UserID" Type="Edm.String" Nullable="false" MaxLength="255" />
     <Property Name="CreatedBy" Type="Edm.String" MaxLength="255" />
     <Property Name="Created" Type="Edm.DateTimeOffset" />
     <Property Name="ModifiedBy" Type="Edm.String" MaxLength="255" />

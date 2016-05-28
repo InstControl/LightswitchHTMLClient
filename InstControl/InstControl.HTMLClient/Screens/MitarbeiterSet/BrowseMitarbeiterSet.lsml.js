@@ -28,21 +28,20 @@ myapp.BrowseMitarbeiterSet.Delete_execute = function (screen) {
 
     });
 };
+
 myapp.BrowseMitarbeiterSet.beforeApplyChanges = function (screen) {
     screen.MitarbeiterAktuell.refresh();
     screen.MitarbeiterAusgeschieden.refresh();
     screen.MitarbeiterOhneVertrag.refresh();
 };
+
 myapp.BrowseMitarbeiterSet.Monate_postRender = function (element, contentItem) {
     // Write code here.
-    contentItem.value = 2;
-    var Anzahl = contentItem.screen.MitarbeiterMitAuslaufendenVertrag.count;
-    contentItem.screen.findContentItem("Group4").displayName = "mit auslaufende Verträgen (" + Anzahl.toString() + ")";
+    contentItem.value = 6;
+
 };
-myapp.BrowseMitarbeiterSet.Group4_postRender = function (element, contentItem) {
-    var Anzahl = contentItem.screen.MitarbeiterMitAuslaufendenVertrag.count;
-    contentItem.screen.findContentItem("Group4").displayName = "mit auslaufende Verträgen (" + Anzahl.toString() + ")";
-};
+
+
 myapp.BrowseMitarbeiterSet.aktuelleMitarbeiter_render = function (element, contentItem) {
     // Write code here.
     var itemTemplate = $("<div></div>").attr('id', 'aktuelleMitarbeiter')
@@ -69,7 +68,23 @@ myapp.BrowseMitarbeiterSet.aktuelleMitarbeiter_render = function (element, conte
     };
 };
 
-myapp.BrowseMitarbeiterSet.aktuelleMitarbeiter_postRender = function (element, contentItem) {
+
+
+myapp.BrowseMitarbeiterSet.VertragBis_postRender = function (element, contentItem) {
     // Write code here.
+    var heute = new Date();
+    contentItem.value=heute;
+    console.log("strValue: " + contentItem.stringValue);
+};
+
+myapp.BrowseMitarbeiterSet.Property1_postRender = function (element, contentItem) {
+    // Write code here.
+    $(element).text("hallo")
+    contentItem.value = "Hall2o";
+};
+myapp.BrowseMitarbeiterSet.created = function (screen) {
+    // Write code here.
+    var heute = new Date();
+    //screen.findContentItem("Group1").displayName = screen.findContentItem("Group1").displayName + "(" + screen.MitarbeiterAktuell.count.toString() + ")";
 
 };

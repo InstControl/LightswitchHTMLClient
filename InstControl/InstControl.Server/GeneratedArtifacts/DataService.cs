@@ -12,7 +12,7 @@ namespace LightSwitchApplication
     #region Data Services
     
     /// <summary>
-    /// Stellt Member zum Abfragen und Aktualisieren von Daten in der Datenquelle ApplicationData bereit.
+    /// Provides members to query and update data in the ApplicationData datasource.
     /// </summary>
     public sealed partial class ApplicationDataService
         : global::LightSwitchApplication.ApplicationData
@@ -30,7 +30,7 @@ namespace LightSwitchApplication
         #region Private Properties
         
         /// <summary>
-        /// Ruft das Application-Objekt für diese Anwendung ab. Das Application-Objekt stellt Zugriff auf aktive Bildschirme, Methoden zum Öffnen von Bildschirmen sowie Zugriff auf den aktuellen Benutzer bereit.
+        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -43,7 +43,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Ruft den übergeordneten Datenarbeitsbereich ab. Der Datenarbeitsbereich stellt Zugriff auf alle Datenquellen in der Anwendung bereit.
+        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1133,6 +1133,175 @@ namespace LightSwitchApplication
             private static void __ApplicationData_InitializingConnection(global::LightSwitchApplication.ApplicationDataService d, global::Microsoft.LightSwitch.DatabaseConnectionState state)
             {
                 d.ApplicationData_InitializingConnection(state);
+            }
+        }
+    
+        #endregion
+    }
+    
+    /// <summary>
+    /// Provides members to query and update data in the WCF_RIA_ServiceData datasource.
+    /// </summary>
+    public sealed partial class WCF_RIA_ServiceDataService
+        : global::LightSwitchApplication.WCF_RIA_ServiceData
+    {
+        #region Constructors
+    
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public WCF_RIA_ServiceDataService() : base()
+        {
+        }
+    
+        #endregion
+    
+        #region Private Properties
+        
+        /// <summary>
+        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.Application Application
+        {
+            get
+            {
+                return global::LightSwitchApplication.Application.Current;
+            }
+        }
+        
+        /// <summary>
+        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.DataWorkspace DataWorkspace
+        {
+            get
+            {
+                return (global::LightSwitchApplication.DataWorkspace)this.Details.DataWorkspace;
+            }
+        }
+        
+        #endregion
+    
+        #region Server Interceptions Points
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EnhancedMitarbeiters_CanRead(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EnhancedMitarbeiters_Validate(global::LightSwitchApplication.EnhancedMitarbeiter entity, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder results);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SaveChanges_CanExecute(ref bool result);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SaveChanges_Executing();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SaveChanges_Executed();
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void SaveChanges_ExecuteFailed(global::System.Exception exception);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Query_Executing(global::Microsoft.LightSwitch.QueryExecutingDescriptor queryDescriptor);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Query_Executed(global::Microsoft.LightSwitch.QueryExecutedDescriptor queryDescriptor);
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void Query_ExecuteFailed(global::Microsoft.LightSwitch.QueryExecuteFailedDescriptor queryDescriptor);
+    
+        #endregion
+    
+        #region Details Class
+    
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
+        public static new class DetailsClass
+        {
+    
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1810:InitializeReferenceTypeStaticFieldsInline")]
+            static DetailsClass()
+            {
+            }
+            
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.WCF_RIA_ServiceDataService, global::LightSwitchApplication.EnhancedMitarbeiter>
+                __EnhancedMitarbeitersEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.EntitySetEntry<global::LightSwitchApplication.WCF_RIA_ServiceDataService, global::LightSwitchApplication.EnhancedMitarbeiter>(
+                    "EnhancedMitarbeiters",
+                    null,
+                    null,
+                    null,
+                    global::LightSwitchApplication.WCF_RIA_ServiceDataService.DetailsClass.__EnhancedMitarbeiters_CanRead,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    global::LightSwitchApplication.WCF_RIA_ServiceDataService.DetailsClass.__EnhancedMitarbeiters_Validate,
+                    null);
+            private static bool __EnhancedMitarbeiters_CanRead(global::LightSwitchApplication.WCF_RIA_ServiceDataService d)
+            {
+                bool result = true;
+                d.EnhancedMitarbeiters_CanRead(ref result);
+                return result;
+            }
+            private static void __EnhancedMitarbeiters_Validate(global::LightSwitchApplication.WCF_RIA_ServiceDataService d, global::LightSwitchApplication.EnhancedMitarbeiter e, global::Microsoft.LightSwitch.EntitySetValidationResultsBuilder r)
+            {
+                d.EnhancedMitarbeiters_Validate(e, r);
+            }
+            
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.OperationEntry<global::LightSwitchApplication.WCF_RIA_ServiceDataService>
+                __SaveChangesEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.OperationEntry<global::LightSwitchApplication.WCF_RIA_ServiceDataService>(
+                    "SaveChanges",
+                    global::LightSwitchApplication.WCF_RIA_ServiceDataService.DetailsClass.__SaveChanges_CanExecute,
+                    global::LightSwitchApplication.WCF_RIA_ServiceDataService.DetailsClass.__SaveChanges_Executing,
+                    global::LightSwitchApplication.WCF_RIA_ServiceDataService.DetailsClass.__SaveChanges_Executed,
+                    global::LightSwitchApplication.WCF_RIA_ServiceDataService.DetailsClass.__SaveChanges_Failed);
+            private static bool __SaveChanges_CanExecute(global::LightSwitchApplication.WCF_RIA_ServiceDataService d, bool r)
+            {
+                d.SaveChanges_CanExecute(ref r);
+                return r;
+            }
+            private static void __SaveChanges_Executing(global::LightSwitchApplication.WCF_RIA_ServiceDataService d, object[] args)
+            {
+                d.SaveChanges_Executing();
+            }
+            private static void __SaveChanges_Executed(global::LightSwitchApplication.WCF_RIA_ServiceDataService d, object[] args)
+            {
+                d.SaveChanges_Executed();
+            }
+            private static void __SaveChanges_Failed(global::LightSwitchApplication.WCF_RIA_ServiceDataService d, object[] args, global::System.Exception ex)
+            {
+                d.SaveChanges_ExecuteFailed(ex);
+            }
+    
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static readonly global::Microsoft.LightSwitch.Details.Framework.Server.QueryEntry<global::LightSwitchApplication.WCF_RIA_ServiceDataService>
+                ___QueryEntry = new global::Microsoft.LightSwitch.Details.Framework.Server.QueryEntry<global::LightSwitchApplication.WCF_RIA_ServiceDataService>(
+                    global::LightSwitchApplication.WCF_RIA_ServiceDataService.DetailsClass.__Query_Executing,
+                    global::LightSwitchApplication.WCF_RIA_ServiceDataService.DetailsClass.__Query_Executed,
+                    global::LightSwitchApplication.WCF_RIA_ServiceDataService.DetailsClass.__Query_Failed);
+            private static void __Query_Executing(global::LightSwitchApplication.WCF_RIA_ServiceDataService d, global::Microsoft.LightSwitch.QueryExecutingDescriptor queryDescriptor)
+            {
+                d.Query_Executing(queryDescriptor);
+            }
+            private static void __Query_Executed(global::LightSwitchApplication.WCF_RIA_ServiceDataService d, global::Microsoft.LightSwitch.QueryExecutedDescriptor queryDescriptor)
+            {
+                d.Query_Executed(queryDescriptor);
+            }
+            private static void __Query_Failed(global::LightSwitchApplication.WCF_RIA_ServiceDataService d, global::Microsoft.LightSwitch.QueryExecuteFailedDescriptor queryDescriptor)
+            {
+                d.Query_ExecuteFailed(queryDescriptor);
             }
         }
     

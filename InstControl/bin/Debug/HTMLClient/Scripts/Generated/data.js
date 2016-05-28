@@ -15,377 +15,421 @@ window.myapp = msls.application;
 
     function AbteilungItem(entitySet) {
         /// <summary>
-        /// Stellt den Entitätstyp AbteilungItem dar.
+        /// Represents the AbteilungItem entity type.
         /// </summary>
         /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// Der Entitätssatz, der diesen abteilungItem enthalten sollte.
+        /// The entity set that should contain this abteilungItem.
         /// </param>
         /// <field name="Id" type="Number">
-        /// Ruft den id für diesen abteilungItem ab oder legt diesen fest.
+        /// Gets or sets the id for this abteilungItem.
         /// </field>
         /// <field name="Kürzel" type="String">
-        /// Ruft den kürzel für diesen abteilungItem ab oder legt diesen fest.
+        /// Gets or sets the kürzel for this abteilungItem.
         /// </field>
         /// <field name="Langname" type="String">
-        /// Ruft den langname für diesen abteilungItem ab oder legt diesen fest.
+        /// Gets or sets the langname for this abteilungItem.
         /// </field>
         /// <field name="MitarbeiterItemCollection" type="msls.EntityCollection" elementType="msls.application.MitarbeiterItem">
-        /// Ruft den mitarbeiterItemCollection für diesen abteilungItem ab.
+        /// Gets the mitarbeiterItemCollection for this abteilungItem.
         /// </field>
         /// <field name="ProjektItemCollection" type="msls.EntityCollection" elementType="msls.application.ProjektItem">
-        /// Ruft den projektItemCollection für diesen abteilungItem ab.
+        /// Gets the projektItemCollection for this abteilungItem.
         /// </field>
         /// <field name="Abteilungsleiter" type="msls.application.MitarbeiterItem">
-        /// Ruft den abteilungsleiter für diesen abteilungItem ab oder legt diesen fest.
+        /// Gets or sets the abteilungsleiter for this abteilungItem.
         /// </field>
         /// <field name="CreatedBy" type="String">
-        /// Ruft den createdBy für diesen abteilungItem ab oder legt diesen fest.
+        /// Gets or sets the createdBy for this abteilungItem.
         /// </field>
         /// <field name="Created" type="Date">
-        /// Ruft den created für diesen abteilungItem ab oder legt diesen fest.
+        /// Gets or sets the created for this abteilungItem.
         /// </field>
         /// <field name="ModifiedBy" type="String">
-        /// Ruft den modifiedBy für diesen abteilungItem ab oder legt diesen fest.
+        /// Gets or sets the modifiedBy for this abteilungItem.
         /// </field>
         /// <field name="Modified" type="Date">
-        /// Ruft den modified für diesen abteilungItem ab oder legt diesen fest.
+        /// Gets or sets the modified for this abteilungItem.
         /// </field>
         /// <field name="RowVersion" type="Array">
-        /// Ruft den rowVersion für diesen abteilungItem ab oder legt diesen fest.
+        /// Gets or sets the rowVersion for this abteilungItem.
         /// </field>
         /// <field name="details" type="msls.application.AbteilungItem.Details">
-        /// Ruft die Details für diesen abteilungItem ab.
+        /// Gets the details for this abteilungItem.
         /// </field>
         $Entity.call(this, entitySet);
     }
 
     function BeschäftigungsArtItem(entitySet) {
         /// <summary>
-        /// Stellt den Entitätstyp BeschäftigungsArtItem dar.
+        /// Represents the BeschäftigungsArtItem entity type.
         /// </summary>
         /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// Der Entitätssatz, der diesen beschäftigungsArtItem enthalten sollte.
+        /// The entity set that should contain this beschäftigungsArtItem.
         /// </param>
         /// <field name="Id" type="Number">
-        /// Ruft den id für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// Gets or sets the id for this beschäftigungsArtItem.
         /// </field>
         /// <field name="Art" type="String">
-        /// Ruft den art für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// Gets or sets the art for this beschäftigungsArtItem.
         /// </field>
         /// <field name="VertragItem" type="msls.EntityCollection" elementType="msls.application.VertragItem">
-        /// Ruft den vertragItem für diesen beschäftigungsArtItem ab.
+        /// Gets the vertragItem for this beschäftigungsArtItem.
         /// </field>
         /// <field name="CreatedBy" type="String">
-        /// Ruft den createdBy für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// Gets or sets the createdBy for this beschäftigungsArtItem.
         /// </field>
         /// <field name="Created" type="Date">
-        /// Ruft den created für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// Gets or sets the created for this beschäftigungsArtItem.
         /// </field>
         /// <field name="ModifiedBy" type="String">
-        /// Ruft den modifiedBy für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// Gets or sets the modifiedBy for this beschäftigungsArtItem.
         /// </field>
         /// <field name="Modified" type="Date">
-        /// Ruft den modified für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// Gets or sets the modified for this beschäftigungsArtItem.
         /// </field>
         /// <field name="RowVersion" type="Array">
-        /// Ruft den rowVersion für diesen beschäftigungsArtItem ab oder legt diesen fest.
+        /// Gets or sets the rowVersion for this beschäftigungsArtItem.
         /// </field>
         /// <field name="details" type="msls.application.BeschäftigungsArtItem.Details">
-        /// Ruft die Details für diesen beschäftigungsArtItem ab.
+        /// Gets the details for this beschäftigungsArtItem.
         /// </field>
         $Entity.call(this, entitySet);
     }
 
     function MitarbeiterItem(entitySet) {
         /// <summary>
-        /// Stellt den Entitätstyp MitarbeiterItem dar.
+        /// Represents the MitarbeiterItem entity type.
         /// </summary>
         /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// Der Entitätssatz, der diesen mitarbeiterItem enthalten sollte.
+        /// The entity set that should contain this mitarbeiterItem.
         /// </param>
         /// <field name="Id" type="Number">
-        /// Ruft den id für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the id for this mitarbeiterItem.
         /// </field>
         /// <field name="Nachname" type="String">
-        /// Ruft den nachname für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the nachname for this mitarbeiterItem.
         /// </field>
         /// <field name="Vorname" type="String">
-        /// Ruft den vorname für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the vorname for this mitarbeiterItem.
         /// </field>
         /// <field name="Geburtstag" type="Date">
-        /// Ruft den geburtstag für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the geburtstag for this mitarbeiterItem.
         /// </field>
         /// <field name="Erstanstellung" type="Date">
-        /// Ruft den erstanstellung für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the erstanstellung for this mitarbeiterItem.
         /// </field>
         /// <field name="Ausscheidedatum" type="Date">
-        /// Ruft den ausscheidedatum für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the ausscheidedatum for this mitarbeiterItem.
         /// </field>
         /// <field name="Bermerkung" type="String">
-        /// Ruft den bermerkung für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the bermerkung for this mitarbeiterItem.
         /// </field>
         /// <field name="Raum" type="String">
         /// Raumnummer
         /// </field>
         /// <field name="Telefon" type="String">
-        /// Ruft den telefon für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the telefon for this mitarbeiterItem.
         /// </field>
         /// <field name="Foto" type="String">
-        /// Ruft den foto für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the foto for this mitarbeiterItem.
         /// </field>
         /// <field name="VertragItemCollection" type="msls.EntityCollection" elementType="msls.application.VertragItem">
-        /// Ruft den vertragItemCollection für diesen mitarbeiterItem ab.
+        /// Gets the vertragItemCollection for this mitarbeiterItem.
         /// </field>
         /// <field name="PersonalNr" type="String">
-        /// Ruft den personalNr für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the personalNr for this mitarbeiterItem.
         /// </field>
         /// <field name="AbteilungItem" type="msls.application.AbteilungItem">
-        /// Ruft den abteilungItem für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the abteilungItem for this mitarbeiterItem.
         /// </field>
         /// <field name="Abteilungsleiter" type="msls.application.AbteilungItem">
-        /// Ruft den abteilungsleiter für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the abteilungsleiter for this mitarbeiterItem.
+        /// </field>
+        /// <field name="UserID" type="String">
+        /// Eindeutiges Kürzel zur Identifikation der Person
         /// </field>
         /// <field name="CreatedBy" type="String">
-        /// Ruft den createdBy für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the createdBy for this mitarbeiterItem.
         /// </field>
         /// <field name="Created" type="Date">
-        /// Ruft den created für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the created for this mitarbeiterItem.
         /// </field>
         /// <field name="ModifiedBy" type="String">
-        /// Ruft den modifiedBy für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the modifiedBy for this mitarbeiterItem.
         /// </field>
         /// <field name="Modified" type="Date">
-        /// Ruft den modified für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the modified for this mitarbeiterItem.
         /// </field>
         /// <field name="RowVersion" type="Array">
-        /// Ruft den rowVersion für diesen mitarbeiterItem ab oder legt diesen fest.
+        /// Gets or sets the rowVersion for this mitarbeiterItem.
         /// </field>
         /// <field name="details" type="msls.application.MitarbeiterItem.Details">
-        /// Ruft die Details für diesen mitarbeiterItem ab.
+        /// Gets the details for this mitarbeiterItem.
         /// </field>
         $Entity.call(this, entitySet);
     }
 
     function ProjektItem(entitySet) {
         /// <summary>
-        /// Stellt den Entitätstyp ProjektItem dar.
+        /// Represents the ProjektItem entity type.
         /// </summary>
         /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// Der Entitätssatz, der diesen projektItem enthalten sollte.
+        /// The entity set that should contain this projektItem.
         /// </param>
         /// <field name="Id" type="Number">
-        /// Ruft den id für diesen projektItem ab oder legt diesen fest.
+        /// Gets or sets the id for this projektItem.
         /// </field>
         /// <field name="ProjektKurzName" type="String">
-        /// Ruft den projektKurzName für diesen projektItem ab oder legt diesen fest.
+        /// Gets or sets the projektKurzName for this projektItem.
         /// </field>
         /// <field name="ProjektLangName" type="String">
-        /// Ruft den projektLangName für diesen projektItem ab oder legt diesen fest.
+        /// Gets or sets the projektLangName for this projektItem.
         /// </field>
         /// <field name="Start" type="Date">
-        /// Ruft den start für diesen projektItem ab oder legt diesen fest.
+        /// Gets or sets the start for this projektItem.
         /// </field>
         /// <field name="Laufzeit" type="Number">
         /// Laufzeit in Monaten
         /// </field>
         /// <field name="PSPElement" type="String">
-        /// Ruft den pSPElement für diesen projektItem ab oder legt diesen fest.
+        /// Gets or sets the pSPElement for this projektItem.
         /// </field>
         /// <field name="AbteilungItem" type="msls.application.AbteilungItem">
-        /// Ruft den abteilungItem für diesen projektItem ab oder legt diesen fest.
+        /// Gets or sets the abteilungItem for this projektItem.
         /// </field>
         /// <field name="StellenanteilItem" type="msls.EntityCollection" elementType="msls.application.StellenanteilItem">
-        /// Ruft den stellenanteilItem für diesen projektItem ab.
+        /// Gets the stellenanteilItem for this projektItem.
         /// </field>
         /// <field name="CreatedBy" type="String">
-        /// Ruft den createdBy für diesen projektItem ab oder legt diesen fest.
+        /// Gets or sets the createdBy for this projektItem.
         /// </field>
         /// <field name="Created" type="Date">
-        /// Ruft den created für diesen projektItem ab oder legt diesen fest.
+        /// Gets or sets the created for this projektItem.
         /// </field>
         /// <field name="ModifiedBy" type="String">
-        /// Ruft den modifiedBy für diesen projektItem ab oder legt diesen fest.
+        /// Gets or sets the modifiedBy for this projektItem.
         /// </field>
         /// <field name="Modified" type="Date">
-        /// Ruft den modified für diesen projektItem ab oder legt diesen fest.
+        /// Gets or sets the modified for this projektItem.
         /// </field>
         /// <field name="RowVersion" type="Array">
-        /// Ruft den rowVersion für diesen projektItem ab oder legt diesen fest.
+        /// Gets or sets the rowVersion for this projektItem.
         /// </field>
         /// <field name="details" type="msls.application.ProjektItem.Details">
-        /// Ruft die Details für diesen projektItem ab.
+        /// Gets the details for this projektItem.
         /// </field>
         $Entity.call(this, entitySet);
     }
 
     function StellenanteilItem(entitySet) {
         /// <summary>
-        /// Stellt den Entitätstyp StellenanteilItem dar.
+        /// Represents the StellenanteilItem entity type.
         /// </summary>
         /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// Der Entitätssatz, der diesen stellenanteilItem enthalten sollte.
+        /// The entity set that should contain this stellenanteilItem.
         /// </param>
         /// <field name="Id" type="Number">
-        /// Ruft den id für diesen stellenanteilItem ab oder legt diesen fest.
+        /// Gets or sets the id for this stellenanteilItem.
         /// </field>
         /// <field name="Stellenanteil" type="String">
-        /// Ruft den stellenanteil für diesen stellenanteilItem ab oder legt diesen fest.
+        /// Gets or sets the stellenanteil for this stellenanteilItem.
         /// </field>
         /// <field name="VertragItem" type="msls.application.VertragItem">
-        /// Ruft den vertragItem für diesen stellenanteilItem ab oder legt diesen fest.
+        /// Gets or sets the vertragItem for this stellenanteilItem.
         /// </field>
         /// <field name="ProjektItem" type="msls.application.ProjektItem">
-        /// Ruft den projektItem für diesen stellenanteilItem ab oder legt diesen fest.
+        /// Gets or sets the projektItem for this stellenanteilItem.
         /// </field>
         /// <field name="VertragJeMonatCollection" type="msls.EntityCollection" elementType="msls.application.VertragJeMonatItem">
-        /// Ruft den vertragJeMonatCollection für diesen stellenanteilItem ab.
+        /// Gets the vertragJeMonatCollection for this stellenanteilItem.
         /// </field>
         /// <field name="CreatedBy" type="String">
-        /// Ruft den createdBy für diesen stellenanteilItem ab oder legt diesen fest.
+        /// Gets or sets the createdBy for this stellenanteilItem.
         /// </field>
         /// <field name="Created" type="Date">
-        /// Ruft den created für diesen stellenanteilItem ab oder legt diesen fest.
+        /// Gets or sets the created for this stellenanteilItem.
         /// </field>
         /// <field name="ModifiedBy" type="String">
-        /// Ruft den modifiedBy für diesen stellenanteilItem ab oder legt diesen fest.
+        /// Gets or sets the modifiedBy for this stellenanteilItem.
         /// </field>
         /// <field name="Modified" type="Date">
-        /// Ruft den modified für diesen stellenanteilItem ab oder legt diesen fest.
+        /// Gets or sets the modified for this stellenanteilItem.
         /// </field>
         /// <field name="RowVersion" type="Array">
-        /// Ruft den rowVersion für diesen stellenanteilItem ab oder legt diesen fest.
+        /// Gets or sets the rowVersion for this stellenanteilItem.
         /// </field>
         /// <field name="details" type="msls.application.StellenanteilItem.Details">
-        /// Ruft die Details für diesen stellenanteilItem ab.
+        /// Gets the details for this stellenanteilItem.
         /// </field>
         $Entity.call(this, entitySet);
     }
 
     function VertragItem(entitySet) {
         /// <summary>
-        /// Stellt den Entitätstyp VertragItem dar.
+        /// Represents the VertragItem entity type.
         /// </summary>
         /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// Der Entitätssatz, der diesen vertragItem enthalten sollte.
+        /// The entity set that should contain this vertragItem.
         /// </param>
         /// <field name="Id" type="Number">
-        /// Ruft den id für diesen vertragItem ab oder legt diesen fest.
+        /// Gets or sets the id for this vertragItem.
         /// </field>
         /// <field name="von" type="Date">
-        /// Ruft den von für diesen vertragItem ab oder legt diesen fest.
+        /// Gets or sets the von for this vertragItem.
         /// </field>
         /// <field name="bis" type="Date">
-        /// Ruft den bis für diesen vertragItem ab oder legt diesen fest.
+        /// Gets or sets the bis for this vertragItem.
         /// </field>
         /// <field name="MitarbeiterItem" type="msls.application.MitarbeiterItem">
-        /// Ruft den mitarbeiterItem für diesen vertragItem ab oder legt diesen fest.
+        /// Gets or sets the mitarbeiterItem for this vertragItem.
         /// </field>
         /// <field name="BeschäftigungsArtItem" type="msls.application.BeschäftigungsArtItem">
-        /// Ruft den beschäftigungsArtItem für diesen vertragItem ab oder legt diesen fest.
+        /// Gets or sets the beschäftigungsArtItem for this vertragItem.
         /// </field>
         /// <field name="StellenanteilItemCollection" type="msls.EntityCollection" elementType="msls.application.StellenanteilItem">
-        /// Ruft den stellenanteilItemCollection für diesen vertragItem ab.
+        /// Gets the stellenanteilItemCollection for this vertragItem.
         /// </field>
         /// <field name="CreatedBy" type="String">
-        /// Ruft den createdBy für diesen vertragItem ab oder legt diesen fest.
+        /// Gets or sets the createdBy for this vertragItem.
         /// </field>
         /// <field name="Created" type="Date">
-        /// Ruft den created für diesen vertragItem ab oder legt diesen fest.
+        /// Gets or sets the created for this vertragItem.
         /// </field>
         /// <field name="ModifiedBy" type="String">
-        /// Ruft den modifiedBy für diesen vertragItem ab oder legt diesen fest.
+        /// Gets or sets the modifiedBy for this vertragItem.
         /// </field>
         /// <field name="Modified" type="Date">
-        /// Ruft den modified für diesen vertragItem ab oder legt diesen fest.
+        /// Gets or sets the modified for this vertragItem.
         /// </field>
         /// <field name="RowVersion" type="Array">
-        /// Ruft den rowVersion für diesen vertragItem ab oder legt diesen fest.
+        /// Gets or sets the rowVersion for this vertragItem.
         /// </field>
         /// <field name="details" type="msls.application.VertragItem.Details">
-        /// Ruft die Details für diesen vertragItem ab.
+        /// Gets the details for this vertragItem.
         /// </field>
         $Entity.call(this, entitySet);
     }
 
     function VertragJeMonatItem(entitySet) {
         /// <summary>
-        /// Stellt den Entitätstyp VertragJeMonatItem dar.
+        /// Represents the VertragJeMonatItem entity type.
         /// </summary>
         /// <param name="entitySet" type="msls.EntitySet" optional="true">
-        /// Der Entitätssatz, der diesen vertragJeMonatItem enthalten sollte.
+        /// The entity set that should contain this vertragJeMonatItem.
         /// </param>
         /// <field name="Id" type="Number">
-        /// Ruft den id für diesen vertragJeMonatItem ab oder legt diesen fest.
+        /// Gets or sets the id for this vertragJeMonatItem.
         /// </field>
         /// <field name="Monat" type="Date">
-        /// Ruft den monat für diesen vertragJeMonatItem ab oder legt diesen fest.
+        /// Monat, in dem ein Vertrag besteht
         /// </field>
         /// <field name="StellenanteilItem" type="msls.application.StellenanteilItem">
-        /// Ruft den stellenanteilItem für diesen vertragJeMonatItem ab oder legt diesen fest.
+        /// Stellenanteil von FTE (Full-time equivalent)
         /// </field>
         /// <field name="CreatedBy" type="String">
-        /// Ruft den createdBy für diesen vertragJeMonatItem ab oder legt diesen fest.
+        /// Gets or sets the createdBy for this vertragJeMonatItem.
         /// </field>
         /// <field name="Created" type="Date">
-        /// Ruft den created für diesen vertragJeMonatItem ab oder legt diesen fest.
+        /// Gets or sets the created for this vertragJeMonatItem.
         /// </field>
         /// <field name="ModifiedBy" type="String">
-        /// Ruft den modifiedBy für diesen vertragJeMonatItem ab oder legt diesen fest.
+        /// Gets or sets the modifiedBy for this vertragJeMonatItem.
         /// </field>
         /// <field name="Modified" type="Date">
-        /// Ruft den modified für diesen vertragJeMonatItem ab oder legt diesen fest.
+        /// Gets or sets the modified for this vertragJeMonatItem.
         /// </field>
         /// <field name="RowVersion" type="Array">
-        /// Ruft den rowVersion für diesen vertragJeMonatItem ab oder legt diesen fest.
+        /// Gets or sets the rowVersion for this vertragJeMonatItem.
         /// </field>
         /// <field name="details" type="msls.application.VertragJeMonatItem.Details">
-        /// Ruft die Details für diesen vertragJeMonatItem ab.
+        /// Gets the details for this vertragJeMonatItem.
+        /// </field>
+        $Entity.call(this, entitySet);
+    }
+
+    function EnhancedMitarbeiter(entitySet) {
+        /// <summary>
+        /// Represents the EnhancedMitarbeiter entity type.
+        /// </summary>
+        /// <param name="entitySet" type="msls.EntitySet" optional="true">
+        /// The entity set that should contain this enhancedMitarbeiter.
+        /// </param>
+        /// <field name="ID" type="Number">
+        /// Gets or sets the iD for this enhancedMitarbeiter.
+        /// </field>
+        /// <field name="UserID" type="String">
+        /// Gets or sets the userID for this enhancedMitarbeiter.
+        /// </field>
+        /// <field name="aktuellerVertragBis" type="Date">
+        /// Gets or sets the aktuellerVertragBis for this enhancedMitarbeiter.
+        /// </field>
+        /// <field name="details" type="msls.application.EnhancedMitarbeiter.Details">
+        /// Gets the details for this enhancedMitarbeiter.
         /// </field>
         $Entity.call(this, entitySet);
     }
 
     function ApplicationData(dataWorkspace) {
         /// <summary>
-        /// Stellt den Datendienst ApplicationData dar.
+        /// Represents the ApplicationData data service.
         /// </summary>
         /// <param name="dataWorkspace" type="msls.DataWorkspace">
-        /// Der Datenarbeitsbereich, der diesen Datendienst erstellt hat.
+        /// The data workspace that created this data service.
         /// </param>
         /// <field name="AbteilungItemSet" type="msls.EntitySet">
-        /// Ruft die Entitätenmenge AbteilungItemSet ab.
+        /// Gets the AbteilungItemSet entity set.
         /// </field>
         /// <field name="BeschäftigungsArtItemSet" type="msls.EntitySet">
-        /// Ruft die Entitätenmenge BeschäftigungsArtItemSet ab.
+        /// Gets the BeschäftigungsArtItemSet entity set.
         /// </field>
         /// <field name="MitarbeiterItemSet" type="msls.EntitySet">
-        /// Ruft die Entitätenmenge MitarbeiterItemSet ab.
+        /// Gets the MitarbeiterItemSet entity set.
         /// </field>
         /// <field name="ProjektItemSet" type="msls.EntitySet">
-        /// Ruft die Entitätenmenge ProjektItemSet ab.
+        /// Gets the ProjektItemSet entity set.
         /// </field>
         /// <field name="StellenanteilItemSet" type="msls.EntitySet">
-        /// Ruft die Entitätenmenge StellenanteilItemSet ab.
+        /// Gets the StellenanteilItemSet entity set.
         /// </field>
         /// <field name="VertragItemSet" type="msls.EntitySet">
-        /// Ruft die Entitätenmenge VertragItemSet ab.
+        /// Gets the VertragItemSet entity set.
         /// </field>
         /// <field name="VertragJeMonatItemSet" type="msls.EntitySet">
-        /// Ruft die Entitätenmenge VertragJeMonatItemSet ab.
+        /// Gets the VertragJeMonatItemSet entity set.
         /// </field>
         /// <field name="details" type="msls.application.ApplicationData.Details">
-        /// Ruft die Details für diesen Datendienst ab.
+        /// Gets the details for this data service.
+        /// </field>
+        $DataService.call(this, dataWorkspace);
+    };
+
+    function WCF_RIA_ServiceData(dataWorkspace) {
+        /// <summary>
+        /// Represents the WCF_RIA_ServiceData data service.
+        /// </summary>
+        /// <param name="dataWorkspace" type="msls.DataWorkspace">
+        /// The data workspace that created this data service.
+        /// </param>
+        /// <field name="EnhancedMitarbeiters" type="msls.EntitySet">
+        /// Gets the EnhancedMitarbeiters entity set.
+        /// </field>
+        /// <field name="details" type="msls.application.WCF_RIA_ServiceData.Details">
+        /// Gets the details for this data service.
         /// </field>
         $DataService.call(this, dataWorkspace);
     };
     function DataWorkspace() {
         /// <summary>
-        /// Stellt den Datenarbeitsbereich dar.
+        /// Represents the data workspace.
         /// </summary>
         /// <field name="ApplicationData" type="msls.application.ApplicationData">
-        /// Ruft den Datendienst ApplicationData auf.
+        /// Gets the ApplicationData data service.
+        /// </field>
+        /// <field name="WCF_RIA_ServiceData" type="msls.application.WCF_RIA_ServiceData">
+        /// Gets the WCF_RIA_ServiceData data service.
         /// </field>
         /// <field name="details" type="msls.application.DataWorkspace.Details">
-        /// Ruft die Details für diesen Arbeitsbereich ab.
+        /// Gets the details for this data workspace.
         /// </field>
         $DataWorkspace.call(this);
     };
@@ -432,6 +476,7 @@ window.myapp = msls.application;
             { name: "PersonalNr", type: String },
             { name: "AbteilungItem", kind: "reference", type: AbteilungItem },
             { name: "Abteilungsleiter", kind: "reference", type: AbteilungItem },
+            { name: "UserID", type: String },
             { name: "CreatedBy", type: String, isReadOnly: true },
             { name: "Created", type: Date, isReadOnly: true },
             { name: "ModifiedBy", type: String, isReadOnly: true },
@@ -491,6 +536,12 @@ window.myapp = msls.application;
             { name: "ModifiedBy", type: String, isReadOnly: true },
             { name: "Modified", type: Date, isReadOnly: true },
             { name: "RowVersion", type: Array }
+        ]),
+
+        EnhancedMitarbeiter: $defineEntity(EnhancedMitarbeiter, [
+            { name: "ID", type: Number },
+            { name: "UserID", type: String },
+            { name: "aktuellerVertragBis", type: Date }
         ]),
 
         ApplicationData: $defineDataService(ApplicationData, lightSwitchApplication.rootUri + "/ApplicationData.svc", [
@@ -586,8 +637,21 @@ window.myapp = msls.application;
             }
         ]),
 
+        WCF_RIA_ServiceData: $defineDataService(WCF_RIA_ServiceData, lightSwitchApplication.rootUri + "/WCF_RIA_ServiceData.svc", [
+            { name: "EnhancedMitarbeiters", elementType: EnhancedMitarbeiter }
+        ], [
+            {
+                name: "EnhancedMitarbeiters_SingleOrDefault", value: function (ID) {
+                    return new $DataServiceQuery({ _entitySet: this.EnhancedMitarbeiters },
+                        lightSwitchApplication.rootUri + "/WCF_RIA_ServiceData.svc" + "/EnhancedMitarbeiters(" + "ID=" + $toODataString(ID, "Int32?") + ")"
+                    );
+                }
+            }
+        ]),
+
         DataWorkspace: $defineDataWorkspace(DataWorkspace, [
-            { name: "ApplicationData", type: ApplicationData }
+            { name: "ApplicationData", type: ApplicationData },
+            { name: "WCF_RIA_ServiceData", type: WCF_RIA_ServiceData }
         ])
 
     });

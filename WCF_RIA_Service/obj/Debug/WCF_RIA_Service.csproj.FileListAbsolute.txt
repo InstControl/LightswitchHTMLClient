@@ -1,0 +1,16 @@
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\WCF_RIA_Service.dll
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\WCF_RIA_Service.pdb
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\System.ServiceModel.DomainServices.Server.dll
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\System.ServiceModel.DomainServices.Server.xml
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\de\System.ServiceModel.DomainServices.Server.resources.dll
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\es\System.ServiceModel.DomainServices.Server.resources.dll
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\fr\System.ServiceModel.DomainServices.Server.resources.dll
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\it\System.ServiceModel.DomainServices.Server.resources.dll
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\ja\System.ServiceModel.DomainServices.Server.resources.dll
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\ko\System.ServiceModel.DomainServices.Server.resources.dll
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\ru\System.ServiceModel.DomainServices.Server.resources.dll
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\zh-Hans\System.ServiceModel.DomainServices.Server.resources.dll
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\bin\Debug\zh-Hant\System.ServiceModel.DomainServices.Server.resources.dll
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\obj\Debug\WCF_RIA_Service.dll
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\obj\Debug\WCF_RIA_Service.pdb
+C:\Users\tbart\Source\Repos\LightswitchHTMLClient\WCF_RIA_Service\obj\Debug\WCF_RIA_Service.csprojResolveAssemblyReference.cache

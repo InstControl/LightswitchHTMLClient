@@ -69,42 +69,42 @@
 
     msls._addEntryPoints(lightSwitchApplication.AddEditAbteilungItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer AddEditAbteilungItem-Bildschirm erstellt wird.
+        /// Called when a new AddEditAbteilungItem screen is created.
         /// <br/>created(msls.application.AddEditAbteilungItem screen)
         /// </field>
         created: [lightSwitchApplication.AddEditAbteilungItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven AddEditAbteilungItem-Bildschirm angewendet werden.
+        /// Called before changes on an active AddEditAbteilungItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.AddEditAbteilungItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.AddEditAbteilungItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditAbteilungItem().findContentItem("Details"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// Called after the columns content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditAbteilungItem().findContentItem("columns"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// Called after the left content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         left_postRender: [$element, function () { return new lightSwitchApplication.AddEditAbteilungItem().findContentItem("left"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Kürzel gerendert wurde.
+        /// Called after the Kürzel content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Kürzel_postRender: [$element, function () { return new lightSwitchApplication.AddEditAbteilungItem().findContentItem("Kürzel"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Langname gerendert wurde.
+        /// Called after the Langname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Langname_postRender: [$element, function () { return new lightSwitchApplication.AddEditAbteilungItem().findContentItem("Langname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// Called after the right content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.AddEditAbteilungItem().findContentItem("right"); }]
@@ -173,37 +173,37 @@
 
     msls._addEntryPoints(lightSwitchApplication.BrowseAbteilungItemSet, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer BrowseAbteilungItemSet-Bildschirm erstellt wird.
+        /// Called when a new BrowseAbteilungItemSet screen is created.
         /// <br/>created(msls.application.BrowseAbteilungItemSet screen)
         /// </field>
         created: [lightSwitchApplication.BrowseAbteilungItemSet],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven BrowseAbteilungItemSet-Bildschirm angewendet werden.
+        /// Called before changes on an active BrowseAbteilungItemSet screen are applied.
         /// <br/>beforeApplyChanges(msls.application.BrowseAbteilungItemSet screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.BrowseAbteilungItemSet],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement AbteilungItemList gerendert wurde.
+        /// Called after the AbteilungItemList content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         AbteilungItemList_postRender: [$element, function () { return new lightSwitchApplication.BrowseAbteilungItemSet().findContentItem("AbteilungItemList"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement AbteilungItemSet gerendert wurde.
+        /// Called after the AbteilungItemSet content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         AbteilungItemSet_postRender: [$element, function () { return new lightSwitchApplication.BrowseAbteilungItemSet().findContentItem("AbteilungItemSet"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement rows gerendert wurde.
+        /// Called after the rows content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         rows_postRender: [$element, function () { return new lightSwitchApplication.BrowseAbteilungItemSet().findContentItem("rows"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Kürzel gerendert wurde.
+        /// Called after the Kürzel content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Kürzel_postRender: [$element, function () { return new lightSwitchApplication.BrowseAbteilungItemSet().findContentItem("Kürzel"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Langname gerendert wurde.
+        /// Called after the Langname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Langname_postRender: [$element, function () { return new lightSwitchApplication.BrowseAbteilungItemSet().findContentItem("Langname"); }]
@@ -430,132 +430,132 @@
 
     msls._addEntryPoints(lightSwitchApplication.ViewAbteilungItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer ViewAbteilungItem-Bildschirm erstellt wird.
+        /// Called when a new ViewAbteilungItem screen is created.
         /// <br/>created(msls.application.ViewAbteilungItem screen)
         /// </field>
         created: [lightSwitchApplication.ViewAbteilungItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven ViewAbteilungItem-Bildschirm angewendet werden.
+        /// Called before changes on an active ViewAbteilungItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.ViewAbteilungItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.ViewAbteilungItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("Details"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// Called after the columns content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("columns"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// Called after the left content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         left_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("left"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Kürzel gerendert wurde.
+        /// Called after the Kürzel content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Kürzel_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("Kürzel"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Langname gerendert wurde.
+        /// Called after the Langname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Langname_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("Langname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement CreatedBy gerendert wurde.
+        /// Called after the CreatedBy content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         CreatedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("CreatedBy"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// Called after the right content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("right"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Created gerendert wurde.
+        /// Called after the Created content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Created_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("Created"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ModifiedBy gerendert wurde.
+        /// Called after the ModifiedBy content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ModifiedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("ModifiedBy"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Modified gerendert wurde.
+        /// Called after the Modified content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Modified_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("Modified"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterItemCollection gerendert wurde.
+        /// Called after the MitarbeiterItemCollection content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         MitarbeiterItemCollection_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("MitarbeiterItemCollection"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterItemCollection1 gerendert wurde.
+        /// Called after the MitarbeiterItemCollection1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         MitarbeiterItemCollection1_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("MitarbeiterItemCollection1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns1 gerendert wurde.
+        /// Called after the columns1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns1_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("columns1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Foto gerendert wurde.
+        /// Called after the Foto content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Foto_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("Foto"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement rows gerendert wurde.
+        /// Called after the rows content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         rows_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("rows"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Nachname gerendert wurde.
+        /// Called after the Nachname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Nachname_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("Nachname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Vorname gerendert wurde.
+        /// Called after the Vorname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Vorname_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("Vorname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Geburtstag gerendert wurde.
+        /// Called after the Geburtstag content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Geburtstag_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("Geburtstag"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektItemCollection gerendert wurde.
+        /// Called after the ProjektItemCollection content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektItemCollection_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("ProjektItemCollection"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektItemCollection1 gerendert wurde.
+        /// Called after the ProjektItemCollection1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektItemCollection1_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("ProjektItemCollection1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement rows1 gerendert wurde.
+        /// Called after the rows1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         rows1_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("rows1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektKurzName gerendert wurde.
+        /// Called after the ProjektKurzName content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektKurzName_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("ProjektKurzName"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektLangName gerendert wurde.
+        /// Called after the ProjektLangName content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektLangName_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("ProjektLangName"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Start gerendert wurde.
+        /// Called after the Start content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Start_postRender: [$element, function () { return new lightSwitchApplication.ViewAbteilungItem().findContentItem("Start"); }]
@@ -618,37 +618,37 @@
 
     msls._addEntryPoints(lightSwitchApplication.AddEditBeschäftigungsArtItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer AddEditBeschäftigungsArtItem-Bildschirm erstellt wird.
+        /// Called when a new AddEditBeschäftigungsArtItem screen is created.
         /// <br/>created(msls.application.AddEditBeschäftigungsArtItem screen)
         /// </field>
         created: [lightSwitchApplication.AddEditBeschäftigungsArtItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven AddEditBeschäftigungsArtItem-Bildschirm angewendet werden.
+        /// Called before changes on an active AddEditBeschäftigungsArtItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.AddEditBeschäftigungsArtItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.AddEditBeschäftigungsArtItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditBeschäftigungsArtItem().findContentItem("Details"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// Called after the columns content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditBeschäftigungsArtItem().findContentItem("columns"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// Called after the left content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         left_postRender: [$element, function () { return new lightSwitchApplication.AddEditBeschäftigungsArtItem().findContentItem("left"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Art gerendert wurde.
+        /// Called after the Art content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Art_postRender: [$element, function () { return new lightSwitchApplication.AddEditBeschäftigungsArtItem().findContentItem("Art"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// Called after the right content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.AddEditBeschäftigungsArtItem().findContentItem("right"); }]
@@ -725,42 +725,42 @@
 
     msls._addEntryPoints(lightSwitchApplication.BrowseBeschäftigungsArtItemSet, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer BrowseBeschäftigungsArtItemSet-Bildschirm erstellt wird.
+        /// Called when a new BrowseBeschäftigungsArtItemSet screen is created.
         /// <br/>created(msls.application.BrowseBeschäftigungsArtItemSet screen)
         /// </field>
         created: [lightSwitchApplication.BrowseBeschäftigungsArtItemSet],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven BrowseBeschäftigungsArtItemSet-Bildschirm angewendet werden.
+        /// Called before changes on an active BrowseBeschäftigungsArtItemSet screen are applied.
         /// <br/>beforeApplyChanges(msls.application.BrowseBeschäftigungsArtItemSet screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.BrowseBeschäftigungsArtItemSet],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement BeschäftigungsArtItemList gerendert wurde.
+        /// Called after the BeschäftigungsArtItemList content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         BeschäftigungsArtItemList_postRender: [$element, function () { return new lightSwitchApplication.BrowseBeschäftigungsArtItemSet().findContentItem("BeschäftigungsArtItemList"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement BeschäftigungsArtItemSet gerendert wurde.
+        /// Called after the BeschäftigungsArtItemSet content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         BeschäftigungsArtItemSet_postRender: [$element, function () { return new lightSwitchApplication.BrowseBeschäftigungsArtItemSet().findContentItem("BeschäftigungsArtItemSet"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement rows gerendert wurde.
+        /// Called after the rows content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         rows_postRender: [$element, function () { return new lightSwitchApplication.BrowseBeschäftigungsArtItemSet().findContentItem("rows"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Art gerendert wurde.
+        /// Called after the Art content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Art_postRender: [$element, function () { return new lightSwitchApplication.BrowseBeschäftigungsArtItemSet().findContentItem("Art"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement CreatedBy gerendert wurde.
+        /// Called after the CreatedBy content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         CreatedBy_postRender: [$element, function () { return new lightSwitchApplication.BrowseBeschäftigungsArtItemSet().findContentItem("CreatedBy"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Created gerendert wurde.
+        /// Called after the Created content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Created_postRender: [$element, function () { return new lightSwitchApplication.BrowseBeschäftigungsArtItemSet().findContentItem("Created"); }]
@@ -855,57 +855,57 @@
 
     msls._addEntryPoints(lightSwitchApplication.ViewBeschäftigungsArtItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer ViewBeschäftigungsArtItem-Bildschirm erstellt wird.
+        /// Called when a new ViewBeschäftigungsArtItem screen is created.
         /// <br/>created(msls.application.ViewBeschäftigungsArtItem screen)
         /// </field>
         created: [lightSwitchApplication.ViewBeschäftigungsArtItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven ViewBeschäftigungsArtItem-Bildschirm angewendet werden.
+        /// Called before changes on an active ViewBeschäftigungsArtItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.ViewBeschäftigungsArtItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.ViewBeschäftigungsArtItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.ViewBeschäftigungsArtItem().findContentItem("Details"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// Called after the columns content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns_postRender: [$element, function () { return new lightSwitchApplication.ViewBeschäftigungsArtItem().findContentItem("columns"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// Called after the left content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         left_postRender: [$element, function () { return new lightSwitchApplication.ViewBeschäftigungsArtItem().findContentItem("left"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Art gerendert wurde.
+        /// Called after the Art content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Art_postRender: [$element, function () { return new lightSwitchApplication.ViewBeschäftigungsArtItem().findContentItem("Art"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement CreatedBy gerendert wurde.
+        /// Called after the CreatedBy content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         CreatedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewBeschäftigungsArtItem().findContentItem("CreatedBy"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Created gerendert wurde.
+        /// Called after the Created content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Created_postRender: [$element, function () { return new lightSwitchApplication.ViewBeschäftigungsArtItem().findContentItem("Created"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// Called after the right content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.ViewBeschäftigungsArtItem().findContentItem("right"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ModifiedBy gerendert wurde.
+        /// Called after the ModifiedBy content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ModifiedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewBeschäftigungsArtItem().findContentItem("ModifiedBy"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Modified gerendert wurde.
+        /// Called after the Modified content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Modified_postRender: [$element, function () { return new lightSwitchApplication.ViewBeschäftigungsArtItem().findContentItem("Modified"); }]
@@ -936,17 +936,17 @@
 
     msls._addEntryPoints(lightSwitchApplication.AddEditKontoItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer AddEditKontoItem-Bildschirm erstellt wird.
+        /// Called when a new AddEditKontoItem screen is created.
         /// <br/>created(msls.application.AddEditKontoItem screen)
         /// </field>
         created: [lightSwitchApplication.AddEditKontoItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven AddEditKontoItem-Bildschirm angewendet werden.
+        /// Called before changes on an active AddEditKontoItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.AddEditKontoItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.AddEditKontoItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditKontoItem().findContentItem("Details"); }]
@@ -977,17 +977,17 @@
 
     msls._addEntryPoints(lightSwitchApplication.BrowseKontoItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer BrowseKontoItem-Bildschirm erstellt wird.
+        /// Called when a new BrowseKontoItem screen is created.
         /// <br/>created(msls.application.BrowseKontoItem screen)
         /// </field>
         created: [lightSwitchApplication.BrowseKontoItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven BrowseKontoItem-Bildschirm angewendet werden.
+        /// Called before changes on an active BrowseKontoItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.BrowseKontoItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.BrowseKontoItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement KontoItemList gerendert wurde.
+        /// Called after the KontoItemList content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         KontoItemList_postRender: [$element, function () { return new lightSwitchApplication.BrowseKontoItem().findContentItem("KontoItemList"); }]
@@ -1018,17 +1018,17 @@
 
     msls._addEntryPoints(lightSwitchApplication.ViewKontoItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer ViewKontoItem-Bildschirm erstellt wird.
+        /// Called when a new ViewKontoItem screen is created.
         /// <br/>created(msls.application.ViewKontoItem screen)
         /// </field>
         created: [lightSwitchApplication.ViewKontoItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven ViewKontoItem-Bildschirm angewendet werden.
+        /// Called before changes on an active ViewKontoItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.ViewKontoItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.ViewKontoItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.ViewKontoItem().findContentItem("Details"); }]
@@ -1064,6 +1064,14 @@
             screen: lightSwitchApplication.AddEditMitarbeiter,
             data: lightSwitchApplication.MitarbeiterItem,
             value: lightSwitchApplication.MitarbeiterItem
+        },
+        UserID: {
+            _$class: msls.ContentItem,
+            _$name: "UserID",
+            _$parentName: "left",
+            screen: lightSwitchApplication.AddEditMitarbeiter,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: String
         },
         Nachname: {
             _$class: msls.ContentItem,
@@ -1187,107 +1195,112 @@
 
     msls._addEntryPoints(lightSwitchApplication.AddEditMitarbeiter, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer AddEditMitarbeiter-Bildschirm erstellt wird.
+        /// Called when a new AddEditMitarbeiter screen is created.
         /// <br/>created(msls.application.AddEditMitarbeiter screen)
         /// </field>
         created: [lightSwitchApplication.AddEditMitarbeiter],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven AddEditMitarbeiter-Bildschirm angewendet werden.
+        /// Called before changes on an active AddEditMitarbeiter screen are applied.
         /// <br/>beforeApplyChanges(msls.application.AddEditMitarbeiter screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.AddEditMitarbeiter],
         /// <field>
-        /// Wird aufgerufen, um zu ermitteln, ob die Methode Delete ausgeführt werden kann.
+        /// Called to determine if the Delete method can be executed.
         /// <br/>canExecute(msls.application.AddEditMitarbeiter screen)
         /// </field>
         Delete_canExecute: [lightSwitchApplication.AddEditMitarbeiter],
         /// <field>
-        /// Wird aufgerufen, um die Methode Delete auszuführen.
+        /// Called to execute the Delete method.
         /// <br/>execute(msls.application.AddEditMitarbeiter screen)
         /// </field>
         Delete_execute: [lightSwitchApplication.AddEditMitarbeiter],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("Details"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// Called after the columns content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("columns"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// Called after the left content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         left_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("left"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Nachname gerendert wurde.
+        /// Called after the UserID content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        UserID_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("UserID"); }],
+        /// <field>
+        /// Called after the Nachname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Nachname_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("Nachname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Vorname gerendert wurde.
+        /// Called after the Vorname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Vorname_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("Vorname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Geburtstag gerendert wurde.
+        /// Called after the Geburtstag content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Geburtstag_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("Geburtstag"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Erstanstellung gerendert wurde.
+        /// Called after the Erstanstellung content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Erstanstellung_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("Erstanstellung"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Ausscheidedatum gerendert wurde.
+        /// Called after the Ausscheidedatum content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Ausscheidedatum_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("Ausscheidedatum"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// Called after the right content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("right"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement AbteilungItem gerendert wurde.
+        /// Called after the AbteilungItem content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         AbteilungItem_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("AbteilungItem"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement AbteilungItem1 gerendert wurde.
+        /// Called after the AbteilungItem1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         AbteilungItem1_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("AbteilungItem1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement PersonalNr gerendert wurde.
+        /// Called after the PersonalNr content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         PersonalNr_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("PersonalNr"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Raum gerendert wurde.
+        /// Called after the Raum content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Raum_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("Raum"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Telefon gerendert wurde.
+        /// Called after the Telefon content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Telefon_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("Telefon"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Foto gerendert wurde.
+        /// Called after the Foto content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Foto_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("Foto"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Group gerendert wurde.
+        /// Called after the Group content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Group_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("Group"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Bermerkung gerendert wurde.
+        /// Called after the Bermerkung content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Bermerkung_postRender: [$element, function () { return new lightSwitchApplication.AddEditMitarbeiter().findContentItem("Bermerkung"); }]
@@ -1346,17 +1359,25 @@
             data: lightSwitchApplication.MitarbeiterItem,
             value: String
         },
-        Geburtstag: {
+        Bermerkung2: {
             _$class: msls.ContentItem,
-            _$name: "Geburtstag",
+            _$name: "Bermerkung2",
+            _$parentName: "aktuelleMitarbeiterTemplate",
+            screen: lightSwitchApplication.BrowseMitarbeiterSet,
+            data: lightSwitchApplication.MitarbeiterItem,
+            value: String
+        },
+        VertragBis: {
+            _$class: msls.ContentItem,
+            _$name: "VertragBis",
             _$parentName: "aktuelleMitarbeiterTemplate",
             screen: lightSwitchApplication.BrowseMitarbeiterSet,
             data: lightSwitchApplication.MitarbeiterItem,
             value: Date
         },
-        Group4: {
+        Group2: {
             _$class: msls.ContentItem,
-            _$name: "Group4",
+            _$name: "Group2",
             _$parentName: "Tabs",
             screen: lightSwitchApplication.BrowseMitarbeiterSet,
             data: lightSwitchApplication.BrowseMitarbeiterSet,
@@ -1365,7 +1386,7 @@
         Monate: {
             _$class: msls.ContentItem,
             _$name: "Monate",
-            _$parentName: "Group4",
+            _$parentName: "Group2",
             screen: lightSwitchApplication.BrowseMitarbeiterSet,
             data: lightSwitchApplication.BrowseMitarbeiterSet,
             value: Number
@@ -1373,7 +1394,7 @@
         MitarbeiterMitAuslaufendenVertrag: {
             _$class: msls.ContentItem,
             _$name: "MitarbeiterMitAuslaufendenVertrag",
-            _$parentName: "Group4",
+            _$parentName: "Group2",
             screen: lightSwitchApplication.BrowseMitarbeiterSet,
             data: lightSwitchApplication.BrowseMitarbeiterSet,
             value: {
@@ -1462,14 +1483,6 @@
             data: lightSwitchApplication.MitarbeiterItem,
             value: String
         },
-        Ausscheidedatum: {
-            _$class: msls.ContentItem,
-            _$name: "Ausscheidedatum",
-            _$parentName: "MitarbeiterOhneVertragTemplate",
-            screen: lightSwitchApplication.BrowseMitarbeiterSet,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: Date
-        },
         Bermerkung: {
             _$class: msls.ContentItem,
             _$name: "Bermerkung",
@@ -1478,9 +1491,9 @@
             data: lightSwitchApplication.MitarbeiterItem,
             value: String
         },
-        Group2: {
+        Group4: {
             _$class: msls.ContentItem,
-            _$name: "Group2",
+            _$name: "Group4",
             _$parentName: "Tabs",
             screen: lightSwitchApplication.BrowseMitarbeiterSet,
             data: lightSwitchApplication.BrowseMitarbeiterSet,
@@ -1489,7 +1502,7 @@
         ausgeschiedeneMitarbeiter: {
             _$class: msls.ContentItem,
             _$name: "ausgeschiedeneMitarbeiter",
-            _$parentName: "Group2",
+            _$parentName: "Group4",
             screen: lightSwitchApplication.BrowseMitarbeiterSet,
             data: lightSwitchApplication.BrowseMitarbeiterSet,
             value: {
@@ -1550,157 +1563,157 @@
 
     msls._addEntryPoints(lightSwitchApplication.BrowseMitarbeiterSet, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer BrowseMitarbeiterSet-Bildschirm erstellt wird.
+        /// Called when a new BrowseMitarbeiterSet screen is created.
         /// <br/>created(msls.application.BrowseMitarbeiterSet screen)
         /// </field>
         created: [lightSwitchApplication.BrowseMitarbeiterSet],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven BrowseMitarbeiterSet-Bildschirm angewendet werden.
+        /// Called before changes on an active BrowseMitarbeiterSet screen are applied.
         /// <br/>beforeApplyChanges(msls.application.BrowseMitarbeiterSet screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.BrowseMitarbeiterSet],
         /// <field>
-        /// Wird aufgerufen, um zu ermitteln, ob die Methode Delete ausgeführt werden kann.
+        /// Called to determine if the Delete method can be executed.
         /// <br/>canExecute(msls.application.BrowseMitarbeiterSet screen)
         /// </field>
         Delete_canExecute: [lightSwitchApplication.BrowseMitarbeiterSet],
         /// <field>
-        /// Wird aufgerufen, um die Methode Delete auszuführen.
+        /// Called to execute the Delete method.
         /// <br/>execute(msls.application.BrowseMitarbeiterSet screen)
         /// </field>
         Delete_execute: [lightSwitchApplication.BrowseMitarbeiterSet],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Group1 gerendert wurde.
+        /// Called after the Group1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Group1_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Group1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement aktuelleMitarbeiter gerendert wurde.
+        /// Called after the aktuelleMitarbeiter content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         aktuelleMitarbeiter_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("aktuelleMitarbeiter"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement aktuelleMitarbeiterTemplate gerendert wurde.
+        /// Called after the aktuelleMitarbeiterTemplate content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         aktuelleMitarbeiterTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("aktuelleMitarbeiterTemplate"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Nachname gerendert wurde.
+        /// Called after the Nachname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Nachname_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Nachname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Vorname gerendert wurde.
+        /// Called after the Vorname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Vorname_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Vorname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Geburtstag gerendert wurde.
+        /// Called after the Bermerkung2 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        Geburtstag_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Geburtstag"); }],
+        Bermerkung2_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Bermerkung2"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Group4 gerendert wurde.
+        /// Called after the VertragBis content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        Group4_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Group4"); }],
+        VertragBis_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("VertragBis"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Monate gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Monate_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Monate"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterMitAuslaufendenVertrag gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        MitarbeiterMitAuslaufendenVertrag_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("MitarbeiterMitAuslaufendenVertrag"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterMitAuslaufendenVertragTemplate gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        MitarbeiterMitAuslaufendenVertragTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("MitarbeiterMitAuslaufendenVertragTemplate"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Nachname3 gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Nachname3_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Nachname3"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Vorname3 gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Vorname3_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Vorname3"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Bermerkung1 gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Bermerkung1_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Bermerkung1"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Group3 gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Group3_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Group3"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterOhneVertrag gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        MitarbeiterOhneVertrag_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("MitarbeiterOhneVertrag"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterOhneVertragTemplate gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        MitarbeiterOhneVertragTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("MitarbeiterOhneVertragTemplate"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Nachname2 gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Nachname2_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Nachname2"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Vorname2 gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Vorname2_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Vorname2"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Ausscheidedatum gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Ausscheidedatum_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Ausscheidedatum"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Bermerkung gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Bermerkung_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Bermerkung"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Group2 gerendert wurde.
+        /// Called after the Group2 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Group2_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Group2"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ausgeschiedeneMitarbeiter gerendert wurde.
+        /// Called after the Monate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Monate_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Monate"); }],
+        /// <field>
+        /// Called after the MitarbeiterMitAuslaufendenVertrag content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MitarbeiterMitAuslaufendenVertrag_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("MitarbeiterMitAuslaufendenVertrag"); }],
+        /// <field>
+        /// Called after the MitarbeiterMitAuslaufendenVertragTemplate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MitarbeiterMitAuslaufendenVertragTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("MitarbeiterMitAuslaufendenVertragTemplate"); }],
+        /// <field>
+        /// Called after the Nachname3 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Nachname3_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Nachname3"); }],
+        /// <field>
+        /// Called after the Vorname3 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Vorname3_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Vorname3"); }],
+        /// <field>
+        /// Called after the Bermerkung1 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Bermerkung1_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Bermerkung1"); }],
+        /// <field>
+        /// Called after the Group3 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group3_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Group3"); }],
+        /// <field>
+        /// Called after the MitarbeiterOhneVertrag content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MitarbeiterOhneVertrag_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("MitarbeiterOhneVertrag"); }],
+        /// <field>
+        /// Called after the MitarbeiterOhneVertragTemplate content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        MitarbeiterOhneVertragTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("MitarbeiterOhneVertragTemplate"); }],
+        /// <field>
+        /// Called after the Nachname2 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Nachname2_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Nachname2"); }],
+        /// <field>
+        /// Called after the Vorname2 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Vorname2_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Vorname2"); }],
+        /// <field>
+        /// Called after the Bermerkung content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Bermerkung_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Bermerkung"); }],
+        /// <field>
+        /// Called after the Group4 content item has been rendered.
+        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
+        /// </field>
+        Group4_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Group4"); }],
+        /// <field>
+        /// Called after the ausgeschiedeneMitarbeiter content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ausgeschiedeneMitarbeiter_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("ausgeschiedeneMitarbeiter"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ausgeschiedeneMitarbeiterTemplate gerendert wurde.
+        /// Called after the ausgeschiedeneMitarbeiterTemplate content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ausgeschiedeneMitarbeiterTemplate_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("ausgeschiedeneMitarbeiterTemplate"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Nachname1 gerendert wurde.
+        /// Called after the Nachname1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Nachname1_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Nachname1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Vorname1 gerendert wurde.
+        /// Called after the Vorname1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Vorname1_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Vorname1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Ausscheidedatum1 gerendert wurde.
+        /// Called after the Ausscheidedatum1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Ausscheidedatum1_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Ausscheidedatum1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Group gerendert wurde.
+        /// Called after the Group content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Group_postRender: [$element, function () { return new lightSwitchApplication.BrowseMitarbeiterSet().findContentItem("Group"); }]
@@ -2029,222 +2042,212 @@
 
     msls._addEntryPoints(lightSwitchApplication.ViewMitarbeiter, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer ViewMitarbeiter-Bildschirm erstellt wird.
+        /// Called when a new ViewMitarbeiter screen is created.
         /// <br/>created(msls.application.ViewMitarbeiter screen)
         /// </field>
         created: [lightSwitchApplication.ViewMitarbeiter],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven ViewMitarbeiter-Bildschirm angewendet werden.
+        /// Called before changes on an active ViewMitarbeiter screen are applied.
         /// <br/>beforeApplyChanges(msls.application.ViewMitarbeiter screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.ViewMitarbeiter],
         /// <field>
-        /// Wird aufgerufen, um zu ermitteln, ob die Methode UpdateTab ausgeführt werden kann.
+        /// Called to determine if the UpdateTab method can be executed.
         /// <br/>canExecute(msls.application.ViewMitarbeiter screen)
         /// </field>
         UpdateTab_canExecute: [lightSwitchApplication.ViewMitarbeiter],
         /// <field>
-        /// Wird aufgerufen, um die Methode UpdateTab auszuführen.
+        /// Called to execute the UpdateTab method.
         /// <br/>execute(msls.application.ViewMitarbeiter screen)
         /// </field>
         UpdateTab_execute: [lightSwitchApplication.ViewMitarbeiter],
         /// <field>
-        /// Wird aufgerufen, um zu ermitteln, ob die Methode RefreshTabs ausgeführt werden kann.
+        /// Called to determine if the RefreshTabs method can be executed.
         /// <br/>canExecute(msls.application.ViewMitarbeiter screen)
         /// </field>
         RefreshTabs_canExecute: [lightSwitchApplication.ViewMitarbeiter],
         /// <field>
-        /// Wird aufgerufen, um die Methode RefreshTabs auszuführen.
+        /// Called to execute the RefreshTabs method.
         /// <br/>execute(msls.application.ViewMitarbeiter screen)
         /// </field>
         RefreshTabs_execute: [lightSwitchApplication.ViewMitarbeiter],
         /// <field>
-        /// Wird aufgerufen, um zu ermitteln, ob die Methode DeleteVertrag ausgeführt werden kann.
-        /// <br/>canExecute(msls.application.ViewMitarbeiter screen)
-        /// </field>
-        DeleteVertrag_canExecute: [lightSwitchApplication.ViewMitarbeiter],
-        /// <field>
-        /// Wird aufgerufen, um die Methode DeleteVertrag auszuführen.
-        /// <br/>execute(msls.application.ViewMitarbeiter screen)
-        /// </field>
-        DeleteVertrag_execute: [lightSwitchApplication.ViewMitarbeiter],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Tab_VertragItemCollectionCurrent gerendert wurde.
+        /// Called after the Tab_VertragItemCollectionCurrent content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Tab_VertragItemCollectionCurrent_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Tab_VertragItemCollectionCurrent"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement VertragItemCollectionCurrent gerendert wurde.
+        /// Called after the VertragItemCollectionCurrent content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         VertragItemCollectionCurrent_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("VertragItemCollectionCurrent"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement VertragItemCollectionTemplate gerendert wurde.
+        /// Called after the VertragItemCollectionTemplate content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         VertragItemCollectionTemplate_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("VertragItemCollectionTemplate"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement von1 gerendert wurde.
+        /// Called after the von1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         von1_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("von1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement bis1 gerendert wurde.
+        /// Called after the bis1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         bis1_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("bis1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement BeschäftigungsArtItem gerendert wurde.
+        /// Called after the BeschäftigungsArtItem content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         BeschäftigungsArtItem_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("BeschäftigungsArtItem"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Tab_VertragItemCollectionPlanned gerendert wurde.
+        /// Called after the Tab_VertragItemCollectionPlanned content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Tab_VertragItemCollectionPlanned_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Tab_VertragItemCollectionPlanned"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement VertragItemCollectionPlanned gerendert wurde.
+        /// Called after the VertragItemCollectionPlanned content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         VertragItemCollectionPlanned_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("VertragItemCollectionPlanned"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement VertragItemCollectionPlannedTemplate gerendert wurde.
+        /// Called after the VertragItemCollectionPlannedTemplate content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         VertragItemCollectionPlannedTemplate_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("VertragItemCollectionPlannedTemplate"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement von2 gerendert wurde.
+        /// Called after the von2 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         von2_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("von2"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement bis2 gerendert wurde.
+        /// Called after the bis2 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         bis2_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("bis2"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Tab_VertragItemCollectionEnded gerendert wurde.
+        /// Called after the Tab_VertragItemCollectionEnded content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Tab_VertragItemCollectionEnded_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Tab_VertragItemCollectionEnded"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement VertragItemCollectionEnded gerendert wurde.
+        /// Called after the VertragItemCollectionEnded content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         VertragItemCollectionEnded_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("VertragItemCollectionEnded"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement VertragItemCollectionEndedTemplate gerendert wurde.
+        /// Called after the VertragItemCollectionEndedTemplate content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         VertragItemCollectionEndedTemplate_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("VertragItemCollectionEndedTemplate"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement von gerendert wurde.
+        /// Called after the von content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         von_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("von"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement bis gerendert wurde.
+        /// Called after the bis content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         bis_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("bis"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Stammdaten gerendert wurde.
+        /// Called after the Stammdaten content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Stammdaten_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Stammdaten"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// Called after the columns content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("columns"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// Called after the left content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         left_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("left"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Nachname gerendert wurde.
+        /// Called after the Nachname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Nachname_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Nachname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Vorname gerendert wurde.
+        /// Called after the Vorname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Vorname_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Vorname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Geburtstag gerendert wurde.
+        /// Called after the Geburtstag content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Geburtstag_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Geburtstag"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Erstanstellung gerendert wurde.
+        /// Called after the Erstanstellung content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Erstanstellung_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Erstanstellung"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Ausscheidedatum gerendert wurde.
+        /// Called after the Ausscheidedatum content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Ausscheidedatum_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Ausscheidedatum"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Group2 gerendert wurde.
+        /// Called after the Group2 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Group2_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Group2"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Kürzel gerendert wurde.
+        /// Called after the Kürzel content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Kürzel_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Kürzel"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Telefon gerendert wurde.
+        /// Called after the Telefon content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Telefon_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Telefon"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Raum gerendert wurde.
+        /// Called after the Raum content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Raum_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Raum"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Foto gerendert wurde.
+        /// Called after the Foto content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Foto_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Foto"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// Called after the right content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("right"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement CreatedBy gerendert wurde.
+        /// Called after the CreatedBy content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         CreatedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("CreatedBy"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Created gerendert wurde.
+        /// Called after the Created content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Created_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Created"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ModifiedBy gerendert wurde.
+        /// Called after the ModifiedBy content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ModifiedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("ModifiedBy"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Modified gerendert wurde.
+        /// Called after the Modified content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Modified_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Modified"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Group1 gerendert wurde.
+        /// Called after the Group1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Group1_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Group1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Bermerkung gerendert wurde.
+        /// Called after the Bermerkung content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Bermerkung_postRender: [$element, function () { return new lightSwitchApplication.ViewMitarbeiter().findContentItem("Bermerkung"); }]
@@ -2355,67 +2358,67 @@
 
     msls._addEntryPoints(lightSwitchApplication.AddEditProjektItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer AddEditProjektItem-Bildschirm erstellt wird.
+        /// Called when a new AddEditProjektItem screen is created.
         /// <br/>created(msls.application.AddEditProjektItem screen)
         /// </field>
         created: [lightSwitchApplication.AddEditProjektItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven AddEditProjektItem-Bildschirm angewendet werden.
+        /// Called before changes on an active AddEditProjektItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.AddEditProjektItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.AddEditProjektItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditProjektItem().findContentItem("Details"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// Called after the columns content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditProjektItem().findContentItem("columns"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// Called after the left content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         left_postRender: [$element, function () { return new lightSwitchApplication.AddEditProjektItem().findContentItem("left"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektCode gerendert wurde.
+        /// Called after the ProjektCode content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektCode_postRender: [$element, function () { return new lightSwitchApplication.AddEditProjektItem().findContentItem("ProjektCode"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Start gerendert wurde.
+        /// Called after the Start content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Start_postRender: [$element, function () { return new lightSwitchApplication.AddEditProjektItem().findContentItem("Start"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement AbteilungItem gerendert wurde.
+        /// Called after the AbteilungItem content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         AbteilungItem_postRender: [$element, function () { return new lightSwitchApplication.AddEditProjektItem().findContentItem("AbteilungItem"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement AbteilungItem1 gerendert wurde.
+        /// Called after the AbteilungItem1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         AbteilungItem1_postRender: [$element, function () { return new lightSwitchApplication.AddEditProjektItem().findContentItem("AbteilungItem1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// Called after the right content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.AddEditProjektItem().findContentItem("right"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Projektname gerendert wurde.
+        /// Called after the Projektname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Projektname_postRender: [$element, function () { return new lightSwitchApplication.AddEditProjektItem().findContentItem("Projektname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Laufzeit gerendert wurde.
+        /// Called after the Laufzeit content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Laufzeit_postRender: [$element, function () { return new lightSwitchApplication.AddEditProjektItem().findContentItem("Laufzeit"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement PSPElement gerendert wurde.
+        /// Called after the PSPElement content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         PSPElement_postRender: [$element, function () { return new lightSwitchApplication.AddEditProjektItem().findContentItem("PSPElement"); }]
@@ -2516,57 +2519,57 @@
 
     msls._addEntryPoints(lightSwitchApplication.BrowseProjektItemSet, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer BrowseProjektItemSet-Bildschirm erstellt wird.
+        /// Called when a new BrowseProjektItemSet screen is created.
         /// <br/>created(msls.application.BrowseProjektItemSet screen)
         /// </field>
         created: [lightSwitchApplication.BrowseProjektItemSet],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven BrowseProjektItemSet-Bildschirm angewendet werden.
+        /// Called before changes on an active BrowseProjektItemSet screen are applied.
         /// <br/>beforeApplyChanges(msls.application.BrowseProjektItemSet screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.BrowseProjektItemSet],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektItemList gerendert wurde.
+        /// Called after the ProjektItemList content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektItemList_postRender: [$element, function () { return new lightSwitchApplication.BrowseProjektItemSet().findContentItem("ProjektItemList"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektItemSet gerendert wurde.
+        /// Called after the ProjektItemSet content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektItemSet_postRender: [$element, function () { return new lightSwitchApplication.BrowseProjektItemSet().findContentItem("ProjektItemSet"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement rows gerendert wurde.
+        /// Called after the rows content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         rows_postRender: [$element, function () { return new lightSwitchApplication.BrowseProjektItemSet().findContentItem("rows"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektCode gerendert wurde.
+        /// Called after the ProjektCode content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektCode_postRender: [$element, function () { return new lightSwitchApplication.BrowseProjektItemSet().findContentItem("ProjektCode"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Projektname gerendert wurde.
+        /// Called after the Projektname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Projektname_postRender: [$element, function () { return new lightSwitchApplication.BrowseProjektItemSet().findContentItem("Projektname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Group gerendert wurde.
+        /// Called after the Group content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Group_postRender: [$element, function () { return new lightSwitchApplication.BrowseProjektItemSet().findContentItem("Group"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Start gerendert wurde.
+        /// Called after the Start content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Start_postRender: [$element, function () { return new lightSwitchApplication.BrowseProjektItemSet().findContentItem("Start"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Laufzeit gerendert wurde.
+        /// Called after the Laufzeit content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Laufzeit_postRender: [$element, function () { return new lightSwitchApplication.BrowseProjektItemSet().findContentItem("Laufzeit"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement PSPElement gerendert wurde.
+        /// Called after the PSPElement content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         PSPElement_postRender: [$element, function () { return new lightSwitchApplication.BrowseProjektItemSet().findContentItem("PSPElement"); }]
@@ -2669,62 +2672,62 @@
 
     msls._addEntryPoints(lightSwitchApplication.ViewProjektItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer ViewProjektItem-Bildschirm erstellt wird.
+        /// Called when a new ViewProjektItem screen is created.
         /// <br/>created(msls.application.ViewProjektItem screen)
         /// </field>
         created: [lightSwitchApplication.ViewProjektItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven ViewProjektItem-Bildschirm angewendet werden.
+        /// Called before changes on an active ViewProjektItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.ViewProjektItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.ViewProjektItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.ViewProjektItem().findContentItem("Details"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// Called after the columns content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns_postRender: [$element, function () { return new lightSwitchApplication.ViewProjektItem().findContentItem("columns"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// Called after the left content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         left_postRender: [$element, function () { return new lightSwitchApplication.ViewProjektItem().findContentItem("left"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektCode gerendert wurde.
+        /// Called after the ProjektCode content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektCode_postRender: [$element, function () { return new lightSwitchApplication.ViewProjektItem().findContentItem("ProjektCode"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Start gerendert wurde.
+        /// Called after the Start content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Start_postRender: [$element, function () { return new lightSwitchApplication.ViewProjektItem().findContentItem("Start"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement AbteilungItem gerendert wurde.
+        /// Called after the AbteilungItem content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         AbteilungItem_postRender: [$element, function () { return new lightSwitchApplication.ViewProjektItem().findContentItem("AbteilungItem"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// Called after the right content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.ViewProjektItem().findContentItem("right"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Projektname gerendert wurde.
+        /// Called after the Projektname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Projektname_postRender: [$element, function () { return new lightSwitchApplication.ViewProjektItem().findContentItem("Projektname"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Laufzeit gerendert wurde.
+        /// Called after the Laufzeit content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Laufzeit_postRender: [$element, function () { return new lightSwitchApplication.ViewProjektItem().findContentItem("Laufzeit"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement PSPElement gerendert wurde.
+        /// Called after the PSPElement content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         PSPElement_postRender: [$element, function () { return new lightSwitchApplication.ViewProjektItem().findContentItem("PSPElement"); }]
@@ -2803,57 +2806,57 @@
 
     msls._addEntryPoints(lightSwitchApplication.AddEditStellenanteilItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer AddEditStellenanteilItem-Bildschirm erstellt wird.
+        /// Called when a new AddEditStellenanteilItem screen is created.
         /// <br/>created(msls.application.AddEditStellenanteilItem screen)
         /// </field>
         created: [lightSwitchApplication.AddEditStellenanteilItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven AddEditStellenanteilItem-Bildschirm angewendet werden.
+        /// Called before changes on an active AddEditStellenanteilItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.AddEditStellenanteilItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.AddEditStellenanteilItem],
         /// <field>
-        /// Wird aufgerufen, um zu ermitteln, ob die Methode Delete ausgeführt werden kann.
+        /// Called to determine if the Delete method can be executed.
         /// <br/>canExecute(msls.application.AddEditStellenanteilItem screen)
         /// </field>
         Delete_canExecute: [lightSwitchApplication.AddEditStellenanteilItem],
         /// <field>
-        /// Wird aufgerufen, um die Methode Delete auszuführen.
+        /// Called to execute the Delete method.
         /// <br/>execute(msls.application.AddEditStellenanteilItem screen)
         /// </field>
         Delete_execute: [lightSwitchApplication.AddEditStellenanteilItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("Details"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// Called after the columns content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("columns"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// Called after the left content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         left_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("left"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil gerendert wurde.
+        /// Called after the Stellenanteil content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Stellenanteil_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("Stellenanteil"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektItem gerendert wurde.
+        /// Called after the ProjektItem content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektItem_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("ProjektItem"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektItem1 gerendert wurde.
+        /// Called after the ProjektItem1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektItem1_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("ProjektItem1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// Called after the right content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.AddEditStellenanteilItem().findContentItem("right"); }]
@@ -2930,42 +2933,42 @@
 
     msls._addEntryPoints(lightSwitchApplication.BrowseStellenanteilItemSet, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer BrowseStellenanteilItemSet-Bildschirm erstellt wird.
+        /// Called when a new BrowseStellenanteilItemSet screen is created.
         /// <br/>created(msls.application.BrowseStellenanteilItemSet screen)
         /// </field>
         created: [lightSwitchApplication.BrowseStellenanteilItemSet],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven BrowseStellenanteilItemSet-Bildschirm angewendet werden.
+        /// Called before changes on an active BrowseStellenanteilItemSet screen are applied.
         /// <br/>beforeApplyChanges(msls.application.BrowseStellenanteilItemSet screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.BrowseStellenanteilItemSet],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement StellenanteilItemList gerendert wurde.
+        /// Called after the StellenanteilItemList content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         StellenanteilItemList_postRender: [$element, function () { return new lightSwitchApplication.BrowseStellenanteilItemSet().findContentItem("StellenanteilItemList"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement StellenanteilItemSet gerendert wurde.
+        /// Called after the StellenanteilItemSet content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         StellenanteilItemSet_postRender: [$element, function () { return new lightSwitchApplication.BrowseStellenanteilItemSet().findContentItem("StellenanteilItemSet"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement rows gerendert wurde.
+        /// Called after the rows content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         rows_postRender: [$element, function () { return new lightSwitchApplication.BrowseStellenanteilItemSet().findContentItem("rows"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Id gerendert wurde.
+        /// Called after the Id content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Id_postRender: [$element, function () { return new lightSwitchApplication.BrowseStellenanteilItemSet().findContentItem("Id"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil gerendert wurde.
+        /// Called after the Stellenanteil content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Stellenanteil_postRender: [$element, function () { return new lightSwitchApplication.BrowseStellenanteilItemSet().findContentItem("Stellenanteil"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement VertragItem gerendert wurde.
+        /// Called after the VertragItem content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         VertragItem_postRender: [$element, function () { return new lightSwitchApplication.BrowseStellenanteilItemSet().findContentItem("VertragItem"); }]
@@ -3068,62 +3071,62 @@
 
     msls._addEntryPoints(lightSwitchApplication.ViewStellenanteilItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer ViewStellenanteilItem-Bildschirm erstellt wird.
+        /// Called when a new ViewStellenanteilItem screen is created.
         /// <br/>created(msls.application.ViewStellenanteilItem screen)
         /// </field>
         created: [lightSwitchApplication.ViewStellenanteilItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven ViewStellenanteilItem-Bildschirm angewendet werden.
+        /// Called before changes on an active ViewStellenanteilItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.ViewStellenanteilItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.ViewStellenanteilItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("Details"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// Called after the columns content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("columns"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// Called after the left content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         left_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("left"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil gerendert wurde.
+        /// Called after the Stellenanteil content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Stellenanteil_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("Stellenanteil"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement VertragItem gerendert wurde.
+        /// Called after the VertragItem content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         VertragItem_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("VertragItem"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement CreatedBy gerendert wurde.
+        /// Called after the CreatedBy content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         CreatedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("CreatedBy"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// Called after the right content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("right"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Created gerendert wurde.
+        /// Called after the Created content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Created_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("Created"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ModifiedBy gerendert wurde.
+        /// Called after the ModifiedBy content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ModifiedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("ModifiedBy"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Modified gerendert wurde.
+        /// Called after the Modified content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Modified_postRender: [$element, function () { return new lightSwitchApplication.ViewStellenanteilItem().findContentItem("Modified"); }]
@@ -3256,87 +3259,87 @@
 
     msls._addEntryPoints(lightSwitchApplication.AddEditVertragItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer AddEditVertragItem-Bildschirm erstellt wird.
+        /// Called when a new AddEditVertragItem screen is created.
         /// <br/>created(msls.application.AddEditVertragItem screen)
         /// </field>
         created: [lightSwitchApplication.AddEditVertragItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven AddEditVertragItem-Bildschirm angewendet werden.
+        /// Called before changes on an active AddEditVertragItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.AddEditVertragItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.AddEditVertragItem],
         /// <field>
-        /// Wird aufgerufen, um zu ermitteln, ob die Methode DeleteVertrag ausgeführt werden kann.
+        /// Called to determine if the DeleteVertrag method can be executed.
         /// <br/>canExecute(msls.application.AddEditVertragItem screen)
         /// </field>
         DeleteVertrag_canExecute: [lightSwitchApplication.AddEditVertragItem],
         /// <field>
-        /// Wird aufgerufen, um die Methode DeleteVertrag auszuführen.
+        /// Called to execute the DeleteVertrag method.
         /// <br/>execute(msls.application.AddEditVertragItem screen)
         /// </field>
         DeleteVertrag_execute: [lightSwitchApplication.AddEditVertragItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("Details"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// Called after the columns content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("columns"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// Called after the left content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         left_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("left"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement von gerendert wurde.
+        /// Called after the von content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         von_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("von"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// Called after the right content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("right"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement bis gerendert wurde.
+        /// Called after the bis content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         bis_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("bis"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement BeschäftigungsArtItem gerendert wurde.
+        /// Called after the BeschäftigungsArtItem content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         BeschäftigungsArtItem_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("BeschäftigungsArtItem"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement BeschäftigungsArtItem1 gerendert wurde.
+        /// Called after the BeschäftigungsArtItem1 content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         BeschäftigungsArtItem1_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("BeschäftigungsArtItem1"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement StellenanteilItemCollection gerendert wurde.
+        /// Called after the StellenanteilItemCollection content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         StellenanteilItemCollection_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("StellenanteilItemCollection"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement StellenanteilItemCollectionTemplate gerendert wurde.
+        /// Called after the StellenanteilItemCollectionTemplate content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         StellenanteilItemCollectionTemplate_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("StellenanteilItemCollectionTemplate"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil gerendert wurde.
+        /// Called after the Stellenanteil content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Stellenanteil_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("Stellenanteil"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektKurzName gerendert wurde.
+        /// Called after the ProjektKurzName content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektKurzName_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("ProjektKurzName"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement PSPElement gerendert wurde.
+        /// Called after the PSPElement content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         PSPElement_postRender: [$element, function () { return new lightSwitchApplication.AddEditVertragItem().findContentItem("PSPElement"); }]
@@ -3405,37 +3408,37 @@
 
     msls._addEntryPoints(lightSwitchApplication.BrowseVertragItemSet, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer BrowseVertragItemSet-Bildschirm erstellt wird.
+        /// Called when a new BrowseVertragItemSet screen is created.
         /// <br/>created(msls.application.BrowseVertragItemSet screen)
         /// </field>
         created: [lightSwitchApplication.BrowseVertragItemSet],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven BrowseVertragItemSet-Bildschirm angewendet werden.
+        /// Called before changes on an active BrowseVertragItemSet screen are applied.
         /// <br/>beforeApplyChanges(msls.application.BrowseVertragItemSet screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.BrowseVertragItemSet],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement VertragItemList gerendert wurde.
+        /// Called after the VertragItemList content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         VertragItemList_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragItemSet().findContentItem("VertragItemList"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement VertragItemSet gerendert wurde.
+        /// Called after the VertragItemSet content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         VertragItemSet_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragItemSet().findContentItem("VertragItemSet"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement rows gerendert wurde.
+        /// Called after the rows content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         rows_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragItemSet().findContentItem("rows"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement von gerendert wurde.
+        /// Called after the von content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         von_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragItemSet().findContentItem("von"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement bis gerendert wurde.
+        /// Called after the bis content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         bis_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragItemSet().findContentItem("bis"); }]
@@ -3541,140 +3544,98 @@
             _$name: "Popups",
             _$parentName: "RootContentItem",
             screen: lightSwitchApplication.ViewVertragItem
+        },
+        Group: {
+            _$class: msls.ContentItem,
+            _$name: "Group",
+            _$parentName: "Popups",
+            screen: lightSwitchApplication.ViewVertragItem,
+            data: lightSwitchApplication.ViewVertragItem,
+            value: lightSwitchApplication.ViewVertragItem
         }
     };
 
     msls._addEntryPoints(lightSwitchApplication.ViewVertragItem, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer ViewVertragItem-Bildschirm erstellt wird.
+        /// Called when a new ViewVertragItem screen is created.
         /// <br/>created(msls.application.ViewVertragItem screen)
         /// </field>
         created: [lightSwitchApplication.ViewVertragItem],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven ViewVertragItem-Bildschirm angewendet werden.
+        /// Called before changes on an active ViewVertragItem screen are applied.
         /// <br/>beforeApplyChanges(msls.application.ViewVertragItem screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.ViewVertragItem],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Details gerendert wurde.
+        /// Called to determine if the Delete method can be executed.
+        /// <br/>canExecute(msls.application.ViewVertragItem screen)
+        /// </field>
+        Delete_canExecute: [lightSwitchApplication.ViewVertragItem],
+        /// <field>
+        /// Called to execute the Delete method.
+        /// <br/>execute(msls.application.ViewVertragItem screen)
+        /// </field>
+        Delete_execute: [lightSwitchApplication.ViewVertragItem],
+        /// <field>
+        /// Called after the Details content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Details_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("Details"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement columns gerendert wurde.
+        /// Called after the columns content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         columns_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("columns"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement left gerendert wurde.
+        /// Called after the left content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         left_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("left"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement von gerendert wurde.
+        /// Called after the von content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         von_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("von"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement bis gerendert wurde.
+        /// Called after the bis content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         bis_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("bis"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterItem gerendert wurde.
+        /// Called after the MitarbeiterItem content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         MitarbeiterItem_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("MitarbeiterItem"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement right gerendert wurde.
+        /// Called after the right content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         right_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("right"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement CreatedBy gerendert wurde.
+        /// Called after the CreatedBy content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         CreatedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("CreatedBy"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Created gerendert wurde.
+        /// Called after the Created content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Created_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("Created"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ModifiedBy gerendert wurde.
+        /// Called after the ModifiedBy content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ModifiedBy_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("ModifiedBy"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Modified gerendert wurde.
+        /// Called after the Modified content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        Modified_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("Modified"); }]
-    });
-
-    lightSwitchApplication.Browse.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.Browse
-        },
-        Group: {
-            _$class: msls.ContentItem,
-            _$name: "Group",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.Browse,
-            data: lightSwitchApplication.Browse,
-            value: lightSwitchApplication.Browse
-        },
-        Property1: {
-            _$class: msls.ContentItem,
-            _$name: "Property1",
-            _$parentName: "Group",
-            screen: lightSwitchApplication.Browse,
-            data: lightSwitchApplication.Browse,
-            value: String
-        },
-        ShowBrowseMitarbeiterSet: {
-            _$class: msls.ContentItem,
-            _$name: "ShowBrowseMitarbeiterSet",
-            _$parentName: "Group",
-            screen: lightSwitchApplication.Browse
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.Browse
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.Browse, {
+        Modified_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("Modified"); }],
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer Browse-Bildschirm erstellt wird.
-        /// <br/>created(msls.application.Browse screen)
-        /// </field>
-        created: [lightSwitchApplication.Browse],
-        /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven Browse-Bildschirm angewendet werden.
-        /// <br/>beforeApplyChanges(msls.application.Browse screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.Browse],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Group gerendert wurde.
+        /// Called after the Group content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        Group_postRender: [$element, function () { return new lightSwitchApplication.Browse().findContentItem("Group"); }],
-        /// <field>
-        /// Wird aufgerufen, um das Inhaltselement Property1 zu rendern.
-        /// <br/>render(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Property1_render: [$element, function () { return new lightSwitchApplication.Browse().findContentItem("Property1"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ShowBrowseMitarbeiterSet gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ShowBrowseMitarbeiterSet_postRender: [$element, function () { return new lightSwitchApplication.Browse().findContentItem("ShowBrowseMitarbeiterSet"); }]
+        Group_postRender: [$element, function () { return new lightSwitchApplication.ViewVertragItem().findContentItem("Group"); }]
     });
 
     lightSwitchApplication.BrowseVertragJeMonatItemSet.prototype._$contentItems = {
@@ -3754,14 +3715,6 @@
             data: lightSwitchApplication.VertragJeMonatItem,
             value: String
         },
-        Kürzel: {
-            _$class: msls.ContentItem,
-            _$name: "Kürzel",
-            _$parentName: "rows",
-            screen: lightSwitchApplication.BrowseVertragJeMonatItemSet,
-            data: lightSwitchApplication.VertragJeMonatItem,
-            value: String
-        },
         Popups: {
             _$class: msls.ContentItem,
             _$name: "Popups",
@@ -3772,341 +3725,55 @@
 
     msls._addEntryPoints(lightSwitchApplication.BrowseVertragJeMonatItemSet, {
         /// <field>
-        /// Wird aufgerufen, wenn ein neuer BrowseVertragJeMonatItemSet-Bildschirm erstellt wird.
+        /// Called when a new BrowseVertragJeMonatItemSet screen is created.
         /// <br/>created(msls.application.BrowseVertragJeMonatItemSet screen)
         /// </field>
         created: [lightSwitchApplication.BrowseVertragJeMonatItemSet],
         /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven BrowseVertragJeMonatItemSet-Bildschirm angewendet werden.
+        /// Called before changes on an active BrowseVertragJeMonatItemSet screen are applied.
         /// <br/>beforeApplyChanges(msls.application.BrowseVertragJeMonatItemSet screen)
         /// </field>
         beforeApplyChanges: [lightSwitchApplication.BrowseVertragJeMonatItemSet],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement VertragJeMonatItemList gerendert wurde.
+        /// Called after the VertragJeMonatItemList content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         VertragJeMonatItemList_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("VertragJeMonatItemList"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement VertragJeMonatItemSet gerendert wurde.
+        /// Called after the VertragJeMonatItemSet content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         VertragJeMonatItemSet_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("VertragJeMonatItemSet"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement rows gerendert wurde.
+        /// Called after the rows content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         rows_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("rows"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Id gerendert wurde.
+        /// Called after the Id content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Id_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("Id"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Monat gerendert wurde.
+        /// Called after the Monat content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Monat_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("Monat"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Stellenanteil gerendert wurde.
+        /// Called after the Stellenanteil content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         Stellenanteil_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("Stellenanteil"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ProjektKurzName gerendert wurde.
+        /// Called after the ProjektKurzName content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
         ProjektKurzName_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("ProjektKurzName"); }],
         /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Nachname gerendert wurde.
+        /// Called after the Nachname content item has been rendered.
         /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
         /// </field>
-        Nachname_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("Nachname"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Kürzel gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Kürzel_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("Kürzel"); }]
-    });
-
-    lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate.prototype._$contentItems = {
-        Tabs: {
-            _$class: msls.ContentItem,
-            _$name: "Tabs",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate
-        },
-        MitarbeiterItemList: {
-            _$class: msls.ContentItem,
-            _$name: "MitarbeiterItemList",
-            _$parentName: "Tabs",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            value: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate
-        },
-        MitarbeiterItem: {
-            _$class: msls.ContentItem,
-            _$name: "MitarbeiterItem",
-            _$parentName: "MitarbeiterItemList",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            value: {
-                _$class: msls.VisualCollection,
-                screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-                _$entry: {
-                    elementType: lightSwitchApplication.MitarbeiterItem
-                }
-            }
-        },
-        RowTemplate: {
-            _$class: msls.ContentItem,
-            _$name: "RowTemplate",
-            _$parentName: "MitarbeiterItem",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: lightSwitchApplication.MitarbeiterItem
-        },
-        Nachname: {
-            _$class: msls.ContentItem,
-            _$name: "Nachname",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: String
-        },
-        Vorname: {
-            _$class: msls.ContentItem,
-            _$name: "Vorname",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: String
-        },
-        Geburtstag: {
-            _$class: msls.ContentItem,
-            _$name: "Geburtstag",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: Date
-        },
-        Erstanstellung: {
-            _$class: msls.ContentItem,
-            _$name: "Erstanstellung",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: Date
-        },
-        Ausscheidedatum: {
-            _$class: msls.ContentItem,
-            _$name: "Ausscheidedatum",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: Date
-        },
-        Bermerkung: {
-            _$class: msls.ContentItem,
-            _$name: "Bermerkung",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: String
-        },
-        Raum: {
-            _$class: msls.ContentItem,
-            _$name: "Raum",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: String
-        },
-        Telefon: {
-            _$class: msls.ContentItem,
-            _$name: "Telefon",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: String
-        },
-        Foto: {
-            _$class: msls.ContentItem,
-            _$name: "Foto",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: String
-        },
-        PersonalNr: {
-            _$class: msls.ContentItem,
-            _$name: "PersonalNr",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: String
-        },
-        AbteilungItem: {
-            _$class: msls.ContentItem,
-            _$name: "AbteilungItem",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: lightSwitchApplication.AbteilungItem
-        },
-        RowTemplate1: {
-            _$class: msls.ContentItem,
-            _$name: "RowTemplate1",
-            _$parentName: "AbteilungItem",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.AbteilungItem,
-            value: lightSwitchApplication.AbteilungItem
-        },
-        CreatedBy: {
-            _$class: msls.ContentItem,
-            _$name: "CreatedBy",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: String
-        },
-        Created: {
-            _$class: msls.ContentItem,
-            _$name: "Created",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: Date
-        },
-        ModifiedBy: {
-            _$class: msls.ContentItem,
-            _$name: "ModifiedBy",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: String
-        },
-        Modified: {
-            _$class: msls.ContentItem,
-            _$name: "Modified",
-            _$parentName: "RowTemplate",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate,
-            data: lightSwitchApplication.MitarbeiterItem,
-            value: Date
-        },
-        Popups: {
-            _$class: msls.ContentItem,
-            _$name: "Popups",
-            _$parentName: "RootContentItem",
-            screen: lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate
-        }
-    };
-
-    msls._addEntryPoints(lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate, {
-        /// <field>
-        /// Wird aufgerufen, wenn ein neuer MitarbeiterMitAktuellemVertragGridSortingTemplate-Bildschirm erstellt wird.
-        /// <br/>created(msls.application.MitarbeiterMitAktuellemVertragGridSortingTemplate screen)
-        /// </field>
-        created: [lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate],
-        /// <field>
-        /// Wird aufgerufen, bevor Änderungen auf einem aktiven MitarbeiterMitAktuellemVertragGridSortingTemplate-Bildschirm angewendet werden.
-        /// <br/>beforeApplyChanges(msls.application.MitarbeiterMitAktuellemVertragGridSortingTemplate screen)
-        /// </field>
-        beforeApplyChanges: [lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterItemList gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        MitarbeiterItemList_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("MitarbeiterItemList"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement MitarbeiterItem gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        MitarbeiterItem_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("MitarbeiterItem"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement RowTemplate gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        RowTemplate_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("RowTemplate"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Nachname gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Nachname_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("Nachname"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Vorname gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Vorname_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("Vorname"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Geburtstag gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Geburtstag_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("Geburtstag"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Erstanstellung gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Erstanstellung_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("Erstanstellung"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Ausscheidedatum gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Ausscheidedatum_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("Ausscheidedatum"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Bermerkung gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Bermerkung_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("Bermerkung"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Raum gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Raum_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("Raum"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Telefon gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Telefon_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("Telefon"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Foto gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Foto_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("Foto"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement PersonalNr gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        PersonalNr_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("PersonalNr"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement AbteilungItem gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        AbteilungItem_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("AbteilungItem"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement RowTemplate1 gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        RowTemplate1_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("RowTemplate1"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement CreatedBy gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        CreatedBy_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("CreatedBy"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Created gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Created_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("Created"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement ModifiedBy gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        ModifiedBy_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("ModifiedBy"); }],
-        /// <field>
-        /// Wird aufgerufen, nachdem das Inhaltselement Modified gerendert wurde.
-        /// <br/>postRender(HTMLElement element, msls.ContentItem contentItem)
-        /// </field>
-        Modified_postRender: [$element, function () { return new lightSwitchApplication.MitarbeiterMitAktuellemVertragGridSortingTemplate().findContentItem("Modified"); }]
+        Nachname_postRender: [$element, function () { return new lightSwitchApplication.BrowseVertragJeMonatItemSet().findContentItem("Nachname"); }]
     });
 
 }(msls.application));

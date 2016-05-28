@@ -14,7 +14,7 @@ namespace LightSwitchApplication
     #region Entities
     
     /// <summary>
-    /// Keine modellierte Beschreibung verfügbar
+    /// No Modeled Description Available
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
     public sealed partial class MitarbeiterItem : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass>
@@ -22,7 +22,7 @@ namespace LightSwitchApplication
         #region Constructors
     
         /// <summary>
-        /// Initialisiert eine neue Instanz der Entität MitarbeiterItem.
+        /// Initializes a new instance of the MitarbeiterItem entity.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -49,7 +49,7 @@ namespace LightSwitchApplication
         #region Private Properties
         
         /// <summary>
-        /// Ruft das Application-Objekt für diese Anwendung ab. Das Application-Objekt stellt Zugriff auf aktive Bildschirme, Methoden zum Öffnen von Bildschirmen sowie Zugriff auf den aktuellen Benutzer bereit.
+        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -62,7 +62,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Ruft den übergeordneten Datenarbeitsbereich ab. Der Datenarbeitsbereich stellt Zugriff auf alle Datenquellen in der Anwendung bereit.
+        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -79,7 +79,7 @@ namespace LightSwitchApplication
         #region Public Properties
     
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -103,7 +103,7 @@ namespace LightSwitchApplication
         partial void Id_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -127,7 +127,7 @@ namespace LightSwitchApplication
         partial void Nachname_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -151,7 +151,7 @@ namespace LightSwitchApplication
         partial void Vorname_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -175,7 +175,7 @@ namespace LightSwitchApplication
         partial void Geburtstag_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -199,7 +199,7 @@ namespace LightSwitchApplication
         partial void Erstanstellung_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -223,7 +223,7 @@ namespace LightSwitchApplication
         partial void Ausscheidedatum_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -271,7 +271,7 @@ namespace LightSwitchApplication
         partial void Raum_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -295,7 +295,7 @@ namespace LightSwitchApplication
         partial void Telefon_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -319,7 +319,7 @@ namespace LightSwitchApplication
         partial void Foto_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -343,7 +343,7 @@ namespace LightSwitchApplication
         partial void PersonalNr_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -361,7 +361,49 @@ namespace LightSwitchApplication
         partial void Name_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public bool hatAktuellenVertrag
+        {
+            get
+            {
+                return global::LightSwitchApplication.MitarbeiterItem.DetailsClass.GetValue(this, global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.hatAktuellenVertrag);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void hatAktuellenVertrag_Compute(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void hatAktuellenVertrag_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+
+        /// <summary>
+        /// Eindeutiges Kürzel zur Identifikation der Person
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string UserID
+        {
+            get
+            {
+                return global::LightSwitchApplication.MitarbeiterItem.DetailsClass.GetValue(this, global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.UserID);
+            }
+            set
+            {
+                global::LightSwitchApplication.MitarbeiterItem.DetailsClass.SetValue(this, global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.UserID, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserID_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserID_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void UserID_Changed();
+
+        /// <summary>
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -389,7 +431,7 @@ namespace LightSwitchApplication
         }
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -409,7 +451,7 @@ namespace LightSwitchApplication
         partial void Created_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -437,7 +479,7 @@ namespace LightSwitchApplication
         }
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -457,7 +499,7 @@ namespace LightSwitchApplication
         partial void Modified_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
@@ -482,7 +524,7 @@ namespace LightSwitchApplication
         partial void RowVersion_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -505,7 +547,7 @@ namespace LightSwitchApplication
         }
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -529,7 +571,7 @@ namespace LightSwitchApplication
         partial void AbteilungItem_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -730,6 +772,22 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, bool> hatAktuellenVertrag
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.hatAktuellenVertrag) as global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, bool>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string> UserID
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties.UserID) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>;
+                    }
+                }
+                
                 public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string> CreatedBy
                 {
                     get
@@ -811,6 +869,7 @@ namespace LightSwitchApplication
                 new string Telefon { get; set; }
                 new byte[] Foto { get; set; }
                 new string PersonalNr { get; set; }
+                new string UserID { get; set; }
                 new string CreatedBy { get; }
                 new global::System.Nullable<global::System.DateTimeOffset> Created { get; }
                 new string ModifiedBy { get; }
@@ -1258,6 +1317,65 @@ namespace LightSwitchApplication
                 }
     
                 [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, bool>.Entry
+                    hatAktuellenVertrag = new global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, bool>.Entry(
+                        "hatAktuellenVertrag",
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._hatAktuellenVertrag_Stub,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._hatAktuellenVertrag_Validate,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._hatAktuellenVertrag_ComputeValue);
+                private static void _hatAktuellenVertrag_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, bool>.Data> c, global::LightSwitchApplication.MitarbeiterItem.DetailsClass d, object sf)
+                {
+                    c(d, ref d._hatAktuellenVertrag, sf);
+                }
+                private static void _hatAktuellenVertrag_Validate(global::LightSwitchApplication.MitarbeiterItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.hatAktuellenVertrag_Validate(r);
+                }
+                private static bool _hatAktuellenVertrag_ComputeValue(global::LightSwitchApplication.MitarbeiterItem e)
+                {
+                    bool value = default(bool);
+                    e.hatAktuellenVertrag_Compute(ref value);
+                    return value;
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Entry
+                    UserID = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Entry(
+                        "UserID",
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._UserID_Stub,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._UserID_ComputeIsReadOnly,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._UserID_Validate,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._UserID_GetImplementationValue,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._UserID_SetImplementationValue,
+                        global::LightSwitchApplication.MitarbeiterItem.DetailsClass.PropertySetProperties._UserID_OnValueChanged);
+                private static void _UserID_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.MitarbeiterItem.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Data> c, global::LightSwitchApplication.MitarbeiterItem.DetailsClass d, object sf)
+                {
+                    c(d, ref d._UserID, sf);
+                }
+                private static bool _UserID_ComputeIsReadOnly(global::LightSwitchApplication.MitarbeiterItem e)
+                {
+                    bool result = false;
+                    e.UserID_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _UserID_Validate(global::LightSwitchApplication.MitarbeiterItem e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.UserID_Validate(r);
+                }
+                private static string _UserID_GetImplementationValue(global::LightSwitchApplication.MitarbeiterItem.DetailsClass d)
+                {
+                    return d.ImplementationEntity.UserID;
+                }
+                private static void _UserID_SetImplementationValue(global::LightSwitchApplication.MitarbeiterItem.DetailsClass d, string v)
+                {
+                    d.ImplementationEntity.UserID = v;
+                }
+                private static void _UserID_OnValueChanged(global::LightSwitchApplication.MitarbeiterItem e)
+                {
+                    e.UserID_Changed();
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
                 public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Entry
                     CreatedBy = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Entry(
                         "CreatedBy",
@@ -1577,6 +1695,12 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Data _Name;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityComputedProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, bool>.Data _hatAktuellenVertrag;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Data _UserID;
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.MitarbeiterItem, global::LightSwitchApplication.MitarbeiterItem.DetailsClass, string>.Data _CreatedBy;

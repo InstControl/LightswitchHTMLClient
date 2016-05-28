@@ -19,7 +19,7 @@ namespace LightSwitchApplication
         #region Constructors
     
         /// <summary>
-        /// Initialisiert eine neue Instanz eines DataWorkspace.  Änderungen an Datenquellen können in der neuen Instanz unabhängig von Änderungen an Datenquellen im standardmäßigen DataWorkspace vorgenommen werden.
+        /// Initializes a new instance of a DataWorkspace.  Changes can be made to data sources in the new instance independent of changes made to data sources in the default DataWorkspace.
         /// </summary>
         public DataWorkspace() : base()
         {
@@ -30,7 +30,7 @@ namespace LightSwitchApplication
         #region Public Properties
     
         /// <summary>
-        /// Ruft die Datenquelle ApplicationData ab. Dadurch werden Member zum Abfragen und Aktualisieren von Daten in der Datenquelle bereitgestellt.
+        /// Gets the ApplicationData datasource.  This provides members to query and update data in the data source.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -39,6 +39,19 @@ namespace LightSwitchApplication
             get
             {
                 return global::LightSwitchApplication.DataWorkspace.DetailsClass.GetValue(this, global::LightSwitchApplication.DataWorkspace.DetailsClass.PropertySetProperties.ApplicationData);
+            }
+        }
+        
+        /// <summary>
+        /// Gets the WCF_RIA_ServiceData datasource.  This provides members to query and update data in the data source.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::LightSwitchApplication.WCF_RIA_ServiceDataService WCF_RIA_ServiceData
+        {
+            get
+            {
+                return global::LightSwitchApplication.DataWorkspace.DetailsClass.GetValue(this, global::LightSwitchApplication.DataWorkspace.DetailsClass.PropertySetProperties.WCF_RIA_ServiceData);
             }
         }
         
@@ -89,6 +102,14 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.WCF_RIA_ServiceDataService> WCF_RIA_ServiceData
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.DataWorkspace.DetailsClass.PropertySetProperties.WCF_RIA_ServiceData) as global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.WCF_RIA_ServiceDataService>;
+                    }
+                }
+                
             }
     
             [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -107,10 +128,23 @@ namespace LightSwitchApplication
                     c(d, ref d._ApplicationData, sf);
                 }
                  
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.WCF_RIA_ServiceDataService>.Entry
+                    WCF_RIA_ServiceData = new global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.WCF_RIA_ServiceDataService>.Entry(
+                        "WCF_RIA_ServiceData",
+                        global::LightSwitchApplication.DataWorkspace.DetailsClass.PropertySetProperties._WCF_RIA_ServiceData_Stub);
+                private static void _WCF_RIA_ServiceData_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.DataWorkspace.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.WCF_RIA_ServiceDataService>.Data> c, global::LightSwitchApplication.DataWorkspace.DetailsClass d, object sf)
+                {
+                    c(d, ref d._WCF_RIA_ServiceData, sf);
+                }
+                 
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.ApplicationDataService>.Data _ApplicationData;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.DataWorkspaceDataServiceProperty<global::LightSwitchApplication.DataWorkspace, global::LightSwitchApplication.DataWorkspace.DetailsClass, global::LightSwitchApplication.WCF_RIA_ServiceDataService>.Data _WCF_RIA_ServiceData;
             
         }
     
@@ -122,7 +156,7 @@ namespace LightSwitchApplication
     #region Data Services
     
     /// <summary>
-    /// Stellt Member zum Abfragen und Aktualisieren von Daten in der Datenquelle ApplicationData bereit.
+    /// Provides members to query and update data in the ApplicationData datasource.
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -131,7 +165,7 @@ namespace LightSwitchApplication
         #region Constructors
     
         /// <summary>
-        /// Dieser Konstruktor wird für das interne LightSwitch-Framework verwendet. Verwenden Sie stattdessen DataWorkspace.
+        /// This constructor is used for the internal LightSwitch framework. Use DataWorkspace instead.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public ApplicationData() : base()
@@ -143,7 +177,7 @@ namespace LightSwitchApplication
         #region Public Properties
     
         /// <summary>
-        /// Ruft die Entitätenmenge AbteilungItemSet ab. Die Entitätenmenge stellt Member für den Zugriff auf Entitäten eines bestimmten Typs bereit.
+        /// Gets the AbteilungItemSet entity set.  The entity set provides members to access entities of a specific type.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -156,7 +190,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Ruft die Entitätenmenge BeschäftigungsArtItemSet ab. Die Entitätenmenge stellt Member für den Zugriff auf Entitäten eines bestimmten Typs bereit.
+        /// Gets the BeschäftigungsArtItemSet entity set.  The entity set provides members to access entities of a specific type.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -169,7 +203,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Ruft die Entitätenmenge MitarbeiterItemSet ab. Die Entitätenmenge stellt Member für den Zugriff auf Entitäten eines bestimmten Typs bereit.
+        /// Gets the MitarbeiterItemSet entity set.  The entity set provides members to access entities of a specific type.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -182,7 +216,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Ruft die Entitätenmenge ProjektItemSet ab. Die Entitätenmenge stellt Member für den Zugriff auf Entitäten eines bestimmten Typs bereit.
+        /// Gets the ProjektItemSet entity set.  The entity set provides members to access entities of a specific type.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -195,7 +229,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Ruft die Entitätenmenge StellenanteilItemSet ab. Die Entitätenmenge stellt Member für den Zugriff auf Entitäten eines bestimmten Typs bereit.
+        /// Gets the StellenanteilItemSet entity set.  The entity set provides members to access entities of a specific type.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -208,7 +242,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Ruft die Entitätenmenge VertragItemSet ab. Die Entitätenmenge stellt Member für den Zugriff auf Entitäten eines bestimmten Typs bereit.
+        /// Gets the VertragItemSet entity set.  The entity set provides members to access entities of a specific type.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -221,7 +255,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Ruft die Entitätenmenge VertragJeMonatItemSet ab. Die Entitätenmenge stellt Member für den Zugriff auf Entitäten eines bestimmten Typs bereit.
+        /// Gets the VertragJeMonatItemSet entity set.  The entity set provides members to access entities of a specific type.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -304,7 +338,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         public global::Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.MitarbeiterItem> MitarbeiterAusgeschieden()
         {
@@ -312,7 +346,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         public global::Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.MitarbeiterItem> MitarbeiterMitAktuellemVertrag()
         {
@@ -320,10 +354,10 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         /// <param name="Monate">
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </param>
         public global::Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.MitarbeiterItem> MitarbeiterMitAuslaufendemVertrag(global::System.Nullable<int> Monate)
         {
@@ -331,7 +365,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         public global::Microsoft.LightSwitch.IDataServiceQueryable<global::LightSwitchApplication.MitarbeiterItem> MitarbeiterOhneAktuellenVertrag()
         {
@@ -1029,6 +1063,213 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.ApplicationData, global::LightSwitchApplication.ApplicationData.DetailsClass, global::LightSwitchApplication.VertragJeMonatItem>.Data _VertragJeMonatItemSet_SingleOrDefault;
+            
+        }
+    
+        #endregion
+    }
+    
+    /// <summary>
+    /// Provides members to query and update data in the WCF_RIA_ServiceData datasource.
+    /// </summary>
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public class WCF_RIA_ServiceData : global::Microsoft.LightSwitch.Framework.Base.DataService<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass>
+    {
+        #region Constructors
+    
+        /// <summary>
+        /// This constructor is used for the internal LightSwitch framework. Use DataWorkspace instead.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        public WCF_RIA_ServiceData() : base()
+        {
+        }
+    
+        #endregion
+    
+        #region Public Properties
+    
+        /// <summary>
+        /// Gets the EnhancedMitarbeiters entity set.  The entity set provides members to access entities of a specific type.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::Microsoft.LightSwitch.Framework.EntitySet<global::LightSwitchApplication.EnhancedMitarbeiter> EnhancedMitarbeiters
+        {
+            get
+            {
+                return global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.GetValue(this, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.PropertySetProperties.EnhancedMitarbeiters);
+            }
+        }
+        
+        #endregion
+    
+        #region Queries
+    
+        /// <summary>
+        /// Returns the entity whose identity is specified by the parameter(s).
+        /// </summary>
+        /// <param name="ID">
+        /// The value of the 'ID' key property of the entity to retrieve.
+        /// </param>
+        public global::LightSwitchApplication.EnhancedMitarbeiter EnhancedMitarbeiters_Single(global::System.Nullable<int> ID)
+        {
+            return this.Details.Methods.EnhancedMitarbeiters_Single.CreateInvocation(ID).Execute();
+        }
+        
+        /// <summary>
+        /// Returns the entity whose identity is specified by the parameter(s) or null if no such entity exists.
+        /// </summary>
+        /// <param name="ID">
+        /// The value of the 'ID' key property of the entity to retrieve.
+        /// </param>
+        public global::LightSwitchApplication.EnhancedMitarbeiter EnhancedMitarbeiters_SingleOrDefault(global::System.Nullable<int> ID)
+        {
+            return this.Details.Methods.EnhancedMitarbeiters_SingleOrDefault.CreateInvocation(ID).Execute();
+        }
+        
+        #endregion
+    
+        #region Details Class
+    
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public sealed class DetailsClass : global::Microsoft.LightSwitch.Details.Framework.Base.DataServiceDetails<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.PropertySet, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.MethodSet>
+        {
+    
+            static DetailsClass()
+            {
+                var initializeMethodEntry = global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.MethodSetProperties.EnhancedMitarbeiters_Single;
+                var initializePropertyEntry = global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.PropertySetProperties.EnhancedMitarbeiters;
+            }
+    
+            public DetailsClass() : base()
+            {
+            }
+    
+            public new global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.MethodSet Methods
+            {
+                get
+                {
+                    return base.Methods;
+                }
+            }
+    
+            public new global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.PropertySet Properties
+            {
+                get
+                {
+                    return base.Properties;
+                }
+            }
+    
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class MethodSet : global::Microsoft.LightSwitch.Details.Framework.Base.DataServiceMethodSet<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass>
+            {
+    
+                public MethodSet() : base()
+                {
+                }
+    
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter> EnhancedMitarbeiters_Single
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.MethodSetProperties.EnhancedMitarbeiters_Single) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>;
+                    }
+                }
+                
+                public global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter> EnhancedMitarbeiters_SingleOrDefault
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.MethodSetProperties.EnhancedMitarbeiters_SingleOrDefault) as global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>;
+                    }
+                }
+                
+            }
+    
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1034:NestedTypesShouldNotBeVisible")]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class PropertySet : global::Microsoft.LightSwitch.Details.Framework.Base.DataServicePropertySet<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass>
+            {
+    
+                public PropertySet() : base()
+                {
+                }
+    
+                public global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter> EnhancedMitarbeiters
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.PropertySetProperties.EnhancedMitarbeiters) as global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>;
+                    }
+                }
+                
+            }
+    
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal class MethodSetProperties
+            {
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>.Entry
+                    EnhancedMitarbeiters_Single = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>.Entry(
+                        "EnhancedMitarbeiters_Single",
+                        global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.MethodSetProperties._EnhancedMitarbeiters_Single_Stub);
+                private static void _EnhancedMitarbeiters_Single_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>.Data> c, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass d, object sf)
+                {
+                    c(d, ref d._EnhancedMitarbeiters_Single, sf);
+                }
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>.Entry
+                    EnhancedMitarbeiters_SingleOrDefault = new global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>.Entry(
+                        "EnhancedMitarbeiters_SingleOrDefault",
+                        global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.MethodSetProperties._EnhancedMitarbeiters_SingleOrDefault_Stub);
+                private static void _EnhancedMitarbeiters_SingleOrDefault_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>.Data> c, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass d, object sf)
+                {
+                    c(d, ref d._EnhancedMitarbeiters_SingleOrDefault, sf);
+                }
+    
+            }
+    
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal class PropertySetProperties
+            {
+    
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>.Entry
+                    EnhancedMitarbeiters = new global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>.Entry(
+                        "EnhancedMitarbeiters",
+                        global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass.PropertySetProperties._EnhancedMitarbeiters_Stub);
+                private static void _EnhancedMitarbeiters_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>.Data> c, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass d, object sf)
+                {
+                    c(d, ref d._EnhancedMitarbeiters, sf);
+                }
+     
+            }
+    
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.DataServiceEntitySetProperty<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>.Data _EnhancedMitarbeiters;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>.Data _EnhancedMitarbeiters_Single;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.CreateScalarQueryMethod<global::LightSwitchApplication.WCF_RIA_ServiceData, global::LightSwitchApplication.WCF_RIA_ServiceData.DetailsClass, global::LightSwitchApplication.EnhancedMitarbeiter>.Data _EnhancedMitarbeiters_SingleOrDefault;
             
         }
     

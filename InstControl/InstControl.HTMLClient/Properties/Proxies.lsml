@@ -58,16 +58,22 @@
         Target="ServiceInterface:MitarbeiterItem" />
     </EntityType.Attributes>
   </EntityType>
-  <EntityType>
-    <EntityType.Attributes>
-      <Proxy
-        Target="ServiceInterface:VertragJeMonatItem" />
-    </EntityType.Attributes>
-  </EntityType>
   <Association>
     <Association.Attributes>
       <Proxy
         Target="ServiceInterface:VertragJeMonatItem_StellenanteilItem" />
     </Association.Attributes>
   </Association>
+  <EntityType>
+    <EntityType.Attributes>
+      <Proxy
+        Target="ServiceInterface:EnhancedMitarbeiter" />
+    </EntityType.Attributes>
+  </EntityType>
+  <EntityContainer>
+    <EntityContainer.Attributes>
+      <Proxy
+        Target="ServiceInterface:WCF_RIA_ServiceData" />
+    </EntityContainer.Attributes>
+  </EntityContainer>
 </Application>

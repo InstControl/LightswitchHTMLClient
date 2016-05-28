@@ -35,7 +35,6 @@
           <Required />
           <MaxLength
             Value="255" />
-          <IncludeInUniqueIndex />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -45,7 +44,6 @@
           <Required />
           <MaxLength
             Value="255" />
-          <IncludeInUniqueIndex />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -139,6 +137,28 @@
         PropertyType=":String">
         <EntityProperty.Attributes>
           <Computed />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="hatAktuellenVertrag"
+        PropertyType=":Boolean">
+        <EntityProperty.Attributes>
+          <Computed />
+          <NotSearchable />
+        </EntityProperty.Attributes>
+      </EntityProperty>
+      <EntityProperty
+        Name="UserID"
+        PropertyType=":String">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength
+            Value="255" />
+          <IncludeInUniqueIndex />
+          <Description
+            Value="Eindeutiges Kürzel zur Identifikation der Person" />
+          <DisplayName
+            Value="Namenskürzel" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
@@ -353,6 +373,10 @@
         <SsdlForeignKeyProperty
           Name="AbteilungItem_MitarbeiterItem"
           Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="MitarbeiterItem_VertragItem"
+          Nullable="False"
           Type="int" />
       </EntitySetMapping.Attributes>
     </EntitySetMapping>

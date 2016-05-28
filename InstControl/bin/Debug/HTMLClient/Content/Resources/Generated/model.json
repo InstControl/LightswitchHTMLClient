@@ -1993,42 +1993,6 @@
       ]
     },
     {
-      "id": "Syncfusion.LightSwitch.Extension.DocIO:!module",
-      "name": "Syncfusion.LightSwitch.Extension.DocIO"
-    },
-    {
-      "id": "EJ.DataVisualization:!module",
-      "name": "EJ.DataVisualization",
-      "targetPlatform": "MobileWeb",
-      "globalItems":
-      [
-        {
-          "id": "EJ.DataVisualization:CollectionCustomControl",
-          "name": "CollectionCustomControl",
-          "attachedLabelSupport": "DisplayedByContainer",
-          "supportedContentItemKind": "Collection",
-          "baseControl": { "__id": ":RootCustomControl" },
-          "properties":
-          [
-            {
-              "id": "EJ.DataVisualization:CollectionCustomControl/Properties[Control]",
-              "name": "Control",
-              "propertyType": { "__id": ":String" },
-              "defaultValueSource":
-              {
-                "value": "ejRangeNavigator"
-              }
-            },
-            {
-              "id": "EJ.DataVisualization:CollectionCustomControl/Properties[ControlProperty]",
-              "name": "ControlProperty",
-              "propertyType": { "__id": ":String" }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "Microsoft.LightSwitch.Cosmopolitan:!module",
       "name": "Microsoft.LightSwitch.Cosmopolitan",
       "globalItems":
@@ -2160,8 +2124,7 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:EmailAddress",
           "name": "EmailAddress",
-          "underlyingType": { "__id": ":String" },
-          "Microsoft.LightSwitch.Extensions:@EmailAddressValidation": { "domainRequired": true }
+          "underlyingType": { "__id": ":String" }
         },
         {
           "__isSemanticType": 1,
@@ -2179,15 +2142,13 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:PhoneNumber",
           "name": "PhoneNumber",
-          "underlyingType": { "__id": ":String" },
-          "Microsoft.LightSwitch.Extensions:@PhoneNumberValidation": { "formats": "C (AAA) NNN-NNNN;C (AAA) NNNNNNN;CAAANNNNNNN;(AAA) NNN-NNNN;(AAA) NNNNNNN;AAANNNNNNN;NNN-NNNN;NNNNNNN" }
+          "underlyingType": { "__id": ":String" }
         },
         {
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:Percent",
           "name": "Percent",
           "underlyingType": { "__id": ":Decimal" },
-          "Microsoft.LightSwitch.Extensions:@FormatParameter": { "decimalDigits": 2 },
           ":@DecimalConstraint":
           {
             "scale": 9
@@ -2197,90 +2158,39 @@
           "__isSemanticType": 1,
           "id": "Microsoft.LightSwitch.Extensions:WebAddress",
           "name": "WebAddress",
-          "underlyingType": { "__id": ":String" },
-          "Microsoft.LightSwitch.Extensions:@WebAddressValidation": { }
+          "underlyingType": { "__id": ":String" }
         }
       ]
     },
     {
-      "id": "Syncfusion.LightSwitch.Extension.Editors:!module",
-      "name": "Syncfusion.LightSwitch.Extension.Editors"
-    },
-    {
-      "id": "Syncfusion.LightSwitch.Extension.OlapClient:!module",
-      "name": "Syncfusion.LightSwitch.Extension.OlapClient"
-    },
-    {
-      "id": "Syncfusion.LightSwitch.Extension.RangeNavigator:!module",
-      "name": "Syncfusion.LightSwitch.Extension.RangeNavigator"
-    },
-    {
-      "id": "Syncfusion.LightSwitch.Extension.ReportViewer:!module",
-      "name": "Syncfusion.LightSwitch.Extension.ReportViewer"
-    },
-    {
-      "id": "Syncfusion.LightSwitch.Extension.SfBulletGraph:!module",
-      "name": "Syncfusion.LightSwitch.Extension.SfBulletGraph"
-    },
-    {
-      "id": "Syncfusion.LightSwitch.Extension.Chart:!module",
-      "name": "Syncfusion.LightSwitch.Extension.Chart"
-    },
-    {
-      "id": "Syncfusion.LightSwitch.Extension.SfDataGrid:!module",
-      "name": "Syncfusion.LightSwitch.Extension.SfDataGrid"
-    },
-    {
-      "id": "Syncfusion.LightSwitch.Extension.SfGauge:!module",
-      "name": "Syncfusion.LightSwitch.Extension.SfGauge"
-    },
-    {
-      "id": "Syncfusion.LightSwitch.Extension.SfMaps:!module",
-      "name": "Syncfusion.LightSwitch.Extension.SfMaps"
-    },
-    {
-      "id": "Syncfusion.LightSwitch.Extension.SfTreeMap:!module",
-      "name": "Syncfusion.LightSwitch.Extension.SfTreeMap"
-    },
-    {
-      "id": "Syncfusion.LightSwitch.Extension.Shell.Ribbon:!module",
-      "name": "Syncfusion.LightSwitch.Extension.Shell.Ribbon",
+      "id": "EJ.DataVisualization:!module",
+      "name": "EJ.DataVisualization",
+      "targetPlatform": "MobileWeb",
       "globalItems":
       [
         {
-          "id": "Syncfusion.LightSwitch.Extension.Shell.Ribbon:SyncfusionShell",
-          "name": "SyncfusionShell"
-        }
-      ]
-    },
-    {
-      "id": "Syncfusion.LightSwitch.Extension.SparkLine:!module",
-      "name": "Syncfusion.LightSwitch.Extension.SparkLine"
-    },
-    {
-      "id": "Syncfusion.LightSwitch.Extension.Themes:!module",
-      "name": "Syncfusion.LightSwitch.Extension.Themes",
-      "globalItems":
-      [
-        {
-          "id": "Syncfusion.LightSwitch.Extension.Themes:SyncfusionBlendExtension",
-          "name": "SyncfusionBlendExtension"
-        },
-        {
-          "id": "Syncfusion.LightSwitch.Extension.Themes:SyncfusionMetroExtension",
-          "name": "SyncfusionMetroExtension"
-        },
-        {
-          "id": "Syncfusion.LightSwitch.Extension.Themes:SyncfusionOffice2010BlueExtension",
-          "name": "SyncfusionOffice2010BlueExtension"
-        },
-        {
-          "id": "Syncfusion.LightSwitch.Extension.Themes:SyncfusionOffice2010BlackExtension",
-          "name": "SyncfusionOffice2010BlackExtension"
-        },
-        {
-          "id": "Syncfusion.LightSwitch.Extension.Themes:SyncfusionOffice2010SilverExtension",
-          "name": "SyncfusionOffice2010SilverExtension"
+          "id": "EJ.DataVisualization:CollectionCustomControl",
+          "name": "CollectionCustomControl",
+          "attachedLabelSupport": "DisplayedByContainer",
+          "supportedContentItemKind": "Collection",
+          "baseControl": { "__id": ":RootCustomControl" },
+          "properties":
+          [
+            {
+              "id": "EJ.DataVisualization:CollectionCustomControl/Properties[Control]",
+              "name": "Control",
+              "propertyType": { "__id": ":String" },
+              "defaultValueSource":
+              {
+                "value": "ejRangeNavigator"
+              }
+            },
+            {
+              "id": "EJ.DataVisualization:CollectionCustomControl/Properties[ControlProperty]",
+              "name": "ControlProperty",
+              "propertyType": { "__id": ":String" }
+            }
+          ]
         }
       ]
     },
@@ -2356,6 +2266,92 @@
       ]
     },
     {
+      "id": "Syncfusion.LightSwitch.Extension.Chart:!module",
+      "name": "Syncfusion.LightSwitch.Extension.Chart"
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.DocIO:!module",
+      "name": "Syncfusion.LightSwitch.Extension.DocIO"
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.Editors:!module",
+      "name": "Syncfusion.LightSwitch.Extension.Editors"
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.OlapClient:!module",
+      "name": "Syncfusion.LightSwitch.Extension.OlapClient"
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.RangeNavigator:!module",
+      "name": "Syncfusion.LightSwitch.Extension.RangeNavigator"
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.ReportViewer:!module",
+      "name": "Syncfusion.LightSwitch.Extension.ReportViewer"
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.SfBulletGraph:!module",
+      "name": "Syncfusion.LightSwitch.Extension.SfBulletGraph"
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.SfDataGrid:!module",
+      "name": "Syncfusion.LightSwitch.Extension.SfDataGrid"
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.SfGauge:!module",
+      "name": "Syncfusion.LightSwitch.Extension.SfGauge"
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.SfMaps:!module",
+      "name": "Syncfusion.LightSwitch.Extension.SfMaps"
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.SfTreeMap:!module",
+      "name": "Syncfusion.LightSwitch.Extension.SfTreeMap"
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.Shell.Ribbon:!module",
+      "name": "Syncfusion.LightSwitch.Extension.Shell.Ribbon",
+      "globalItems":
+      [
+        {
+          "id": "Syncfusion.LightSwitch.Extension.Shell.Ribbon:SyncfusionShell",
+          "name": "SyncfusionShell"
+        }
+      ]
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.SparkLine:!module",
+      "name": "Syncfusion.LightSwitch.Extension.SparkLine"
+    },
+    {
+      "id": "Syncfusion.LightSwitch.Extension.Themes:!module",
+      "name": "Syncfusion.LightSwitch.Extension.Themes",
+      "globalItems":
+      [
+        {
+          "id": "Syncfusion.LightSwitch.Extension.Themes:SyncfusionBlendExtension",
+          "name": "SyncfusionBlendExtension"
+        },
+        {
+          "id": "Syncfusion.LightSwitch.Extension.Themes:SyncfusionMetroExtension",
+          "name": "SyncfusionMetroExtension"
+        },
+        {
+          "id": "Syncfusion.LightSwitch.Extension.Themes:SyncfusionOffice2010BlueExtension",
+          "name": "SyncfusionOffice2010BlueExtension"
+        },
+        {
+          "id": "Syncfusion.LightSwitch.Extension.Themes:SyncfusionOffice2010BlackExtension",
+          "name": "SyncfusionOffice2010BlackExtension"
+        },
+        {
+          "id": "Syncfusion.LightSwitch.Extension.Themes:SyncfusionOffice2010SilverExtension",
+          "name": "SyncfusionOffice2010SilverExtension"
+        }
+      ]
+    },
+    {
       "id": "Syncfusion.LightSwitch.Extension.XlsIO:!module",
       "name": "Syncfusion.LightSwitch.Extension.XlsIO"
     },
@@ -2382,6 +2378,11 @@
               "id": "DataWorkspace/Members[ApplicationData]",
               "name": "ApplicationData",
               "entityContainer": { "__id": "ApplicationData" }
+            },
+            {
+              "id": "DataWorkspace/Members[WCF_RIA_ServiceData]",
+              "name": "WCF_RIA_ServiceData",
+              "entityContainer": { "__id": "WCF_RIA_ServiceData" }
             }
           ]
         },
@@ -2390,60 +2391,60 @@
           "name": "LightSwitchServiceApplicationGroup"
         },
         {
-          "id": "VertragJeMonatItem*",
-          "name": "VertragJeMonatItem*",
+          "id": "EnhancedMitarbeiter*",
+          "name": "EnhancedMitarbeiter*",
           "kind": "Enumerable",
-          "elementType": { "__id": "VertragJeMonatItem" }
+          "elementType": { "__id": "EnhancedMitarbeiter" }
         },
         {
-          "id": "CollectionView$VertragJeMonatItem",
-          "name": "CollectionView$VertragJeMonatItem",
+          "id": "CollectionView$EnhancedMitarbeiter",
+          "name": "CollectionView$EnhancedMitarbeiter",
           "kind": "CollectionView",
-          "elementType": { "__id": "VertragJeMonatItem" },
+          "elementType": { "__id": "EnhancedMitarbeiter" },
           "methods":
           [
             {
-              "id": "CollectionView$VertragJeMonatItem/Methods[addNew]",
+              "id": "CollectionView$EnhancedMitarbeiter/Methods[addNew]",
               "name": "addNew",
-              "returnType": { "__id": "VertragJeMonatItem" }
+              "returnType": { "__id": "EnhancedMitarbeiter" }
             },
             {
-              "id": "CollectionView$VertragJeMonatItem/Methods[addAndEditNew]",
+              "id": "CollectionView$EnhancedMitarbeiter/Methods[addAndEditNew]",
               "name": "addAndEditNew",
-              "returnType": { "__id": "VertragJeMonatItem" }
+              "returnType": { "__id": "EnhancedMitarbeiter" }
             },
             {
-              "id": "CollectionView$VertragJeMonatItem/Methods[showSearch]",
+              "id": "CollectionView$EnhancedMitarbeiter/Methods[showSearch]",
               "name": "showSearch",
-              "returnType": { "__id": "VertragJeMonatItem" }
+              "returnType": { "__id": "EnhancedMitarbeiter" }
             },
             {
-              "id": "CollectionView$VertragJeMonatItem/Methods[editSelected]",
+              "id": "CollectionView$EnhancedMitarbeiter/Methods[editSelected]",
               "name": "editSelected"
             },
             {
-              "id": "CollectionView$VertragJeMonatItem/Methods[deleteSelected]",
+              "id": "CollectionView$EnhancedMitarbeiter/Methods[deleteSelected]",
               "name": "deleteSelected"
             },
             {
-              "id": "CollectionView$VertragJeMonatItem/Methods[removeSelected]",
+              "id": "CollectionView$EnhancedMitarbeiter/Methods[removeSelected]",
               "name": "removeSelected"
             },
             {
-              "id": "CollectionView$VertragJeMonatItem/Methods[refresh]",
+              "id": "CollectionView$EnhancedMitarbeiter/Methods[refresh]",
               "name": "refresh"
             },
             {
-              "id": "CollectionView$VertragJeMonatItem/Methods[viewSelected]",
+              "id": "CollectionView$EnhancedMitarbeiter/Methods[viewSelected]",
               "name": "viewSelected"
             }
           ],
           "properties":
           [
             {
-              "id": "CollectionView$VertragJeMonatItem/Properties[selectedItem]",
+              "id": "CollectionView$EnhancedMitarbeiter/Properties[selectedItem]",
               "name": "selectedItem",
-              "propertyType": { "__id": "VertragJeMonatItem" }
+              "propertyType": { "__id": "EnhancedMitarbeiter" }
             }
           ]
         },
@@ -2502,6 +2503,64 @@
               "id": "CollectionView$MitarbeiterItem/Properties[selectedItem]",
               "name": "selectedItem",
               "propertyType": { "__id": "MitarbeiterItem" }
+            }
+          ]
+        },
+        {
+          "id": "VertragJeMonatItem*",
+          "name": "VertragJeMonatItem*",
+          "kind": "Enumerable",
+          "elementType": { "__id": "VertragJeMonatItem" }
+        },
+        {
+          "id": "CollectionView$VertragJeMonatItem",
+          "name": "CollectionView$VertragJeMonatItem",
+          "kind": "CollectionView",
+          "elementType": { "__id": "VertragJeMonatItem" },
+          "methods":
+          [
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[addNew]",
+              "name": "addNew",
+              "returnType": { "__id": "VertragJeMonatItem" }
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[addAndEditNew]",
+              "name": "addAndEditNew",
+              "returnType": { "__id": "VertragJeMonatItem" }
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[showSearch]",
+              "name": "showSearch",
+              "returnType": { "__id": "VertragJeMonatItem" }
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[editSelected]",
+              "name": "editSelected"
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[deleteSelected]",
+              "name": "deleteSelected"
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[removeSelected]",
+              "name": "removeSelected"
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[refresh]",
+              "name": "refresh"
+            },
+            {
+              "id": "CollectionView$VertragJeMonatItem/Methods[viewSelected]",
+              "name": "viewSelected"
+            }
+          ],
+          "properties":
+          [
+            {
+              "id": "CollectionView$VertragJeMonatItem/Properties[selectedItem]",
+              "name": "selectedItem",
+              "propertyType": { "__id": "VertragJeMonatItem" }
             }
           ]
         },
@@ -3320,7 +3379,6 @@
         },
         {
           "__isEntityType": 1,
-          ":@SummaryProperty": { "property": { "__id": "VertragItem/Properties[Id]" } },
           "id": "VertragItem",
           "name": "VertragItem",
           ":@CreatedModifiedPropertiesEnabled": { },
@@ -3332,6 +3390,7 @@
               "screenParameter": { "__id": "ViewVertragItem/Properties[VertragItem]" }
             }
           },
+          ":@SummaryProperty": { "property": { "__id": "VertragItem/Properties[von]" } },
           "methods":
           [
             {
@@ -3437,6 +3496,102 @@
             },
             {
               "id": "VertragItem/Properties[RowVersion]",
+              "name": "RowVersion",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":RowVersion" },
+              ":@Hidden": { },
+              ":@UseForConcurrency": { },
+              ":@NotSearchable": { }
+            }
+          ]
+        },
+        {
+          "__isEntityType": 1,
+          ":@SummaryProperty": { "property": { "__id": "VertragJeMonatItem/Properties[Id]" } },
+          "id": "VertragJeMonatItem",
+          "name": "VertragJeMonatItem",
+          ":@CreatedModifiedPropertiesEnabled": { },
+          "methods":
+          [
+            {
+              "id": "VertragJeMonatItem/Methods[deleteEntity]",
+              "name": "deleteEntity"
+            },
+            {
+              "id": "VertragJeMonatItem/Methods[edit]",
+              "name": "edit"
+            },
+            {
+              "id": "VertragJeMonatItem/Methods[view]",
+              "name": "view"
+            }
+          ],
+          "properties":
+          [
+            {
+              "__isKeyProperty": 1,
+              "id": "VertragJeMonatItem/Properties[Id]",
+              "name": "Id",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Int32" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[Monat]",
+              "name": "Monat",
+              "propertyType": { "__id": ":Date" },
+              ":@Required": { },
+              ":@NotSearchable": { },
+              ":@StringValueFormat": { "value": "\"mm-yy\"" }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[StellenanteilItem]",
+              "name": "StellenanteilItem",
+              "association": { "__id": "VertragJeMonatItem_StellenanteilItem" },
+              "elementType": { "__id": "StellenanteilItem" },
+              "fromEnd": { "__id": "VertragJeMonatItem_StellenanteilItem/Ends[VertragJeMonatItem]" },
+              "propertyType": { "__id": "StellenanteilItem" },
+              "toEnd": { "__id": "VertragJeMonatItem_StellenanteilItem/Ends[StellenanteilItem]" }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[CreatedBy]",
+              "name": "CreatedBy",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Person?" },
+              ":@NotSearchable": { },
+              ":@MaxLength":
+              {
+                "value": 255
+              }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[Created]",
+              "name": "Created",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":DateTimeOffset?" },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[ModifiedBy]",
+              "name": "ModifiedBy",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":Person?" },
+              ":@NotSearchable": { },
+              ":@MaxLength":
+              {
+                "value": 255
+              }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[Modified]",
+              "name": "Modified",
+              "isReadOnly": true,
+              "propertyType": { "__id": ":DateTimeOffset?" },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "VertragJeMonatItem/Properties[RowVersion]",
               "name": "RowVersion",
               "isReadOnly": true,
               "propertyType": { "__id": ":RowVersion" },
@@ -4207,8 +4362,7 @@
               ":@MaxLength":
               {
                 "value": 255
-              },
-              ":@IncludeInUniqueIndex": { }
+              }
             },
             {
               "id": "MitarbeiterItem/Properties[Vorname]",
@@ -4218,8 +4372,7 @@
               ":@MaxLength":
               {
                 "value": 255
-              },
-              ":@IncludeInUniqueIndex": { }
+              }
             },
             {
               "id": "MitarbeiterItem/Properties[Geburtstag]",
@@ -4313,6 +4466,17 @@
               "toEnd": { "__id": "AbteilungItem_MitarbeiterItem1/Ends[AbteilungItem]" }
             },
             {
+              "id": "MitarbeiterItem/Properties[UserID]",
+              "name": "UserID",
+              "propertyType": { "__id": ":String" },
+              ":@Required": { },
+              ":@MaxLength":
+              {
+                "value": 255
+              },
+              ":@IncludeInUniqueIndex": { }
+            },
+            {
               "id": "MitarbeiterItem/Properties[CreatedBy]",
               "name": "CreatedBy",
               "isReadOnly": true,
@@ -4360,101 +4524,6 @@
           ]
         },
         {
-          "__isEntityType": 1,
-          ":@SummaryProperty": { "property": { "__id": "VertragJeMonatItem/Properties[Id]" } },
-          "id": "VertragJeMonatItem",
-          "name": "VertragJeMonatItem",
-          ":@CreatedModifiedPropertiesEnabled": { },
-          "methods":
-          [
-            {
-              "id": "VertragJeMonatItem/Methods[deleteEntity]",
-              "name": "deleteEntity"
-            },
-            {
-              "id": "VertragJeMonatItem/Methods[edit]",
-              "name": "edit"
-            },
-            {
-              "id": "VertragJeMonatItem/Methods[view]",
-              "name": "view"
-            }
-          ],
-          "properties":
-          [
-            {
-              "__isKeyProperty": 1,
-              "id": "VertragJeMonatItem/Properties[Id]",
-              "name": "Id",
-              "isReadOnly": true,
-              "propertyType": { "__id": ":Int32" },
-              ":@Required": { },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "VertragJeMonatItem/Properties[Monat]",
-              "name": "Monat",
-              "propertyType": { "__id": ":Date" },
-              ":@Required": { },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "VertragJeMonatItem/Properties[StellenanteilItem]",
-              "name": "StellenanteilItem",
-              "association": { "__id": "VertragJeMonatItem_StellenanteilItem" },
-              "elementType": { "__id": "StellenanteilItem" },
-              "fromEnd": { "__id": "VertragJeMonatItem_StellenanteilItem/Ends[VertragJeMonatItem]" },
-              "propertyType": { "__id": "StellenanteilItem" },
-              "toEnd": { "__id": "VertragJeMonatItem_StellenanteilItem/Ends[StellenanteilItem]" }
-            },
-            {
-              "id": "VertragJeMonatItem/Properties[CreatedBy]",
-              "name": "CreatedBy",
-              "isReadOnly": true,
-              "propertyType": { "__id": ":Person?" },
-              ":@NotSearchable": { },
-              ":@MaxLength":
-              {
-                "value": 255
-              }
-            },
-            {
-              "id": "VertragJeMonatItem/Properties[Created]",
-              "name": "Created",
-              "isReadOnly": true,
-              "propertyType": { "__id": ":DateTimeOffset?" },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "VertragJeMonatItem/Properties[ModifiedBy]",
-              "name": "ModifiedBy",
-              "isReadOnly": true,
-              "propertyType": { "__id": ":Person?" },
-              ":@NotSearchable": { },
-              ":@MaxLength":
-              {
-                "value": 255
-              }
-            },
-            {
-              "id": "VertragJeMonatItem/Properties[Modified]",
-              "name": "Modified",
-              "isReadOnly": true,
-              "propertyType": { "__id": ":DateTimeOffset?" },
-              ":@NotSearchable": { }
-            },
-            {
-              "id": "VertragJeMonatItem/Properties[RowVersion]",
-              "name": "RowVersion",
-              "isReadOnly": true,
-              "propertyType": { "__id": ":RowVersion" },
-              ":@Hidden": { },
-              ":@UseForConcurrency": { },
-              ":@NotSearchable": { }
-            }
-          ]
-        },
-        {
           "id": "VertragJeMonatItem_StellenanteilItem",
           "name": "VertragJeMonatItem_StellenanteilItem",
           "ends":
@@ -4471,6 +4540,106 @@
               "multiplicity": "One",
               "entityType": { "__id": "StellenanteilItem" },
               ":@DeleteRule": { "action": "Cascade" }
+            }
+          ]
+        },
+        {
+          "__isEntityType": 1,
+          ":@SummaryProperty": { "property": { "__id": "EnhancedMitarbeiter/Properties[UserID]" } },
+          "id": "EnhancedMitarbeiter",
+          "name": "EnhancedMitarbeiter",
+          "methods":
+          [
+            {
+              "id": "EnhancedMitarbeiter/Methods[deleteEntity]",
+              "name": "deleteEntity"
+            },
+            {
+              "id": "EnhancedMitarbeiter/Methods[edit]",
+              "name": "edit"
+            },
+            {
+              "id": "EnhancedMitarbeiter/Methods[view]",
+              "name": "view"
+            }
+          ],
+          "properties":
+          [
+            {
+              "__isKeyProperty": 1,
+              "id": "EnhancedMitarbeiter/Properties[ID]",
+              "name": "ID",
+              "propertyType": { "__id": ":Int32" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            },
+            {
+              "id": "EnhancedMitarbeiter/Properties[UserID]",
+              "name": "UserID",
+              "propertyType": { "__id": ":String?" }
+            },
+            {
+              "id": "EnhancedMitarbeiter/Properties[aktuellerVertragBis]",
+              "name": "aktuellerVertragBis",
+              "propertyType": { "__id": ":Date" },
+              ":@Required": { },
+              ":@NotSearchable": { }
+            }
+          ]
+        },
+        {
+          "id": "WCF_RIA_ServiceData",
+          "name": "WCF_RIA_ServiceData",
+          "dataProvider": "CustomDataProvider",
+          ":@Partial": { "isPrimary": true },
+          "entitySets":
+          [
+            {
+              "id": "WCF_RIA_ServiceData/Members[EnhancedMitarbeiters]",
+              "name": "EnhancedMitarbeiters",
+              "elementType": { "__id": "EnhancedMitarbeiter" },
+              "entityType": { "__id": "EnhancedMitarbeiter" }
+            }
+          ],
+          "queryOperations":
+          [
+            {
+              "id": "WCF_RIA_ServiceData/Members[EnhancedMitarbeiters_Single]",
+              "name": "EnhancedMitarbeiters_Single",
+              "elementType": { "__id": "EnhancedMitarbeiter" },
+              "query": { "__id": "WCF_RIA_ServiceData/Members[EnhancedMitarbeiters_Single]" },
+              "returnType": { "__id": "EnhancedMitarbeiter" },
+              "source":
+              {
+                "member": { "__id": "WCF_RIA_ServiceData/Members[EnhancedMitarbeiters]" }
+              },
+              "parameters":
+              [
+                {
+                  "id": "WCF_RIA_ServiceData/Members[EnhancedMitarbeiters_Single]/Parameters[ID]",
+                  "name": "ID",
+                  "parameterType": { "__id": ":Int32?" }
+                }
+              ]
+            },
+            {
+              "id": "WCF_RIA_ServiceData/Members[EnhancedMitarbeiters_SingleOrDefault]",
+              "name": "EnhancedMitarbeiters_SingleOrDefault",
+              "elementType": { "__id": "EnhancedMitarbeiter" },
+              "query": { "__id": "WCF_RIA_ServiceData/Members[EnhancedMitarbeiters_SingleOrDefault]" },
+              "returnType": { "__id": "EnhancedMitarbeiter" },
+              "source":
+              {
+                "member": { "__id": "WCF_RIA_ServiceData/Members[EnhancedMitarbeiters]" }
+              },
+              "parameters":
+              [
+                {
+                  "id": "WCF_RIA_ServiceData/Members[EnhancedMitarbeiters_SingleOrDefault]/Parameters[ID]",
+                  "name": "ID",
+                  "parameterType": { "__id": ":Int32?" }
+                }
+              ]
             }
           ]
         },
@@ -4963,7 +5132,7 @@
                                 }
                               },
                               {
-                                "displayName": "Erstellt von",
+                                "displayName": "Created By",
                                 "name": "CreatedBy",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -4993,7 +5162,7 @@
                             "childContentItems":
                             [
                               {
-                                "displayName": "Erstellt",
+                                "displayName": "Created",
                                 "name": "Created",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -5003,7 +5172,7 @@
                                 }
                               },
                               {
-                                "displayName": "Geändert von",
+                                "displayName": "Modified By",
                                 "name": "ModifiedBy",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -5013,7 +5182,7 @@
                                 }
                               },
                               {
-                                "displayName": "Geändert",
+                                "displayName": "Modified",
                                 "name": "Modified",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -5662,7 +5831,7 @@
                                 ]
                               },
                               {
-                                "displayName": "Erstellt von",
+                                "displayName": "Created By",
                                 "name": "CreatedBy",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -5679,7 +5848,7 @@
                                 ]
                               },
                               {
-                                "displayName": "Erstellt",
+                                "displayName": "Created",
                                 "name": "Created",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -5923,7 +6092,7 @@
                                 }
                               },
                               {
-                                "displayName": "Erstellt von",
+                                "displayName": "Created By",
                                 "name": "CreatedBy",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -5933,7 +6102,7 @@
                                 }
                               },
                               {
-                                "displayName": "Erstellt",
+                                "displayName": "Created",
                                 "name": "Created",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -5963,7 +6132,7 @@
                             "childContentItems":
                             [
                               {
-                                "displayName": "Geändert von",
+                                "displayName": "Modified By",
                                 "name": "ModifiedBy",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -5973,7 +6142,7 @@
                                 }
                               },
                               {
-                                "displayName": "Geändert",
+                                "displayName": "Modified",
                                 "name": "Modified",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -6416,6 +6585,16 @@
                             "childContentItems":
                             [
                               {
+                                "displayName": "Namenskürzel",
+                                "name": "UserID",
+                                "kind": "Value",
+                                "view": { "__id": ":TextBox" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "MitarbeiterItem/Properties[UserID]" }
+                                }
+                              },
+                              {
                                 "displayName": "Nachname",
                                 "name": "Nachname",
                                 "kind": "Value",
@@ -6759,7 +6938,7 @@
                     "displayName": "mit aktuellem Vertrag",
                     "name": "Group1",
                     "kind": "Tab",
-                    "view": { "__id": ":RowsLayout" },
+                    "view": { "__id": ":ColumnsLayout" },
                     "childContentItems":
                     [
                       {
@@ -6814,13 +6993,13 @@
                                 }
                               },
                               {
-                                "displayName": "Geburtstag",
-                                "name": "Geburtstag",
+                                "displayName": "Bermerkung",
+                                "name": "Bermerkung2",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
                                 "dataSource":
                                 {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Geburtstag]" }
+                                  "member": { "__id": "MitarbeiterItem/Properties[Bermerkung]" }
                                 },
                                 "propertySources":
                                 [
@@ -6829,6 +7008,16 @@
                                     "value": "Small"
                                   }
                                 ]
+                              },
+                              {
+                                "displayName": "Vertrag Bis",
+                                "name": "VertragBis",
+                                "kind": "Value",
+                                "view": { "__id": ":Text" },
+                                "dataSource":
+                                {
+                                  "member": { "__id": "BrowseMitarbeiterSet/Properties[VertragBis]" }
+                                }
                               }
                             ]
                           }
@@ -6867,7 +7056,8 @@
                     "commandItems":
                     [
                       {
-                        "displayName": "Add",
+                        "displayName": "Neuer Mitarbeiter",
+                        "description": "Legt Datensatz für einen neuen Mitarbeiter an.",
                         "name": "AddMitarbeiter",
                         "kind": "Command",
                         "view": { "__id": ":CommandBarButton" },
@@ -6923,7 +7113,7 @@
                   },
                   {
                     "displayName": "mit auslaufendem Vertrag",
-                    "name": "Group4",
+                    "name": "Group2",
                     "kind": "Tab",
                     "view": { "__id": ":RowsLayout" },
                     "childContentItems":
@@ -6946,6 +7136,10 @@
                           {
                             "property": { "__id": ":RootControl/Properties[Width]" },
                             "value": 50
+                          },
+                          {
+                            "property": { "__id": ":RootValueControl/Properties[PlaceholderText]" },
+                            "value": "Monate"
                           }
                         ]
                       },
@@ -7111,16 +7305,6 @@
                                 }
                               },
                               {
-                                "displayName": "Ausscheidedatum",
-                                "name": "Ausscheidedatum",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Ausscheidedatum]" }
-                                }
-                              },
-                              {
                                 "displayName": "Bermerkung",
                                 "name": "Bermerkung",
                                 "kind": "Value",
@@ -7168,7 +7352,7 @@
                   {
                     "displayName": "ausgeschieden",
                     "description": "Mitarbeiter mit gesetztem Auslaufdatum",
-                    "name": "Group2",
+                    "name": "Group4",
                     "kind": "Tab",
                     "view": { "__id": ":RowsLayout" },
                     "childContentItems":
@@ -7288,6 +7472,38 @@
                           }
                         ]
                       }
+                    ],
+                    "commandItems":
+                    [
+                      {
+                        "displayName": "Search",
+                        "description": "Suche nach Mitarbeiter",
+                        "name": "SearchMitarbeiterAktuell",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "links":
+                              [
+                                {
+                                  "member": { "__id": "BrowseMitarbeiterSet/Properties[MitarbeiterAusgeschieden]" }
+                                },
+                                {
+                                  "target": { "__id": "CollectionView$MitarbeiterItem/Methods[showSearch]" }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-search"
+                          }
+                        ]
+                      }
                     ]
                   }
                 ],
@@ -7365,7 +7581,7 @@
             {
               "id": "BrowseMitarbeiterSet/Properties[MitarbeiterOhneAktuellenVertrag]",
               "name": "MitarbeiterOhneAktuellenVertrag",
-              "pageSize": 45,
+              "pageSize": 12,
               "elementType": { "__id": "MitarbeiterItem" },
               "propertyType": { "__id": "CollectionView$MitarbeiterItem" },
               "query":
@@ -7446,8 +7662,20 @@
             {
               "id": "BrowseMitarbeiterSet/Properties[Monate]",
               "name": "Monate",
-              "elementType": { "__id": ":Int32" },
-              "propertyType": { "__id": ":Int32" }
+              "elementType": { "__id": ":Int32?" },
+              "propertyType": { "__id": ":Int32?" },
+              ":@Range":
+              {
+                "maximum": "1",
+                "minimum": "36"
+              },
+              ":@IsParameter": { }
+            },
+            {
+              "id": "BrowseMitarbeiterSet/Properties[VertragBis]",
+              "name": "VertragBis",
+              "elementType": { "__id": ":Date" },
+              "propertyType": { "__id": ":Date" }
             }
           ]
         },
@@ -7859,29 +8087,6 @@
                           }
                         ]
                       }
-                    ],
-                    "commandItems":
-                    [
-                      {
-                        "displayName": "Lösche Vertrag",
-                        "name": "DeleteVertrag",
-                        "kind": "Command",
-                        "view": { "__id": ":CommandBarButton" },
-                        "propertySources":
-                        [
-                          {
-                            "property": { "__id": ":RootControl/Properties[Tap]" },
-                            "source":
-                            {
-                              "target": { "__id": "ViewMitarbeiter/Methods[DeleteVertrag]" }
-                            }
-                          },
-                          {
-                            "property": { "__id": ":RootCommand/Properties[Icon]" },
-                            "value": "msls-remove"
-                          }
-                        ]
-                      }
                     ]
                   },
                   {
@@ -8051,7 +8256,7 @@
                             "childContentItems":
                             [
                               {
-                                "displayName": "Erstellt von",
+                                "displayName": "Created By",
                                 "name": "CreatedBy",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -8061,7 +8266,7 @@
                                 }
                               },
                               {
-                                "displayName": "Erstellt",
+                                "displayName": "Created",
                                 "name": "Created",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -8071,7 +8276,7 @@
                                 }
                               },
                               {
-                                "displayName": "Geändert von",
+                                "displayName": "Modified By",
                                 "name": "ModifiedBy",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -8081,7 +8286,7 @@
                                 }
                               },
                               {
-                                "displayName": "Geändert",
+                                "displayName": "Modified",
                                 "name": "Modified",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -8222,10 +8427,6 @@
             {
               "id": "ViewMitarbeiter/Methods[RefreshTabs]",
               "name": "RefreshTabs"
-            },
-            {
-              "id": "ViewMitarbeiter/Methods[DeleteVertrag]",
-              "name": "DeleteVertrag"
             }
           ],
           "properties":
@@ -9591,7 +9792,7 @@
                                       "member": { "__id": "StellenanteilItem/Properties[VertragItem]" }
                                     },
                                     {
-                                      "member": { "__id": "VertragItem/Properties[Id]" }
+                                      "member": { "__id": "VertragItem/Properties[von]" }
                                     }
                                   ]
                                 },
@@ -9843,13 +10044,13 @@
                                       "member": { "__id": "StellenanteilItem/Properties[VertragItem]" }
                                     },
                                     {
-                                      "member": { "__id": "VertragItem/Properties[Id]" }
+                                      "member": { "__id": "VertragItem/Properties[von]" }
                                     }
                                   ]
                                 }
                               },
                               {
-                                "displayName": "Erstellt von",
+                                "displayName": "Created By",
                                 "name": "CreatedBy",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -9879,7 +10080,7 @@
                             "childContentItems":
                             [
                               {
-                                "displayName": "Erstellt",
+                                "displayName": "Created",
                                 "name": "Created",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -9889,7 +10090,7 @@
                                 }
                               },
                               {
-                                "displayName": "Geändert von",
+                                "displayName": "Modified By",
                                 "name": "ModifiedBy",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -9899,7 +10100,7 @@
                                 }
                               },
                               {
-                                "displayName": "Geändert",
+                                "displayName": "Modified",
                                 "name": "Modified",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -10288,26 +10489,6 @@
                             "value": "msls-add"
                           }
                         ]
-                      },
-                      {
-                        "displayName": "Vertrag löschen",
-                        "name": "DeleteVertrag",
-                        "kind": "Command",
-                        "view": { "__id": ":CommandBarButton" },
-                        "propertySources":
-                        [
-                          {
-                            "property": { "__id": ":RootControl/Properties[Tap]" },
-                            "source":
-                            {
-                              "target": { "__id": "AddEditVertragItem/Methods[DeleteVertrag]" }
-                            }
-                          },
-                          {
-                            "property": { "__id": ":RootCommand/Properties[Icon]" },
-                            "value": "msls-remove"
-                          }
-                        ]
                       }
                     ]
                   }
@@ -10509,12 +10690,12 @@
                             "property": { "__id": ":RootCollectionControl/Properties[ItemTap]" },
                             "source":
                             {
-                              "target": { "__id": "!module/Methods[showViewVertragItem]" },
+                              "target": { "__id": "!module/Methods[showAddEditVertragItem]" },
                               ":@AssociatedCollection": { "collection": { "__id": "BrowseVertragItemSet/Properties[VertragItemSet]" } },
                               "arguments":
                               [
                                 {
-                                  "parameter": { "__id": "!module/Methods[showViewVertragItem]/Parameters[VertragItem]" },
+                                  "parameter": { "__id": "!module/Methods[showAddEditVertragItem]/Parameters[VertragItem]" },
                                   "value":
                                   {
                                     "links":
@@ -10770,7 +10951,7 @@
                             "childContentItems":
                             [
                               {
-                                "displayName": "Erstellt von",
+                                "displayName": "Created By",
                                 "name": "CreatedBy",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -10780,7 +10961,7 @@
                                 }
                               },
                               {
-                                "displayName": "Erstellt",
+                                "displayName": "Created",
                                 "name": "Created",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -10790,7 +10971,7 @@
                                 }
                               },
                               {
-                                "displayName": "Geändert von",
+                                "displayName": "Modified By",
                                 "name": "ModifiedBy",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -10800,7 +10981,7 @@
                                 }
                               },
                               {
-                                "displayName": "Geändert",
+                                "displayName": "Modified",
                                 "name": "Modified",
                                 "kind": "Value",
                                 "view": { "__id": ":Text" },
@@ -10861,6 +11042,26 @@
                             "value": "msls-edit"
                           }
                         ]
+                      },
+                      {
+                        "displayName": "Delete",
+                        "name": "Delete",
+                        "kind": "Command",
+                        "view": { "__id": ":CommandBarButton" },
+                        "propertySources":
+                        [
+                          {
+                            "property": { "__id": ":RootControl/Properties[Tap]" },
+                            "source":
+                            {
+                              "target": { "__id": "ViewVertragItem/Methods[Delete]" }
+                            }
+                          },
+                          {
+                            "property": { "__id": ":RootCommand/Properties[Icon]" },
+                            "value": "msls-remove"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -10877,7 +11078,16 @@
                 "displayName": "Popups",
                 "name": "Popups",
                 "kind": "Group",
-                "view": { "__id": ":DialogPages" }
+                "view": { "__id": ":DialogPages" },
+                "childContentItems":
+                [
+                  {
+                    "displayName": "Group",
+                    "name": "Group",
+                    "kind": "Popup",
+                    "view": { "__id": ":RowsLayout" }
+                  }
+                ]
               }
             ]
           },
@@ -10906,6 +11116,10 @@
                   "parameterType": { "__id": ":String" }
                 }
               ]
+            },
+            {
+              "id": "ViewVertragItem/Methods[Delete]",
+              "name": "Delete"
             }
           ],
           "properties":
@@ -10916,157 +11130,6 @@
               "elementType": { "__id": "VertragItem" },
               "propertyType": { "__id": "VertragItem" },
               ":@IsParameter": { }
-            }
-          ]
-        },
-        {
-          "displayName": "Home",
-          "id": "Browse",
-          "name": "Browse",
-          "launchMode": "Single",
-          ":@SaveChangesTo":
-          {
-            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
-          },
-          "rootContentItem":
-          {
-            "displayName": "Home",
-            "name": "RootContentItem",
-            "kind": "Screen",
-            "view": { "__id": ":Screen" },
-            "childContentItems":
-            [
-              {
-                "displayName": "Tabs",
-                "name": "Tabs",
-                "kind": "Group",
-                "view": { "__id": ":TabPages" },
-                "childContentItems":
-                [
-                  {
-                    "displayName": "Group",
-                    "name": "Group",
-                    "kind": "Tab",
-                    "view": { "__id": ":RowsLayout" },
-                    "childContentItems":
-                    [
-                      {
-                        "displayName": "Property1",
-                        "name": "Property1",
-                        "kind": "Value",
-                        "view": { "__id": ":ValueCustomControl" },
-                        "dataSource":
-                        {
-                          "member": { "__id": "Browse/Properties[Property1]" }
-                        },
-                        "propertySources":
-                        [
-                          {
-                            "property": { "__id": ":RootControl/Properties[Tap]" },
-                            "source":
-                            {
-                              "target": { "__id": "!module/Methods[showBrowseMitarbeiterSet]" }
-                            }
-                          },
-                          {
-                            "property": { "__id": ":RootControl/Properties[FontStyle]" },
-                            "value": "Large"
-                          },
-                          {
-                            "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
-                            "value": "FixedSize"
-                          },
-                          {
-                            "property": { "__id": ":RootControl/Properties[HeightSizingMode]" },
-                            "value": "FixedSize"
-                          },
-                          {
-                            "property": { "__id": ":RootControl/Properties[Width]" },
-                            "value": 300
-                          },
-                          {
-                            "property": { "__id": ":RootControl/Properties[Height]" },
-                            "value": 100
-                          }
-                        ]
-                      },
-                      {
-                        "displayName": "Show Browse Mitarbeiter Set",
-                        "name": "ShowBrowseMitarbeiterSet",
-                        "kind": "Command",
-                        "view": { "__id": ":Button" },
-                        "propertySources":
-                        [
-                          {
-                            "property": { "__id": ":RootControl/Properties[Tap]" },
-                            "source":
-                            {
-                              "target": { "__id": "!module/Methods[showBrowseMitarbeiterSet]" }
-                            }
-                          },
-                          {
-                            "property": { "__id": ":RootControl/Properties[WidthSizingMode]" },
-                            "value": "FixedSize"
-                          },
-                          {
-                            "property": { "__id": ":RootControl/Properties[Width]" },
-                            "value": 300
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "propertySources":
-                [
-                  {
-                    "property": { "__id": ":RootControl/Properties[BrowseOnly]" },
-                    "value": true
-                  }
-                ]
-              },
-              {
-                "displayName": "Popups",
-                "name": "Popups",
-                "kind": "Group",
-                "view": { "__id": ":DialogPages" }
-              }
-            ]
-          },
-          "methods":
-          [
-            {
-              "id": "Browse/Methods[showTab]",
-              "name": "showTab",
-              "parameters":
-              [
-                {
-                  "id": "Browse/Methods[showTab]/Parameters[tabName]",
-                  "name": "tabName",
-                  "parameterType": { "__id": ":String" }
-                }
-              ]
-            },
-            {
-              "id": "Browse/Methods[showDialog]",
-              "name": "showDialog",
-              "parameters":
-              [
-                {
-                  "id": "Browse/Methods[showDialog]/Parameters[dialogName]",
-                  "name": "dialogName",
-                  "parameterType": { "__id": ":String" }
-                }
-              ]
-            }
-          ],
-          "properties":
-          [
-            {
-              "id": "Browse/Properties[Property1]",
-              "name": "Property1",
-              "elementType": { "__id": ":String" },
-              "propertyType": { "__id": ":String" }
             }
           ]
         },
@@ -11218,33 +11281,6 @@
                                     },
                                     {
                                       "member": { "__id": "MitarbeiterItem/Properties[Nachname]" }
-                                    }
-                                  ]
-                                }
-                              },
-                              {
-                                "displayName": "Abteilung",
-                                "name": "Kürzel",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "links":
-                                  [
-                                    {
-                                      "member": { "__id": "VertragJeMonatItem/Properties[StellenanteilItem]" }
-                                    },
-                                    {
-                                      "member": { "__id": "StellenanteilItem/Properties[VertragItem]" }
-                                    },
-                                    {
-                                      "member": { "__id": "VertragItem/Properties[MitarbeiterItem]" }
-                                    },
-                                    {
-                                      "member": { "__id": "MitarbeiterItem/Properties[AbteilungItem]" }
-                                    },
-                                    {
-                                      "member": { "__id": "AbteilungItem/Properties[Kürzel]" }
                                     }
                                   ]
                                 }
@@ -11414,333 +11450,6 @@
               }
             }
           ]
-        },
-        {
-          "displayName": "Mitarbeiter Mit Aktuellem Vertrag Grid Sorting Template",
-          "id": "MitarbeiterMitAktuellemVertragGridSortingTemplate",
-          "name": "MitarbeiterMitAktuellemVertragGridSortingTemplate",
-          "launchMode": "Single",
-          ":@SaveChangesTo":
-          {
-            "property": { "__id": "DataWorkspace/Members[ApplicationData]" }
-          },
-          "rootContentItem":
-          {
-            "displayName": "Root Content Item",
-            "name": "RootContentItem",
-            "kind": "Screen",
-            "view": { "__id": ":Screen" },
-            "childContentItems":
-            [
-              {
-                "displayName": "Tabs",
-                "name": "Tabs",
-                "kind": "Group",
-                "view": { "__id": ":TabPages" },
-                "childContentItems":
-                [
-                  {
-                    "displayName": "Mitarbeiter Item List",
-                    "name": "MitarbeiterItemList",
-                    "kind": "Tab",
-                    "view": { "__id": ":RowsLayout" },
-                    "childContentItems":
-                    [
-                      {
-                        "displayName": "Mitarbeiter Mit Aktuellem Vertrag",
-                        "name": "MitarbeiterItem",
-                        "kind": "Collection",
-                        "view": { "__id": "EJ.Web:CollectionCustomControl" },
-                        "dataSource":
-                        {
-                          "member": { "__id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[MitarbeiterMitAktuellemVertrag]" }
-                        },
-                        "childContentItems":
-                        [
-                          {
-                            "displayName": "Mitarbeiter",
-                            "name": "RowTemplate",
-                            "kind": "Details",
-                            "view": { "__id": ":RowsLayout" },
-                            "dataSource":
-                            {
-                              "links":
-                              [
-                              ]
-                            },
-                            "childContentItems":
-                            [
-                              {
-                                "displayName": "Nachname",
-                                "name": "Nachname",
-                                "kind": "Value",
-                                "view": { "__id": ":TextBox" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Nachname]" }
-                                }
-                              },
-                              {
-                                "displayName": "Vorname",
-                                "name": "Vorname",
-                                "kind": "Value",
-                                "view": { "__id": ":TextBox" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Vorname]" }
-                                }
-                              },
-                              {
-                                "displayName": "Geburtstag",
-                                "name": "Geburtstag",
-                                "kind": "Value",
-                                "view": { "__id": ":DatePicker" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Geburtstag]" }
-                                }
-                              },
-                              {
-                                "displayName": "Erstanstellung",
-                                "name": "Erstanstellung",
-                                "kind": "Value",
-                                "view": { "__id": ":DatePicker" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Erstanstellung]" }
-                                }
-                              },
-                              {
-                                "displayName": "Ausscheidedatum",
-                                "name": "Ausscheidedatum",
-                                "kind": "Value",
-                                "view": { "__id": ":DatePicker" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Ausscheidedatum]" }
-                                }
-                              },
-                              {
-                                "displayName": "Bermerkung",
-                                "name": "Bermerkung",
-                                "kind": "Value",
-                                "view": { "__id": ":TextBox" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Bermerkung]" }
-                                }
-                              },
-                              {
-                                "displayName": "Raum",
-                                "name": "Raum",
-                                "kind": "Value",
-                                "view": { "__id": ":TextBox" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Raum]" }
-                                }
-                              },
-                              {
-                                "displayName": "Telefon",
-                                "name": "Telefon",
-                                "kind": "Value",
-                                "view": { "__id": ":PhoneNumberEditor" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Telefon]" }
-                                }
-                              },
-                              {
-                                "displayName": "Foto",
-                                "name": "Foto",
-                                "kind": "Value",
-                                "view": { "__id": ":Image" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Foto]" }
-                                }
-                              },
-                              {
-                                "displayName": "Personal Nr",
-                                "name": "PersonalNr",
-                                "kind": "Value",
-                                "view": { "__id": ":TextBox" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[PersonalNr]" }
-                                }
-                              },
-                              {
-                                "displayName": "Abteilung Item",
-                                "name": "AbteilungItem",
-                                "kind": "Details",
-                                "view": { "__id": ":DetailsModalPicker" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[AbteilungItem]" }
-                                },
-                                "childContentItems":
-                                [
-                                  {
-                                    "displayName": "Abteilung",
-                                    "name": "RowTemplate1",
-                                    "kind": "Value",
-                                    "view": { "__id": ":Text" },
-                                    "dataSource":
-                                    {
-                                      "member": { "__id": "AbteilungItem/Properties[Kürzel]" }
-                                    }
-                                  }
-                                ]
-                              },
-                              {
-                                "displayName": "Erstellt von",
-                                "name": "CreatedBy",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[CreatedBy]" }
-                                }
-                              },
-                              {
-                                "displayName": "Erstellt",
-                                "name": "Created",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Created]" }
-                                }
-                              },
-                              {
-                                "displayName": "Geändert von",
-                                "name": "ModifiedBy",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[ModifiedBy]" }
-                                }
-                              },
-                              {
-                                "displayName": "Geändert",
-                                "name": "Modified",
-                                "kind": "Value",
-                                "view": { "__id": ":Text" },
-                                "dataSource":
-                                {
-                                  "member": { "__id": "MitarbeiterItem/Properties[Modified]" }
-                                }
-                              }
-                            ]
-                          }
-                        ],
-                        "propertySources":
-                        [
-                          {
-                            "property": { "__id": "EJ.Web:CollectionCustomControl/Properties[Control]" },
-                            "value": "ejGrid"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "displayName": "Popups",
-                "name": "Popups",
-                "kind": "Group",
-                "view": { "__id": ":DialogPages" }
-              }
-            ]
-          },
-          "methods":
-          [
-            {
-              "id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Methods[showTab]",
-              "name": "showTab",
-              "parameters":
-              [
-                {
-                  "id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Methods[showTab]/Parameters[tabName]",
-                  "name": "tabName",
-                  "parameterType": { "__id": ":String" }
-                }
-              ]
-            },
-            {
-              "id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Methods[showDialog]",
-              "name": "showDialog",
-              "parameters":
-              [
-                {
-                  "id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Methods[showDialog]/Parameters[dialogName]",
-                  "name": "dialogName",
-                  "parameterType": { "__id": ":String" }
-                }
-              ]
-            }
-          ],
-          "properties":
-          [
-            {
-              "id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[MitarbeiterMitAktuellemVertrag]",
-              "name": "MitarbeiterMitAktuellemVertrag",
-              "pageSize": 45,
-              "elementType": { "__id": "MitarbeiterItem" },
-              "propertyType": { "__id": "CollectionView$MitarbeiterItem" },
-              "query":
-              {
-                "id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[MitarbeiterMitAktuellemVertrag]/Query",
-                "name": "MitarbeiterMitAktuellemVertragQuery",
-                "elementType": { "__id": "MitarbeiterItem" },
-                "returnType": { "__id": "MitarbeiterItem*" },
-                "source":
-                {
-                  "member": { "__id": "ApplicationData/Members[MitarbeiterMitAktuellemVertrag]" }
-                }
-              },
-              "source":
-              {
-                "target": { "__id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[MitarbeiterMitAktuellemVertrag]/Query" }
-              }
-            },
-            {
-              "id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[VertragItemCollection]",
-              "name": "VertragItemCollection",
-              "pageSize": 15,
-              "elementType": { "__id": "VertragItem" },
-              "propertyType": { "__id": "CollectionView$VertragItem" },
-              "query":
-              {
-                "id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[VertragItemCollection]/Query",
-                "name": "VertragItemCollectionQuery",
-                "elementType": { "__id": "VertragItem" },
-                "returnType": { "__id": "VertragItem*" },
-                "source":
-                {
-                  "links":
-                  [
-                    {
-                      "member": { "__id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[MitarbeiterMitAktuellemVertrag]" }
-                    },
-                    {
-                      "member": { "__id": "CollectionView$MitarbeiterItem/Properties[selectedItem]" }
-                    },
-                    {
-                      "member": { "__id": "MitarbeiterItem/Properties[VertragItemCollection]" }
-                    }
-                  ]
-                }
-              },
-              "source":
-              {
-                "target": { "__id": "MitarbeiterMitAktuellemVertragGridSortingTemplate/Properties[VertragItemCollection]/Query" }
-              }
-            }
-          ]
         }
       ],
       "methods":
@@ -11838,7 +11547,15 @@
         {
           "id": "!module/Methods[showBrowseMitarbeiterSet]",
           "name": "showBrowseMitarbeiterSet",
-          ":@ShowScreenMethod": { "targetScreen": { "__id": "BrowseMitarbeiterSet" } }
+          ":@ShowScreenMethod": { "targetScreen": { "__id": "BrowseMitarbeiterSet" } },
+          "parameters":
+          [
+            {
+              "id": "!module/Methods[showBrowseMitarbeiterSet]/Parameters[Monate]",
+              "name": "Monate",
+              "parameterType": { "__id": ":Int32?" }
+            }
+          ]
         },
         {
           "id": "!module/Methods[showViewMitarbeiter]",
@@ -11947,19 +11664,9 @@
           ]
         },
         {
-          "id": "!module/Methods[showBrowse]",
-          "name": "showBrowse",
-          ":@ShowScreenMethod": { "targetScreen": { "__id": "Browse" } }
-        },
-        {
           "id": "!module/Methods[showBrowseVertragJeMonatItemSet]",
           "name": "showBrowseVertragJeMonatItemSet",
           ":@ShowScreenMethod": { "targetScreen": { "__id": "BrowseVertragJeMonatItemSet" } }
-        },
-        {
-          "id": "!module/Methods[showMitarbeiterMitAktuellemVertragGridSortingTemplate]",
-          "name": "showMitarbeiterMitAktuellemVertragGridSortingTemplate",
-          ":@ShowScreenMethod": { "targetScreen": { "__id": "MitarbeiterMitAktuellemVertragGridSortingTemplate" } }
         }
       ],
       "navigationItems":
@@ -11985,14 +11692,14 @@
           "method": { "__id": "!module/Methods[showBrowseAbteilungItemSet]" }
         },
         {
+          "id": "!module/NavigationItems[link2]",
+          "name": "link2",
+          "method": { "__id": "!module/Methods[showBrowseKontoItem]" }
+        },
+        {
           "id": "!module/NavigationItems[link5]",
           "name": "link5",
           "method": { "__id": "!module/Methods[showBrowseVertragJeMonatItemSet]" }
-        },
-        {
-          "id": "!module/NavigationItems[link7]",
-          "name": "link7",
-          "method": { "__id": "!module/Methods[showMitarbeiterMitAktuellemVertragGridSortingTemplate]" }
         }
       ]
     }

@@ -124,7 +124,7 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <CallExpression
-                        Target="!module/Methods[showViewVertragItem]">
+                        Target="!module/Methods[showAddEditVertragItem]">
                         <CallExpression.Attributes>
                           <AssociatedCollection
                             Collection="BrowseVertragItemSet/Properties[VertragItemSet]" />
@@ -139,6 +139,16 @@
                           </ChainExpression>
                         </ArgumentExpression>
                       </CallExpression>
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootCommand/Properties[Icon]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="msls-edit"
+                        ResultType=":String" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>

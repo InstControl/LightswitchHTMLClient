@@ -32,6 +32,8 @@
         <EntityProperty.Attributes>
           <Required />
           <NotSearchable />
+          <StringValueFormat
+            Value="&quot;mm-yy&quot;" />
         </EntityProperty.Attributes>
       </EntityProperty>
       <NavigationProperty

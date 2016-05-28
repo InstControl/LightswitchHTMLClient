@@ -172,6 +172,103 @@ namespace LightSwitchApplication.Implementation
     #endregion
     
     }
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public class WCF_RIA_ServiceDataDataService
+        : global::Microsoft.LightSwitch.ServerGenerated.Implementation.DataService<global::LightSwitchApplication.Implementation.WCF_RIA_ServiceData>
+    {
+    
+        public WCF_RIA_ServiceDataDataService() : base()
+        {
+        }
+    
+        protected override global::Microsoft.LightSwitch.IDataService GetDataService(global::Microsoft.LightSwitch.IDataWorkspace dataWorkspace)
+        {
+            return ((global::LightSwitchApplication.DataWorkspace)dataWorkspace).WCF_RIA_ServiceData;
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public class WCF_RIA_ServiceDataServiceImplementation
+        : global::Microsoft.LightSwitch.ServerGenerated.Implementation.RiaDataServiceImplementation<global::LightSwitchApplication.Implementation.WCF_RIA_ServiceData, global::WCF_RIA_Service.WCF_RIA_Service>
+    {
+        public WCF_RIA_ServiceDataServiceImplementation(global::Microsoft.LightSwitch.IDataService dataService) : base(dataService)
+        {
+        }
+    
+    #region Queries
+    #endregion
+
+    #region Protected Methods
+        protected override object CreateObject(global::System.Type type)
+        {
+            if (type == typeof(global::LightSwitchApplication.Implementation.EnhancedMitarbeiter))
+            {
+                return new global::LightSwitchApplication.Implementation.EnhancedMitarbeiter();
+            }
+    
+            return base.CreateObject(type);
+        }
+    
+        protected override global::LightSwitchApplication.Implementation.WCF_RIA_ServiceData CreateObjectContext()
+        {
+            string assemblyName = global::System.Reflection.Assembly.GetExecutingAssembly().GetName().Name;
+            return new global::LightSwitchApplication.Implementation.WCF_RIA_ServiceData(this.GetEntityConnectionString(
+                "WCF_RIA_ServiceData",
+                "res://" + assemblyName + "/WCF_RIA_ServiceData.csdl|res://" + assemblyName + "/WCF_RIA_ServiceData.ssdl|res://" + assemblyName + "/WCF_RIA_ServiceData.msl",
+                "System.Data.SqlClient",
+                true));
+        }
+    
+        protected override global::Microsoft.LightSwitch.Internal.IEntityImplementation CreateEntityImplementation<T>()
+        {
+            if (typeof(T) == typeof(global::LightSwitchApplication.EnhancedMitarbeiter))
+            {
+                return new global::LightSwitchApplication.Implementation.EnhancedMitarbeiter();
+            }
+            return null;
+        }
+    
+        protected override global::System.Type ConvertType(global::System.Type outerType)
+        {
+            if (outerType == typeof(global::LightSwitchApplication.Implementation.EnhancedMitarbeiter))
+            {
+                return typeof(global::WCF_RIA_Service.EnhancedMitarbeiter);
+            }
+            return base.ConvertType(outerType);
+        }
+    
+        protected override object ConvertEntity(object outerEntity)
+        {
+            global::LightSwitchApplication.Implementation.EnhancedMitarbeiter enhancedMitarbeiter = outerEntity as global::LightSwitchApplication.Implementation.EnhancedMitarbeiter;
+            if (enhancedMitarbeiter != null)
+            {
+                global::WCF_RIA_Service.EnhancedMitarbeiter result = new global::WCF_RIA_Service.EnhancedMitarbeiter();
+                result.ID = enhancedMitarbeiter.ID;
+                result.UserID = enhancedMitarbeiter.UserID;
+                result.aktuellerVertragBis = enhancedMitarbeiter.aktuellerVertragBis;
+                return result;
+            }
+            return null;
+        }
+    
+        protected override void UpdateResult(object outerEntity, object innerResult)
+        {
+            global::LightSwitchApplication.Implementation.EnhancedMitarbeiter outerEnhancedMitarbeiter = outerEntity as global::LightSwitchApplication.Implementation.EnhancedMitarbeiter;
+            global::WCF_RIA_Service.EnhancedMitarbeiter innerEnhancedMitarbeiter = innerResult as global::WCF_RIA_Service.EnhancedMitarbeiter;
+            if ((outerEnhancedMitarbeiter != null) && (innerEnhancedMitarbeiter != null))
+            {
+                outerEnhancedMitarbeiter.ID = innerEnhancedMitarbeiter.ID;
+                outerEnhancedMitarbeiter.UserID = innerEnhancedMitarbeiter.UserID;
+                outerEnhancedMitarbeiter.aktuellerVertragBis = innerEnhancedMitarbeiter.aktuellerVertragBis;
+                return;
+            }
+        }
+    
+    #endregion
+    
+    }
     
     #region DataServiceImplementationFactory
     [global::System.ComponentModel.Composition.PartCreationPolicy(global::System.ComponentModel.Composition.CreationPolicy.Shared)]
@@ -188,6 +285,10 @@ namespace LightSwitchApplication.Implementation
             {
                 return new global::LightSwitchApplication.ApplicationDataService();
             }
+            if (dataServiceType == typeof(global::LightSwitchApplication.WCF_RIA_ServiceDataService))
+            {
+                return new global::LightSwitchApplication.WCF_RIA_ServiceDataService();
+            }
             return base.CreateDataService(dataServiceType);
         }
     
@@ -196,6 +297,10 @@ namespace LightSwitchApplication.Implementation
             if (typeof(TDataService) == typeof(global::LightSwitchApplication.ApplicationDataService))
             {
                 return new global::LightSwitchApplication.Implementation.ApplicationDataServiceImplementation(dataService);
+            }
+            if (typeof(TDataService) == typeof(global::LightSwitchApplication.WCF_RIA_ServiceDataService))
+            {
+                return new global::LightSwitchApplication.Implementation.WCF_RIA_ServiceDataServiceImplementation(dataService);
             }
             return base.CreateDataServiceImplementation(dataService);
         }
@@ -238,6 +343,10 @@ namespace LightSwitchApplication.Implementation
             if (typeof(global::LightSwitchApplication.VertragJeMonatItem) == definitionType)
             {
                 return typeof(global::LightSwitchApplication.Implementation.VertragJeMonatItem);
+            }
+            if (typeof(global::LightSwitchApplication.EnhancedMitarbeiter) == definitionType)
+            {
+                return typeof(global::LightSwitchApplication.Implementation.EnhancedMitarbeiter);
             }
             return null;
         }
@@ -724,6 +833,39 @@ namespace LightSwitchApplication.Implementation
             }
         }
         
+        #region IEntityImplementation Members
+        private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
+        
+        global::Microsoft.LightSwitch.Internal.IEntityImplementationHost global::Microsoft.LightSwitch.Internal.IEntityImplementation.Host
+        {
+            get
+            {
+                return this.__host;
+            }
+        }
+        
+        void global::Microsoft.LightSwitch.Internal.IEntityImplementation.Initialize(global::Microsoft.LightSwitch.Internal.IEntityImplementationHost host)
+        {
+            this.__host = host;
+        }
+        
+        protected override void OnPropertyChanged(string propertyName)
+        {
+            base.OnPropertyChanged(propertyName);
+            if (this.__host != null)
+            {
+                this.__host.RaisePropertyChanged(propertyName);
+            }
+        }
+        #endregion
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    public partial class EnhancedMitarbeiter :
+        global::LightSwitchApplication.EnhancedMitarbeiter.DetailsClass.IImplementation
+    {
+    
         #region IEntityImplementation Members
         private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
         

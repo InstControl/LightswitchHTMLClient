@@ -2,9 +2,18 @@
 
 myapp.ViewVertragItem.Details_postRender = function (element, contentItem) {
     // Write code here.
-    var name = contentItem.screen.VertragItem.details.getModel()[':@SummaryProperty'].property.name;
-    contentItem.dataBind("screen.VertragItem." + name, function (value) {
-        contentItem.screen.details.displayName = value;
-    });
+
 }
 
+
+myapp.ViewVertragItem.Delete_execute = function (screen) {
+    screen.VertragItem.deleteEntity();
+    return myapp.commitChanges().then(null, function fail(e) {
+        myapp.cancelChanges();
+        throw e;
+    });
+};
+myapp.ViewVertragItem.created = function (screen) {
+    // Write code here.
+
+};

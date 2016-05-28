@@ -1,4 +1,5 @@
-﻿using Microsoft.LightSwitch.Security.Server;
+﻿using System.Linq.Expressions;
+using Microsoft.LightSwitch.Security.Server;
 using Microsoft.LightSwitch;
 using System.Text;
 using System.Linq;
@@ -25,9 +26,7 @@ namespace LightSwitchApplication
         {
             //Mitarbeiter deren letzter Vertrag bereits geendet ist oder die noch keinen Vertrag haben
             DateTime Today = DateTime.Today;
-            query = query.Where(
-                p => !p.VertragItemCollection.Any(q => (q.von <= Today) && (q.bis >= Today))
-            );
+            query = query.Where(p => !p.VertragItemCollection.Any(q => (q.von <= Today) && (q.bis >= Today)));
         }
 
         partial void MitarbeiterMitAktuellemVertrag_PreprocessQuery(ref IQueryable<MitarbeiterItem> query)
@@ -40,14 +39,18 @@ namespace LightSwitchApplication
         partial void MitarbeiterMitAuslaufendemVertrag_PreprocessQuery(int? Monate, ref IQueryable<MitarbeiterItem> query)
         {
 
-            //Mitarbeiter, die heute einen und in xx Monaten keinen aktuellen Vertrag mehr haben
+            //Mitarbeiter, die heute einen... 
+            DateTime Today = DateTime.Today;
+            query = query.Where(p => p.VertragItemCollection.Any(q => (q.von <= Today) && (q.bis >= Today)));
 
             if (Monate == null)
             {
                 Monate = 0;
             }
-            DateTime DueDate = DateTime.Today.AddMonths(Monate.Value);
-            query = query.Where(p => (p.VertragItemCollection.Max(q => q.bis) < DueDate) && (p.VertragItemCollection.Max(q => q.bis) >= DateTime.Today));
+            
+            //...und in xx Monaten keinen aktuellen Vertrag mehr haben
+            DateTime DueDate = new DateTime(DateTime.Today.AddMonths(Monate.Value+1).Year, DateTime.Today.AddMonths(Monate.Value+1).Month,1).Date;
+            query = query.Where(p => !p.VertragItemCollection.Any(q => (q.von <= DueDate) && (q.bis >= DueDate)));
         }
 
         partial void VertragItemSet_Updated(VertragItem entity)
@@ -84,23 +87,40 @@ namespace LightSwitchApplication
             {
                 results.AddEntityError("Kein Stellenanteil hinzugefügt."); 
             }
-            if (entity.MitarbeiterItem.VertragItemCollection.Any(p => IsOverlapping(entity,p)) == true)
-            {
-                results.AddEntityError("Ein Vertrag in diesem Zeitraum existiert bereits.");
-            }
+            //if (entity.MitarbeiterItem.VertragItemCollection.Where(p => (p.bis >= entity.von && p.von <= entity.bis)).Count() > 1 )
+            //    // wenn ein Vertrag in diesem Zeitraum bereits existiert:
+            //{
+            //    results.AddEntityError("Ein Vertrag in diesem Zeitraum existiert bereits.");
+            //}
         }
 
         partial void StellenanteilItemSet_Deleting(StellenanteilItem entity)
         {
-            if (entity.VertragItem.StellenanteilItemCollection.Count() == 0)
+            if (entity.VertragItem != null)
             {
-                throw new ValidationException("Es muss mindestens ein Stellenanteil vorhanden sein!");
+                if (entity.VertragItem.StellenanteilItemCollection.Count() == 0)
+                {
+                    throw new ValidationException("Es muss mindestens ein Stellenanteil vorhanden sein!");
+                }
             }
         }
 
-        internal bool IsOverlapping(VertragItem entityNew, VertragItem entityExist)
-        {
-            return (entityNew.bis >= entityExist.von) && (entityNew.von <= entityExist.bis) && (entityNew.Id != entityExist.Id) ;
-        }
+        //partial void Query_Executing(QueryExecutingDescriptor queryDescriptor)
+        //{
+        //    foreach (var Mitarbeiter in MitarbeiterItemSet.GetQuery().)
+        //    {
+        //        if (Mitarbeiter.hatAktuellenVertrag)
+        //        {
+        //            DateTime Today = DateTime.Today;
+        //            Mitarbeiter.aktuellerVertragBis = Mitarbeiter.VertragItemCollectionQuery.Where(q => (q.von <= Today) && (q.bis >= Today)).First().bis;
+        //        }
+        //        else
+        //        {
+        //            Mitarbeiter.aktuellerVertragBis = null;
+        //        }
+        //    }
+        //}
+
+
     }
 }

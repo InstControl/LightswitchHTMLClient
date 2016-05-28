@@ -110,7 +110,7 @@
     "validation_invalidValue_dateTime": "Ungültiger Datum-Zeit-Wert.",
     "validation_invalidValue_decimal": "Ungültiger Dezimalwert.",
     "validation_invalidValue_guid": "Ungültiger GUI D-Wert. Die GUID muss 32 Zeichen im Format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx enthalten.",
-    "validation_invalidValue_integer": "Ungültiger Ganzzahlwert.",
+    "validation_invalidValue_integer": "Ungültiger Integer-Wert.",
     "validation_invalidValue_money": "Ungültiger Geldwert.",
     "validation_invalidValue_percent": "Ungültiger Prozentwert.",
     "validation_invalidValue_timespan": "Ungültiger Wert für Zeitspanne. Die Zeitspanne muss im Format [+|-][Tage.]Stunden:Minuten:Sekunden[.Millisekunden] angegeben werden.",

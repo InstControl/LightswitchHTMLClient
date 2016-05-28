@@ -50,6 +50,19 @@
                 Name="left"
                 Kind="Group">
                 <ContentItem
+                  Name="UserID"
+                  Kind="Value"
+                  DataType=":String">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="MitarbeiterItem/Properties[UserID]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
+                </ContentItem>
+                <ContentItem
                   Name="Nachname"
                   Kind="Value"
                   DataType=":String">

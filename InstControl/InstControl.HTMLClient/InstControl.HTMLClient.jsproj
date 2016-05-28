@@ -46,11 +46,11 @@
     <Content Include="Content\Images\InstControl-splash-screen.png" />
     <Content Include="Content\Images\msls-black-icons-18.png" />
     <Content Include="Content\Images\msls-black-icons-36.png" />
+    <Content Include="Content\Images\msls-blue-icons-36.png" />
     <Content Include="Content\Images\msls-loader-dark.gif" />
     <Content Include="Content\Images\msls-loader-light.gif" />
     <Content Include="Content\Images\msls-white-icons-18.png" />
     <Content Include="Content\Images\msls-white-icons-36.png" />
-    <Content Include="Content\Images\msls-blue-icons-36.png" />
     <Content Include="Content\jquery.mobile-1.3.0.css" />
     <Content Include="Content\jquery.mobile-1.3.0.min.css" />
     <Content Include="Content\jquery.mobile.structure-1.3.0.css" />
@@ -390,6 +390,11 @@
     <Content Include="Content\Images\user-logo-144.png" />
     <Content Include="Content\Images\user-splash-screen.png" />
     <Content Include="Content\Web.config" />
+    <Content Include="lsWires\lsWires.css" />
+    <Content Include="lsWires\lsWires.js" />
+    <Content Include="lsWires\lsWiresTheme-dark.css" />
+    <Content Include="lsWires\lsWiresTheme-light.css" />
+    <Content Include="lsWires\ResizeEnd.js" />
     <Content Include="packages.config" />
     <Content Include="Screens\AbteilungItemSet\ViewAbteilungItem.lsml.js">
       <DependentUpon>ViewAbteilungItem.lsml</DependentUpon>
@@ -397,17 +402,11 @@
     <Content Include="Screens\BeschäftigungsArtItemSet\ViewBeschäftigungsArtItem.lsml.js">
       <DependentUpon>ViewBeschäftigungsArtItem.lsml</DependentUpon>
     </Content>
-    <Content Include="Screens\Browse.lsml.js">
-      <DependentUpon>Browse.lsml</DependentUpon>
-    </Content>
     <Content Include="Screens\BrowseVertragJeMonatItemSet.lsml.js">
       <DependentUpon>BrowseVertragJeMonatItemSet.lsml</DependentUpon>
     </Content>
     <Content Include="Screens\KontoItem\ViewKontoItem.lsml.js">
       <DependentUpon>ViewKontoItem.lsml</DependentUpon>
-    </Content>
-    <Content Include="Screens\MitarbeiterMitAktuellemVertragGridSortingTemplate.lsml.js">
-      <DependentUpon>MitarbeiterMitAktuellemVertragGridSortingTemplate.lsml</DependentUpon>
     </Content>
     <Content Include="Screens\MitarbeiterSet\AddEditMitarbeiter.lsml.js">
       <DependentUpon>AddEditMitarbeiter.lsml</DependentUpon>
@@ -440,21 +439,34 @@
     <Content Include="Scripts\datajs-1.1.3.min.js" />
     <Content Include="Scripts\ej\ej.web.all.min.js" />
     <Content Include="Scripts\jquery-1.11.3.min.js" />
-    <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
-    <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-1.12.3.intellisense.js" />
+    <Content Include="Scripts\jquery-1.12.3.js" />
+    <Content Include="Scripts\jquery-1.12.3.min.js" />
+    <Content Include="Scripts\jquery-1.12.3.min.map" />
     <Content Include="Scripts\jquery.easing.1.3.min.js" />
     <Content Include="Scripts\jquery.globalize.min.js" />
     <Content Include="Scripts\jquery.mobile-1.3.0-vsdoc.js" />
     <Content Include="Scripts\jquery.mobile-1.3.0.js" />
     <Content Include="Scripts\jquery.mobile-1.3.0.min.js" />
     <Content Include="Scripts\jsrender.min.js" />
-    <Content Include="Scripts\msls.js" />
+    <Content Include="Scripts\lodash.core.js" />
+    <Content Include="Scripts\lodash.core.min.js" />
+    <Content Include="Scripts\lodash.js" />
+    <Content Include="Scripts\lodash.min.js" />
+    <Content Include="Scripts\moment-with-locales.js" />
+    <Content Include="Scripts\moment-with-locales.min.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\moment.min.js" />
     <Content Include="Scripts\msls-2.5.3-vsdoc.js" />
     <Content Include="Scripts\msls-2.5.3.js" />
     <Content Include="Scripts\msls-2.5.3.min.js" />
+    <Content Include="Scripts\msls.js" />
     <Content Include="Scripts\winjs-1.0.js" />
     <Content Include="Scripts\winjs-1.0.min.js" />
+    <Content Include="UserCode\VertragItem.lsml.js">
+      <DependentUpon>
+      </DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ServiceMetadataReference Include="..\InstControl.Server\InstControl.Server.csproj">
@@ -467,6 +479,7 @@
     <LightSwitchModel Include="Properties\ApplicationData\ProjektItemSet.lsml" />
     <LightSwitchModel Include="Properties\ApplicationData\StellenanteilItemSet.lsml" />
     <LightSwitchModel Include="Properties\ApplicationData\VertragItemSet.lsml" />
+    <LightSwitchModel Include="Properties\ApplicationData\VertragJeMonatItemSet.lsml" />
     <LightSwitchModel Include="Properties\Client.lsml">
       <ProjectCritical>true</ProjectCritical>
     </LightSwitchModel>
@@ -477,12 +490,10 @@
     <LightSwitchModel Include="Screens\BeschäftigungsArtItemSet\AddEditBeschäftigungsArtItem.lsml" />
     <LightSwitchModel Include="Screens\BeschäftigungsArtItemSet\BrowseBeschäftigungsArtItemSet.lsml" />
     <LightSwitchModel Include="Screens\BeschäftigungsArtItemSet\ViewBeschäftigungsArtItem.lsml" />
-    <LightSwitchModel Include="Screens\Browse.lsml" />
     <LightSwitchModel Include="Screens\BrowseVertragJeMonatItemSet.lsml" />
     <LightSwitchModel Include="Screens\KontoItem\AddEditKontoItem.lsml" />
     <LightSwitchModel Include="Screens\KontoItem\BrowseKontoItem.lsml" />
     <LightSwitchModel Include="Screens\KontoItem\ViewKontoItem.lsml" />
-    <LightSwitchModel Include="Screens\MitarbeiterMitAktuellemVertragGridSortingTemplate.lsml" />
     <LightSwitchModel Include="Screens\MitarbeiterSet\AddEditMitarbeiter.lsml" />
     <LightSwitchModel Include="Screens\MitarbeiterSet\BrowseMitarbeiterSet.lsml" />
     <LightSwitchModel Include="Screens\MitarbeiterSet\ViewMitarbeiter.lsml" />

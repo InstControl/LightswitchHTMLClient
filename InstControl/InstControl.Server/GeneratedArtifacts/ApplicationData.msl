@@ -43,6 +43,7 @@
           <ScalarProperty Name="Foto" ColumnName="Foto" />
           <ScalarProperty Name="PersonalNr" ColumnName="PersonalNr" />
           <ScalarProperty Name="AbteilungItem_MitarbeiterItem" ColumnName="AbteilungItem_MitarbeiterItem" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
           <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
           <ScalarProperty Name="Created" ColumnName="Created" />
           <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />

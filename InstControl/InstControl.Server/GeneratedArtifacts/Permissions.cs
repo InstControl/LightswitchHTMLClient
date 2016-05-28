@@ -17,12 +17,12 @@ namespace LightSwitchApplication
     public static class Permissions
     {
         /// <summary>
-        /// Bietet die Möglichkeit, die Sicherheit für die Anwendung zu verwalten.
+        /// Provides the ability to manage security for the application.
         /// </summary>
         public const string SecurityAdministration = global::Microsoft.LightSwitch.Security.ApplicationPermissions.SecurityAdministration;
 
         /// <summary>
-        /// Ruft alle für die Anwendung definierten Berechtigungen ab. Hierzu zählen systemdefinierte und benutzerdefinierte Berechtigungen.
+        /// Gets all permissions defined for the application.  This includes system and user-defined permissions.
         /// </summary>
         public static global::System.Collections.ObjectModel.ReadOnlyCollection<string> AllPermissions { get { return global::Microsoft.LightSwitch.Security.ApplicationPermissions.AllPermissions; } }
     }

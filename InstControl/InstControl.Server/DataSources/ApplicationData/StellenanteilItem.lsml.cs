@@ -8,6 +8,10 @@ namespace LightSwitchApplication
 {
     public partial class StellenanteilItem
     {
+        partial void Stellenanteil_Validate(EntityValidationResultsBuilder results)
+        {
+            // results.AddPropertyError("<Error-Message>");
 
+        }
     }
 }

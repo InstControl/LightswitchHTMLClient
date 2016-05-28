@@ -1,10 +1,4 @@
-﻿/* App Customization CSS file - dark:
-   Contains styles that are meant to override the main theme file for dark themes (dark-theme-*.css).
-   **************************************************************************************************/
-
-/* App Loading sequence */
-
-#msls-id-app-loading .ui-icon-loading {
+﻿#msls-id-app-loading .ui-icon-loading {
     background-image: url(Images/msls-loader-dark.gif) !important;
 }
 
@@ -12,18 +6,14 @@
     background: url(Images/msls-loader-dark.gif) no-repeat bottom !important;
 }
 
-/* In dark theme, there is a 1px border on top of buttons. Remove it. */
 .ui-btn-inner {
     border-top: none;
 }
 
-/* No bold fonts as per Modern Ux guidelines. Override globally. */
 .ui-btn {
     font-weight: normal;
 }
 
-/* Header/Footer
-  *****************************************************************/
 .msls-header, 
 .msls-footer {
     border-right: none;
@@ -42,10 +32,7 @@
     border-top: none;
 }
 
-/* Use the body color for the header instead of the header color defined in the theme. */
-.msls-header.ui-bar-a{
-    background: #191919 /*{a-bar-background-color}*/;
-}
+.msls-header.ui-bar-a,
 .msls-header.ui-bar-b,
 .msls-header.ui-bar-c,
 .msls-header.ui-bar-d,
@@ -53,8 +40,6 @@
     background: inherit;
 }
 
-/* Header/dialog/footer icons
-  *****************************************************************/
 .msls-large-icon .ui-icon,
 .msls-large-icon .ui-icon-searchfield:after {
     background-image: url(images/msls-white-icons-36.png)!important;
@@ -68,30 +53,19 @@
     text-shadow: none;
 }
 
-/* Control visual states
-  *****************************************************************/
-
-/* ... disabled */
-
 .ui-body-a .ui-disabled .ui-link {
     color: #d9d9d9 !important;
 }
-
-/* ... read only */
 
 input.msls-read-only, .msls-read-only.ui-select .ui-btn, textarea.msls-read-only {
     background-color: transparent;
     border-color: #595959;
 }
 
-/* ... loading */
-
 .msls-presenter.msls-loading > :not(.msls-presenter) > .msls-state-overlay,
 .msls-presenter.msls-loading > .msls-state-overlay {
     background-image: url(Images/msls-loader-light.gif);
 }
-
-/* ... person viewer loading and links */
 
 .msls-sppsv-loading {
     background-image: url(Images/msls-loader-light.gif);
@@ -107,34 +81,23 @@ input.msls-read-only, .msls-read-only.ui-select .ui-btn, textarea.msls-read-only
     color: #2EB5EF;
 }
 
-/* ... person picker border color and background */
-
 .msls-ctl-person-picker-base .ui-listview {
     border-color: #666666;
     background: #555555;
 }
-
-/* ... details picker border color and background */
 
 .msls-ctl-details-modal-picker .id-auto-complete-dropdown .msls-ctl-list {
     border-color: #666666;
     background: #555555;
 }
 
-/* ... display error (errors loading control contents or rendering the control) */
-
 .msls-display-error-icon {
     background-image: url(images/msls-white-icons-18.png);
 }
 
-/* ... list loading */
-
 .msls-list-loading {
     background-image: url(Images/msls-loader-light.gif);
 }
-
-/* Focus state
-*****************************************************************/
 
 .ui-focus,
 .ui-btn:focus {
@@ -181,8 +144,6 @@ tr.msls-table-row:focus {
     box-shadow: inset 0px 0px 0px #2EB5EF, 0px 0px 0px 1px #2EB5EF;
 }
 
-/* Links
-***************************************************************/
 .ui-bar-a a.ui-link,
 .ui-bar-b a.ui-link,
 .ui-bar-c a.ui-link,
@@ -197,9 +158,6 @@ tr.msls-table-row:focus {
     text-decoration: none;
 }
 
-
-/* SharePoint Chrome
-***************************************************************/
 
 .msls-sharepoint-chrome {
     background-color: rgb(0, 114, 198);

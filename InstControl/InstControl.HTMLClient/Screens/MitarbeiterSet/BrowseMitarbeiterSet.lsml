@@ -23,7 +23,8 @@
           View="Microsoft.LightSwitch.MobileWeb:TabPages">
           <ContentItem
             Name="Group1"
-            Kind="Group">
+            Kind="Group"
+            View="Microsoft.LightSwitch.MobileWeb:ColumnsLayout">
             <ContentItem.Attributes>
               <DisplayName
                 Value="mit aktuellem Vertrag" />
@@ -44,7 +45,8 @@
               <ContentItem
                 Name="aktuelleMitarbeiterTemplate"
                 Kind="Details"
-                DataType="MitarbeiterItem">
+                DataType="MitarbeiterItem"
+                View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
                 <ContentItem.DataSource>
                   <ScreenExpressionTree>
                     <ChainExpression />
@@ -53,7 +55,8 @@
                 <ContentItem
                   Name="Nachname"
                   Kind="Value"
-                  DataType=":String">
+                  DataType=":String"
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -78,7 +81,8 @@
                 <ContentItem
                   Name="Vorname"
                   Kind="Value"
-                  DataType=":String">
+                  DataType=":String"
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -89,14 +93,14 @@
                   </ContentItem.DataSource>
                 </ContentItem>
                 <ContentItem
-                  Name="Geburtstag"
+                  Name="Bermerkung2"
                   Kind="Value"
-                  DataType=":Date">
+                  DataType=":String?">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
                         <MemberExpression
-                          Member="MitarbeiterItem/Properties[Geburtstag]" />
+                          Member="MitarbeiterItem/Properties[Bermerkung]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
@@ -112,6 +116,19 @@
                       </ScreenExpressionTree>
                     </ControlPropertySource>
                   </ContentItem.PropertySources>
+                </ContentItem>
+                <ContentItem
+                  Name="VertragBis"
+                  Kind="Value"
+                  DataType=":Date">
+                  <ContentItem.DataSource>
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="BrowseMitarbeiterSet/Properties[VertragBis]" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ContentItem.DataSource>
                 </ContentItem>
               </ContentItem>
               <ContentItem.PropertySources>
@@ -156,7 +173,9 @@
                 Kind="Command">
                 <ContentItem.Attributes>
                   <DisplayName
-                    Value="Add" />
+                    Value="Neuer Mitarbeiter" />
+                  <Description
+                    Value="Legt Datensatz für einen neuen Mitarbeiter an." />
                 </ContentItem.Attributes>
                 <ContentItem.PropertySources>
                   <ControlPropertySource
@@ -221,9 +240,8 @@
             </ContentItem.CommandItems>
           </ContentItem>
           <ContentItem
-            Name="Group4"
-            Kind="Group"
-            View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
+            Name="Group2"
+            Kind="Group">
             <ContentItem.Attributes>
               <DisplayName
                 Value="mit auslaufendem Vertrag" />
@@ -231,7 +249,7 @@
             <ContentItem
               Name="Monate"
               Kind="Value"
-              DataType=":Int32"
+              DataType=":Int32?"
               View="Microsoft.LightSwitch.MobileWeb:TextBox">
               <ContentItem.Attributes>
                 <DisplayName
@@ -263,6 +281,16 @@
                       <ConstantExpression
                         Value="50"
                         ResultType=":Double" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ControlPropertySource>
+                <ControlPropertySource
+                  Property="Microsoft.LightSwitch.MobileWeb:RootValueControl/Properties[PlaceholderText]">
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <ConstantExpression
+                        Value="Monate"
+                        ResultType=":String" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ControlPropertySource>
@@ -333,7 +361,8 @@
                 <ContentItem
                   Name="Bermerkung1"
                   Kind="Value"
-                  DataType=":String?">
+                  DataType=":String?"
+                  View="Microsoft.LightSwitch.MobileWeb:Text">
                   <ContentItem.DataSource>
                     <ScreenExpressionTree>
                       <ChainExpression>
@@ -397,8 +426,7 @@
           </ContentItem>
           <ContentItem
             Name="Group3"
-            Kind="Group"
-            View="Microsoft.LightSwitch.MobileWeb:RowsLayout">
+            Kind="Group">
             <ContentItem.Attributes>
               <DisplayName
                 Value="ohne aktuellen Vertrag" />
@@ -447,19 +475,6 @@
                       <ChainExpression>
                         <MemberExpression
                           Member="MitarbeiterItem/Properties[Vorname]" />
-                      </ChainExpression>
-                    </ScreenExpressionTree>
-                  </ContentItem.DataSource>
-                </ContentItem>
-                <ContentItem
-                  Name="Ausscheidedatum"
-                  Kind="Value"
-                  DataType=":Date?">
-                  <ContentItem.DataSource>
-                    <ScreenExpressionTree>
-                      <ChainExpression>
-                        <MemberExpression
-                          Member="MitarbeiterItem/Properties[Ausscheidedatum]" />
                       </ChainExpression>
                     </ScreenExpressionTree>
                   </ContentItem.DataSource>
@@ -516,7 +531,7 @@
             </ContentItem>
           </ContentItem>
           <ContentItem
-            Name="Group2"
+            Name="Group4"
             Kind="Group">
             <ContentItem.Attributes>
               <DisplayName
@@ -670,6 +685,41 @@
                 </ControlPropertySource>
               </ContentItem.PropertySources>
             </ContentItem>
+            <ContentItem.CommandItems>
+              <ContentItem
+                Name="SearchMitarbeiterAktuell"
+                Kind="Command">
+                <ContentItem.Attributes>
+                  <DisplayName
+                    Value="Search" />
+                  <Description
+                    Value="Suche nach Mitarbeiter" />
+                </ContentItem.Attributes>
+                <ContentItem.PropertySources>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootControl/Properties[Tap]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <MemberExpression
+                          Member="BrowseMitarbeiterSet/Properties[MitarbeiterAusgeschieden]" />
+                        <CallExpression
+                          Target="showSearch" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                  <ControlPropertySource
+                    Property="Microsoft.LightSwitch.MobileWeb:RootCommand/Properties[Icon]">
+                    <ScreenExpressionTree>
+                      <ChainExpression>
+                        <ConstantExpression
+                          Value="msls-search"
+                          ResultType=":String" />
+                      </ChainExpression>
+                    </ScreenExpressionTree>
+                  </ControlPropertySource>
+                </ContentItem.PropertySources>
+              </ContentItem>
+            </ContentItem.CommandItems>
           </ContentItem>
           <ContentItem.PropertySources>
             <ControlPropertySource
@@ -745,7 +795,7 @@
       </ScreenCollectionProperty>
       <ScreenCollectionProperty
         Name="MitarbeiterOhneAktuellenVertrag"
-        PageSize="45"
+        PageSize="12"
         PropertyType="CollectionView$MitarbeiterItem">
         <ScreenCollectionProperty.Query>
           <ScreenQueryDefinition
@@ -831,7 +881,17 @@
       </ScreenCollectionProperty>
       <ScreenProperty
         Name="Monate"
-        PropertyType=":Int32" />
+        PropertyType=":Int32?">
+        <ScreenProperty.Attributes>
+          <Range
+            Maximum="1"
+            Minimum="36" />
+          <IsParameter />
+        </ScreenProperty.Attributes>
+      </ScreenProperty>
+      <ScreenProperty
+        Name="VertragBis"
+        PropertyType=":Date" />
     </Screen.Properties>
   </Screen>
   <Application.Methods>
@@ -841,6 +901,9 @@
         <ShowScreenMethod
           TargetScreen="BrowseMitarbeiterSet" />
       </ApplicationMethod.Attributes>
+      <ApplicationMethodParameter
+        Name="Monate"
+        ParameterType=":Int32?" />
     </ApplicationMethod>
   </Application.Methods>
 </Application>

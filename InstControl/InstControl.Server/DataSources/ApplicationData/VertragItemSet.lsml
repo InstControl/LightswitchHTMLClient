@@ -71,13 +71,6 @@
         </EntityProperty.Attributes>
       </EntityProperty>
       <EntityProperty
-        Name="isOverlapping"
-        PropertyType=":Boolean?">
-        <EntityProperty.Attributes>
-          <Computed />
-        </EntityProperty.Attributes>
-      </EntityProperty>
-      <EntityProperty
         Name="CreatedBy"
         IsReadOnly="True"
         PropertyType=":Person?">

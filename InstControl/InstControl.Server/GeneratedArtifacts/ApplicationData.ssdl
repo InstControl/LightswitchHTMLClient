@@ -71,12 +71,8 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
-    <Property Name="Nachname" Type="nvarchar" Nullable="false" MaxLength="255">
-      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
-    </Property>
-    <Property Name="Vorname" Type="nvarchar" Nullable="false" MaxLength="255">
-      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
-    </Property>
+    <Property Name="Nachname" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Vorname" Type="nvarchar" Nullable="false" MaxLength="255" />
     <Property Name="Geburtstag" Type="datetime" Nullable="false" />
     <Property Name="Erstanstellung" Type="datetime" Nullable="false" />
     <Property Name="Ausscheidedatum" Type="datetime" />
@@ -85,6 +81,9 @@
     <Property Name="Telefon" Type="nvarchar" MaxLength="255" />
     <Property Name="Foto" Type="varbinary(max)" />
     <Property Name="PersonalNr" Type="nvarchar" Nullable="false" MaxLength="255">
+      <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </Property>
+    <Property Name="UserID" Type="nvarchar" Nullable="false" MaxLength="255">
       <UniqueIndexAnnotation xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
     </Property>
     <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />

@@ -14,7 +14,7 @@ namespace LightSwitchApplication
     #region Entities
     
     /// <summary>
-    /// Keine modellierte Beschreibung verfügbar
+    /// No Modeled Description Available
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
     public sealed partial class StellenanteilItem : global::Microsoft.LightSwitch.Framework.Base.EntityObject<global::LightSwitchApplication.StellenanteilItem, global::LightSwitchApplication.StellenanteilItem.DetailsClass>
@@ -22,7 +22,7 @@ namespace LightSwitchApplication
         #region Constructors
     
         /// <summary>
-        /// Initialisiert eine neue Instanz der Entität StellenanteilItem.
+        /// Initializes a new instance of the StellenanteilItem entity.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -49,7 +49,7 @@ namespace LightSwitchApplication
         #region Private Properties
         
         /// <summary>
-        /// Ruft das Application-Objekt für diese Anwendung ab. Das Application-Objekt stellt Zugriff auf aktive Bildschirme, Methoden zum Öffnen von Bildschirmen sowie Zugriff auf den aktuellen Benutzer bereit.
+        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -62,7 +62,7 @@ namespace LightSwitchApplication
         }
         
         /// <summary>
-        /// Ruft den übergeordneten Datenarbeitsbereich ab. Der Datenarbeitsbereich stellt Zugriff auf alle Datenquellen in der Anwendung bereit.
+        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -79,7 +79,7 @@ namespace LightSwitchApplication
         #region Public Properties
     
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -103,7 +103,7 @@ namespace LightSwitchApplication
         partial void Id_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -127,7 +127,7 @@ namespace LightSwitchApplication
         partial void Stellenanteil_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -155,7 +155,7 @@ namespace LightSwitchApplication
         }
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -175,7 +175,7 @@ namespace LightSwitchApplication
         partial void Created_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -203,7 +203,7 @@ namespace LightSwitchApplication
         }
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -223,7 +223,7 @@ namespace LightSwitchApplication
         partial void Modified_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
@@ -248,7 +248,7 @@ namespace LightSwitchApplication
         partial void RowVersion_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -272,7 +272,7 @@ namespace LightSwitchApplication
         partial void VertragItem_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -296,7 +296,7 @@ namespace LightSwitchApplication
         partial void ProjektItem_Changed();
 
         /// <summary>
-        /// Keine modellierte Beschreibung verfügbar
+        /// No Modeled Description Available
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "14.0.0.0")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
