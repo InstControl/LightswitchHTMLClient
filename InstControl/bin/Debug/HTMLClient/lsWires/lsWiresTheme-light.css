@@ -337,5 +337,5 @@ tr.msls-table-row:focus {
 }
 
 .msls-screen-tab-active .ui-btn-text {
-    color: blue;
+    /*color: blue;*/
 }
